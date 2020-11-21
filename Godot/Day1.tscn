@@ -5,7 +5,7 @@
 
 [node name="Day1" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -27.9142, -12.6567 )
-
 [node name="Ktchen" parent="." instance=ExtResource( 2 )]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -29.5259, 68.6192 )
