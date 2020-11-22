@@ -6,6 +6,9 @@
 [ext_resource path="res://Bedroom1.tscn" type="PackedScene" id=4]
 
 [node name="Day1" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [ 24.5324 ]
+}
 
 [node name="Ktchen" parent="." instance=ExtResource( 2 )]
 
@@ -14,4 +17,4 @@
 [node name="Bedroom1" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -29.5259, 68.6192 )
+position = Vector2( 22.6969, 87.2191 )
