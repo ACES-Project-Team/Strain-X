@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bedroom 1 Tile Set.png-88d7aa8e01c12e7897076e0a13e9a3fc.stex"
+path="res://.import/Mom-Sheet.png-ba4cd5f1c69e01e10b1e0200e6d9a735.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/World/Bedroom 1 Tile Set.png"
-dest_files=[ "res://.import/Bedroom 1 Tile Set.png-88d7aa8e01c12e7897076e0a13e9a3fc.stex" ]
+source_file="res://Day 1/Player/Mom-Sheet.png"
+dest_files=[ "res://.import/Mom-Sheet.png-ba4cd5f1c69e01e10b1e0200e6d9a735.stex" ]
 
 [params]
 

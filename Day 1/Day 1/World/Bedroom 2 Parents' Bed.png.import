@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bedroom 1 Tile Set.png-88d7aa8e01c12e7897076e0a13e9a3fc.stex"
+path="res://.import/Bedroom 2 Parents' Bed.png-92e753d8f7147572ffa8e8c4c629eb25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/World/Bedroom 1 Tile Set.png"
-dest_files=[ "res://.import/Bedroom 1 Tile Set.png-88d7aa8e01c12e7897076e0a13e9a3fc.stex" ]
+source_file="res://Day 1/World/Bedroom 2 Parents' Bed.png"
+dest_files=[ "res://.import/Bedroom 2 Parents' Bed.png-92e753d8f7147572ffa8e8c4c629eb25.stex" ]
 
 [params]
 
