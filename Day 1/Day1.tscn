@@ -18,10 +18,10 @@ position = Vector2( 0.774607, 120.013 )
 [node name="LivingRoom" parent="." instance=ExtResource( 3 )]
 
 [node name="Bedroom1" parent="." instance=ExtResource( 4 )]
-position = Vector2( 6.08987, -177.599 )
+position = Vector2( 16.0819, -175.615 )
 
 [node name="Bedroom2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -2.23416, -165.979 )
+position = Vector2( -18.2112, -165.979 )
 
 [node name="Outside" parent="." instance=ExtResource( 6 )]
 
