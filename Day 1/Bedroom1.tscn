@@ -597,7 +597,7 @@
 0/z_index = 0
 
 [node name="Bedroom1" type="Node2D"]
-position = Vector2( 15.1697, 19.3017 )
+position = Vector2( 18.1645, -176.693 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
