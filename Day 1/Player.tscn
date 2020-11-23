@@ -265,7 +265,7 @@ start_node = "Idle"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=27]
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 0, -1 )
+position = Vector2( 0, -0.686012 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

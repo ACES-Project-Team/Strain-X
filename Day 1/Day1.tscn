@@ -12,12 +12,15 @@ __meta__ = {
 }
 
 [node name="Ktchen" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0.774607, 120.013 )
 
 [node name="LivingRoom" parent="." instance=ExtResource( 3 )]
 
 [node name="Bedroom1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6.08987, -177.599 )
 
 [node name="Bedroom2" parent="." instance=ExtResource( 5 )]
+position = Vector2( -2.23416, -165.979 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 22.6969, 87.2191 )
+position = Vector2( -12.7833, 38.5515 )
