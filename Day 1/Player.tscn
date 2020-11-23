@@ -4,7 +4,7 @@
 [ext_resource path="res://Player.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 2.49001
+radius = 3.26704
 
 [sub_resource type="Animation" id=2]
 resource_name = "AttackDown"
@@ -275,7 +275,7 @@ hframes = 40
 frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 133.425, 68.4611 )
+position = Vector2( 133.462, 68.4611 )
 rotation = 1.5708
 shape = SubResource( 1 )
 
