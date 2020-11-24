@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Bedroom1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Outside.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Grocery store.tscn" type="PackedScene" id=7]
 
 [node name="Day1" type="Node2D"]
 __meta__ = {
@@ -27,3 +28,6 @@ position = Vector2( -18.2112, -165.979 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -12.7833, 38.5515 )
+
+[node name="Grocery store" parent="." instance=ExtResource( 7 )]
+position = Vector2( -366.579, -635.905 )
