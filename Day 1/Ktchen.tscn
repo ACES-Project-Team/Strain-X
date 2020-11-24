@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Day 1/World/Kitchen Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Kitchen Appliances.png" type="Texture" id=2]
@@ -499,6 +499,70 @@ extents = Vector2( 9.94534, 7.78735 )
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 6.37415, 7.86011 )
 
+[sub_resource type="TileSet" id=18]
+0/name = "Kitchen Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 34, 49, 17, 17 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=19]
+0/name = "Kitchen Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 35, 49, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=20]
+0/name = "Kitchen Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 35, 49, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=21]
+0/name = "Kitchen Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 34, 50, 17, 15 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
 [node name="Ktchen" type="Node2D"]
 position = Vector2( 0.840897, 183.454 )
 
@@ -613,3 +677,31 @@ polygon = PoolVector2Array( 126.888, 128.112, 126.888, 142.599, 125.728, 142.975
 
 [node name="Table" type="CollisionPolygon2D" parent="Furniture /StaticBody2D"]
 polygon = PoolVector2Array( 80.7259, 128.719, 80.4073, 151.339, 112.372, 151.126, 113.009, 128.401 )
+
+[node name="RCornerTop " type="TileMap" parent="."]
+position = Vector2( 5.41005, 11.1808 )
+tile_set = SubResource( 18 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65547, -1610612736, 0 )
+
+[node name="LCornerTop" type="TileMap" parent="."]
+position = Vector2( -6.1314, 11.1808 )
+tile_set = SubResource( 19 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65536, -2147483648, 0 )
+
+[node name="RCornerBottom" type="TileMap" parent="."]
+position = Vector2( 149.678, 7.93466 )
+tile_set = SubResource( 20 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 851970, 1610612736, 0 )
+
+[node name="LCornerBottom" type="TileMap" parent="."]
+position = Vector2( -5.41005, 7.5741 )
+tile_set = SubResource( 21 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 851968, -1073741824, 0 )
