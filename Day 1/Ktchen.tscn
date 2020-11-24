@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Day 1/World/Kitchen Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Kitchen Appliances.png" type="Texture" id=2]
@@ -77,18 +77,24 @@
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 64.1088, 29.8376 )
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16.2357, 26.1933 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 2.42656, 104.509 )
 
-[sub_resource type="TileSet" id=19]
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 100.791, 10 )
+
+[sub_resource type="AtlasTexture" id=6]
+
+[sub_resource type="TileSet" id=7]
 0/name = "Kitchen Tile Set.png 0"
 0/texture = ExtResource( 1 )
-0/normal_map = SubResource( 18 )
+0/normal_map = SubResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 78, 11, 17, 16 )
@@ -102,7 +108,7 @@ extents = Vector2( 16.2357, 26.1933 )
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=20]
+[sub_resource type="TileSet" id=8]
 0/name = "Kitchen Appliances.png 0"
 0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
@@ -230,16 +236,16 @@ extents = Vector2( 16.2357, 26.1933 )
 8/shapes = [  ]
 8/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 7.12495, 21.2238 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 7.15807, 16.95 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 7.65503, 13.9683 )
 
-[sub_resource type="TileSet" id=10]
+[sub_resource type="TileSet" id=12]
 0/name = "Kitchen Bottom Left Counter Top.png 0"
 0/texture = ExtResource( 10 )
 0/tex_offset = Vector2( 0, 0 )
@@ -423,16 +429,16 @@ extents = Vector2( 7.65503, 13.9683 )
 12/shapes = [  ]
 12/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 15.7719, 8.66745 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 6.99241, 12.8087 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 9.94534, 7.78735 )
 
-[sub_resource type="TileSet" id=14]
+[sub_resource type="TileSet" id=16]
 0/name = "Kitchen Door Frame.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -490,7 +496,7 @@ extents = Vector2( 9.94534, 7.78735 )
 3/shapes = [  ]
 3/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 6.37415, 7.86011 )
 
 [node name="Ktchen" type="Node2D"]
@@ -507,20 +513,32 @@ tile_data = PoolIntArray( 65536, 5, 0, 65537, 5, 0, 65538, 5, 0, 65539, 5, 0, 65
 
 [node name="Left Wall" type="CollisionShape2D" parent="Wall/StaticBody2D"]
 position = Vector2( 64.2724, 45.8852 )
-shape = SubResource( 16 )
+shape = SubResource( 2 )
 
 [node name="Right Wall" type="CollisionShape2D" parent="Wall/StaticBody2D"]
 position = Vector2( 176.749, 41.9096 )
-shape = SubResource( 17 )
+shape = SubResource( 3 )
+
+[node name="Side Left" type="CollisionShape2D" parent="Wall/StaticBody2D"]
+position = Vector2( -2.69717, 120.483 )
+shape = SubResource( 4 )
+
+[node name="Side Right" type="CollisionShape2D" parent="Wall/StaticBody2D"]
+position = Vector2( 194.722, 119.949 )
+shape = SubResource( 4 )
+
+[node name="Down" type="CollisionShape2D" parent="Wall/StaticBody2D"]
+position = Vector2( 95.9654, 233.237 )
+shape = SubResource( 5 )
 
 [node name="Ground" type="TileMap" parent="."]
-tile_set = SubResource( 19 )
+tile_set = SubResource( 7 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 65544, 0, 0, 65545, 0, 0, 131080, 0, 0, 131081, 0, 0, 196616, 0, 0, 196617, 0, 0, 262152, 0, 0, 262153, 0, 0, 327680, 1610612736, 0, 327681, 1610612736, 0, 327682, 1610612736, 0, 327683, 1610612736, 0, 327684, 1610612736, 0, 327685, 1610612736, 0, 327686, 1610612736, 0, 327687, 1610612736, 0, 327688, 1610612736, 0, 327689, 1610612736, 0, 327690, 1610612736, 0, 327691, -1073741824, 0, 393216, 1610612736, 0, 393217, 1610612736, 0, 393218, 1610612736, 0, 393219, 1610612736, 0, 393220, 1610612736, 0, 393221, 1610612736, 0, 393222, 1610612736, 0, 393223, 1610612736, 0, 393224, 1610612736, 0, 393225, 1610612736, 0, 393226, 1610612736, 0, 393227, -1073741824, 0, 458752, 1610612736, 0, 458753, 1610612736, 0, 458754, 1610612736, 0, 458755, 1610612736, 0, 458756, 1610612736, 0, 458757, 1610612736, 0, 458758, 1610612736, 0, 458759, 1610612736, 0, 458760, 1610612736, 0, 458761, 1610612736, 0, 458762, 1610612736, 0, 458763, -1073741824, 0, 524288, 1610612736, 0, 524289, 1610612736, 0, 524290, 1610612736, 0, 524291, 1610612736, 0, 524292, 1610612736, 0, 524293, 1610612736, 0, 524294, 1610612736, 0, 524295, 1610612736, 0, 524296, 1610612736, 0, 524297, 1610612736, 0, 524298, 1610612736, 0, 524299, -1073741824, 0, 589824, 1610612736, 0, 589825, 1610612736, 0, 589826, 1610612736, 0, 589827, 1610612736, 0, 589828, 1610612736, 0, 589829, 1610612736, 0, 589830, 1610612736, 0, 589831, 1610612736, 0, 589832, 1610612736, 0, 589833, 1610612736, 0, 589834, 1610612736, 0, 589835, -1073741824, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 1610612736, 0, 655371, -1073741824, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786438, 0, 0, 786439, 0, 0, 786440, 0, 0, 786441, 0, 0, 786442, 0, 0, 786443, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851975, 0, 0, 851976, 0, 0, 851977, 0, 0, 851978, 0, 0, 851979, 0, 0 )
 
 [node name="Apppliances" type="TileMap" parent="."]
-tile_set = SubResource( 20 )
+tile_set = SubResource( 8 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 196610, 1, 0, 196613, 1, 0, 262147, 536870916, 0, 262148, 0, 0, 458752, 5, 0 )
@@ -529,18 +547,18 @@ tile_data = PoolIntArray( 196610, 1, 0, 196613, 1, 0, 262147, 536870916, 0, 2621
 
 [node name="Cabinet" type="CollisionShape2D" parent="Apppliances/StaticBody2D"]
 position = Vector2( 6.46037, 133.68 )
-shape = SubResource( 7 )
+shape = SubResource( 9 )
 
 [node name="Ref" type="CollisionShape2D" parent="Apppliances/StaticBody2D"]
 position = Vector2( 56.1556, 80.0093 )
-shape = SubResource( 8 )
+shape = SubResource( 10 )
 
 [node name="Stove" type="CollisionShape2D" parent="Apppliances/StaticBody2D"]
 position = Vector2( 72.2237, 77.3589 )
-shape = SubResource( 9 )
+shape = SubResource( 11 )
 
 [node name="Additional Stuff" type="TileMap" parent="."]
-tile_set = SubResource( 10 )
+tile_set = SubResource( 12 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 196608, 12, 0, 196609, 12, 0, 262144, 4, 0, 262145, 8, 0, 262149, 10, 0, 262150, 10, 0, 262151, 6, 0, 262154, 536870916, 0, 262155, 536870919, 0, 327682, 9, 0, 851968, 0, 0, 851978, 536870912, 0 )
@@ -549,18 +567,18 @@ tile_data = PoolIntArray( 196608, 12, 0, 196609, 12, 0, 262144, 4, 0, 262145, 8,
 
 [node name="Counter" type="CollisionShape2D" parent="Additional Stuff/StaticBody2D"]
 position = Vector2( 96.243, 73.7145 )
-shape = SubResource( 11 )
+shape = SubResource( 13 )
 
 [node name="Oven" type="CollisionShape2D" parent="Additional Stuff/StaticBody2D"]
 position = Vector2( 119.765, 75.2054 )
-shape = SubResource( 12 )
+shape = SubResource( 14 )
 
 [node name="Left Counter" type="CollisionPolygon2D" parent="Additional Stuff/StaticBody2D"]
 polygon = PoolVector2Array( -0.460261, 64.5677, -0.642275, 91.051, 15.7391, 90.96, 15.7391, 82.6783, 30.5734, 82.7693, 30.5734, 64.9318 )
 
 [node name="Plant" type="CollisionShape2D" parent="Additional Stuff/StaticBody2D"]
 position = Vector2( 39.9419, 84.6044 )
-shape = SubResource( 13 )
+shape = SubResource( 15 )
 
 [node name="Right Counter" type="CollisionPolygon2D" parent="Additional Stuff/StaticBody2D"]
 polygon = PoolVector2Array( 160.167, 65.0531, 160.476, 82.9986, 174.606, 83.2049, 174.812, 90.94, 190.901, 91.2494, 191.211, 78.2544, 191.004, 65.0531 )
@@ -572,7 +590,7 @@ polygon = PoolVector2Array( -0.600586, 209.05, -0.394316, 224.933, 30.8557, 224.
 polygon = PoolVector2Array( 160.517, 215.816, 160.414, 223.448, 190.633, 223.861, 190.633, 208.287, 175.575, 208.494, 175.678, 215.507, 160.414, 216.023 )
 
 [node name="Furniture " type="TileMap" parent="."]
-tile_set = SubResource( 14 )
+tile_set = SubResource( 16 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 458757, 1, 0, 524292, 3, 0, 524293, 2, 0, 524295, 536870915, 0 )
@@ -581,11 +599,11 @@ tile_data = PoolIntArray( 458757, 1, 0, 524292, 3, 0, 524293, 2, 0, 524295, 5368
 
 [node name="Right Up Chair" type="CollisionShape2D" parent="Furniture /StaticBody2D"]
 position = Vector2( 103.36, 120.292 )
-shape = SubResource( 15 )
+shape = SubResource( 17 )
 
 [node name="Left Up Chair" type="CollisionShape2D" parent="Furniture /StaticBody2D"]
 position = Vector2( 88.4524, 120.513 )
-shape = SubResource( 15 )
+shape = SubResource( 17 )
 
 [node name="Chair Left" type="CollisionPolygon2D" parent="Furniture /StaticBody2D"]
 polygon = PoolVector2Array( 63.9204, 128.087, 63.8281, 143.368, 65.1208, 143.691, 64.7976, 149.924, 69.322, 149.924, 68.8141, 146.046, 73.477, 146.184, 73.3847, 150.154, 78.2784, 150.385, 78.6016, 144.568, 78.8324, 135.15, 77.7244, 134.134, 68.1678, 134.042, 68.0293, 128.179 )
