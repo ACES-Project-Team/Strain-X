@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Day 1/World/Grocery Inside Tile Set.png" type="Texture" id=2]
 [ext_resource path="res://Day 1/World/Grocery Door-Sheet.png" type="Texture" id=3]
@@ -116,6 +116,8 @@
 0/shapes = [  ]
 0/z_index = 0
 
+[sub_resource type="TileSet" id=4]
+
 [node name="Grocery store" type="Node2D"]
 
 [node name="Floor " type="TileMap" parent="."]
@@ -132,5 +134,11 @@ tile_data = PoolIntArray( 0, 3, 0, 1, 536870915, 0, 2, 536870915, 0, 3, 53687091
 
 [node name="Door " type="TileMap" parent="."]
 tile_set = SubResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 917512, 0, 0 )
+
+[node name="Furnitures" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
 cell_size = Vector2( 16, 16 )
 format = 1
