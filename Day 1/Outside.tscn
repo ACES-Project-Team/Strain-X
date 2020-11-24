@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Day 1/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Outside Sign Post.png" type="Texture" id=2]
@@ -11,7 +11,55 @@
 [ext_resource path="res://Day 1/World/Outside Rocks.png" type="Texture" id=9]
 [ext_resource path="res://Day 1/World/Outside Fence Side View.png" type="Texture" id=10]
 
+[sub_resource type="TileSet" id=18]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 40, 48, 48 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=21]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 40, 15, 45 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
 [sub_resource type="TileSet" id=1]
+0/name = "Outside Fence Side View.png 0"
+0/texture = ExtResource( 10 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 1, 0, 4, 38 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=2]
 0/name = "Outside Bush.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -391,37 +439,37 @@
 38/shapes = [  ]
 38/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 151.973, 7.74215 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 88.4832, 7.86125 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 3.18793, 65.8472 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 6.14485, 5.1217 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 13.7952, 9.24115 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 9.28337, 8.96659 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 87.8397, 10 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 7.82561, 7.56602 )
 
-[sub_resource type="CircleShape2D" id=13]
+[sub_resource type="CircleShape2D" id=11]
 radius = 9.24402
 
-[sub_resource type="CircleShape2D" id=14]
+[sub_resource type="CircleShape2D" id=12]
 radius = 7.23734
 
-[sub_resource type="TileSet" id=2]
+[sub_resource type="TileSet" id=13]
 0/name = "Outside Neighbor Home.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -465,10 +513,10 @@ radius = 7.23734
 2/shapes = [  ]
 2/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 54.7115, 71.8936 )
 
-[sub_resource type="TileSet" id=3]
+[sub_resource type="TileSet" id=15]
 0/name = "Outside Mailbox Neighbor.png 0"
 0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
@@ -515,7 +563,67 @@ extents = Vector2( 54.7115, 71.8936 )
 [sub_resource type="CircleShape2D" id=16]
 radius = 8.06703
 
-[sub_resource type="TileSet" id=4]
+[sub_resource type="TileSet" id=20]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 40, 48, 48 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Outside Home Tile Set.png 1"
+1/texture = ExtResource( 7 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 32, 32, 16, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Outside Home Tile Set.png 2"
+2/texture = ExtResource( 7 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 40, 16, 48 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="TileSet" id=19]
+0/name = "Outside Bush.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 15, 15 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=17]
 0/name = "Outside Fence Side View.png 0"
 0/texture = ExtResource( 10 )
 0/tex_offset = Vector2( 0, 0 )
@@ -545,93 +653,194 @@ radius = 8.06703
 1/shapes = [  ]
 1/z_index = 0
 
+[sub_resource type="TileSet" id=22]
+0/name = "Outside Bush.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 15 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=23]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 91, 87, 49 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=24]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 70, 0, 37, 50 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=25]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 91, 87, 49 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=26]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 49, 37 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
 [node name="Outside" type="Node2D"]
 
-[node name="MC House" type="TileMap" parent="."]
-position = Vector2( -18.1021, -0.397854 )
+[node name="BottomGrass" type="TileMap" parent="."]
+position = Vector2( 0.459763, -5.05731 )
+tile_set = SubResource( 18 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -11, 536870912, 0, -8, 536870912, 0, -5, 536870912, 0, -3, 536870912, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+position = Vector2( 1.83902, 0.459755 )
+tile_set = SubResource( 21 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 12, 536870912, 0, 65548, 536870912, 0, 131084, 536870912, 0 )
+
+[node name="RightFence" type="TileMap" parent="."]
+position = Vector2( -1.73572, -6.69721 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -3014659, -1610612698, 0, -3080169, -1610612698, 0, -2818051, -1610612698, 0, -2883561, -1610612698, 0, -2621443, -1610612698, 0, -2686953, -1610612698, 0, -2621439, 1, 0, -2621437, 1, 0, -2621435, 1, 0, -2621433, 1, 0, -2621431, 1, 0, -2621429, 1, 0, -2621427, 1, 0, -2621425, 1, 0, -2621423, 1, 0, -2621421, 1, 0, -2555903, 14, 0, -2555900, 14, 0, -2555898, 14, 0, -2555895, 14, 0, -2555892, 14, 0, -2555889, 14, 0, -2555886, 14, 0, -2424835, -1610612698, 0, -2490362, 14, 0, -2490356, 14, 0, -2490345, -1610612698, 0, -2424831, 14, 0, -2424828, 14, 0, -2424823, 14, 0, -2424817, 14, 0, -2424814, 14, 0, -2228227, -1610612698, 0, -2293737, -1610612698, 0, -2228223, 14, 0, -2228206, 14, 0, -2031619, -1610612698, 0, -2097129, -1610612698, 0, -2031615, 14, 0, -2031598, 14, 0, -1966080, 27, 0, -1966069, 27, 0, -1835011, -1610612698, 0, -1900521, -1610612698, 0, -1835007, 14, 0, -1834990, 14, 0, -1769472, 27, 0, -1769457, 27, 0, -1638403, -1610612698, 0, -1703921, 27, 0, -1703913, -1610612698, 0, -1638399, 14, 0, -1638382, 14, 0, -1441795, -1610612698, 0, -1507313, 27, 0, -1507305, -1610612698, 0, -1441791, 14, 0, -1441774, 14, 0, -1376256, 27, 0, -1245187, -1610612698, 0, -1310719, 14, 0, -1310717, 14, 0, -1310715, 14, 0, -1310714, 14, 0, -1310711, 20, 0, -1310710, 20, 0, -1310709, 20, 0, -1310705, 27, 0, -1310697, -1610612698, 0, -1245183, 14, 0, -1245181, 14, 0, -1245178, 14, 0, -1245172, 14, 0, -1245169, 14, 0, -1245166, 14, 0, -1179648, 27, 0, -1179630, 31, 0, -1179628, 10, 0, -1048579, -1610612698, 0, -1114108, 21, 0, -1114107, 21, 0, -1114106, 21, 0, -1114105, 21, 0, -1114104, 21, 0, -1114103, 20, 0, -1114102, 20, 0, -1114101, 20, 0, -1114099, 21, 0, -1114098, 21, 0, -1114097, 21, 0, -1114096, 27, 0, -1114093, 30, 0, -1114089, -1610612698, 0, -1048575, 14, 0, -1048573, 14, 0, -1048570, 14, 0, -1048569, 21, 0, -1048568, 21, 0, -1048564, 14, 0, -1048563, 21, 0, -1048562, 21, 0, -1048561, 14, 0, -1048559, 14, 0, -1048558, 14, 0, -917507, -1610612698, 0, -983036, 21, 0, -983035, 21, 0, -983034, 21, 0, -983033, 21, 0, -983032, 21, 0, -983027, 21, 0, -983026, 21, 0, -983025, 21, 0, -983024, 27, 0, -983023, 21, 0, -917503, 1, 0, -917502, 1, 0, -917501, 1, 0, -917499, 1, 0, -917497, 1, 0, -917492, 1, 0, -917490, 1, 0, -917489, 21, 0, -917488, 1, 0, -917487, 21, 0, -917486, 1, 0, -917485, 1, 0, -917481, -1610612698, 0, -786433, 11, 0, -851952, 27, 0, -851946, 11, 0, -720899, -1610612698, 0, -786432, 27, 0, -655365, 38, 0, -655362, 38, 0, -720896, 38, 0, -720895, 38, 0, -720894, 38, 0, -720893, 38, 0, -720892, 38, 0, -720891, 38, 0, -720890, 38, 0, -720889, 38, 0, -720888, 38, 0, -720887, 38, 0, -720886, 38, 0, -720885, 38, 0, -720884, 38, 0, -720883, 38, 0, -720882, 38, 0, -720881, 38, 0, -720880, 38, 0, -720879, 38, 0, -720878, 38, 0, -720877, 38, 0, -720876, 38, 0, -720875, 38, 0, -720874, 38, 0, -720873, 38, 0, -720872, 38, 0, -720871, 38, 0, -393226, 1, 0, -393225, 1, 0, -393223, 1, 0, -393221, 1, 0, -393219, 1, 0, -393217, 1, 0, -458751, 1, 0, -458749, 1, 0, -458747, 1, 0, -458745, 1, 0, -458740, 1, 0, -458738, 1, 0, -458736, 1, 0, -458734, 1, 0, -458732, 1, 0, -458731, 1, 0, -327690, 14, 0, -327689, 536870926, 0, -327687, 27, 0, -327686, 536870926, 0, -327684, 27, 0, -327683, 536870926, 0, -327681, 27, 0, -393216, 536870926, 0, -393214, 27, 0, -393213, 536870926, 0, -393211, 27, 0, -393210, 536870926, 0, -393207, 20, 0, -393206, 20, 0, -393205, 20, 0, -393204, 536870926, 0, -393201, 536870926, 0, -393198, 536870926, 0, -393196, 536870926, 0, -393193, 33, 0, -262147, 14, 0, -327673, 536870922, 0, -327671, 20, 0, -327670, 20, 0, -262139, 536870943, 0, -262138, 536870942, 0, -262135, 20, 0, -262134, 20, 0, -262133, 20, 0, -262129, 27, 0, -262126, 27, 0, -262124, 27, 0, -262121, 33, 0, -131082, 14, 0, -131081, 536870926, 0, -131079, 27, 0, -131078, 536870926, 0, -131076, 27, 0, -196608, 536870926, 0, -196606, 27, 0, -196605, 536870926, 0, -196603, 536870939, 0, -196602, 536870926, 0, -196601, 536870944, 0, -196598, 20, 0, -196596, 536870926, 0, -196593, 536870926, 0, -196590, 536870926, 0, -196588, 536870926, 0, -65546, 14, 0, -65545, 536870926, 0, -65543, 27, 0, -65542, 536870926, 0, -65540, 27, 0, -65539, 536870926, 0, -65538, 27, 0, -131072, 536870926, 0, -131069, 536870926, 0, -131068, 536870926, 0, -131066, 536870926, 0, -131062, 20, 0, -131061, 28, 0, -131058, 536870926, 0, -131057, 27, 0, -131055, 536870926, 0, -131054, 27, 0, -131052, 536870926, 0, -131049, 33, 0, -8, 31, 0, -7, 30, 0, -6, 32, 0, -65527, 0, 0, -65525, 0, 0, -65513, 33, 0, 65530, 31, 0, 13, 536870924, 0, 131063, 536870912, 0, 131064, 536870912, 0, 131065, 536870912, 0, 131066, 536870912, 0, 131067, 536870912, 0, 131068, 536870912, 0, 131069, 536870912, 0, 131070, 536870912, 0, 131071, 536870912, 0, 65536, 536870912, 0, 131082, 536870941, 0 )
+tile_data = PoolIntArray( -393194, 536870912, 0, -262122, 536870912, 0, -131050, 536870912, 0, -65514, 536870912, 0 )
+
+[node name="MC House" type="TileMap" parent="."]
+position = Vector2( -18.1021, -0.397854 )
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -3014659, -1610612698, 0, -3080169, -1610612698, 0, -2818051, -1610612698, 0, -2883561, -1610612698, 0, -2621443, -1610612698, 0, -2686953, -1610612698, 0, -2621439, 1, 0, -2621437, 1, 0, -2621435, 1, 0, -2621433, 1, 0, -2621431, 1, 0, -2621429, 1, 0, -2621427, 1, 0, -2621425, 1, 0, -2621423, 1, 0, -2621421, 1, 0, -2555903, 14, 0, -2555900, 14, 0, -2555898, 14, 0, -2555895, 14, 0, -2555892, 14, 0, -2555889, 14, 0, -2555886, 14, 0, -2424835, -1610612698, 0, -2490362, 14, 0, -2490356, 14, 0, -2490345, -1610612698, 0, -2424831, 14, 0, -2424828, 14, 0, -2424823, 14, 0, -2424817, 14, 0, -2424814, 14, 0, -2228227, -1610612698, 0, -2293737, -1610612698, 0, -2228223, 14, 0, -2228206, 14, 0, -2031619, -1610612698, 0, -2097129, -1610612698, 0, -2031615, 14, 0, -2031598, 14, 0, -1966080, 27, 0, -1966069, 27, 0, -1835011, -1610612698, 0, -1900521, -1610612698, 0, -1835007, 14, 0, -1834990, 14, 0, -1769472, 27, 0, -1769457, 27, 0, -1638403, -1610612698, 0, -1703921, 27, 0, -1703913, -1610612698, 0, -1638399, 14, 0, -1638382, 14, 0, -1441795, -1610612698, 0, -1507313, 27, 0, -1507305, -1610612698, 0, -1441791, 14, 0, -1441774, 14, 0, -1376256, 27, 0, -1245187, -1610612698, 0, -1310719, 14, 0, -1310717, 14, 0, -1310715, 14, 0, -1310714, 14, 0, -1310711, 20, 0, -1310710, 20, 0, -1310709, 20, 0, -1310705, 27, 0, -1310697, -1610612698, 0, -1245183, 14, 0, -1245181, 14, 0, -1245178, 14, 0, -1245172, 14, 0, -1245169, 14, 0, -1245166, 14, 0, -1179648, 27, 0, -1179630, 31, 0, -1179628, 10, 0, -1048579, -1610612698, 0, -1114108, 21, 0, -1114107, 21, 0, -1114106, 21, 0, -1114105, 21, 0, -1114104, 21, 0, -1114103, 20, 0, -1114102, 20, 0, -1114101, 20, 0, -1114099, 21, 0, -1114098, 21, 0, -1114097, 21, 0, -1114096, 27, 0, -1114093, 30, 0, -1114089, -1610612698, 0, -1048575, 14, 0, -1048573, 14, 0, -1048570, 14, 0, -1048569, 21, 0, -1048568, 21, 0, -1048564, 14, 0, -1048563, 21, 0, -1048562, 21, 0, -1048561, 14, 0, -1048559, 14, 0, -1048558, 14, 0, -917507, -1610612698, 0, -983036, 21, 0, -983035, 21, 0, -983034, 21, 0, -983033, 21, 0, -983032, 21, 0, -983027, 21, 0, -983026, 21, 0, -983025, 21, 0, -983024, 27, 0, -983023, 21, 0, -917503, 1, 0, -917502, 1, 0, -917501, 1, 0, -917499, 1, 0, -917497, 1, 0, -917492, 1, 0, -917490, 1, 0, -917489, 21, 0, -917488, 1, 0, -917487, 21, 0, -917486, 1, 0, -917485, 1, 0, -917481, -1610612698, 0, -786433, 11, 0, -851952, 27, 0, -851946, 11, 0, -786432, 27, 0, -655371, 536870950, 0, -655368, 536870950, 0, -720893, 38, 0, -720892, 38, 0, -720891, 38, 0, -720890, 38, 0, -720889, 38, 0, -720888, 38, 0, -720887, 38, 0, -720886, 38, 0, -720885, 38, 0, -720884, 38, 0, -720883, 38, 0, -720882, 38, 0, -720881, 38, 0, -720880, 38, 0, -720879, 38, 0, -720878, 38, 0, -720877, 38, 0, -720876, 38, 0, -720875, 38, 0, -720874, 38, 0, -720873, 38, 0, -720872, 38, 0, -720871, 38, 0, -393226, 1, 0, -393225, 1, 0, -393223, 1, 0, -393221, 1, 0, -393219, 1, 0, -393217, 1, 0, -458751, 1, 0, -458749, 1, 0, -458747, 1, 0, -458745, 1, 0, -458740, 1, 0, -458738, 1, 0, -458736, 1, 0, -458734, 1, 0, -458732, 1, 0, -458731, 1, 0, -327690, 14, 0, -327689, 536870926, 0, -327687, 27, 0, -327686, 536870926, 0, -327684, 27, 0, -327683, 536870926, 0, -327681, 27, 0, -393216, 536870926, 0, -393214, 27, 0, -393213, 536870926, 0, -393211, 27, 0, -393210, 536870926, 0, -393207, 20, 0, -393206, 20, 0, -393205, 20, 0, -393204, 536870926, 0, -393201, 536870926, 0, -393198, 536870926, 0, -393196, 536870926, 0, -262147, 14, 0, -327673, 536870922, 0, -327671, 20, 0, -327670, 20, 0, -262139, 536870943, 0, -262138, 536870942, 0, -262135, 20, 0, -262134, 20, 0, -262133, 20, 0, -262129, 27, 0, -262126, 27, 0, -262124, 27, 0, -131082, 14, 0, -131081, 536870926, 0, -131079, 27, 0, -131078, 536870926, 0, -131076, 27, 0, -196608, 536870926, 0, -196606, 27, 0, -196605, 536870926, 0, -196603, 536870939, 0, -196602, 536870926, 0, -196601, 536870944, 0, -196598, 20, 0, -196596, 536870926, 0, -196593, 536870926, 0, -196590, 536870926, 0, -196588, 536870926, 0, -65546, 14, 0, -65545, 536870926, 0, -65543, 27, 0, -65542, 536870926, 0, -65540, 27, 0, -65539, 536870926, 0, -65538, 27, 0, -131062, 20, 0, -131061, 28, 0, -131058, 536870926, 0, -131057, 27, 0, -131055, 536870926, 0, -131054, 27, 0, -131052, 536870926, 0, -8, 31, 0, -7, 536870942, 0, -65527, 0, 0, -65525, 0, 0, 65530, 31, 0, 13, 536870924, 0, 131082, 536870941, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="MC House"]
 
 [node name="Fence 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -8.26031, -103.831 )
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 
 [node name="Fence 2" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 280.406, -103.504 )
-shape = SubResource( 6 )
+shape = SubResource( 4 )
 
 [node name="Fense 3" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 370.304, -44.2502 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 
 [node name="Fense 4" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -156.723, -42.1654 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 
 [node name="Rock 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -121.622, -10.0044 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="Rock 2 & 3" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -99.259, -9.2197 )
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 
 [node name="Rock 4" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -89.4508, 5.29642 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="Rock 5" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 86.5083, -58.4569 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="Rock 6" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 118.287, -44.9216 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="Rock 7" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 119.268, -73.5615 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 
 [node name="Rock 8" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 106.125, -55.7106 )
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 
 [node name="Bush" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -69.4595, 20.5543 )
-shape = SubResource( 11 )
+shape = SubResource( 9 )
 
 [node name="Bush 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 152.145, -8.0065 )
-shape = SubResource( 12 )
+shape = SubResource( 10 )
 
 [node name="Bush 2" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 183.68, -8.0065 )
-shape = SubResource( 12 )
+shape = SubResource( 10 )
 
 [node name="Post" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 150.801, -91.7207 )
-shape = SubResource( 13 )
+shape = SubResource( 11 )
 
 [node name="Lamp" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 184.257, -94.3319 )
-shape = SubResource( 13 )
+shape = SubResource( 11 )
 
 [node name="Street Sign 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 361.368, -185.862 )
-shape = SubResource( 14 )
+shape = SubResource( 12 )
 
 [node name="Street Sign 2" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -6.78155, -185.39 )
-shape = SubResource( 14 )
+shape = SubResource( 12 )
 
 [node name="Neighbor House" type="TileMap" parent="."]
 position = Vector2( -12.1578, 9.8855 )
 scale = Vector2( 3, 3 )
-tile_set = SubResource( 2 )
+tile_set = SubResource( 13 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -786431, 0, 0 )
@@ -640,10 +849,10 @@ tile_data = PoolIntArray( -786431, 0, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbor House/StaticBody2D"]
 position = Vector2( 57.9042, -145.637 )
-shape = SubResource( 15 )
+shape = SubResource( 14 )
 
 [node name="Neighbor Mail" type="TileMap" parent="."]
-tile_set = SubResource( 3 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -1048566, 2, 0, -983040, 1, 0, -983039, 1, 0, -983038, 1, 0, -983037, 1, 0, -983036, 1, 0, -983035, 1, 0, -983034, 1, 0, -983033, 1, 0, -983032, 0, 0, -983029, 1, 0, -983028, 1, 0, -983027, 1, 0, -983026, 1, 0, -983025, 1, 0, -983024, 1, 0, -983023, 1, 0, -983022, 1, 0, -983021, 1, 0, -524278, 2, 0, -458744, 0, 0 )
@@ -658,8 +867,58 @@ shape = SubResource( 16 )
 position = Vector2( 166.489, -223.383 )
 shape = SubResource( 16 )
 
-[node name="Fence" type="TileMap" parent="."]
-tile_set = SubResource( 4 )
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( -1.37926, -23.4476 )
+tile_set = SubResource( 20 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -2621420, 0, 0, -2555904, 0, 0, -2555884, 0, 0, -2490368, 0, 0, -2490348, 0, 0, -2424832, 0, 0, -2424812, 0, 0, -2359296, 0, 0, -2359276, 0, 0, -2293760, 0, 0, -2293740, 0, 0, -2228224, 0, 0, -2228204, 0, 0, -2162688, 0, 0, -2162668, 0, 0, -2097152, 0, 0, -2097132, 0, 0, -2031616, 0, 0, -2031596, 0, 0, -1966080, 0, 0, -1966060, 0, 0, -1900544, 0, 0, -1900524, 0, 0, -1835008, 0, 0, -1834988, 0, 0, -1769472, 0, 0, -1769452, 0, 0, -1703936, 0, 0, -1703916, 0, 0, -1638400, 0, 0, -1638380, 0, 0, -1572864, 0, 0, -1572844, 0, 0, -1507328, 0, 0, -1441772, 0, 0, -1376256, 0, 0, -1310720, 0, 0, -1310700, 0, 0, -1245184, 0, 0, -1179648, 0, 0, -1179628, 0, 0, -1114112, 0, 0, -1048576, 0, 0, -1048556, 0, 0, -327691, 0, 0, -262155, 0, 0, -131083, 0, 0, -11, 0, 0, 131061, 1, 0 )
+tile_data = PoolIntArray( -65539, 536870912, 0, 196607, 536870914, 0 )
+
+[node name="Bush" type="TileMap" parent="."]
+position = Vector2( -16.0914, -6.89632 )
+tile_set = SubResource( 19 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 196608, 536870912, 0 )
+
+[node name="Fence" type="TileMap" parent="."]
+position = Vector2( -2.65271, -10.8401 )
+tile_set = SubResource( 17 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2621420, 0, 0, -2555904, 0, 0, -2555884, 0, 0, -2490368, 0, 0, -2490348, 0, 0, -2424832, 0, 0, -2424812, 0, 0, -2359296, 0, 0, -2359276, 0, 0, -2293760, 0, 0, -2293740, 0, 0, -2228224, 0, 0, -2228204, 0, 0, -2162688, 0, 0, -2162668, 0, 0, -2097152, 0, 0, -2097132, 0, 0, -2031616, 0, 0, -2031596, 0, 0, -1966080, 0, 0, -1966060, 0, 0, -1900544, 0, 0, -1900524, 0, 0, -1835008, 0, 0, -1834988, 0, 0, -1769472, 0, 0, -1769452, 0, 0, -1703936, 0, 0, -1703916, 0, 0, -1638400, 0, 0, -1638380, 0, 0, -1572864, 0, 0, -1572844, 0, 0, -1507328, 0, 0, -1441772, 0, 0, -1376256, 0, 0, -1310720, 0, 0, -1310700, 0, 0, -1245184, 0, 0, -1179648, 0, 0, -1179628, 0, 0, -1114112, 0, 0, -1048576, 0, 0, -1048556, 0, 0, -327691, 0, 0, -262155, 0, 0, -131083, 0, 0, -11, 0, 0, 65525, 536870912, 0 )
+
+[node name="bushRight" type="TileMap" parent="."]
+position = Vector2( 1.83902, 0 )
+tile_set = SubResource( 22 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -327690, 536870912, 0, -327689, 536870912, 0, -327688, 536870912, 0, -393198, 536870912, 0, -393197, 536870912, 0, -393196, 536870912, 0, -131076, 536870912, 0, -196592, 536870912, 0, -65541, 536870912, 0, -131055, 536870912, 0, 262156, 536870912, 0 )
+
+[node name="GroceryRoad" type="TileMap" parent="."]
+position = Vector2( 4.78323, -1.37927 )
+tile_set = SubResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -851982, -536870912, 0 )
+
+[node name="ROAd" type="TileMap" parent="."]
+position = Vector2( -11.7087, 5.5462 )
+tile_set = SubResource( 24 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -1638413, 1073741824, 0, -1441805, 1073741824, 0, -1245197, 1073741824, 0, -1048589, 1073741824, 0 )
+
+[node name="ROAD2" type="TileMap" parent="."]
+position = Vector2( -3.08124, -1.23251 )
+tile_set = SubResource( 25 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -851972, -536870912, 0 )
+
+[node name="ROAd3" type="TileMap" parent="."]
+position = Vector2( -3.08124, -0.616241 )
+tile_set = SubResource( 26 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -655367, 536870912, 0, -655361, 536870912, 0 )
