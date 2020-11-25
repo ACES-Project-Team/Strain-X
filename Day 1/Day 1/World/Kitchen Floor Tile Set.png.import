@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Game Play Button.png-362d44829dedd56d94d3d5acda5108ec.stex"
+path="res://.import/Kitchen Floor Tile Set.png-404590eb6872705611ba14d175cae29e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/World/Game Play Button.png"
-dest_files=[ "res://.import/Game Play Button.png-362d44829dedd56d94d3d5acda5108ec.stex" ]
+source_file="res://Day 1/World/Kitchen Floor Tile Set.png"
+dest_files=[ "res://.import/Kitchen Floor Tile Set.png-404590eb6872705611ba14d175cae29e.stex" ]
 
 [params]
 

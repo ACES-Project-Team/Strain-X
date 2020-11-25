@@ -13,7 +13,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 24.5324 ]
 }
 
-[node name="Ktchen" parent="." instance=ExtResource( 2 )]
+[node name="Kitchen" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0.774607, 120.013 )
 
 [node name="LivingRoom" parent="." instance=ExtResource( 3 )]

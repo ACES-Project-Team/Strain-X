@@ -610,7 +610,7 @@ radius = 8.06703
 2/shapes = [  ]
 2/z_index = 0
 
-[sub_resource type="TileSet" id=28]
+[sub_resource type="TileSet" id=21]
 0/name = "Outside Home Tile Set.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
@@ -626,7 +626,7 @@ radius = 8.06703
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=21]
+[sub_resource type="TileSet" id=22]
 0/name = "Outside Bush.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -642,7 +642,7 @@ radius = 8.06703
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=22]
+[sub_resource type="TileSet" id=23]
 0/name = "Outside Fence Side View.png 0"
 0/texture = ExtResource( 10 )
 0/tex_offset = Vector2( 0, 0 )
@@ -672,7 +672,7 @@ radius = 8.06703
 1/shapes = [  ]
 1/z_index = 0
 
-[sub_resource type="TileSet" id=23]
+[sub_resource type="TileSet" id=24]
 0/name = "Outside Bush.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -688,28 +688,12 @@ radius = 8.06703
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=24]
-0/name = "Outside Home Tile Set.png 0"
-0/texture = ExtResource( 7 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 91, 87, 49 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
 [sub_resource type="TileSet" id=25]
 0/name = "Outside Home Tile Set.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 70, 0, 37, 50 )
+0/region = Rect2( 0, 91, 87, 49 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -725,7 +709,7 @@ radius = 8.06703
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 91, 87, 49 )
+0/region = Rect2( 70, 0, 37, 50 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -737,6 +721,22 @@ radius = 8.06703
 0/z_index = 0
 
 [sub_resource type="TileSet" id=27]
+0/name = "Outside Home Tile Set.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 91, 87, 49 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=28]
 0/name = "Outside Home Tile Set.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
@@ -899,56 +899,56 @@ tile_data = PoolIntArray( -65539, 536870912, 0, 196607, 536870914, 0 )
 
 [node name="SmallGrass" type="TileMap" parent="."]
 position = Vector2( 2.65327, -0.442207 )
-tile_set = SubResource( 28 )
+tile_set = SubResource( 21 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -65524, 536870912, 0, 12, 536870912, 0, 65548, 536870912, 0, 131084, 536870912, 0, 196620, 536870912, 0 )
 
 [node name="Bush" type="TileMap" parent="."]
 position = Vector2( -16.0914, -6.89632 )
-tile_set = SubResource( 21 )
+tile_set = SubResource( 22 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 196608, 536870912, 0 )
 
 [node name="Fence" type="TileMap" parent="."]
 position = Vector2( -2.65271, -10.8401 )
-tile_set = SubResource( 22 )
+tile_set = SubResource( 23 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2621420, 0, 0, -2555904, 0, 0, -2555884, 0, 0, -2490368, 0, 0, -2490348, 0, 0, -2424832, 0, 0, -2424812, 0, 0, -2359296, 0, 0, -2359276, 0, 0, -2293760, 0, 0, -2293740, 0, 0, -2228224, 0, 0, -2228204, 0, 0, -2162688, 0, 0, -2162668, 0, 0, -2097152, 0, 0, -2097132, 0, 0, -2031616, 0, 0, -2031596, 0, 0, -1966080, 0, 0, -1966060, 0, 0, -1900544, 0, 0, -1900524, 0, 0, -1835008, 0, 0, -1834988, 0, 0, -1769472, 0, 0, -1769452, 0, 0, -1703936, 0, 0, -1703916, 0, 0, -1638400, 0, 0, -1638380, 0, 0, -1572864, 0, 0, -1572844, 0, 0, -1507328, 0, 0, -1441772, 0, 0, -1376256, 0, 0, -1310720, 0, 0, -1310700, 0, 0, -1245184, 0, 0, -1179648, 0, 0, -1179628, 0, 0, -1114112, 0, 0, -1048576, 0, 0, -1048556, 0, 0, -327691, 0, 0, -262155, 0, 0, -131083, 0, 0, -11, 0, 0, 65525, 536870912, 0 )
 
 [node name="bushRight" type="TileMap" parent="."]
 position = Vector2( 1.83902, 0 )
-tile_set = SubResource( 23 )
+tile_set = SubResource( 24 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -327690, 536870912, 0, -327689, 536870912, 0, -327688, 536870912, 0, -393198, 536870912, 0, -393197, 536870912, 0, -393196, 536870912, 0, -131076, 536870912, 0, -196592, 536870912, 0, -65541, 536870912, 0, -131055, 536870912, 0, 262156, 536870912, 0 )
 
 [node name="GroceryRoad" type="TileMap" parent="."]
 position = Vector2( 4.78323, -1.37927 )
-tile_set = SubResource( 24 )
+tile_set = SubResource( 25 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -851982, -536870912, 0 )
 
 [node name="ROAd" type="TileMap" parent="."]
 position = Vector2( -11.7087, 5.5462 )
-tile_set = SubResource( 25 )
+tile_set = SubResource( 26 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -1638413, 1073741824, 0, -1441805, 1073741824, 0, -1245197, 1073741824, 0, -1048589, 1073741824, 0 )
 
 [node name="ROAD2" type="TileMap" parent="."]
 position = Vector2( -3.08124, -1.23251 )
-tile_set = SubResource( 26 )
+tile_set = SubResource( 27 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -851972, -536870912, 0 )
 
 [node name="ROAd3" type="TileMap" parent="."]
 position = Vector2( -3.08124, -0.616241 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 28 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -655367, 536870912, 0, -655361, 536870912, 0 )
