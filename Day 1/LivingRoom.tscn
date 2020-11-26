@@ -1,187 +1,150 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=47 format=2]
 
-[ext_resource path="res://Day 1/World/Living Room Tile Set.png" type="Texture" id=1]
-[ext_resource path="res://Day 1/World/Bookshelf.png" type="Texture" id=2]
-[ext_resource path="res://Day 1/World/House Plant.png" type="Texture" id=3]
-[ext_resource path="res://Day 1/World/Couch and TV.png" type="Texture" id=4]
-[ext_resource path="res://Day 1/World/Carpet.png" type="Texture" id=5]
-[ext_resource path="res://Day 1/World/Coffee Table.png" type="Texture" id=6]
-[ext_resource path="res://Day 1/World/Hallway Tile Set.png" type="Texture" id=7]
+[ext_resource path="res://Day 1/World/Living Room Wall Tile Set.png" type="Texture" id=1]
+[ext_resource path="res://Day 1/World/Living Room Floor Tile Set.png" type="Texture" id=2]
+[ext_resource path="res://Day 1/World/Window.png" type="Texture" id=3]
+[ext_resource path="res://Day 1/World/Carpet.png" type="Texture" id=4]
+[ext_resource path="res://Day 1/World/Bookshelf.png" type="Texture" id=5]
+[ext_resource path="res://Day 1/World/Couch and TV.png" type="Texture" id=6]
+[ext_resource path="res://Day 1/World/House Plant.png" type="Texture" id=7]
+[ext_resource path="res://Day 1/World/Coffee Table.png" type="Texture" id=8]
 
-[sub_resource type="TileSet" id=1]
-0/name = "Living Room Tile Set.png 0"
-0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 68, 0, 48, 48 )
-0/tile_mode = 1
-0/autotile/bitmask_mode = 1
-0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27 ]
-0/autotile/icon_coordinate = Vector2( 0, 0 )
-0/autotile/tile_size = Vector2( 16, 16 )
-0/autotile/spacing = 0
-0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [  ]
-0/autotile/priority_map = [  ]
-0/autotile/z_index_map = [  ]
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="TileSet" id=2]
-0/name = "Living Room Tile Set.png 0"
-0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 48, 49 )
-0/tile_mode = 1
-0/autotile/bitmask_mode = 1
-0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27 ]
-0/autotile/icon_coordinate = Vector2( 0, 0 )
-0/autotile/tile_size = Vector2( 16, 16 )
-0/autotile/spacing = 0
-0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [  ]
-0/autotile/priority_map = [  ]
-0/autotile/z_index_map = [  ]
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-2/name = "Living Room Tile Set.png 2"
-2/texture = ExtResource( 1 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 51, 0, 16, 48 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape_one_way = false
-2/shape_one_way_margin = 0.0
-2/shapes = [  ]
-2/z_index = 0
-3/name = "Living Room Tile Set.png 3"
-3/texture = ExtResource( 1 )
-3/tex_offset = Vector2( 0, 0 )
-3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 0, 50, 16, 15 )
-3/tile_mode = 0
-3/occluder_offset = Vector2( 0, 0 )
-3/navigation_offset = Vector2( 0, 0 )
-3/shape_offset = Vector2( 0, 0 )
-3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape_one_way = false
-3/shape_one_way_margin = 0.0
-3/shapes = [  ]
-3/z_index = 0
-4/name = "Living Room Tile Set.png 4"
-4/texture = ExtResource( 1 )
-4/tex_offset = Vector2( 0, 0 )
-4/modulate = Color( 1, 1, 1, 1 )
-4/region = Rect2( 16, 50, 16, 15 )
-4/tile_mode = 0
-4/occluder_offset = Vector2( 0, 0 )
-4/navigation_offset = Vector2( 0, 0 )
-4/shape_offset = Vector2( 0, 0 )
-4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape_one_way = false
-4/shape_one_way_margin = 0.0
-4/shapes = [  ]
-4/z_index = 0
-5/name = "Living Room Tile Set.png 5"
-5/texture = ExtResource( 1 )
-5/tex_offset = Vector2( 0, 0 )
-5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 34, 50, 16, 15 )
-5/tile_mode = 0
-5/occluder_offset = Vector2( 0, 0 )
-5/navigation_offset = Vector2( 0, 0 )
-5/shape_offset = Vector2( 0, 0 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape_one_way = false
-5/shape_one_way_margin = 0.0
-5/shapes = [  ]
-5/z_index = 0
-6/name = "Living Room Tile Set.png 6"
-6/texture = ExtResource( 1 )
-6/tex_offset = Vector2( 0, 0 )
-6/modulate = Color( 1, 1, 1, 1 )
-6/region = Rect2( 51, 49, 16, 15 )
-6/tile_mode = 0
-6/occluder_offset = Vector2( 0, 0 )
-6/navigation_offset = Vector2( 0, 0 )
-6/shape_offset = Vector2( 0, 0 )
-6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape_one_way = false
-6/shape_one_way_margin = 0.0
-6/shapes = [  ]
-6/z_index = 0
-7/name = "Living Room Tile Set.png 7"
-7/texture = ExtResource( 1 )
-7/tex_offset = Vector2( 0, 0 )
-7/modulate = Color( 1, 1, 1, 1 )
-7/region = Rect2( 72, 49, 7, 17 )
-7/tile_mode = 0
-7/occluder_offset = Vector2( 0, 0 )
-7/navigation_offset = Vector2( 0, 0 )
-7/shape_offset = Vector2( 0, 0 )
-7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape_one_way = false
-7/shape_one_way_margin = 0.0
-7/shapes = [  ]
-7/z_index = 0
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 71.8425, 23.7832 )
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 15.7686, 24.1786 )
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 10, 21.5892 )
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 14.4337, 21.4096 )
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 11.6989, 44.1948 )
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 10, 15.1447 )
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="TileSet" id=9]
-0/name = "Living Room Tile Set.png 0"
-0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 35, 50, 15, 15 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=10]
-0/name = "House Plant.png 0"
-0/texture = ExtResource( 3 )
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 8, 6, 17, 18 )
+0/region = Rect2( 0, 0, 48, 48 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27 ]
+0/autotile/icon_coordinate = Vector2( 1, 1 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Living Room Floor Tile Set.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 48, 48 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 1
+1/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27 ]
+1/autotile/icon_coordinate = Vector2( 1, 1 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="TileSet" id=11]
+0/name = "Living Room Floor Tile Set.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 16, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -191,11 +154,11 @@ extents = Vector2( 10, 15.1447 )
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
-1/name = "Coffee Table.png 1"
-1/texture = ExtResource( 6 )
+1/name = "Living Room Floor Tile Set.png 1"
+1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 7, 20, 50, 24 )
+1/region = Rect2( 32, 16, 16, 16 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
@@ -205,277 +168,555 @@ extents = Vector2( 10, 15.1447 )
 1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
-2/name = "Bookshelf.png 2"
-2/texture = ExtResource( 2 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 11, 11, 44, 38 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape_one_way = false
-2/shape_one_way_margin = 0.0
-2/shapes = [  ]
-2/z_index = 0
-3/name = "Carpet.png 3"
-3/texture = ExtResource( 5 )
-3/tex_offset = Vector2( 0, 0 )
-3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 10, 18, 44, 29 )
-3/tile_mode = 0
-3/occluder_offset = Vector2( 0, 0 )
-3/navigation_offset = Vector2( 0, 0 )
-3/shape_offset = Vector2( 0, 0 )
-3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape_one_way = false
-3/shape_one_way_margin = 0.0
-3/shapes = [  ]
-3/z_index = 0
-4/name = "Couch and TV.png 4"
-4/texture = ExtResource( 4 )
-4/tex_offset = Vector2( 0, 0 )
-4/modulate = Color( 1, 1, 1, 1 )
-4/region = Rect2( 6, 2, 42, 19 )
-4/tile_mode = 0
-4/occluder_offset = Vector2( 0, 0 )
-4/navigation_offset = Vector2( 0, 0 )
-4/shape_offset = Vector2( 0, 0 )
-4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape_one_way = false
-4/shape_one_way_margin = 0.0
-4/shapes = [  ]
-4/z_index = 0
-5/name = "Couch and TV.png 5"
-5/texture = ExtResource( 4 )
-5/tex_offset = Vector2( 0, 0 )
-5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 7, 32, 39, 29 )
-5/tile_mode = 0
-5/occluder_offset = Vector2( 0, 0 )
-5/navigation_offset = Vector2( 0, 0 )
-5/shape_offset = Vector2( 0, 0 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape_one_way = false
-5/shape_one_way_margin = 0.0
-5/shapes = [  ]
-5/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 47.835, 15.8948 )
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="TileSet" id=13]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 32, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 12 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 31.3204, 7.52459 )
-
-[sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 5.56519, 5.8593 )
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=15]
-0/name = "Couch and TV.png 0"
-0/texture = ExtResource( 4 )
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 45, 21, 19, 21 )
+0/region = Rect2( 64, 32, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 14 )
 0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 0/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 5.54578, 9.24873 )
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=17]
-0/name = "Hallway Tile Set.png 0"
-0/texture = ExtResource( 7 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 17, 49 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
-[sub_resource type="TileSet" id=18]
-0/name = "Living Room Tile Set.png 0"
+0/name = "Living Room Wall Tile Set.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 34, 49, 17, 17 )
+0/region = Rect2( 64, 32, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 16 )
 0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=19]
-0/name = "Living Room Tile Set.png 0"
+0/name = "Living Room Wall Tile Set.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 35, 50, 15, 15 )
+0/region = Rect2( 64, 0, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 18 )
 0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=20]
-0/name = "Living Room Tile Set.png 0"
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=21]
+0/name = "Living Room Wall Tile Set.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 52, 49, 15, 15 )
+0/region = Rect2( 64, 0, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 20 )
 0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=23]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 16, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 22 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=25]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 16, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 24 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=27]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 0, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 26 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=29]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 32, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 28 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 28 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=31]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 32, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 30 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 30 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=33]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 0, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 32 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=35]
+0/name = "Living Room Wall Tile Set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 32, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 34 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 34 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 15.8482, 15.598 )
+
+[sub_resource type="RectangleShape2D" id=37]
+extents = Vector2( 5.59528, 4.87569 )
+
+[sub_resource type="RectangleShape2D" id=38]
+extents = Vector2( 45.1933, 10 )
 
 [node name="LivingRoom" type="Node2D"]
 position = Vector2( -1.36115, -192.831 )
 
-[node name="Ground" type="TileMap" parent="."]
-tile_set = SubResource( 1 )
-cell_size = Vector2( 16, 16 )
-format = 1
-tile_data = PoolIntArray( 983040, 0, 0, 983041, 0, 1, 983042, 0, 1, 983043, 0, 1, 983044, 0, 1, 983045, 0, 1, 983046, 0, 1, 983047, 0, 1, 983048, 0, 1, 983049, 0, 1, 983050, 0, 1, 983051, 0, 2, 1048576, 0, 65536, 1048577, 0, 65537, 1048578, 0, 65537, 1048579, 0, 65537, 1048580, 0, 65537, 1048581, 0, 65537, 1048582, 0, 65537, 1048583, 0, 65537, 1048584, 0, 65537, 1048585, 0, 65537, 1048586, 0, 65537, 1048587, 0, 65538, 1114112, 0, 65536, 1114113, 0, 65537, 1114114, 0, 65537, 1114115, 0, 65537, 1114116, 0, 65537, 1114117, 0, 65537, 1114118, 0, 65537, 1114119, 0, 65537, 1114120, 0, 65537, 1114121, 0, 65537, 1114122, 0, 65537, 1114123, 0, 65538, 1179648, 0, 65536, 1179649, 0, 65537, 1179650, 0, 65537, 1179651, 0, 65537, 1179652, 0, 65537, 1179653, 0, 65537, 1179654, 0, 65537, 1179655, 0, 65537, 1179656, 0, 65537, 1179657, 0, 65537, 1179658, 0, 65537, 1179659, 0, 65538, 1245184, 0, 65536, 1245185, 0, 65537, 1245186, 0, 65537, 1245187, 0, 65537, 1245188, 0, 65537, 1245189, 0, 65537, 1245190, 0, 65537, 1245191, 0, 65537, 1245192, 0, 65537, 1245193, 0, 65537, 1245194, 0, 65537, 1245195, 0, 65538, 1310720, 0, 131072, 1310721, 0, 131073, 1310722, 0, 131073, 1310723, 0, 131073, 1310724, 0, 131073, 1310725, 0, 131073, 1310726, 0, 131073, 1310727, 0, 131073, 1310728, 0, 131073, 1310729, 0, 131073, 1310730, 0, 131073, 1310731, 0, 131074 )
-
-[node name="Wall" type="TileMap" parent="."]
-tile_set = SubResource( 2 )
-cell_size = Vector2( 16, 16 )
-format = 1
-tile_data = PoolIntArray( 786432, 0, 0, 786433, 0, 1, 786434, 0, 1, 786435, 0, 1, 786436, 0, 1, 786437, 0, 1, 786438, 0, 1, 786439, 0, 1, 786440, 0, 2, 786442, 0, 0, 786443, 0, 2, 786444, 7, 0, 851968, 0, 65536, 851969, 0, 65537, 851970, 0, 65537, 851971, 0, 65537, 851972, 0, 65537, 851973, 0, 65537, 851974, 0, 65537, 851975, 0, 65537, 851976, 0, 65538, 851978, 0, 65536, 851979, 0, 65538, 851980, 7, 0, 917504, 0, 131072, 917505, 0, 131073, 917506, 0, 131073, 917507, 0, 131073, 917508, 0, 131073, 917509, 0, 131073, 917510, 0, 131073, 917511, 0, 131073, 917512, 0, 131074, 917514, 0, 131072, 917515, 0, 131074, 917516, 7, 0, 983052, 7, 0, 1048588, 7, 0, 1310732, 7, 0, 1376256, -1610612729, 0, 1376257, -1610612729, 0, 1376258, -1610612729, 0, 1376259, -1610612729, 0, 1376260, -1610612729, 0, 1376261, -1610612729, 0, 1376262, -1610612729, 0, 1376263, -1610612729, 0, 1376266, -1610612729, 0, 1376267, -1610612729, 0 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Wall"]
-
-[node name="Left Wall" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( 71.7515, 216.124 )
-shape = SubResource( 3 )
-
-[node name="Right Wall" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( 175.816, 216.184 )
-shape = SubResource( 4 )
-
-[node name="Left" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( -8.43333, 319.314 )
-shape = SubResource( 5 )
-
-[node name="Up" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( -13.6311, 234.494 )
-shape = SubResource( 6 )
-
-[node name="Up Right" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( 203.483, 235.881 )
-shape = SubResource( 7 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/StaticBody2D"]
-position = Vector2( 202.284, 331.929 )
-shape = SubResource( 8 )
-
-[node name="CornerRightTop" type="TileMap" parent="."]
-position = Vector2( 197.548, 32.2685 )
-tile_set = SubResource( 9 )
-cell_size = Vector2( 16, 16 )
-format = 1
-tile_data = PoolIntArray( 720895, -1610612736, 0 )
-
-[node name="Furniture" type="TileMap" parent="."]
+[node name="Wall and Floor" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 917504, 2, 0, 917506, 2, 0, 917508, 2, 0, 983047, 0, 0, 983048, 3, 0, 983051, 0, 0, 1114113, 4, 0, 1114115, 4, 0, 1179650, 1, 0, 1245186, 5, 0 )
+tile_data = PoolIntArray( 786432, 0, 0, 786433, 0, 1, 786434, 0, 1, 786435, 0, 1, 786436, 0, 1, 786437, 0, 1, 786438, 0, 1, 786439, 0, 1, 786440, 0, 2, 786442, 0, 0, 786443, 0, 2, 851968, 0, 65536, 851969, 0, 65537, 851970, 0, 65537, 851971, 0, 65537, 851972, 0, 65537, 851973, 0, 65537, 851974, 0, 65537, 851975, 0, 65537, 851976, 0, 65538, 851978, 0, 65536, 851979, 0, 65538, 917504, 0, 131072, 917505, 0, 131073, 917506, 0, 131073, 917507, 0, 131073, 917508, 0, 131073, 917509, 0, 131073, 917510, 0, 131073, 917511, 0, 131073, 917512, 0, 131074, 917514, 0, 131072, 917515, 0, 131074, 983040, 1, 0, 983041, 1, 1, 983042, 1, 1, 983043, 1, 1, 983044, 1, 1, 983045, 1, 1, 983046, 1, 1, 983047, 1, 1, 983048, 1, 1, 983049, 1, 1, 983050, 1, 1, 983051, 1, 2, 1048576, 1, 65536, 1048577, 1, 65537, 1048578, 1, 65537, 1048579, 1, 65537, 1048580, 1, 65537, 1048581, 1, 65537, 1048582, 1, 65537, 1048583, 1, 65537, 1048584, 1, 65537, 1048585, 1, 65537, 1048586, 1, 65537, 1048587, 1, 65538, 1114112, 1, 65536, 1114113, 1, 65537, 1114114, 1, 65537, 1114115, 1, 65537, 1114116, 1, 65537, 1114117, 1, 65537, 1114118, 1, 65537, 1114119, 1, 65537, 1114120, 1, 65537, 1114121, 1, 65537, 1114122, 1, 65537, 1114123, 1, 65538, 1179648, 1, 65536, 1179649, 1, 65537, 1179650, 1, 65537, 1179651, 1, 65537, 1179652, 1, 65537, 1179653, 1, 65537, 1179654, 1, 65537, 1179655, 1, 65537, 1179656, 1, 65537, 1179657, 1, 65537, 1179658, 1, 65537, 1179659, 1, 65538, 1245184, 1, 65536, 1245185, 1, 65537, 1245186, 1, 65537, 1245187, 1, 65537, 1245188, 1, 65537, 1245189, 1, 65537, 1245190, 1, 65537, 1245191, 1, 65537, 1245192, 1, 65537, 1245193, 1, 65537, 1245194, 1, 65537, 1245195, 1, 65538, 1310720, 1, 131072, 1310721, 1, 131073, 1310722, 1, 131073, 1310723, 1, 131073, 1310724, 1, 131073, 1310725, 1, 131073, 1310726, 1, 131073, 1310727, 1, 131073, 1310728, 1, 131073, 1310729, 1, 131073, 1310730, 1, 131073, 1310731, 1, 131074 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Furniture"]
+[node name="Hallway Floor" type="TileMap" parent="."]
+position = Vector2( 1.06064, 13.7885 )
+tile_set = SubResource( 11 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1310728, 0, 0, 1310729, 1, 0 )
 
-[node name="Bookshelves" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 53.8564, 239.848 )
-shape = SubResource( 11 )
+[node name="Bottom Ceiling" type="TileMap" parent="."]
+position = Vector2( 0, -4.59619 )
+tile_set = SubResource( 13 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376262, 0, 0, 1376263, 0, 0, 1376267, 0, 0 )
 
-[node name="Plant" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 119.679, 250.253 )
-shape = SubResource( 12 )
-
-[node name="Plant2" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 181.058, 250.253 )
-shape = SubResource( 12 )
-
-[node name="Couch" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 53.0877, 280.576 )
-shape = SubResource( 13 )
-
-[node name="Mini Chair" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 38.9557, 301.221 )
-shape = SubResource( 14 )
-
-[node name="Mini Chair2" type="CollisionShape2D" parent="Furniture/StaticBody2D"]
-position = Vector2( 76.5961, 301.435 )
-shape = SubResource( 14 )
-
-[node name="Center Table" type="CollisionPolygon2D" parent="Furniture/StaticBody2D"]
-polygon = PoolVector2Array( 49.6857, 290.988, 45.8896, 293.18, 45.6223, 302.483, 47.3332, 305.477, 65.2445, 305.959, 65.6722, 308.044, 66.9019, 308.044, 67.1158, 304.408, 69.7357, 302.697, 69.8426, 292.913, 66.3673, 290.935 )
-
-[node name="TV" type="CollisionPolygon2D" parent="Furniture/StaticBody2D"]
-polygon = PoolVector2Array( 39.9602, 306.758, 39.5321, 319.26, 37.0488, 321.058, 37.5626, 329.45, 37.5626, 331.848, 39.1896, 331.848, 39.1039, 330.221, 63.6796, 330.478, 63.6796, 332.362, 65.3922, 332.276, 65.8203, 320.973, 63.8509, 320.802, 64.279, 306.33 )
-
-[node name="Couch Side View" type="TileMap" parent="."]
+[node name="Left Ceiling" type="TileMap" parent="."]
+position = Vector2( 4.24264, 0.353546 )
 tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 1179653, 0, 0 )
+tile_data = PoolIntArray( 851967, -1610612736, 0, 917503, -1610612736, 0, 983039, -1610612736, 0 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Couch Side View"]
-
-[node name="Couch" type="CollisionShape2D" parent="Couch Side View/StaticBody2D"]
-position = Vector2( 92.0911, 297.956 )
-shape = SubResource( 16 )
-
-[node name="Hallway" type="TileMap" parent="."]
+[node name="Right Ceiling" type="TileMap" parent="."]
+position = Vector2( -5.30328, 0 )
 tile_set = SubResource( 17 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 1114124, 0, 0 )
+tile_data = PoolIntArray( 786444, -1610612736, 0, 851980, -1610612736, 0, 917516, -1610612736, 0 )
 
-[node name="CornerLeftTop" type="TileMap" parent="."]
-tile_set = SubResource( 18 )
-cell_size = Vector2( 16, 16 )
-format = 1
-tile_data = PoolIntArray( 786432, 0, 0 )
-
-[node name="BottomRight" type="TileMap" parent="."]
-position = Vector2( 7.34619, 5.8065 )
+[node name="Upper Left Ceiling Corner" type="TileMap" parent="."]
+position = Vector2( 9.19238, 0 )
 tile_set = SubResource( 19 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 1310731, 1610612736, 0 )
+tile_data = PoolIntArray( 851967, 536870912, 0 )
 
-[node name="BottomLeft" type="TileMap" parent="."]
-position = Vector2( -2.68786, 5.1628 )
-tile_set = SubResource( 20 )
+[node name="Upper Right Ceiling Corner" type="TileMap" parent="."]
+position = Vector2( -9.19238, 0 )
+tile_set = SubResource( 21 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 1310720, -1610612736, 0 )
+tile_data = PoolIntArray( 786444, 0, 0 )
+
+[node name="Bottom Left Ceiling Corner" type="TileMap" parent="."]
+position = Vector2( 25.4558, 6.36395 )
+tile_set = SubResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1376254, 0, 0 )
+
+[node name="Bottom Right Ceiling Corner" type="TileMap" parent="."]
+position = Vector2( -25.4558, 6.36395 )
+tile_set = SubResource( 25 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1310733, 536870912, 0 )
+
+[node name="Kitchen Hallway Corner" type="TileMap" parent="."]
+position = Vector2( 0.353577, -0.707092 )
+tile_set = SubResource( 27 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1376266, 536870912, 0 )
+
+[node name="Kitchen Hallway Corner2" type="TileMap" parent="."]
+position = Vector2( 1.06068, -0.707092 )
+tile_set = SubResource( 27 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1376263, -536870912, 0, 1376266, 536870912, 0 )
+
+[node name="Bedroom 2 Hallway" type="TileMap" parent="."]
+position = Vector2( 4.24264, -3.53552 )
+tile_set = SubResource( 29 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1048575, -536870912, 0 )
+
+[node name="Bedroom 1 Hallway" type="TileMap" parent="."]
+position = Vector2( -5.30328, -11.3137 )
+tile_set = SubResource( 31 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 983052, -536870912, 0 )
+
+[node name="Hallway Left Corner Ceiling" type="TileMap" parent="."]
+position = Vector2( 0.353554, 14.1421 )
+tile_set = SubResource( 33 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1310719, 0, 0 )
+
+[node name="Hallway Right Corner Ceiling2" type="TileMap" parent="."]
+position = Vector2( 207.536, 15.5563 )
+tile_set = SubResource( 33 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1310719, -1073741824, 0 )
+
+[node name="Hallway Left Top Ceiling" type="TileMap" parent="."]
+position = Vector2( 23.3345, 102.53 )
+scale = Vector2( 0.912323, 0.692802 )
+tile_set = SubResource( 35 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1376253, -536870912, 0 )
+
+[node name="Hallway Right Top Ceiling" type="TileMap" parent="."]
+position = Vector2( 22.2739, 103.945 )
+scale = Vector2( 0.912323, 0.692802 )
+tile_set = SubResource( 35 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1310732, -1073741824, 0 )
+
+[node name="Furniture" type="StaticBody2D" parent="."]
+
+[node name="Couch and TV" type="Sprite" parent="Furniture"]
+position = Vector2( 90.5297, 263.846 )
+texture = ExtResource( 6 )
+
+[node name="TV" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 90.5297, 263.846 )
+scale = Vector2( 3.08333, 2.98982 )
+polygon = PoolVector2Array( -6.44128, 5.42568, -6.44128, 9.38714, -6.44128, 9.38714, -5.69595, 9.38714, -5.69595, 8.73675, 2.15867, 8.73675, 2.15867, 9.38714, 2.78934, 9.38714, 2.78934, 5.42568, 2.21601, 5.42568, 2.27334, 0.695587, -5.81062, 0.754715, -5.92528, 5.42568 )
+
+[node name="Chair" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 90.5297, 263.846 )
+scale = Vector2( 3.08333, 2.98982 )
+polygon = PoolVector2Array( 6.22932, -2.55635, 6.22932, -2.08334, 6.45865, -2.08334, 6.45865, -0.309559, 6.17199, -0.309559, 6.22932, 0.695587, 6.51598, 0.695587, 6.51598, 2.64675, 9.6693, 2.64675, 9.6693, -3.26587, 9.38263, -3.26587, 9.4973, -3.67975, 8.75197, -3.67975, 8.75197, -3.32499, 8.35064, -3.20674, 8.35064, -3.08849, 6.51598, -3.08849 )
+
+[node name="Couch" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 90.5297, 263.846 )
+scale = Vector2( 3.08333, 2.98982 )
+polygon = PoolVector2Array( -6.84261, -9.71063, -6.78528, -4.62577, 3.592, -4.6849, 3.592, -9.71063, 3.30533, -9.71063, 3.30533, -10.0063 )
+
+[node name="Bookshelf" type="Sprite" parent="Furniture"]
+position = Vector2( 21.5869, 242.987 )
+texture = ExtResource( 5 )
+
+[node name="Bookshelf2" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 22.6476, 238.391 )
+shape = SubResource( 36 )
+
+[node name="Carpet" type="Sprite" parent="Furniture"]
+position = Vector2( 152.402, 254.3 )
+texture = ExtResource( 4 )
+
+[node name="Coffee Table" type="Sprite" parent="Furniture"]
+position = Vector2( 29.7186, 324.304 )
+texture = ExtResource( 8 )
+
+[node name="Coffee Table2" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 29.7186, 324.304 )
+scale = Vector2( 2.48494, 1.72375 )
+polygon = PoolVector2Array( -4.93343, -4.67446, -4.93343, 2.19665, -4.07976, 2.19665, -4.07976, 2.70942, -3.93748, 2.81197, -3.93748, 4.65794, -2.87039, 4.65794, -2.87039, 3.4273, 3.24759, 3.4273, 3.24759, 4.45284, 4.31468, 4.45284, 4.38582, 2.40176, 5.16835, 2.2992, 5.16835, -4.57191, 4.5281, -4.57191, 4.67038, -5.08468, 3.74557, -4.98212, 3.74557, -5.7, -3.15495, -5.7, -3.22608, -5.28979, -3.93748, -5.28979, -3.93748, -4.87957 )
+
+[node name="Chair1" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 29.7186, 324.304 )
+scale = Vector2( 2.48494, 1.72375 )
+polygon = PoolVector2Array( -9.27293, -1.70039, -9.27293, 1.06856, -8.84609, 1.1711, -8.84609, 3.52985, -7.70786, 3.52985, -7.70786, 2.19665, -6.78305, 2.19665, -6.78305, 3.73495, -5.7871, 3.73495, -5.7871, 1.37622, -5.21798, 1.37622, -5.21798, -1.59785, -5.71596, -1.59785, -5.71596, -2.21317, -6.35621, -2.21317, -6.35621, -2.82849, -7.99242, -2.82849, -8.06356, -2.31573 )
+
+[node name="Chair2" type="CollisionPolygon2D" parent="Furniture"]
+position = Vector2( 29.7186, 324.304 )
+scale = Vector2( 2.48494, 1.72375 )
+polygon = PoolVector2Array( 5.66633, -1.80295, 5.66633, 1.27367, 5.95089, 1.1711, 5.95089, 3.52985, 7.16025, 3.52985, 7.16025, 2.19665, 8.22735, 2.19665, 8.22735, 3.6324, 9.15216, 3.6324, 9.15216, 1.1711, 9.65013, 1.1711, 9.65013, -1.70039, 9.22329, -1.80295, 9.22329, -2.41827, 8.44076, -2.41827, 8.44076, -3.0336, 6.8757, -3.0336, 6.8757, -2.31573 )
+
+[node name="House Plant" type="Sprite" parent="Furniture"]
+position = Vector2( 121.642, 243.694 )
+texture = ExtResource( 7 )
+
+[node name="House Plant6" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 122.35, 243.871 )
+shape = SubResource( 37 )
+
+[node name="House Plant2" type="Sprite" parent="Furniture"]
+position = Vector2( 182.454, 244.047 )
+texture = ExtResource( 7 )
+
+[node name="House Plant7" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 182.807, 243.871 )
+shape = SubResource( 37 )
+
+[node name="House Plant3" type="Sprite" parent="Furniture"]
+position = Vector2( 51.6389, 243.34 )
+texture = ExtResource( 7 )
+
+[node name="House Plant8" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 52.1692, 243.34 )
+shape = SubResource( 37 )
+
+[node name="House Plant4" type="Sprite" parent="Furniture"]
+position = Vector2( 120.582, 327.839 )
+texture = ExtResource( 7 )
+
+[node name="House Plant9" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 121.112, 326.956 )
+shape = SubResource( 37 )
+
+[node name="House Plant5" type="Sprite" parent="Furniture"]
+position = Vector2( 182.454, 327.486 )
+texture = ExtResource( 7 )
+
+[node name="House Plant10" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 182.984, 326.425 )
+shape = SubResource( 37 )
+
+[node name="Window" type="Sprite" parent="Furniture"]
+position = Vector2( 53.4067, 215.763 )
+texture = ExtResource( 3 )
+
+[node name="Window2" type="Sprite" parent="Furniture"]
+position = Vector2( 86.2871, 215.763 )
+texture = ExtResource( 3 )
+
+[node name="Window3" type="Sprite" parent="Furniture"]
+position = Vector2( 121.996, 216.117 )
+texture = ExtResource( 3 )
+
+[node name="Windows" type="CollisionShape2D" parent="Furniture"]
+position = Vector2( 87.7013, 216.294 )
+shape = SubResource( 38 )

@@ -13,18 +13,18 @@ __meta__ = {
 "_edit_vertical_guides_": [ 24.5324 ]
 }
 
-[node name="Kitchen" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0.774607, 120.013 )
+[node name="Outside" parent="." instance=ExtResource( 6 )]
 
-[node name="LivingRoom" parent="." instance=ExtResource( 3 )]
+[node name="Kitchen" parent="." instance=ExtResource( 2 )]
+position = Vector2( -0.475393, 146.038 )
 
 [node name="Bedroom1" parent="." instance=ExtResource( 4 )]
-position = Vector2( 16.0819, -175.615 )
+position = Vector2( 7.59661, -171.372 )
 
 [node name="Bedroom2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -18.2112, -165.979 )
+position = Vector2( -16.797, -162.443 )
 
-[node name="Outside" parent="." instance=ExtResource( 6 )]
+[node name="LivingRoom" parent="." instance=ExtResource( 3 )]
 
 [node name="Grocery store" parent="." instance=ExtResource( 7 )]
 position = Vector2( -366.579, -635.905 )

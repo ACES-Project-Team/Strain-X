@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cabinets Side View.png-8292dd4e294d37e55106a393b8835b70.stex"
+path="res://.import/Living Room Wall Tile Set.png-18bb977aa0cac8978d1bfae18f03798b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/World/Cabinets Side View.png"
-dest_files=[ "res://.import/Cabinets Side View.png-8292dd4e294d37e55106a393b8835b70.stex" ]
+source_file="res://Day 1/World/Living Room Wall Tile Set.png"
+dest_files=[ "res://.import/Living Room Wall Tile Set.png-18bb977aa0cac8978d1bfae18f03798b.stex" ]
 
 [params]
 
