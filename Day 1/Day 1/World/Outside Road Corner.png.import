@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass Tile Set.png-4526121418b7c6f3e91db8a8c4e9c668.stex"
+path="res://.import/Outside Road Corner.png-0453cfc938fbfd86bfe94c6d22cbd39a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/World/Grass Tile Set.png"
-dest_files=[ "res://.import/Grass Tile Set.png-4526121418b7c6f3e91db8a8c4e9c668.stex" ]
+source_file="res://Day 1/World/Outside Road Corner.png"
+dest_files=[ "res://.import/Outside Road Corner.png-0453cfc938fbfd86bfe94c6d22cbd39a.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
