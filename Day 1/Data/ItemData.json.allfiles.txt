@@ -1,0 +1,42 @@
+{
+	“Alcohol Spray”:  {
+	“ItemCategory”: “Resource”,
+	“StackSize”: 10,
+	“Description”:  “Alcohol in a spray gun.” 
+	“AddDamage”: 5, 
+}, 
+	“Face Shield”:  {
+	“ItemCategory”: “Defense”, 
+	“StackSize”: 10, 
+	“Description”:  “Item of PPE that covers a person’s face to protect him/her from infection.” 
+	“AddDefense”: 25, 
+}, 
+
+	“Vitamins”:  {
+	“ItemCategory”:  “Consumable”, 
+	“StackSize”: 30,
+	“AddHealth”: 30, 
+},
+
+	“Uv Box”:  {
+	“ItemCategory”:  “Defense”, 
+	“StackSize”: 10,
+	“Description”:  “Device that produces UV light to sterilize objects from bacteria and viruses. ” 
+	“AddDamage”: 75, 
+},
+
+	“UV Lightsaber”:  {
+	“ItemCategory”: “Defense”, 
+	“StackSize”: 10, 
+	“AddDamage”: 5, 
+	“Description”: “Acts like a sword.” 
+
+},
+
+	“Surgical Mask”:  { 
+	“ItemCategory”: “Defense”, 
+	“Stack Size”: 10, 
+	“Description”:  “A type of mask commonly used to protect oneself from the virus.” 
+	“AddDefense”: 25, 
+	}
+}
