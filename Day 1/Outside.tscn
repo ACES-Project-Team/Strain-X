@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=39 format=2]
+=======
+[gd_scene load_steps=50 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Day 1/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Outside Sign Post.png" type="Texture" id=2]
@@ -566,12 +570,21 @@ extents = Vector2( 54.7115, 71.8936 )
 [sub_resource type="CircleShape2D" id=19]
 radius = 8.06703
 
+<<<<<<< Updated upstream
 [sub_resource type="TileSet" id=20]
 0/name = "Outside Home Tile Set.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 40, 48, 48 )
+=======
+[sub_resource type="TileSet" id=9]
+0/name = "Outside Road Vertical.png 0"
+0/texture = ExtResource( 8 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 39, 49 )
+>>>>>>> Stashed changes
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -610,12 +623,21 @@ radius = 8.06703
 2/shapes = [  ]
 2/z_index = 0
 
+<<<<<<< Updated upstream
 [sub_resource type="TileSet" id=21]
 0/name = "Outside Home Tile Set.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 58, 11, 29 )
+=======
+[sub_resource type="TileSet" id=8]
+0/name = "Outside Road Corner.png 0"
+0/texture = ExtResource( 9 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 87, 49 )
+>>>>>>> Stashed changes
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -642,9 +664,49 @@ radius = 8.06703
 0/shapes = [  ]
 0/z_index = 0
 
+<<<<<<< Updated upstream
 [sub_resource type="TileSet" id=23]
 0/name = "Outside Fence Side View.png 0"
 0/texture = ExtResource( 10 )
+=======
+[sub_resource type="TileSet" id=30]
+0/name = "Outside Bush.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 17, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 2.5435, 2.07228, 13.0091, 1.29706, 13.2029, 10.7936, 1.57447, 10.7936 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 2.10434, 1.12719, 10.9871, 1.53095, 11.2563, 9.8754, 1.83517, 9.60622 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 5.3778, 0.125755, 20.0479, 2.27917, 18.702, 14.7958, 1.74393, 14.1229 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 2.9002, 1.75677, 16, 0, 13.6672, 13.7351, 1.55432, 11.8509 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 2.06671, 0.101227, 8.66152, 0.370407, 9.06528, 7.50356, 1.12459, 7.50356 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 2.64127, 0, 10.7165, 0.296555, 10.3128, 7.42972, 1.02622, 7.69889 )
+
+[sub_resource type="TileSet" id=18]
+0/name = "Outside Rocks.png 0"
+0/texture = ExtResource( 14 )
+>>>>>>> Stashed changes
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 1, 0, 4, 38 )
@@ -755,8 +817,469 @@ radius = 8.06703
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
 
+<<<<<<< Updated upstream
 [node name="BottomGrass" type="TileMap" parent="."]
 position = Vector2( 0.459763, -5.05731 )
+=======
+[node name="Grass" type="Sprite" parent="."]
+position = Vector2( -2435.83, -1234.08 )
+scale = Vector2( 1.20982, 1.28978 )
+texture = ExtResource( 11 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -2304, -800, 4480, 1872 )
+
+[node name="Sidewalk3" type="Sprite" parent="."]
+position = Vector2( -466.899, -224.19 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk3"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk4" type="Sprite" parent="."]
+position = Vector2( -466.399, -320.19 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk4"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk5" type="Sprite" parent="."]
+position = Vector2( -466.399, -415.69 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 64 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk5"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 48 )
+
+[node name="Sidewalk6" type="Sprite" parent="."]
+position = Vector2( -75.3689, -222.61 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk6"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk7" type="Sprite" parent="."]
+position = Vector2( -75.369, -319.483 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk7"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk8" type="Sprite" parent="."]
+position = Vector2( -75.3689, -415.65 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk8"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk9" type="Sprite" parent="."]
+position = Vector2( -75.369, -511.816 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk9"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk10" type="Sprite" parent="."]
+position = Vector2( -75.3689, -606.569 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk10"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk11" type="Sprite" parent="."]
+position = Vector2( -75.369, -702.028 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk11"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk12" type="Sprite" parent="."]
+position = Vector2( 483.631, -221.028 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk12"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk13" type="Sprite" parent="."]
+position = Vector2( 483.631, -316.528 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk13"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk14" type="Sprite" parent="."]
+position = Vector2( 483.631, -412.528 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk14"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk15" type="Sprite" parent="."]
+position = Vector2( 483.631, -508.528 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk15"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk16" type="Sprite" parent="."]
+position = Vector2( 483.631, -604.528 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk16"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk17" type="Sprite" parent="."]
+position = Vector2( 483.631, -604.528 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk17"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk18" type="Sprite" parent="."]
+position = Vector2( 1046.18, -225.778 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk18"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk19" type="Sprite" parent="."]
+position = Vector2( 1046.18, -322.651 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk19"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk20" type="Sprite" parent="."]
+position = Vector2( 1046.18, -418.818 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk20"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk21" type="Sprite" parent="."]
+position = Vector2( 1046.18, -514.984 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk21"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk22" type="Sprite" parent="."]
+position = Vector2( 1046.26, -608.758 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk22"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk23" type="Sprite" parent="."]
+position = Vector2( 1046.26, -704.924 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk23"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk24" type="Sprite" parent="."]
+position = Vector2( 1651.57, -226.855 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk24"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk25" type="Sprite" parent="."]
+position = Vector2( 1651.57, -323.728 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk25"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk26" type="Sprite" parent="."]
+position = Vector2( 1651.57, -419.895 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk26"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk27" type="Sprite" parent="."]
+position = Vector2( 1651.57, -516.061 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk27"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk28" type="Sprite" parent="."]
+position = Vector2( 1651.66, -609.835 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk28"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk29" type="Sprite" parent="."]
+position = Vector2( 1651.66, -706.001 )
+rotation = 3.14113
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 112, 96 )
+
+[node name="Sidewalk2" type="Sprite" parent="Sidewalk29"]
+position = Vector2( 6.50003, 0.00302124 )
+rotation = 6.35919e-08
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="Sidewalk" type="Sprite" parent="."]
+position = Vector2( -577.278, -134.959 )
+rotation = -1.56905
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -64, -480, 96, 1856 )
+
+[node name="Sidewalk2" type="Sprite" parent="."]
+position = Vector2( 1278.22, -131.718 )
+rotation = -1.56905
+texture = ExtResource( 13 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -64, -480, 96, 1856 )
+
+[node name="Other Road" type="TileMap" parent="."]
+position = Vector2( -7.74857, 3.59985 )
+>>>>>>> Stashed changes
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
@@ -768,8 +1291,19 @@ tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 
+<<<<<<< Updated upstream
 [node name="RightFence" type="TileMap" parent="."]
 position = Vector2( -1.73572, -6.69721 )
+=======
+[node name="Neighbor Pathway2" type="TileMap" parent="."]
+position = Vector2( 565.218, 1.65094 )
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -1245176, 0, 0, -1245175, 0, 0, -1245174, 0, 0, -1245140, 0, 0, -1245139, 0, 0, -1245138, 0, 0, -1179640, 0, 0, -1179639, 0, 0, -1179638, 0, 0, -1179604, 0, 0, -1179603, 0, 0, -1179602, 0, 0, -1114104, 0, 0, -1114103, 0, 0, -1114102, 0, 0, -1114068, 0, 0, -1114067, 0, 0, -1114066, 0, 0, -1048568, 0, 0, -1048567, 0, 0, -1048566, 0, 0, -1048532, 0, 0, -1048531, 0, 0, -1048530, 0, 0, -983032, 0, 0, -983031, 0, 0, -983030, 0, 0, -982996, 0, 0, -982995, 0, 0, -982994, 0, 0, -917495, 0, 0, -917459, 0, 0 )
+
+[node name="MC Pathway" type="TileMap" parent="."]
+>>>>>>> Stashed changes
 tile_set = SubResource( 3 )
 cell_size = Vector2( 16, 16 )
 format = 1
@@ -782,11 +1316,26 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -3014659, -1610612698, 0, -3080169, -1610612698, 0, -2818051, -1610612698, 0, -2883561, -1610612698, 0, -2621443, -1610612698, 0, -2686953, -1610612698, 0, -2621439, 1, 0, -2621437, 1, 0, -2621435, 1, 0, -2621433, 1, 0, -2621431, 1, 0, -2621429, 1, 0, -2621427, 1, 0, -2621425, 1, 0, -2621423, 1, 0, -2621421, 1, 0, -2555903, 14, 0, -2555900, 14, 0, -2555898, 14, 0, -2555895, 14, 0, -2555892, 14, 0, -2555889, 14, 0, -2555886, 14, 0, -2424835, -1610612698, 0, -2490362, 14, 0, -2490356, 14, 0, -2490345, -1610612698, 0, -2424831, 14, 0, -2424828, 14, 0, -2424823, 14, 0, -2424817, 14, 0, -2424814, 14, 0, -2228227, -1610612698, 0, -2293737, -1610612698, 0, -2228223, 14, 0, -2228206, 14, 0, -2031619, -1610612698, 0, -2097129, -1610612698, 0, -2031615, 14, 0, -2031598, 14, 0, -1966080, 27, 0, -1966069, 27, 0, -1835011, -1610612698, 0, -1900521, -1610612698, 0, -1835007, 14, 0, -1834990, 14, 0, -1769472, 27, 0, -1769457, 27, 0, -1638403, -1610612698, 0, -1703921, 27, 0, -1703913, -1610612698, 0, -1638399, 14, 0, -1638382, 14, 0, -1441795, -1610612698, 0, -1507313, 27, 0, -1507305, -1610612698, 0, -1441791, 14, 0, -1441774, 14, 0, -1376256, 27, 0, -1245187, -1610612698, 0, -1310719, 14, 0, -1310717, 14, 0, -1310715, 14, 0, -1310714, 14, 0, -1310711, 20, 0, -1310710, 20, 0, -1310709, 20, 0, -1310705, 27, 0, -1310697, -1610612698, 0, -1245183, 14, 0, -1245181, 14, 0, -1245178, 14, 0, -1245172, 14, 0, -1245169, 14, 0, -1245166, 14, 0, -1179648, 27, 0, -1179630, 31, 0, -1179628, 10, 0, -1048579, -1610612698, 0, -1114108, 21, 0, -1114107, 21, 0, -1114106, 21, 0, -1114105, 21, 0, -1114104, 21, 0, -1114103, 20, 0, -1114102, 20, 0, -1114101, 20, 0, -1114099, 21, 0, -1114098, 21, 0, -1114097, 21, 0, -1114096, 27, 0, -1114093, 30, 0, -1114089, -1610612698, 0, -1048575, 14, 0, -1048573, 14, 0, -1048570, 14, 0, -1048569, 21, 0, -1048568, 21, 0, -1048564, 14, 0, -1048563, 21, 0, -1048562, 21, 0, -1048561, 14, 0, -1048559, 14, 0, -1048558, 14, 0, -917507, -1610612698, 0, -983036, 21, 0, -983035, 21, 0, -983034, 21, 0, -983033, 21, 0, -983032, 21, 0, -983027, 21, 0, -983026, 21, 0, -983025, 21, 0, -983024, 27, 0, -983023, 21, 0, -917503, 1, 0, -917502, 1, 0, -917501, 1, 0, -917499, 1, 0, -917497, 1, 0, -917492, 1, 0, -917490, 1, 0, -917489, 21, 0, -917488, 1, 0, -917487, 21, 0, -917486, 1, 0, -917485, 1, 0, -917481, -1610612698, 0, -786433, 11, 0, -851952, 27, 0, -851946, 11, 0, -786432, 27, 0, -655371, 536870950, 0, -655368, 536870950, 0, -720893, 38, 0, -720892, 38, 0, -720891, 38, 0, -720890, 38, 0, -720889, 38, 0, -720888, 38, 0, -720887, 38, 0, -720886, 38, 0, -720885, 38, 0, -720884, 38, 0, -720883, 38, 0, -720882, 38, 0, -720881, 38, 0, -720880, 38, 0, -720879, 38, 0, -720878, 38, 0, -720877, 38, 0, -720876, 38, 0, -720875, 38, 0, -720874, 38, 0, -720873, 38, 0, -720872, 38, 0, -720871, 38, 0, -393226, 1, 0, -393225, 1, 0, -393223, 1, 0, -393221, 1, 0, -393219, 1, 0, -393217, 1, 0, -458751, 1, 0, -458749, 1, 0, -458747, 1, 0, -458745, 1, 0, -458740, 1, 0, -458738, 1, 0, -458736, 1, 0, -458734, 1, 0, -458732, 1, 0, -458731, 1, 0, -327690, 14, 0, -327689, 536870926, 0, -327687, 27, 0, -327686, 536870926, 0, -327684, 27, 0, -327683, 536870926, 0, -327681, 27, 0, -393216, 536870926, 0, -393214, 27, 0, -393213, 536870926, 0, -393211, 27, 0, -393210, 536870926, 0, -393207, 20, 0, -393206, 20, 0, -393205, 20, 0, -393204, 536870926, 0, -393201, 536870926, 0, -393198, 536870926, 0, -393196, 536870926, 0, -262147, 14, 0, -327673, 536870922, 0, -327671, 20, 0, -327670, 20, 0, -262139, 536870943, 0, -262138, 536870942, 0, -262135, 20, 0, -262134, 20, 0, -262133, 20, 0, -262129, 27, 0, -262126, 27, 0, -262124, 27, 0, -131082, 14, 0, -131081, 536870926, 0, -131079, 27, 0, -131078, 536870926, 0, -131076, 27, 0, -196608, 536870926, 0, -196606, 27, 0, -196605, 536870926, 0, -196603, 536870939, 0, -196602, 536870926, 0, -196601, 536870944, 0, -196598, 20, 0, -196596, 536870926, 0, -196593, 536870926, 0, -196590, 536870926, 0, -196588, 536870926, 0, -65546, 14, 0, -65545, 536870926, 0, -65543, 27, 0, -65542, 536870926, 0, -65540, 27, 0, -65539, 536870926, 0, -65538, 27, 0, -131062, 20, 0, -131061, 28, 0, -131058, 536870926, 0, -131057, 27, 0, -131055, 536870926, 0, -131054, 27, 0, -131052, 536870926, 0, -8, 31, 0, -7, 536870942, 0, -65527, 0, 0, -65525, 0, 0, -65521, 536870942, 0, 65530, 31, 0, 14, 536870943, 0, 131082, 536870941, 0 )
 
+<<<<<<< Updated upstream
 [node name="StaticBody2D" type="StaticBody2D" parent="MC House"]
 
 [node name="Fence 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( -8.26031, -103.831 )
 shape = SubResource( 5 )
+=======
+[node name="Road" type="TileMap" parent="."]
+tile_set = SubResource( 5 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -786461, 0, 0, -786458, 0, 0, -786455, 0, 0, -786452, 0, 0, -786449, 0, 0, -786446, 0, 0, -786436, 0, 0, -786433, 0, 0, -851966, 0, 0, -851963, 0, 0, -851960, 0, 0, -851957, 0, 0, -851954, 0, 0, -851951, 0, 0, -851948, 0, 0, -851937, 0, 0, -851934, 0, 0, -851931, 0, 0, -851928, 0, 0, -851925, 0, 0, -851922, 0, 0, -851919, 0, 0, -851916, 0, 0, -851913, 0, 0, -851902, 0, 0, -851899, 0, 0, -851896, 0, 0, -851893, 0, 0, -851890, 0, 0, -851887, 0, 0, -851884, 0, 0, -851881, 0, 0, -851878, 0, 0, -851875, 0, 0, -851864, 0, 0, -851861, 0, 0, -851858, 0, 0, -851855, 0, 0, -851852, 0, 0, -851849, 0, 0, -851846, 0, 0, -851843, 0, 0, -851840, 0, 0, -851837, 0, 0, -851834, 0, 0, -851831, 0, 0 )
+
+[node name="Intersection" type="TileMap" parent="Road"]
+position = Vector2( -15.7878, -10.9462 )
+tile_set = SubResource( 6 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -786443, 0, 0, -851944, 0, 0, -851909, 0, 0, -851871, 0, 0 )
+>>>>>>> Stashed changes
 
 [node name="Fence 2" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 280.406, -103.504 )
@@ -832,9 +1381,32 @@ shape = SubResource( 10 )
 position = Vector2( 10.053, 47.5702 )
 shape = SubResource( 11 )
 
+<<<<<<< Updated upstream
 [node name="Bush 1" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 152.145, -8.0065 )
 shape = SubResource( 12 )
+=======
+[node name="Road13" type="TileMap" parent="Road/Road2"]
+position = Vector2( 16.9671, 15.8632 )
+tile_set = SubResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -3014595, 1610612736, 0, -2817987, 1610612736, 0, -2621379, 1610612736, 0, -2424771, 1610612736, 0, -2228163, 1610612736, 0, -2031555, 1610612736, 0, -1835042, 1073741824, 0, -1834947, 1610612736, 0, -1638434, 1073741824, 0, -1638339, 1610612736, 0, -1441826, 1073741824, 0, -1507267, 1610612736, 0, -1245218, 1073741824, 0, -1310659, 1610612736, 0, -1048610, 1073741824, 0, -1114051, 1610612736, 0 )
+
+[node name="Road14" type="TileMap" parent="Road/Road2"]
+position = Vector2( 16.9671, 15.8632 )
+tile_set = SubResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -3145629, 1610612736, 0, -3014595, 1610612736, 0, -2949021, 1610612736, 0, -2817987, 1610612736, 0, -2817949, 1610612736, 0, -2621379, 1610612736, 0, -2621341, 1610612736, 0, -2424771, 1610612736, 0, -2424733, 1610612736, 0, -2293661, 1610612736, 0, -2228163, 1610612736, 0, -2097053, 1610612736, 0, -2031555, 1610612736, 0, -1835042, 1073741824, 0, -1900445, 1610612736, 0, -1834947, 1610612736, 0, -1638434, 1073741824, 0, -1703837, 1610612736, 0, -1638339, 1610612736, 0, -1441826, 1073741824, 0, -1507267, 1610612736, 0, -1507229, 1610612736, 0, -1245218, 1073741824, 0, -1310659, 1610612736, 0, -1310621, 1610612736, 0, -1048610, 1073741824, 0, -1114051, 1610612736, 0, -1114013, 1610612736, 0 )
+
+[node name="Corner Road" type="TileMap" parent="Road"]
+position = Vector2( -5.36397, 4.94977 )
+tile_set = SubResource( 8 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -852002, 0, 0 )
+>>>>>>> Stashed changes
 
 [node name="Bush 2" type="CollisionShape2D" parent="MC House/StaticBody2D"]
 position = Vector2( 183.68, -8.0065 )
@@ -866,6 +1438,7 @@ scale = Vector2( 3, 3 )
 tile_set = SubResource( 16 )
 cell_size = Vector2( 16, 16 )
 format = 1
+<<<<<<< Updated upstream
 tile_data = PoolIntArray( -786431, 0, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Neighbor House"]
@@ -873,12 +1446,33 @@ tile_data = PoolIntArray( -786431, 0, 0 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Neighbor House/StaticBody2D"]
 position = Vector2( 57.9042, -145.637 )
 shape = SubResource( 17 )
+=======
+tile_data = PoolIntArray( -3211295, 0, 0, -3080215, 0, 0, -3080209, 0, 0, -3145719, 0, 0, -3145709, 0, 0, -3014702, 0, 0, -3014659, 0, 0, -3080161, 0, 0, -2883626, 0, 0, -2883625, 0, 0, -2883624, 0, 0, -2883623, 0, 0, -2883622, 0, 0, -2883621, 0, 0, -2883620, 0, 0, -2883619, 0, 0, -2883618, 0, 0, -2883617, 0, 0, -2883616, 0, 0, -2883615, 0, 0, -2883614, 0, 0, -2883613, 0, 0, -2883612, 0, 0, -2883611, 0, 0, -2883610, 0, 0, -2883609, 0, 0, -2949101, 0, 0, -2949072, 0, 0, -2949066, 0, 0, -2818090, 0, 0, -2818073, 0, 0, -2883581, 0, 0, -2752554, 0, 0, -2752537, 0, 0, -2818007, 0, 0, -2817995, 0, 0, -2687018, 0, 0, -2687001, 0, 0, -2621482, 0, 0, -2621465, 0, 0, -2555946, 0, 0, -2555929, 0, 0, -2621404, 0, 0, -2490410, 0, 0, -2490393, 0, 0, -2490387, 0, 0, -2490372, 0, 0, -2555892, 0, 0, -2424874, 0, 0, -2424857, 0, 0, -2490346, 0, 0, -2490323, 0, 0, -2359338, 0, 0, -2359321, 0, 0, -2293802, 0, 0, -2293785, 0, 0, -2228266, 0, 0, -2228249, 0, 0, -2162737, 0, 0, -2162730, 0, 0, -2162713, 0, 0, -2162691, 0, 0, -2162690, 0, 0, -2162689, 0, 0, -2228224, 0, 0, -2228223, 0, 0, -2228222, 0, 0, -2228221, 0, 0, -2228220, 0, 0, -2228219, 0, 0, -2228218, 0, 0, -2228217, 0, 0, -2228216, 0, 0, -2228215, 0, 0, -2228214, 0, 0, -2228213, 0, 0, -2228212, 0, 0, -2228211, 0, 0, -2228210, 0, 0, -2228209, 0, 0, -2228208, 0, 0, -2228207, 0, 0, -2228206, 0, 0, -2228205, 0, 0, -2228204, 0, 0, -2228192, 0, 0, -2228191, 0, 0, -2228190, 0, 0, -2228189, 0, 0, -2228188, 0, 0, -2228187, 0, 0, -2228186, 0, 0, -2228185, 0, 0, -2228184, 0, 0, -2228183, 0, 0, -2228182, 0, 0, -2228181, 0, 0, -2228180, 0, 0, -2228179, 0, 0, -2228178, 0, 0, -2228177, 0, 0, -2228176, 0, 0, -2228175, 0, 0, -2228174, 0, 0, -2228173, 0, 0, -2228172, 0, 0, -2228171, 0, 0, -2228170, 0, 0, -2228169, 0, 0, -2097194, 0, 0, -2097177, 0, 0, -2097155, 0, 0, -2162668, 0, 0, -2162656, 0, 0, -2162633, 0, 0, -2031619, 0, 0, -2097132, 0, 0, -2097120, 0, 0, -2097097, 0, 0, -1966120, 0, 0, -1966119, 0, 0, -1966118, 0, 0, -1966117, 0, 0, -1966116, 0, 0, -1966111, 0, 0, -1966110, 0, 0, -1966109, 0, 0, -1966108, 0, 0, -1966107, 0, 0, -1966093, 0, 0, -1966083, 0, 0, -2031596, 0, 0, -2031586, 0, 0, -2031584, 0, 0, -2031561, 0, 0, -1900580, 0, 0, -1900579, 0, 0, -1900576, 0, 0, -1900575, 0, 0, -1900574, 0, 0, -1900547, 0, 0, -1966060, 0, 0, -1966048, 0, 0, -1966025, 0, 0, -1966023, 0, 0, -1835011, 0, 0, -1900524, 0, 0, -1900512, 0, 0, -1900489, 0, 0, -1769492, 0, 0, -1769475, 0, 0, -1834988, 0, 0, -1834976, 0, 0, -1834953, 0, 0, -1703941, 0, 0, -1703939, 0, 0, -1769452, 0, 0, -1769440, 0, 0, -1769417, 0, 0, -1638445, 0, 0, -1638440, 0, 0, -1638403, 0, 0, -1703916, 0, 0, -1703904, 0, 0, -1703881, 0, 0, -1572879, 0, 0, -1572867, 0, 0, -1638380, 0, 0, -1638368, 0, 0, -1638345, 0, 0, -1507331, 0, 0, -1572844, 0, 0, -1572832, 0, 0, -1572809, 0, 0, -1441820, 0, 0, -1441795, 0, 0, -1507308, 0, 0, -1507296, 0, 0, -1507273, 0, 0, -1376278, 0, 0, -1376259, 0, 0, -1441772, 0, 0, -1441760, 0, 0, -1441737, 0, 0, -1310723, 0, 0, -1376236, 0, 0, -1376234, 0, 0, -1376224, 0, 0, -1376201, 0, 0, -1376199, 0, 0, -1245187, 0, 0, -1310700, 0, 0, -1310688, 0, 0, -1310665, 0, 0, -1179696, 0, 0, -1179651, 0, 0, -1245183, 0, 0, -1245182, 0, 0, -1245181, 0, 0, -1245180, 0, 0, -1245179, 0, 0, -1245178, 0, 0, -1245172, 0, 0, -1245171, 0, 0, -1245170, 0, 0, -1245169, 0, 0, -1245168, 0, 0, -1245167, 0, 0, -1245164, 0, 0, -1245152, 0, 0, -1245148, 0, 0, -1245147, 0, 0, -1245146, 0, 0, -1245145, 0, 0, -1245144, 0, 0, -1245143, 0, 0, -1245137, 0, 0, -1245136, 0, 0, -1245135, 0, 0, -1245134, 0, 0, -1245133, 0, 0, -1245132, 0, 0, -1245129, 0, 0, -1245112, 0, 0, -1245111, 0, 0, -1245110, 0, 0, -1245109, 0, 0, -1245108, 0, 0, -1245107, 0, 0, -1245101, 0, 0, -1245100, 0, 0, -1245099, 0, 0, -1245098, 0, 0, -1245097, 0, 0, -1245096, 0, 0, -1114150, 0, 0, -1114115, 0, 0, -1179628, 0, 0, -1179616, 0, 0, -1179593, 0, 0, -1048597, 0, 0, -1048579, 0, 0, -1114092, 0, 0, -1114080, 0, 0, -1114057, 0, 0, -983055, 0, 0, -983043, 0, 0, -983042, 0, 0, -983041, 0, 0, -1048576, 0, 0, -1048575, 0, 0, -1048574, 0, 0, -1048573, 0, 0, -1048572, 0, 0, -1048571, 0, 0, -1048570, 0, 0, -1048563, 0, 0, -1048562, 0, 0, -1048561, 0, 0, -1048560, 0, 0, -1048559, 0, 0, -1048558, 0, 0, -1048557, 0, 0, -1048556, 0, 0, -1048544, 0, 0, -1048543, 0, 0, -1048542, 0, 0, -1048541, 0, 0, -1048540, 0, 0, -1048539, 0, 0, -1048538, 0, 0, -1048537, 0, 0, -1048536, 0, 0, -1048535, 0, 0, -1048528, 0, 0, -1048527, 0, 0, -1048526, 0, 0, -1048525, 0, 0, -1048524, 0, 0, -1048523, 0, 0, -1048522, 0, 0, -1048521, 0, 0, -786476, 0, 0, -655399, 0, 0, -458797, 0, 0, -458785, 0, 0, -458767, 0, 0, -524281, 0, 0, -524277, 0, 0, -524263, 0, 0, -393243, 0, 0, -393236, 0, 0, -393229, 0, 0, -393228, 0, 0, -393227, 0, 0, -393226, 0, 0, -393225, 0, 0, -393224, 0, 0, -393223, 0, 0, -393222, 0, 0, -393221, 0, 0, -393220, 0, 0, -393219, 0, 0, -393218, 0, 0, -393217, 0, 0, -458752, 0, 0, -458751, 0, 0, -458750, 0, 0, -458749, 0, 0, -458748, 0, 0, -458747, 0, 0, -458746, 0, 0, -458745, 0, 0, -458741, 0, 0, -458740, 0, 0, -458739, 0, 0, -458738, 0, 0, -458737, 0, 0, -458736, 0, 0, -458735, 0, 0, -458734, 0, 0, -458733, 0, 0, -458732, 0, 0, -458731, 0, 0, -458730, 0, 0, -458729, 0, 0, -458721, 0, 0, -327693, 0, 0, -393193, 0, 0, -393189, 0, 0, -262181, 0, 0, -262157, 0, 0, -327657, 0, 0, -196637, 0, 0, -196621, 0, 0, -262121, 0, 0, -131085, 0, 0, -196585, 0, 0, -65577, 0, 0, -65552, 0, 0, -65549, 0, 0, -131049, 0, 0, -23, 0, 0, -13, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65525, 0, 0, -65524, 0, 0, -65513, 0, 0, -65508, 0, 0, 65523, 0, 0, 12, 0, 0, 23, 0, 0, 131041, 0, 0, 131059, 0, 0, 131060, 0, 0, 131061, 0, 0, 131062, 0, 0, 131063, 0, 0, 131064, 0, 0, 131065, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 0, 0, 65552, 0, 0, 65553, 0, 0, 65554, 0, 0, 65555, 0, 0, 65556, 0, 0, 65557, 0, 0, 65559, 0, 0, 196595, 0, 0, 196607, 0, 0, 131084, 0, 0, 131095, 0, 0, 262108, 0, 0, 262131, 0, 0, 262143, 0, 0, 196620, 0, 0, 196631, 0, 0, 327667, 0, 0, 262167, 0, 0, 393170, 0, 0, 393200, 0, 0, 393203, 0, 0, 327703, 0, 0, 458739, 0, 0, 393239, 0, 0, 524268, 0, 0, 524275, 0, 0, 458775, 0, 0, 458781, 0, 0, 589811, 0, 0, 524311, 0, 0, 655307, 0, 0, 655347, 0, 0, 589847, 0, 0, 720883, 0, 0, 655383, 0, 0, 786419, 0, 0, 720919, 0, 0, 851955, 0, 0, 786455, 0, 0, 786457, 0, 0, 917486, 0, 0, 917491, 0, 0, 851991, 0, 0, 983001, 0, 0, 983027, 0, 0, 917527, 0, 0, 1048563, 0, 0, 983063, 0, 0, 1114087, 0, 0, 1114099, 0, 0, 1048599, 0, 0, 1179635, 0, 0, 1114135, 0, 0, 1245171, 0, 0, 1179671, 0, 0, 1310704, 0, 0, 1310707, 0, 0, 1245207, 0, 0, 1245214, 0, 0, 1376243, 0, 0, 1310743, 0, 0, 1441779, 0, 0, 1376279, 0, 0, 1507315, 0, 0, 1507316, 0, 0, 1507317, 0, 0, 1507318, 0, 0, 1507319, 0, 0, 1507320, 0, 0, 1507321, 0, 0, 1507322, 0, 0, 1507323, 0, 0, 1507324, 0, 0, 1507325, 0, 0, 1507326, 0, 0, 1507327, 0, 0, 1441792, 0, 0, 1441793, 0, 0, 1441794, 0, 0, 1441795, 0, 0, 1441796, 0, 0, 1441797, 0, 0, 1441798, 0, 0, 1441799, 0, 0, 1441800, 0, 0, 1441801, 0, 0, 1441802, 0, 0, 1441803, 0, 0, 1441804, 0, 0, 1441805, 0, 0, 1441806, 0, 0, 1441807, 0, 0, 1441808, 0, 0, 1441809, 0, 0, 1441810, 0, 0, 1441811, 0, 0, 1441812, 0, 0, 1441813, 0, 0, 1441814, 0, 0, 1441815, 0, 0, 1638366, 0, 0 )
+
+[node name="Bush2" type="TileMap" parent="."]
+position = Vector2( 6.69739, -7.50104 )
+tile_set = SubResource( 30 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228140, 0, 0, -2228139, 0, 0, -2228138, 0, 0, -2228137, 0, 0, -2228136, 0, 0, -2228135, 0, 0, -2228134, 0, 0, -2162598, 0, 0, -2097062, 0, 0, -2031526, 0, 0, -1965990, 0, 0, -1900454, 0, 0, -1834918, 0, 0, -1769382, 0, 0, -1703846, 0, 0, -1638310, 0, 0, -1572774, 0, 0, -1507238, 0, 0, -1441702, 0, 0, -1376166, 0, 0, -1310630, 0, 0, -1245094, 0, 0, -1179558, 0, 0, -1114022, 0, 0, -1048493, 0, 0, -1048492, 0, 0, -1048491, 0, 0, -1048490, 0, 0, -1048489, 0, 0, -1048488, 0, 0, -1048487, 0, 0, -1048486, 0, 0 )
+
+[node name="Bush3" type="TileMap" parent="."]
+position = Vector2( -3.07971, -8.43219 )
+tile_set = SubResource( 30 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228156, 0, 0, -2228155, 0, 0, -2228154, 0, 0, -2228153, 0, 0, -2228152, 0, 0, -2228151, 0, 0, -2228150, 0, 0, -2228149, 0, 0, -2228148, 0, 0, -2228147, 0, 0, -2162620, 0, 0, -2097084, 0, 0, -2031548, 0, 0, -1966012, 0, 0, -1900476, 0, 0, -1834940, 0, 0, -1769404, 0, 0, -1703868, 0, 0, -1638332, 0, 0, -1572796, 0, 0, -1507260, 0, 0, -1441724, 0, 0, -1376188, 0, 0, -1310652, 0, 0, -1245116, 0, 0, -1179580, 0, 0, -1114044, 0, 0, -1048508, 0, 0, -1048507, 0, 0, -1048506, 0, 0, -1048505, 0, 0, -1048504, 0, 0, -1048503, 0, 0, -1048502, 0, 0, -1048501, 0, 0, -1048500, 0, 0, -1048499, 0, 0 )
+>>>>>>> Stashed changes
 
 [node name="Neighbor Mail" type="TileMap" parent="."]
 tile_set = SubResource( 18 )
 cell_size = Vector2( 16, 16 )
 format = 1
+<<<<<<< Updated upstream
 tile_data = PoolIntArray( -1048566, 2, 0, -983040, 1, 0, -983039, 1, 0, -983038, 1, 0, -983037, 1, 0, -983036, 1, 0, -983035, 1, 0, -983034, 1, 0, -983033, 1, 0, -983032, 0, 0, -983029, 1, 0, -983028, 1, 0, -983027, 1, 0, -983026, 1, 0, -983025, 1, 0, -983024, 1, 0, -983023, 1, 0, -983022, 1, 0, -983021, 1, 0, -524278, 2, 0, -458744, 0, 0 )
+=======
+tile_data = PoolIntArray( -2752472, 4, 0, -2752460, 2, 0, -2555887, 2, 0, -2555858, 0, 0, -2490367, 2, 0, -2490335, 4, 0, -2490328, 4, 0, -2424830, 3, 0, -2424778, 4, 0, -2097196, 5, 0, -2097175, 5, 0, -2097134, 1, 0, -2097130, 4, 0, -2097118, 5, 0, -2097099, 0, 0, -2097081, 2, 0, -2097063, 3, 0, -1966081, 1, 0, -1900586, 2, 0, -1900570, 5, 0, -1835049, 5, 0, -1835030, 5, 0, -1900474, 2, 0, -1769486, 4, 0, -1769471, 3, 0, -1769438, 2, 0, -1769383, 1, 0, -1572910, 3, 0, -1638382, 2, 0, -1638379, 4, 0, -1638329, 2, 0, -1572834, 5, 0, -1572810, 3, 0, -1441830, 4, 0, -1441817, 4, 0, -1441809, 2, 0, -1441797, 3, 0, -1507259, 2, 0, -1376272, 4, 0, -1310721, 0, 0, -1376185, 1, 0, -1179688, 1, 0, -1179669, 4, 0, -1245177, 5, 0, -1245150, 4, 0, -1245142, 4, 0, -1245114, 1, 0, -1245106, 4, 0, -1114156, 0, 0, -1179595, 5, 0, -1179559, 1, 0, -1048578, 4, 0, -1114094, 5, 0, -1114073, 1, 0, -852006, 4, 0, -589865, 4, 0, -458780, 4, 0, -458723, 5, 0, -327681, 4, 0, -393205, 2, 0, -393203, 5, 0, -393194, 4, 0, -262159, 3, 0, -262156, 1, 0, -262155, 2, 0, -327674, 0, 0, -196640, 2, 0, -196618, 5, 0, -262119, 5, 0, -131097, 4, 0, -131078, 1, 0, -196589, 1, 0, -196588, 2, 0, -131065, 1, 0, -131052, 5, 0, -131051, 4, 0, -2, 3, 0, -65522, 1, 0, 65498, 3, 0, 65524, 5, 0, 65535, 5, 0, 13, 0, 0, 131093, 3, 0, 131097, 3, 0, 327658, 2, 0, 393188, 4, 0, 393195, 4, 0, 458710, 4, 0, 458778, 2, 0, 720860, 2, 0, 720880, 4, 0, 655374, 3, 0, 655375, 4, 0, 655382, 4, 0, 655389, 5, 0, 786429, 2, 0, 851958, 4, 0, 983012, 4, 0, 1048564, 5, 0, 983053, 3, 0, 983054, 4, 0, 983067, 5, 0, 1048589, 2, 0, 1179640, 3, 0, 1179641, 4, 0, 1114133, 4, 0, 1245176, 5, 0, 1245177, 2, 0, 1179664, 1, 0, 1245201, 2, 0, 1245209, 5, 0, 1376244, 0, 0, 1310729, 2, 0, 1310731, 4, 0, 1310736, 5, 0, 1310742, 3, 0, 1441780, 5, 0, 1441791, 1, 0, 1376277, 4, 0 )
+>>>>>>> Stashed changes
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Neighbor Mail"]
 
@@ -911,9 +1505,211 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 196608, 536870912, 0 )
 
+<<<<<<< Updated upstream
 [node name="Fence" type="TileMap" parent="."]
 position = Vector2( -2.65271, -10.8401 )
 tile_set = SubResource( 23 )
+=======
+[node name="Grocery" type="StaticBody2D" parent="."]
+position = Vector2( -527.753, -613.375 )
+
+[node name="Grocery" type="Sprite" parent="Grocery"]
+texture = ExtResource( 16 )
+
+[node name="Grocery2" type="CollisionPolygon2D" parent="Grocery"]
+scale = Vector2( 15.2328, 13.222 )
+polygon = PoolVector2Array( -8.00694, 5.9487, -0.654396, 5.98651, -0.654396, 3.37723, 0.724209, 3.33941, 0.691383, 5.98651, 8.01111, 5.9487, 8.1424, -8.34566, -8.10542, -8.34566 )
+
+[node name="Mailboxes and Lamp Posts" type="StaticBody2D" parent="."]
+
+[node name="MC Mailbox" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 120.53, -141.539 )
+texture = ExtResource( 18 )
+
+[node name="MC Mailbox2" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 120.53, -142.539 )
+shape = SubResource( 23 )
+
+[node name="Neighbor Mailbox" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 123.252, -250.221 )
+texture = ExtResource( 6 )
+
+[node name="Neighbor Mailbox3" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 123.252, -251.221 )
+shape = SubResource( 24 )
+
+[node name="Neighbor Mailbox2" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 684.695, -250.928 )
+texture = ExtResource( 6 )
+
+[node name="Neighbor Mailbox4" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 684.695, -251.678 )
+shape = SubResource( 25 )
+
+[node name="Neighbor Mailbox5" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1251.73, -252.803 )
+texture = ExtResource( 6 )
+
+[node name="Neighbor Mailbox6" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1251.73, -253.553 )
+shape = SubResource( 25 )
+
+[node name="Neighbor Mailbox7" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1878.67, -252.539 )
+texture = ExtResource( 6 )
+
+[node name="Neighbor Mailbox8" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1878.67, -253.289 )
+shape = SubResource( 25 )
+
+[node name="Lamp Post" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 184.17, -147.195 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post15" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 184.17, -147.195 )
+scale = Vector2( 1.19674, 2.08179 )
+polygon = PoolVector2Array( -2.99002, -9.34608, -2.99002, -8.92149, -3.80246, -8.87904, -3.72859, -5.10028, -2.99002, -5.10028, -2.91617, -3.06229, -2.10373, -3.06229, -2.10373, -2.68018, -1.21745, -2.68018, -1.21745, 5.04717, -3.72859, 5.04717, -3.72859, 8.40135, 3.731, 8.40135, 3.731, 5.04717, 1.29372, 5.04717, 1.29372, -2.63772, 2.17999, -2.63772, 2.25386, -3.10476, 2.91858, -3.10476, 2.99243, -5.05782, 3.731, -5.14273, 3.731, -8.83658, 2.91858, -8.87904, 2.91858, -9.30361 )
+
+[node name="Lamp Post2" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -198.375, -261.04 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post16" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -198.375, -261.04 )
+scale = Vector2( 1.15053, 2.2926 )
+polygon = PoolVector2Array( -3.13324, -8.55331, -3.13324, -8.05212, -3.90147, -8.05212, -3.90147, -4.62083, -3.13324, -4.62083, -3.13324, -2.80881, -2.21135, -2.80881, -2.21135, -2.3847, -1.36629, -2.3847, -1.28947, 4.59353, -4.05513, 4.59353, -4.05513, 7.60072, 3.93456, 7.63927, 3.93456, 4.59353, 1.32254, 4.59353, 1.39937, -2.3847, 2.24442, -2.3847, 2.24442, -2.8859, 3.01266, -2.8859, 3.01266, -4.58228, 3.93456, -4.58228, 4.01138, -8.09067, 3.08949, -8.05212, 3.08949, -8.55331 )
+
+[node name="Lamp Post3" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -197.668, -150.024 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post17" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -197.668, -150.024 )
+scale = Vector2( 0.945743, 2.0414 )
+polygon = PoolVector2Array( 3.64484, -9.61829, -3.75674, -9.61829, -3.75674, -9.12843, -4.81412, -9.09781, -4.81412, -5.17893, -3.69066, -5.14832, -3.75674, -3.18887, -2.6333, -3.18887, -2.6333, -2.6684, -1.57593, -2.63778, -1.57593, 5.13875, -4.68195, 5.19998, -4.74803, 8.56777, 4.7683, 8.53716, 4.70221, 5.10813, 1.59619, 5.10813, 1.59619, -2.6684, 2.65356, -2.72963, 2.65356, -3.15826, 3.64484, -3.21949, 3.71092, -5.1177, 4.7683, -5.17893, 4.7683, -9.00597, 3.77701, -9.06719 )
+
+[node name="Lamp Post4" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -67.5605, -261.04 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post18" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -67.5605, -261.04 )
+scale = Vector2( 0.806614, 2.26031 )
+polygon = PoolVector2Array( -4.32411, -8.64627, -4.32411, -8.17702, -5.63907, -8.13792, -5.63907, -4.6576, -4.32411, -4.6576, -4.32411, -2.8588, -3.11874, -2.81969, -3.11874, -2.42865, -2.02294, -2.38953, -2.02294, 4.57108, -5.63907, 4.61018, -5.52948, 7.73854, 5.42847, 7.77764, 5.31889, 4.61018, 1.81235, 4.61018, 2.0315, -2.42865, 3.23688, -2.42865, 3.34645, -2.81969, 4.44225, -2.8979, 4.55183, -4.69672, 5.64762, -4.73582, 5.64762, -8.17702, 4.33267, -8.13792, 4.33267, -8.72449 )
+
+[node name="Lamp Post5" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -567.594, -149.317 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post19" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -567.594, -149.317 )
+scale = Vector2( 0.879925, 2.24831 )
+polygon = PoolVector2Array( -4.12189, -8.66692, -4.12189, -8.27773, -5.25836, -8.22214, -5.25836, -4.60831, -3.97986, -4.60831, -3.97986, -2.8848, -2.98547, -2.8848, -2.98547, -2.44003, -1.99103, -2.38443, -1.99103, 4.67642, -4.97424, 4.73202, -4.97424, 7.78987, 5.11182, 7.78987, 4.96979, 4.73202, 1.84448, 4.73202, 1.84448, -2.44003, 2.69684, -2.44003, 2.69684, -2.9404, 3.97534, -2.99599, 3.97534, -4.66392, 5.11182, -4.66392, 5.11182, -8.27773, 3.97534, -8.22214, 3.97534, -8.66692 )
+
+[node name="Lamp Post6" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -460.114, -261.747 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post20" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -460.114, -261.747 )
+scale = Vector2( 1, 2.38837 )
+polygon = PoolVector2Array( -3.48221, -8.19088, -3.48221, -7.82452, -4.73221, -7.77219, -4.60721, -4.37029, -3.48221, -4.31795, -3.48221, -2.74783, -2.48221, -2.6955, -2.48221, -2.22446, -1.48221, -2.22446, -1.48221, 4.42233, -4.60721, 4.42233, -4.60721, 7.30087, 4.64279, 7.30087, 4.64279, 4.42233, 1.51779, 4.42233, 1.64279, -2.22446, 2.39279, -2.22446, 2.39279, -2.64316, 3.39279, -2.74783, 3.64279, -4.31795, 4.51779, -4.31795, 4.64279, -7.71985, 3.39279, -7.77219, 3.39279, -8.19088 )
+
+[node name="Lamp Post7" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 361.884, -258.221 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post21" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 361.884, -258.221 )
+scale = Vector2( 1.2189, 2.22642 )
+polygon = PoolVector2Array( -2.85522, -8.81461, -2.85522, -8.30932, -3.67563, -8.30932, -3.57309, -4.65996, -2.75266, -4.65996, -2.75266, -2.91949, -2.03482, -2.91949, -2.03482, -2.52648, -1.11185, -2.47034, -1.11185, 4.7161, -3.57309, 4.77225, -3.57309, 7.80403, 3.81064, 7.74789, 3.81064, 4.7161, 1.3494, 4.65996, 1.3494, -2.41419, 1.96472, -2.47034, 1.96472, -2.86334, 2.78513, -2.91949, 2.78513, -4.7161, 3.7081, -4.7161, 3.60553, -8.30932, 2.88766, -8.30932, 2.88766, -8.9269 )
+
+[node name="Lamp Post8" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 493.884, -258.221 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post22" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 493.884, -258.221 )
+scale = Vector2( 1.28958, 2.23251 )
+polygon = PoolVector2Array( -2.7973, -8.7746, -2.7973, -8.2995, -3.55124, -8.2995, -3.55124, -4.65708, -2.7973, -4.65708, -2.7973, -2.91505, -1.97482, -2.91505, -1.97482, -2.43996, -0.946747, -2.43996, -1.0838, 4.64693, -3.48273, 4.7261, -3.48273, 7.81424, 3.50839, 7.85384, 3.50839, 4.68651, 1.17801, 4.68651, 1.1095, -2.47955, 2.00052, -2.47955, 2.00052, -2.87547, 2.68591, -2.87547, 2.61737, -4.69667, 3.50839, -4.69667, 3.57693, -8.37868, 2.75446, -8.37868, 2.823, -8.81419 )
+
+[node name="Lamp Post9" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 187.252, -257.221 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post23" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 187.252, -257.221 )
+scale = Vector2( 1.08789, 2.35073 )
+polygon = PoolVector2Array( -3.20747, -8.34512, -3.20747, -7.89391, -4.34494, -7.89391, -4.1012, -4.47227, -3.28873, -4.43466, -3.28873, -2.78025, -2.39499, -2.74265, -2.39499, -2.36665, -1.42003, -2.32904, -1.33878, 4.47663, -4.01996, 4.51423, -4.18243, 7.44706, 4.10483, 7.40946, 4.10483, 4.51423, 1.34241, 4.51423, 1.26115, -2.29145, 2.23613, -2.32904, 2.23613, -2.78025, 3.29234, -2.78025, 3.29234, -4.47227, 4.10483, -4.43466, 4.26733, -7.85632, 3.21111, -7.85632, 3.21111, -8.38271 )
+
+[node name="Lamp Post10" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 750.817, -257.928 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post24" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 750.817, -257.928 )
+scale = Vector2( 1.36879, 2.43285 )
+polygon = PoolVector2Array( -2.65894, -8.08431, -2.75024, -7.67327, -3.38947, -7.67327, -3.29816, -4.38495, -2.47626, -4.38495, -2.56757, -2.74078, -2.01965, -2.74078, -2.01965, -2.27836, -1.19775, -2.22698, -1.10645, 4.29829, -3.38947, 4.29829, -3.20685, 7.07281, 3.36829, 7.07281, 3.45966, 4.29829, 1.26788, 4.29829, 1.17657, -2.22698, 1.90717, -2.32974, 1.81586, -2.74078, 2.63776, -2.79216, 2.72906, -4.43633, 3.27698, -4.43633, 3.36829, -7.57051, 2.54639, -7.62189, 2.54639, -8.08431 )
+
+[node name="Lamp Post29" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1325.22, -259.173 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post30" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1325.22, -259.173 )
+scale = Vector2( 1.36879, 2.43285 )
+polygon = PoolVector2Array( -2.65894, -8.08431, -2.75024, -7.67327, -3.38947, -7.67327, -3.29816, -4.38495, -2.47626, -4.38495, -2.56757, -2.74078, -2.01965, -2.74078, -2.01965, -2.27836, -1.19775, -2.22698, -1.10645, 4.29829, -3.38947, 4.29829, -3.20685, 7.07281, 3.36829, 7.07281, 3.45966, 4.29829, 1.26788, 4.29829, 1.17657, -2.22698, 1.90717, -2.32974, 1.81586, -2.74078, 2.63776, -2.79216, 2.72906, -4.43633, 3.27698, -4.43633, 3.36829, -7.57051, 2.54639, -7.62189, 2.54639, -8.08431 )
+
+[node name="Lamp Post31" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1947.48, -259.173 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post32" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 1947.48, -259.173 )
+scale = Vector2( 1.36879, 2.43285 )
+polygon = PoolVector2Array( -2.65894, -8.08431, -2.75024, -7.67327, -3.38947, -7.67327, -3.29816, -4.38495, -2.47626, -4.38495, -2.56757, -2.74078, -2.01965, -2.74078, -2.01965, -2.27836, -1.19775, -2.22698, -1.10645, 4.29829, -3.38947, 4.29829, -3.20685, 7.07281, 3.36829, 7.07281, 3.45966, 4.29829, 1.26788, 4.29829, 1.17657, -2.22698, 1.90717, -2.32974, 1.81586, -2.74078, 2.63776, -2.79216, 2.72906, -4.43633, 3.27698, -4.43633, 3.36829, -7.57051, 2.54639, -7.62189, 2.54639, -8.08431 )
+
+[node name="Lamp Post11" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -504.878, -501.652 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post25" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -504.878, -501.652 )
+scale = Vector2( 0.953207, 2.18165 )
+polygon = PoolVector2Array( -3.69873, -8.95082, -3.69873, -8.46465, -4.90417, -8.46465, -4.90417, -4.77782, -3.79144, -4.73732, -3.60602, -2.91415, -2.586, -2.91415, -2.586, -2.509, -1.65875, -2.509, -1.56604, 4.7836, -4.71875, 4.7836, -4.81146, 8.02477, 4.83221, 8.06528, 4.73944, 4.82413, 1.6795, 4.82413, 1.77222, -2.509, 2.69946, -2.54953, 2.69946, -3.03569, 3.71942, -3.03569, 3.71942, -4.81833, 4.73944, -4.81833, 4.64673, -8.50516, 3.534, -8.46465, 3.62671, -8.95082 )
+
+[node name="Lamp Post12" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -552.961, -501.652 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post26" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -552.961, -501.652 )
+scale = Vector2( 1.12827, 2.15317 )
+polygon = PoolVector2Array( -3.06964, -9.11024, -3.06964, -8.5766, -4.16638, -8.53555, -4.08804, -4.92311, -3.14798, -4.92311, -3.22629, -2.99374, -2.28625, -2.99374, -2.28625, -2.54218, -1.42453, -2.58324, -1.34619, 4.84688, -4.08804, 4.92899, -4.0097, 8.08986, 3.98093, 8.08986, 4.05927, 4.88794, 1.31738, 4.84688, 1.39572, -2.54218, 2.17911, -2.54218, 2.10077, -3.03479, 3.11917, -3.03479, 3.19751, -4.88206, 3.90259, -4.88206, 3.98093, -8.5766, 3.04083, -8.5766, 3.04083, -9.0692 )
+
+[node name="Lamp Post13" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -649.128, -515.794 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post27" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -649.128, -515.794 )
+scale = Vector2( 1, 2.26186 )
+polygon = PoolVector2Array( -3.59314, -8.64423, -3.59314, -8.22975, -4.59314, -8.20212, -4.53064, -4.63757, -3.65564, -4.63757, -3.59314, -2.84149, -2.46814, -2.84149, -2.46814, -2.427, -1.59314, -2.39937, -1.53064, 4.61919, -4.53064, 4.61919, -4.53064, 7.74161, 4.46936, 7.71397, 4.40686, 4.59155, 1.46936, 4.61919, 1.46936, -2.45464, 2.40686, -2.45464, 2.40686, -2.89676, 3.53186, -2.89676, 3.53186, -4.66521, 4.40686, -4.66521, 4.46936, -8.17448, 3.40686, -8.20212, 3.40686, -8.61659 )
+
+[node name="Lamp Post14" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -407.297, -516.501 )
+texture = ExtResource( 17 )
+
+[node name="Lamp Post28" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
+position = Vector2( -407.297, -516.501 )
+scale = Vector2( 1.03814, 2.50342 )
+polygon = PoolVector2Array( -3.35812, -7.80231, -3.47855, -7.3779, -4.32141, -7.3779, -4.38159, -4.18227, -3.35812, -4.20723, -3.47855, -2.60942, -2.39487, -2.58446, -2.39487, -2.20996, -1.43161, -2.185, -1.43161, 4.18129, -4.38159, 4.18129, -4.38159, 7.02739, 4.34796, 7.02739, 4.28778, 4.13136, 1.39798, 4.15633, 1.51837, -2.20996, 2.42145, -2.20996, 2.42145, -2.60942, 3.3847, -2.63438, 3.44492, -4.18227, 4.34796, -4.20723, 4.28778, -7.40286, 3.3847, -7.42783, 3.3847, -7.77734 )
+
+[node name="Neighbor Fence Front View2" type="TileMap" parent="."]
+position = Vector2( -0.5, -5 )
+tile_set = SubResource( 27 )
+>>>>>>> Stashed changes
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2621420, 0, 0, -2555904, 0, 0, -2555884, 0, 0, -2490368, 0, 0, -2490348, 0, 0, -2424832, 0, 0, -2424812, 0, 0, -2359296, 0, 0, -2359276, 0, 0, -2293760, 0, 0, -2293740, 0, 0, -2228224, 0, 0, -2228204, 0, 0, -2162688, 0, 0, -2162668, 0, 0, -2097152, 0, 0, -2097132, 0, 0, -2031616, 0, 0, -2031596, 0, 0, -1966080, 0, 0, -1966060, 0, 0, -1900544, 0, 0, -1900524, 0, 0, -1835008, 0, 0, -1834988, 0, 0, -1769472, 0, 0, -1769452, 0, 0, -1703936, 0, 0, -1703916, 0, 0, -1638400, 0, 0, -1638380, 0, 0, -1572864, 0, 0, -1572844, 0, 0, -1507328, 0, 0, -1441772, 0, 0, -1376256, 0, 0, -1310720, 0, 0, -1310700, 0, 0, -1245184, 0, 0, -1179648, 0, 0, -1179628, 0, 0, -1114112, 0, 0, -1048576, 0, 0, -1048556, 0, 0, -327691, 0, 0, -262155, 0, 0, -131083, 0, 0, -11, 0, 0, 65525, 536870912, 0 )
@@ -939,9 +1735,15 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -1638413, 1073741824, 0, -1441805, 1073741824, 0, -1245197, 1073741824, 0, -1048589, 1073741824, 0 )
 
+<<<<<<< Updated upstream
 [node name="ROAD2" type="TileMap" parent="."]
 position = Vector2( -3.08124, -1.23251 )
 tile_set = SubResource( 27 )
+=======
+[node name="Neighbor Fence Front View" type="TileMap" parent="Neighbor Fence Front View3"]
+position = Vector2( -1.79034, 5 )
+tile_set = SubResource( 20 )
+>>>>>>> Stashed changes
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -851972, -536870912, 0 )
@@ -951,4 +1753,102 @@ position = Vector2( -3.08124, -0.616241 )
 tile_set = SubResource( 28 )
 cell_size = Vector2( 16, 16 )
 format = 1
+<<<<<<< Updated upstream
 tile_data = PoolIntArray( -655367, 536870912, 0, -655361, 536870912, 0 )
+=======
+tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
+
+[node name="Neighbor Fence Front View4" type="TileMap" parent="."]
+position = Vector2( 1131.1, -7.05862 )
+tile_set = SubResource( 27 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
+
+[node name="Neighbor Fence Front View" type="TileMap" parent="Neighbor Fence Front View4"]
+position = Vector2( -1.79034, 5 )
+tile_set = SubResource( 20 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573, 0, 0, -1048571, 0, 0, -1048563, 0, 0, -1048561, 0, 0, -1048559, 0, 0, -1048557, 0, 0 )
+
+[node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View4"]
+position = Vector2( -3.5, 0 )
+tile_set = SubResource( 29 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
+
+[node name="Neighbor Fence Front View5" type="TileMap" parent="."]
+position = Vector2( 1757.28, -6.12259 )
+tile_set = SubResource( 27 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
+
+[node name="Neighbor Fence Front View" type="TileMap" parent="Neighbor Fence Front View5"]
+position = Vector2( -1.79034, 5 )
+tile_set = SubResource( 20 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573, 0, 0, -1048571, 0, 0, -1048563, 0, 0, -1048561, 0, 0, -1048559, 0, 0, -1048557, 0, 0 )
+
+[node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View5"]
+position = Vector2( -3.5, 0 )
+tile_set = SubResource( 29 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
+
+[node name="Neighbor Homes" type="StaticBody2D" parent="."]
+
+[node name="Neighbor Home" type="Sprite" parent="Neighbor Homes"]
+position = Vector2( 155.511, -427.108 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+
+[node name="Neighbor Home3" type="CollisionPolygon2D" parent="Neighbor Homes"]
+position = Vector2( 155.511, -427.108 )
+scale = Vector2( 16.254, -70.7206 )
+polygon = PoolVector2Array( -7.02659, -1.57919, -1.30587, -1.58919, -1.30587, -1.65918, -1.08835, -1.66418, -1.08835, -1.79916, -0.936084, -1.79916, -0.936084, -1.83416, 0.912819, -1.83916, 0.956323, -1.79916, 1.13034, -1.79916, 1.15209, -1.66918, 1.2826, -1.66918, 1.30435, -1.58919, 7.00333, -1.58419, 7.00333, -1.21425, 7.19909, -1.20925, 7.22085, -0.619328, 7.35135, -0.60933, 7.39486, 1.07043, 2.91399, 1.87032, -2.93725, 1.88532, -7.37462, 1.08043, -7.37462, -0.604331, -7.17885, -0.60933, -7.20061, -1.20425, -7.00484, -1.20425 )
+
+[node name="Neighbor Home2" type="Sprite" parent="Neighbor Homes"]
+position = Vector2( 717.003, -425.694 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 19 )
+
+[node name="Neighbor Home4" type="CollisionPolygon2D" parent="Neighbor Homes"]
+position = Vector2( 717.003, -425.694 )
+scale = Vector2( 14.1052, 16.4972 )
+polygon = PoolVector2Array( -8.51121, 2.61208, -8.28563, 2.63351, -8.31069, 5.14095, -8.13523, 5.16238, -8.11016, 6.79114, -1.49287, 6.81257, -1.49287, 7.1769, -1.26728, 7.1769, -1.26728, 7.7341, -1.09183, 7.7341, -1.09183, 7.88412, 1.06381, 7.90555, 1.06381, 7.7341, 1.28939, 7.7341, 1.28939, 7.1769, 1.51498, 7.1769, 1.51498, 6.81257, 8.10721, 6.834, 8.13227, 5.20524, 8.30773, 5.14095, 8.30773, 2.59065, 8.50826, 2.59065, 8.53333, -4.67448, 3.36983, -8.08202, -3.39785, -8.06059, -8.53628, -4.63162 )
+
+[node name="Neighbor Home5" type="Sprite" parent="Neighbor Homes"]
+position = Vector2( 1293.36, -423.553 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 19 )
+
+[node name="Neighbor Home6" type="CollisionPolygon2D" parent="Neighbor Homes"]
+position = Vector2( 1293.36, -423.553 )
+scale = Vector2( 14.1052, 16.4972 )
+polygon = PoolVector2Array( -8.51121, 2.61208, -8.28563, 2.63351, -8.31069, 5.14095, -8.13523, 5.16238, -8.11016, 6.79114, -1.49287, 6.81257, -1.49287, 7.1769, -1.26728, 7.1769, -1.26728, 7.7341, -1.09183, 7.7341, -1.09183, 7.88412, 1.06381, 7.90555, 1.06381, 7.7341, 1.28939, 7.7341, 1.28939, 7.1769, 1.51498, 7.1769, 1.51498, 6.81257, 8.10721, 6.834, 8.13227, 5.20524, 8.30773, 5.14095, 8.30773, 2.59065, 8.50826, 2.59065, 8.53333, -4.67448, 3.36983, -8.08202, -3.39785, -8.06059, -8.53628, -4.63162 )
+
+[node name="Sign Posts" type="StaticBody2D" parent="."]
+
+[node name="Sign Post" type="Sprite" parent="Sign Posts"]
+position = Vector2( -428.63, -247.093 )
+texture = ExtResource( 15 )
+
+[node name="Sign Post2" type="Sprite" parent="Sign Posts"]
+position = Vector2( 914.542, -249.215 )
+texture = ExtResource( 15 )
+
+[node name="Sign Post3" type="CollisionPolygon2D" parent="Sign Posts"]
+position = Vector2( -429.25, -251 )
+scale = Vector2( 1.3403, 1.8 )
+polygon = PoolVector2Array( -7.43942, -5.30704, -7.34616, -2.18204, -2.31, 1.70685, -2.21674, 8.37352, -1.47061, 9.06796, 0.114838, 9.06796, 0.860931, 8.44296, 0.860931, 1.84575, 6.923, 1.91519, 8.32193, 0.526306, 8.32193, -0.862595, 6.64322, -1.90425, 0.860931, -1.83481, 0.860931, -3.64037, 0.114838, -4.26537, -1.28409, -4.26537, -2.03021, -3.64037, -2.12347, -3.15425, -2.68304, -3.08481, -5.29437, -5.16815 )
+
+[node name="Sign Post4" type="CollisionPolygon2D" parent="Sign Posts"]
+position = Vector2( 914.542, -249.215 )
+scale = Vector2( 1.47145, 1.68993 )
+polygon = PoolVector2Array( -7.15405, -8.01511, -7.15405, -4.53864, -2.43933, -0.285507, -2.39685, 6.74142, -1.7597, 7.40712, -0.358032, 7.37015, 0.321533, 6.7784, 0.406494, -0.285507, 5.75836, -0.285507, 7.11755, -1.50597, 7.11755, -3.20721, 5.71588, -4.42769, 0.364014, -4.42769, 0.321533, -6.20291, -0.358032, -6.75766, -1.6748, -6.79465, -2.39685, -6.23988, -2.43933, -5.61116, -2.99152, -5.61116, -2.99152, -6.20291, -5.15771, -7.94115 )
+>>>>>>> Stashed changes
