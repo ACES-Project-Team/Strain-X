@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alcohol spray bottle-Sheet.png-3b90b68fd45310359a2fcc20d6af18fb.stex"
+path="res://.import/alcohol spray bottle-Sheet.png-412c25e012a58eda2cc970b8c8186948.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/UI/alcohol spray bottle-Sheet.png"
-dest_files=[ "res://.import/alcohol spray bottle-Sheet.png-3b90b68fd45310359a2fcc20d6af18fb.stex" ]
+source_file="res://Day 1/Item_Icons/alcohol spray bottle-Sheet.png"
+dest_files=[ "res://.import/alcohol spray bottle-Sheet.png-412c25e012a58eda2cc970b8c8186948.stex" ]
 
 [params]
 

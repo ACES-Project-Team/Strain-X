@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Day 1/Item_Icons/alcohol spray bottle-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Items.gd" type="Script" id=2]
+
+
+[node name="Items" type="Node2D"]
+z_index = 1
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
