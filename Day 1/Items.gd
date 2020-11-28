@@ -8,7 +8,7 @@ func _ready():
 	if rand_val == 0:
 		 item_name = "Alcohol Spray" 
 	elif rand_val == 1: 
-		item_name = "Surgical Mask"
+		item_name = "Face Shield"
 	else: 
 		item_name = "Vitamins"
 	
