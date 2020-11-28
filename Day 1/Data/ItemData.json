@@ -1,42 +1,42 @@
 {
-	“Alcohol Spray”:  {
-	“ItemCategory”: “Resource”,
-	“StackSize”: 10,
-	“Description”:  “Alcohol in a spray gun.” 
-	“AddDamage”: 5, 
-}, 
-	“Face Shield”:  {
-	“ItemCategory”: “Defense”, 
-	“StackSize”: 10, 
-	“Description”:  “Item of PPE that covers a person’s face to protect him/her from infection.” 
-	“AddDefense”: 25, 
-}, 
-
-	“Vitamins”:  {
-	“ItemCategory”:  “Consumable”, 
-	“StackSize”: 30,
-	“AddHealth”: 30, 
-},
-
-	“Uv Box”:  {
-	“ItemCategory”:  “Defense”, 
-	“StackSize”: 10,
-	“Description”:  “Device that produces UV light to sterilize objects from bacteria and viruses. ” 
-	“AddDamage”: 75, 
-},
-
-	“UV Lightsaber”:  {
-	“ItemCategory”: “Defense”, 
-	“StackSize”: 10, 
-	“AddDamage”: 5, 
-	“Description”: “Acts like a sword.” 
-
-},
-
-	“Surgical Mask”:  { 
-	“ItemCategory”: “Defense”, 
-	“Stack Size”: 10, 
-	“Description”:  “A type of mask commonly used to protect oneself from the virus.” 
-	“AddDefense”: 25, 
-	}
+  "Alcohol Spray": {
+    "ItemCategory": "Resource",
+    "StackSize": 10,
+    "Description": "A sturdy tree branch that can be used for crafting."
+  },
+  "Vitamins": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 50,
+    "Description": "It smells like medicine."
+  },
+   "Uv LightSaber": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 1,
+    "Description": "It smells like medicine."
+  },
+   "Face Shield": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 1,
+    "Description": "It smells like medicine."
+  },
+   "Uv Box": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 10,
+    "Description": "It smells like medicine."
+  },
+   "Surgical Mask": {
+    "ItemCategory": "Sword",
+    "ItemAttack": 3,
+    "ItemSpeed": 0.75, 
+    "StackSize": 1,
+    "Description": "Quite a rusty sword, but should be able to get the job done."
+  }
 }
