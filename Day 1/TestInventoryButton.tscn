@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://Inventory.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Day 1/UI/inventory icon-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://Day 1/Item_Icons/Uv LightSaber.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 23.1879
+margin_top = 49.6482
+margin_right = 114.188
+margin_bottom = 92.6482
+text = "Inventory"
+icon = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 87.5377, -20.6389 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 416.599
+margin_top = -1.25993
+margin_right = 475.599
+margin_bottom = 57.7401
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/face shield-Sheet.png-852eafa1c284aa70b38c4dda2986bb59.stex"
+path="res://.import/Uv Box.png-a32db81be75950240225eb0334dd2e2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/Item_Icons/face shield-Sheet.png"
-dest_files=[ "res://.import/face shield-Sheet.png-852eafa1c284aa70b38c4dda2986bb59.stex" ]
+source_file="res://Day 1/Item_Icons/Uv Box.png"
+dest_files=[ "res://.import/Uv Box.png-a32db81be75950240225eb0334dd2e2e.stex" ]
 
 [params]
 

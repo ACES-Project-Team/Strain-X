@@ -4,7 +4,7 @@ const SlotClass = preload ("res://Slot.gd")
 onready var inventory_slots = $GridContainer 
 var holding_item = null 
 
-func _ready(): 
+func _ready():
 	for inv_slot in inventory_slots.get_children():
 		inv_slot.connect("gui_input", self, "slot_gui_input", [inv_slot])
 	
