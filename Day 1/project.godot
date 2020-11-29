@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Strain-X"
-run/main_scene="res://Titile Screen.tscn"
+run/main_scene="res://Title Screen.tscn"
 
 [autoload]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uv lightsaber-Sheet.png-3c9401081cb277ffd1c4a708a7808419.stex"
+path="res://.import/Vitamins.png-1f84632af81e11a63cec0ae7e7174765.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/UI/uv lightsaber-Sheet.png"
-dest_files=[ "res://.import/uv lightsaber-Sheet.png-3c9401081cb277ffd1c4a708a7808419.stex" ]
+source_file="res://Day 1/UI/Vitamins.png"
+dest_files=[ "res://.import/Vitamins.png-1f84632af81e11a63cec0ae7e7174765.stex" ]
 
 [params]
 

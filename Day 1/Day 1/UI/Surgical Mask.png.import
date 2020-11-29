@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vitamins-Sheet.png-e78bac106ea000b4d888d8051924fdaf.stex"
+path="res://.import/Surgical Mask.png-b9a81b1cfcea3e340413e4e77ebce0d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/UI/vitamins-Sheet.png"
-dest_files=[ "res://.import/vitamins-Sheet.png-e78bac106ea000b4d888d8051924fdaf.stex" ]
+source_file="res://Day 1/UI/Surgical Mask.png"
+dest_files=[ "res://.import/Surgical Mask.png-b9a81b1cfcea3e340413e4e77ebce0d0.stex" ]
 
 [params]
 
