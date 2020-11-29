@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=11 format=2]
+=======
+[gd_scene load_steps=10 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=2]
@@ -9,9 +13,12 @@
 [ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 [ext_resource path="res://ItemDrop.tscn" type="PackedScene" id=9]
+<<<<<<< Updated upstream
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6.49014, 4.39405 )
+=======
+>>>>>>> Stashed changes
 
 [node name="Day1" type="Node2D"]
 __meta__ = {
@@ -50,4 +57,8 @@ script = ExtResource( 8 )
 [node name="InventoryButton" parent="UserInterface" instance=ExtResource( 7 )]
 
 [node name="ItemDrop" parent="." instance=ExtResource( 9 )]
+<<<<<<< Updated upstream
 position = Vector2( 136.442, -8.92691 )
+=======
+position = Vector2( 138.715, -160.694 )
+>>>>>>> Stashed changes

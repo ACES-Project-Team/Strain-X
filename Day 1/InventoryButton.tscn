@@ -5,7 +5,10 @@
 [ext_resource path="res://Day 1/UI/inventory icon-Sheet.png" type="Texture" id=3]
 
 [node name="InventoryButton" type="Node2D"]
+<<<<<<< Updated upstream
 position = Vector2( -407.382, 9.474 )
+=======
+>>>>>>> Stashed changes
 script = ExtResource( 1 )
 
 [node name="Button" type="Button" parent="."]
