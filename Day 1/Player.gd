@@ -27,3 +27,14 @@ func _physics_process(delta):
 		
 			
 	velocity = move_and_slide(velocity)
+
+
+func _on_PickUpZone_body_exited(body):
+	pass # Replace with function body.
+
+func _input(event): 
+	if event.is_action_pressed("PickUp "): 
+		if $PickUpZone.items_in_range.size() > 0: 
+			var pickup_item = $PickUpZone.items_in_range.values()[0]
+			pickup_item.pick_up_item(self)
+			$PickUpZone.items_in_range.erase(pickup_item)
