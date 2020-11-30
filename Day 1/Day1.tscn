@@ -15,7 +15,7 @@ __meta__ = {
 }
 
 [node name="Outside" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2.34, 4.63083 )
+position = Vector2( 2.05898, 4.63083 )
 
 [node name="Kitchen" parent="." instance=ExtResource( 2 )]
 position = Vector2( -0.475393, 146.038 )
@@ -29,7 +29,7 @@ position = Vector2( -16.797, -162.443 )
 [node name="LivingRoom" parent="." instance=ExtResource( 3 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -12.7833, 38.5515 )
+position = Vector2( 152.173, 48.6681 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
