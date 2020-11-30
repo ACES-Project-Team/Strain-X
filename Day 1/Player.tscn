@@ -277,7 +277,11 @@ hframes = 64
 frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2( 133.462, 68.4611 )
+=======
+position = Vector2( 0.0439148, 7.50902 )
+>>>>>>> Stashed changes
 rotation = 1.5708
 shape = SubResource( 1 )
 
