@@ -1,7 +1,8 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Day 1/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://CutsceneCamera.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 3.26704
@@ -264,6 +265,8 @@ start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=27]
 
+[sub_resource type="GDScript" id=28]
+
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
 collision_mask = 9
@@ -303,3 +306,8 @@ parameters/Run/blend_position = Vector2( -0.00270271, -0.0314655 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+smoothing_enabled = true
+script = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="Camera2D"]
+script = SubResource( 28 )

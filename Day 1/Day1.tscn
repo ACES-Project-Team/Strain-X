@@ -16,7 +16,7 @@ __meta__ = {
 }
 
 [node name="Outside" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2.05898, 4.73563 )
+position = Vector2( -14.8924, 11.0924 )
 
 [node name="Kitchen" parent="." instance=ExtResource( 2 )]
 position = Vector2( -0.475393, 146.038 )
