@@ -1,8 +1,11 @@
 extends KinematicBody2D
 
+enum State { STOP, MOVE }
+
 const ACCELERATION =500	
 const MAX_SPEED = 80
 const FRICTION = 500
+var state = State.MOVE
 
 var velocity = Vector2.ZERO
 
@@ -25,5 +28,12 @@ func _physics_process(delta):
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta) 
 		
-			
+	
 	velocity = move_and_slide(velocity)
+
+func play_walk_in_animation():
+		state = State.STOP
+		$AnimationPlayer.play("RunUp")
+
+
+
