@@ -1,8 +1,11 @@
 extends KinematicBody2D
 
+enum State { STOP, MOVE }
+
 const ACCELERATION =500	
 const MAX_SPEED = 80
 const FRICTION = 500
+var state = State.MOVE
 
 var velocity = Vector2.ZERO
 
@@ -33,3 +36,9 @@ func _input(event):
 			var pickup_item = $PickUpZone.items_in_range.values()[0]
 			pickup_item.pick_up_item(self)
 			$PickUpZone.items_in_range.erase(pickup_item)
+	
+	velocity = move_and_slide(velocity)
+
+func play_walk_in_animation():
+		state = State.STOP
+		$AnimationPlayer.play("RunUp")

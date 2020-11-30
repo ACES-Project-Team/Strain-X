@@ -22,6 +22,7 @@ run/main_scene="res://Title Screen.tscn"
 
 JsonData="*res://JsonData.gd"
 PlayerInventory="*res://PlayerInventory.gd"
+Hitbox="*res://Hitbox.tscn"
 
 [display]
 
@@ -89,6 +90,14 @@ PickUp={
 2d_physics/layer_1="Player"
 2d_physics/layer_2="World"
 2d_physics/layer_3="ItemDrop "
+2d_physics/layer_1="World"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="playerHurtBox"
+2d_physics/layer_5="enemyHurtBox"
+2d_physics/layer_6="NPC"
+2d_physics/layer_7="Door"
+2d_physics/layer_8="Items"
 2d_physics/layer_4="Door"
 
 [rendering]
