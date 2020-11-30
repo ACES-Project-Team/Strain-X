@@ -28,7 +28,7 @@ func _ready():
 		$Label.text = String(item_quantity)
 
 
-func set_item (nm, qt):
+func set_item(nm, qt):
 	item_name = nm 
 	item_quantity = qt
 	$TextureRect.texture = load("res://Day 1/Item_Icons/" + item_name + ".png")
@@ -37,8 +37,9 @@ func set_item (nm, qt):
 	if stack_size == 1: 
 		$Label.visible = true 
 	else: 
-		$Label.visible = true
+		$Label.visible = false 
 		$Label.text = String(item_quantity)
+		
 func add_item_quantity(amount_to_add):
 	item_quantity += amount_to_add 
 	$Label.text = String(item_quantity)

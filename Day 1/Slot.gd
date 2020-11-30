@@ -28,9 +28,8 @@ func pickFromSlot():
 	remove_child(item)
 	var inventoryNode = find_parent("Inventory")
 	inventoryNode.add_child(item)
-	item= null
+	item = null
 	refresh_style()
-	
 	
 func putIntoSlot(new_item): 
 	item = new_item

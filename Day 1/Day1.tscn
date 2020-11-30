@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=2]
@@ -6,10 +6,9 @@
 [ext_resource path="res://Bedroom1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Outside.tscn" type="PackedScene" id=6]
-[ext_resource path="res://TestInventoryButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 [ext_resource path="res://ItemDrop.tscn" type="PackedScene" id=9]
-[ext_resource path="res://PlayerInventory.gd" type="Script" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.0812, 4.09451 )
@@ -22,7 +21,6 @@ __meta__ = {
 [node name="Ground" type="StaticBody2D" parent="."]
 collision_layer = 2
 collision_mask = 7
-script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
 position = Vector2( -29.33, -27.2881 )
@@ -44,8 +42,6 @@ position = Vector2( -16.797, -162.443 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -12.7833, 38.5515 )
-collision_layer = 1
-collision_mask = 2
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )

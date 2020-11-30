@@ -9,7 +9,7 @@ var player = null
 var being_picked_up = false 
 
 func _ready():
-	item_name = "Alcohol Spray "
+	item_name = "Alcohol Spray"
 	
 func _physics_process(delta):
 	if being_picked_up == false: 
@@ -20,8 +20,9 @@ func _physics_process(delta):
 	
 		var distance = global_position.distance_to(player.global_position)
 		if distance < 4: 
+			PlayerInventory.add_item(item_name, 1)
 			queue_free()
-		velocity = move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP)
 
 func pick_up_item(body):
 	player = body 

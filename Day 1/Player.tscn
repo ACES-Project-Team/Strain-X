@@ -270,7 +270,7 @@ extents = Vector2( 14.6234, 13.0477 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 0, -0.686012 )
-collision_layer = 2
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -311,6 +311,8 @@ position = Vector2( 133.33, 68.5471 )
 current = true
 
 [node name="PickUpZone" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]
