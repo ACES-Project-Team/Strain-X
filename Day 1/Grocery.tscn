@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Day 1/World/Grocery Inside Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -207,8 +207,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( 16, 6.87749, 0, 6.87749, 0, 0.179249, 16, 0.179249 )
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 7, 0, 7 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 0, 0, 5.93875, 0.0824089, 5.75182, 10.083, 9.49037, 10.4569, 15.659, 10.8307, 15.8459, 16.3451, 0, 16.1582, 0.0505295, 0, 0.237457, 0.456264 )
@@ -227,14 +227,14 @@ points = PoolVector2Array( 16.1531, 0.362804, 16.3401, 0.269337, 16.7139, 16.719
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 11 )
+2/shape = SubResource( 20 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 20 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -333,6 +333,8 @@ points = PoolVector2Array( 5.75201, 0, 5.75201, 10.7788, 16.4069, 10.7788, 17, 1
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 35.8775, 41.999 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=19]
 
 [node name="Grocery" type="Node2D"]
 
@@ -584,4 +586,9 @@ texture = ExtResource( 6 )
 polygon = PoolVector2Array( -25.3221, -5.63831, -25.3221, 7.05289, -23.4452, 7.94662, -23.8921, 18.4928, -23.8921, 20.8166, 24.9065, 20.9953, 25.264, 4.9079, 25.7109, -20.2957, 11.679, -20.6532, 10.6959, -19.9382, 10.7853, -7.69392, -25.4114, -7.24706 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, -0.396705 )
+position = Vector2( 226.124, 213.726 )
+
+[node name="AnimationTree" parent="Player" index="3"]
+parameters/playback = SubResource( 19 )
+
+[editable path="Player"]
