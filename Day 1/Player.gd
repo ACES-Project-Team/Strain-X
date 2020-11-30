@@ -28,12 +28,17 @@ func _physics_process(delta):
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta) 
 		
+	velocity = move_and_slide(velocity)
+	
+func _input(event):
+	if event.is_action_pressed("PickUp"):
+		if $PickUpZone.items_in_range.size() > 0: 
+			var pickup_item = $PickUpZone.items_in_range.values()[0]
+			pickup_item.pick_up_item(self)
+			$PickUpZone.items_in_range.erase(pickup_item)
 	
 	velocity = move_and_slide(velocity)
 
 func play_walk_in_animation():
 		state = State.STOP
 		$AnimationPlayer.play("RunUp")
-
-
-
