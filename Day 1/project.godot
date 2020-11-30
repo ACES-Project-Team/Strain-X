@@ -98,7 +98,6 @@ PickUp={
 2d_physics/layer_6="NPC"
 2d_physics/layer_7="Door"
 2d_physics/layer_8="Items"
-2d_physics/layer_4="Door"
 
 [rendering]
 
