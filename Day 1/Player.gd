@@ -10,6 +10,13 @@ const MAX_SPEED = 80
 const FRICTION = 500
 var state = MOVE
 
+const Alcohol_Spray_texture = preload("res://Day 1/Item_Icons/Alcohol Spray.png")
+const Uv_LightSaber_texture = preload("res://Day 1/Item_Icons/Uv LightSaber.png")
+const Surgical_Mask_texture = preload("res://Day 1/Item_Icons/Surgical Mask.png")
+const Face_Shield_texture = preload("res://Day 1/Item_Icons/Face Shield.png")
+
+onready var on_hand_sprite = $Sprites/OnHandSprite 
+
 var velocity = Vector2.ZERO
 
 onready var animationPlayer = $AnimationPlayer 
@@ -69,3 +76,11 @@ func _input(event):
 func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("RunUp")
+		
+		
+func _unhandled_input(event):
+	if event.is_action_pressed("change_to_spray"):
+		on_hand_sprite.texture = Alcohol_Spray_texture
+	elif event.is_action_pressed("change_to_lightsaber"):
+		on_hand_sprite.texture = Uv_LightSaber_texture
+	
