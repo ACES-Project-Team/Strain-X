@@ -415,19 +415,19 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 } ]
 0/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 4.49902, 11.6486 )
 
-[sub_resource type="RectangleShape2D" id=24]
+[sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 4.52646, 11.5955 )
 
-[sub_resource type="RectangleShape2D" id=25]
+[sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 4.51563, 11.6384 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
+[sub_resource type="ConvexPolygonShape2D" id=34]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 18, 0, 18 )
 
-[sub_resource type="TileSet" id=27]
+[sub_resource type="TileSet" id=35]
 0/name = "Outside Fence.png 0"
 0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
@@ -438,22 +438,22 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 18, 0, 18 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 26 )
+0/shape = SubResource( 34 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 26 ),
+"shape": SubResource( 34 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=28]
+[sub_resource type="ConvexPolygonShape2D" id=29]
 points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 
-[sub_resource type="TileSet" id=29]
+[sub_resource type="TileSet" id=30]
 0/name = "Outside Fence Side View.png 0"
 0/texture = ExtResource( 10 )
 0/tex_offset = Vector2( 0, 0 )
@@ -464,14 +464,14 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 28 )
+0/shape = SubResource( 29 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 28 ),
+"shape": SubResource( 29 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -1334,8 +1334,9 @@ position = Vector2( -527.753, -613.375 )
 texture = ExtResource( 16 )
 
 [node name="Grocery2" type="CollisionPolygon2D" parent="Grocery"]
+position = Vector2( 0, -12.4907 )
 scale = Vector2( 15.2328, 13.222 )
-polygon = PoolVector2Array( -8.00694, 5.9487, -0.654396, 5.98651, -0.654396, 3.37723, 0.724209, 3.33941, 0.691383, 5.98651, 8.01111, 5.9487, 8.1424, -8.34566, -8.10542, -8.34566 )
+polygon = PoolVector2Array( -8.04154, -7.24632, -8.04154, 7.08683, -0.548599, 7.28229, -0.579464, 6.08228, 0.665367, 6.08228, 0.752064, 7.15198, 8.13191, 7.15198, 8.13191, -7.34405 )
 
 [node name="Mailboxes and Lamp Posts" type="StaticBody2D" parent="."]
 
@@ -1345,7 +1346,7 @@ texture = ExtResource( 18 )
 
 [node name="MC Mailbox2" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 120.53, -142.539 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Neighbor Mailbox" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 123.252, -250.221 )
@@ -1353,7 +1354,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox3" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 123.252, -251.221 )
-shape = SubResource( 24 )
+shape = SubResource( 32 )
 
 [node name="Neighbor Mailbox2" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 684.695, -250.928 )
@@ -1361,7 +1362,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox4" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 684.695, -251.678 )
-shape = SubResource( 25 )
+shape = SubResource( 33 )
 
 [node name="Neighbor Mailbox5" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 1251.82, -253.133 )
@@ -1369,7 +1370,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox6" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 1251.82, -253.883 )
-shape = SubResource( 25 )
+shape = SubResource( 33 )
 
 [node name="Neighbor Mailbox7" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 1814.36, -255.315 )
@@ -1377,7 +1378,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox8" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 1814.36, -256.065 )
-shape = SubResource( 25 )
+shape = SubResource( 33 )
 
 [node name="Neighbor Mailbox9" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 2370.39, -256 )
@@ -1385,7 +1386,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox10" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 2370.39, -256.75 )
-shape = SubResource( 25 )
+shape = SubResource( 33 )
 
 [node name="Neighbor Mailbox11" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 2923.14, -257.546 )
@@ -1393,7 +1394,7 @@ texture = ExtResource( 6 )
 
 [node name="Neighbor Mailbox12" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 2923.14, -258.296 )
-shape = SubResource( 25 )
+shape = SubResource( 33 )
 
 [node name="Lamp Post" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 184.17, -147.195 )
@@ -1559,7 +1560,7 @@ polygon = PoolVector2Array( -3.35812, -7.80231, -3.47855, -7.3779, -4.32141, -7.
 
 [node name="Neighbor Fence Front View2" type="TileMap" parent="."]
 position = Vector2( -0.5, -5 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1573,14 +1574,14 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View2"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
 [node name="Neighbor Fence Front View3" type="TileMap" parent="."]
 position = Vector2( 560.943, -4.99994 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1594,14 +1595,14 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View3"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
 [node name="Neighbor Fence Front View4" type="TileMap" parent="."]
 position = Vector2( 1127.17, -6.36743 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1615,14 +1616,14 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View4"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
 [node name="Neighbor Fence Front View5" type="TileMap" parent="."]
 position = Vector2( 1691.61, -9.0968 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1636,14 +1637,14 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View5"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
 [node name="Neighbor Fence Front View6" type="TileMap" parent="."]
 position = Vector2( 2245.64, -9.78161 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1657,14 +1658,14 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View6"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
 [node name="Neighbor Fence Front View7" type="TileMap" parent="."]
 position = Vector2( 2798.4, -10.5547 )
-tile_set = SubResource( 27 )
+tile_set = SubResource( 35 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2228225, 0, 0, -2293759, 0, 0, -2293757, 0, 0, -2293755, 0, 0, -2293753, 0, 0, -2293751, 0, 0, -2293749, 0, 0, -2293747, 0, 0, -2293745, 0, 0, -2293743, 0, 0, -2293741, 0, 0 )
@@ -1678,7 +1679,7 @@ tile_data = PoolIntArray( -983043, 0, 0, -983041, 0, 0, -1048575, 0, 0, -1048573
 
 [node name="Neighbor Fence Side View" type="TileMap" parent="Neighbor Fence Front View7"]
 position = Vector2( -3.5, 0 )
-tile_set = SubResource( 29 )
+tile_set = SubResource( 30 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
