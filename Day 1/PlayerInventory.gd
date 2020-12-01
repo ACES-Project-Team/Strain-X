@@ -1,9 +1,11 @@
 extends Node
 
+const SlotClass = preload ("res://Slot.gd")
 const NUM_INVENTORY_SLOTS = 9
+const ItemClass = preload ("res://Items.gd")
 
 var inventory = {
-	0: ["Face Shield", 1]
+	
 }
 
 func add_item(item_name, item_quantity):
@@ -16,3 +18,12 @@ func add_item(item_name, item_quantity):
 		if inventory.has(i) == false: 
 			inventory[i] = [item_name, item_quantity]
 			return
+
+func remove_item(slot: SlotClass): 
+	inventory.erase(slot.slot_index)
+	
+func add_item_to_empty_slot(item: ItemClass, slot: SlotClass):
+	inventory[slot.slot_index] = [item.item_name, item.item_quantity]
+
+func add_item_quantity(slot: SlotClass, quantity_to_add: int):
+	inventory[slot.slot_index] [1] += quantity_to_add
