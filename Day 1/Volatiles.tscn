@@ -12,7 +12,7 @@
 radius = 3.85703
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 44.117
+radius = 73.8636
 
 [sub_resource type="CircleShape2D" id=3]
 
@@ -326,6 +326,7 @@ graph_offset = Vector2( -820, 0 )
 position = Vector2( 183.882, 57.6473 )
 collision_layer = 2147483652
 script = ExtResource( 1 )
+max_speed = 65
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -340,7 +341,6 @@ shape = SubResource( 1 )
 visible = false
 
 [node name="DetectionZone" parent="." instance=ExtResource( 3 )]
-visible = false
 collision_layer = 0
 collision_mask = 2
 
@@ -366,6 +366,7 @@ position = Vector2( 0.561859, -0.374577 )
 shape = SubResource( 4 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
+MAX_HEALTH = 30
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "idledown"
@@ -390,7 +391,9 @@ parameters/playback = SubResource( 39 )
 parameters/attack/blend_position = Vector2( -0.0263621, 0.815517 )
 parameters/idle/blend_position = Vector2( 0.072973, 0.483621 )
 parameters/walk/blend_position = Vector2( 0.0017575, 0.00948286 )
+[connection signal="body_entered" from="Hitbox" to="." method="_on_Hitbox_body_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="DetectionZone"]
 

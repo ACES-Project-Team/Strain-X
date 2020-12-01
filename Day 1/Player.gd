@@ -5,10 +5,12 @@ enum {
 	MOVE, 
 	ATTACK }
 
-const ACCELERATION =500	
+const ACCELERATION = 500
 const MAX_SPEED = 80
 const FRICTION = 500
 var state = MOVE
+
+export var hasSprayBottle = false
 
 const Alcohol_Spray_texture = preload("res://Day 1/Item_Icons/Alcohol Spray.png")
 const Uv_LightSaber_texture = preload("res://Day 1/Item_Icons/Uv LightSaber.png")
@@ -54,8 +56,9 @@ func move_state(delta):
 		
 	velocity = move_and_slide(velocity)
 	
-	if Input.is_action_pressed("attack"):
-		state = ATTACK
+	if hasSprayBottle:
+		if Input.is_action_pressed("attack"):
+			state = ATTACK
 		
 func attack_state(delta):
 	velocity = Vector2.ZERO
