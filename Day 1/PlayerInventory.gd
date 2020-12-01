@@ -3,7 +3,7 @@ extends Node
 const NUM_INVENTORY_SLOTS = 9
 
 var inventory = {
-	0: ["Face Shield", 1]
+	
 }
 
 func add_item(item_name, item_quantity):
