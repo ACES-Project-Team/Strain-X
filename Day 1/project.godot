@@ -21,6 +21,7 @@ run/main_scene="res://Title Screen.tscn"
 [autoload]
 
 JsonData="*res://JsonData.gd"
+PlayerInventory="*res://PlayerInventory.gd"
 Hitbox="*res://Hitbox.tscn"
 
 [display]
@@ -78,13 +79,38 @@ move_down={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
  ]
 }
+PickUp={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":75,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Inventory={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"unicode":0,"echo":false,"script":null)
+ ]
+}
+change_to_spray={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":90,"unicode":0,"echo":false,"script":null)
+ ]
+}
+change_to_lightsaber={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
-2d_physics/layer_1="World"
-2d_physics/layer_2="Player"
-2d_physics/layer_3="Enemy"
-2d_physics/layer_4="playerHurtBox"
+2d_physics/layer_1="Player"
+2d_physics/layer_2="World"
+2d_physics/layer_3="ItemDrop"
+2d_physics/layer_4="Door"
 2d_physics/layer_5="enemyHurtBox"
 2d_physics/layer_6="NPC"
 2d_physics/layer_7="Door"

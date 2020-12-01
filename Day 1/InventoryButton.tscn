@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Day 1/UI/inventory icon-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Inventory.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Node2D.gd" type="Script" id=3]
+
+[node name="InventoryButton" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 415.272
+margin_top = -0.670181
+margin_right = 443.272
+margin_bottom = 21.3298
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 61.7909, -16.0954 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
