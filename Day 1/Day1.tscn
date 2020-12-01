@@ -9,6 +9,14 @@
 [ext_resource path="res://TestInventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 [ext_resource path="res://GroceryDoor.tscn" type="PackedScene" id=9]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://ItemDrop.tscn" type="PackedScene" id=10]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9.88152, 2.88874 )
+>>>>>>> Stashed changes
 
 [node name="Day1" type="Node2D"]
 __meta__ = {
