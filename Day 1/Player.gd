@@ -89,13 +89,15 @@ func _unhandled_input(event):
 	elif event.is_action_pressed("change_to_lightsaber"):
 		on_hand_sprite.texture = Uv_LightSaber_texture
 
-func _on_Hurtbox_area_entered(area):
-	PlayerStats.HEALTH -= area.damage
-	hurtbox.start_invincibility(2)
-	print(PlayerStats.HEALTH)
+func _on_Timer_timeout():
+		self.invincible = false 
 
-func _on_Hurtbox_invincibility_ended():
-	pass # Replace with function body.
 
 func _on_Hurtbox_invincibility_started():
-	pass # Replace with function body.
+	collisionshape.set_deferred("disabled",true)
+	set_deferred("Monitorable",false)
+
+
+func _on_Hurtbox_invincibility_ended():
+	collisionshape.disabled = false
+	monitorable = true
