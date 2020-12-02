@@ -343,22 +343,22 @@ extents = Vector2( 35.8775, 41.999 )
 [sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 10, 17.5553 )
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 8.67328, 14.8777 )
 
-[sub_resource type="RectangleShape2D" id=22]
+[sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 8.54617, 15.0852 )
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=22]
 extents = Vector2( 8.05828, 16.0521 )
 
-[sub_resource type="RectangleShape2D" id=24]
+[sub_resource type="RectangleShape2D" id=23]
 extents = Vector2( 8.49362, 16.0569 )
 
-[sub_resource type="RectangleShape2D" id=25]
+[sub_resource type="RectangleShape2D" id=24]
 extents = Vector2( 8.37349, 15.2583 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=20]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=25]
 
 [node name="Grocery" type="Node2D"]
 
@@ -372,6 +372,19 @@ color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ColorRect"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ColorRect/StaticBody2D"]
+position = Vector2( 456, 300 )
+polygon = PoolVector2Array( -457.362, -288.931, -458.429, 483.328, -1.89996, 484.395, -8.29987, -245.198, 466.362, -239.865, 462.096, 473.728, 917.558, 482.261, 922.891, -307.064, -462.091, -307.3, -472.175, -310.661, -457.049, -310.661 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="ColorRect/StaticBody2D"]
+position = Vector2( 456, 300 )
+polygon = PoolVector2Array( -0.918304, 261.564, -0.0221252, 488.296, 458.818, 484.711, 459.715, 259.772 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="ColorRect/StaticBody2D"]
+polygon = PoolVector2Array( 436.732, 39.8039, 438.621, 186.165, 981.572, 178.611, 993.281, 31.3055 )
 
 [node name="Wall & Floor" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
@@ -644,7 +657,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall1/StaticBody2D"]
-shape = SubResource( 21 )
+shape = SubResource( 20 )
 
 [node name="Stall2" type="Sprite" parent="."]
 position = Vector2( 376.423, 61.7396 )
@@ -656,7 +669,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall2/StaticBody2D"]
-shape = SubResource( 22 )
+shape = SubResource( 21 )
 
 [node name="Stall3" type="Sprite" parent="."]
 position = Vector2( 72.0633, 3.50076 )
@@ -668,7 +681,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall3/StaticBody2D"]
-shape = SubResource( 23 )
+shape = SubResource( 22 )
 
 [node name="Stall4" type="Sprite" parent="."]
 position = Vector2( 71.9037, 59.817 )
@@ -680,7 +693,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall4/StaticBody2D"]
-shape = SubResource( 24 )
+shape = SubResource( 23 )
 
 [node name="Stall5" type="Sprite" parent="."]
 position = Vector2( 72.526, 116.129 )
@@ -692,7 +705,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall5"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall5/StaticBody2D"]
-shape = SubResource( 25 )
+shape = SubResource( 24 )
 
 [node name="Stall6" type="Sprite" parent="."]
 position = Vector2( 376.102, 117.061 )
@@ -704,12 +717,12 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall6"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall6/StaticBody2D"]
-shape = SubResource( 21 )
+shape = SubResource( 20 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 226.124, 213.726 )
 
 [node name="AnimationTree" parent="Player" index="3"]
-parameters/playback = SubResource( 20 )
+parameters/playback = SubResource( 25 )
 
 [editable path="Player"]
