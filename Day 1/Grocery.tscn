@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=38 format=2]
+=======
+[gd_scene load_steps=43 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Day 1/World/Grocery Inside Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -12,9 +16,16 @@
 [ext_resource path="res://Day 1/World/Grocery_Stall_02-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://Day 1/World/Grocery_Stall_03-Sheet.png" type="Texture" id=11]
 [ext_resource path="res://Day 1/World/Grocery_Stall_05-Sheet.png" type="Texture" id=12]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://ItemDrop.tscn" type="PackedScene" id=13]
+[ext_resource path="res://UserInterface2.gd" type="Script" id=14]
+[ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=15]
+[ext_resource path="res://GroceryOutDoor.tscn" type="PackedScene" id=16]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10.1187, 2.16334 )
+>>>>>>> Stashed changes
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -40,7 +51,10 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="TileSet" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=11]
 0/name = "Grocery Inside Tile Set.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -60,62 +74,62 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 1 )
+0/shape = SubResource( 2 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 1 ),
+"shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 0, 1 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 2 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 0, 2 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 1, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 1, 1 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 1, 2 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 2, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 2, 1 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 2, 2 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -213,16 +227,16 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 7, 0, 7 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 0, 0, 5.93875, 0.0824089, 5.75182, 10.083, 9.49037, 10.4569, 15.659, 10.8307, 15.8459, 16.3451, 0, 16.1582, 0.0505295, 0, 0.237457, 0.456264 )
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=14]
 points = PoolVector2Array( 16.1531, 0.362804, 16.3401, 0.269337, 16.7139, 16.719, 0.731613, 16.532, 0.731613, 11.2981, 10.7322, 11.2046, 10.9192, 0, 15.4054, 0.0824089 )
 
-[sub_resource type="TileSet" id=14]
+[sub_resource type="TileSet" id=15]
 2/name = "Grocery Inside Tile Set.png 2"
 2/texture = ExtResource( 1 )
 2/tex_offset = Vector2( 0, 0 )
@@ -233,14 +247,14 @@ points = PoolVector2Array( 16.1531, 0.362804, 16.3401, 0.269337, 16.7139, 16.719
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 11 )
+2/shape = SubResource( 12 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -254,14 +268,14 @@ points = PoolVector2Array( 16.1531, 0.362804, 16.3401, 0.269337, 16.7139, 16.719
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 12 )
+3/shape = SubResource( 13 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
@@ -275,25 +289,25 @@ points = PoolVector2Array( 16.1531, 0.362804, 16.3401, 0.269337, 16.7139, 16.719
 4/navigation_offset = Vector2( 0, 0 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 13 )
+4/shape = SubResource( 14 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
+[sub_resource type="ConvexPolygonShape2D" id=16]
 points = PoolVector2Array( 16.3402, 0.684746, 16.4524, 0.572594, 16.4524, 15.6016, 0.9748, 16.4988, 0.9748, 11.2275, 10.396, 11.2275, 10.9567, 0.572594, 15.5552, 0.12397 )
 
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=17]
 points = PoolVector2Array( 5.75201, 0, 5.75201, 10.7788, 16.4069, 10.7788, 17, 17, 0, 16.1624, 0.144173, 0, 0.256325, 0.12397 )
 
-[sub_resource type="TileSet" id=17]
+[sub_resource type="TileSet" id=18]
 0/name = "Grocery Inside Tile Set.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -304,14 +318,14 @@ points = PoolVector2Array( 5.75201, 0, 5.75201, 10.7788, 16.4069, 10.7788, 17, 1
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 15 )
+0/shape = SubResource( 16 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
+"shape": SubResource( 16 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -325,43 +339,55 @@ points = PoolVector2Array( 5.75201, 0, 5.75201, 10.7788, 16.4069, 10.7788, 17, 1
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 16 )
+1/shape = SubResource( 17 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 16 ),
+"shape": SubResource( 17 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 35.8775, 41.999 )
 
-[sub_resource type="RectangleShape2D" id=19]
+[sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 10, 17.5553 )
 
-[sub_resource type="RectangleShape2D" id=20]
+[sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 8.67328, 14.8777 )
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=22]
 extents = Vector2( 8.54617, 15.0852 )
 
-[sub_resource type="RectangleShape2D" id=22]
+[sub_resource type="RectangleShape2D" id=23]
 extents = Vector2( 8.05828, 16.0521 )
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=24]
 extents = Vector2( 8.49362, 16.0569 )
 
-[sub_resource type="RectangleShape2D" id=24]
+[sub_resource type="RectangleShape2D" id=25]
 extents = Vector2( 8.37349, 15.2583 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=25]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=26]
 
 [node name="Grocery" type="Node2D"]
 
+<<<<<<< Updated upstream
+=======
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2( 203.53, 55.1825 )
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2( -1.6707, 0.208839 )
+shape = SubResource( 1 )
+
+>>>>>>> Stashed changes
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 0.25
 margin_left = -456.0
@@ -387,52 +413,55 @@ polygon = PoolVector2Array( -0.918304, 261.564, -0.0221252, 488.296, 458.818, 48
 polygon = PoolVector2Array( 436.732, 39.8039, 438.621, 186.165, 981.572, 178.611, 993.281, 31.3055 )
 
 [node name="Wall & Floor" type="TileMap" parent="."]
-tile_set = SubResource( 10 )
+tile_set = SubResource( 11 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -393212, 0, 0, -393211, 0, 1, -393210, 0, 1, -393209, 0, 1, -393208, 0, 1, -393207, 0, 1, -393206, 0, 1, -393205, 0, 1, -393204, 0, 1, -393203, 0, 1, -393202, 0, 1, -393201, 0, 1, -393200, 0, 1, -393199, 0, 1, -393198, 0, 1, -393197, 0, 1, -393196, 0, 1, -393195, 0, 1, -393194, 0, 1, -393193, 0, 2, -327676, 0, 65536, -327675, 0, 65537, -327674, 0, 65537, -327673, 0, 65537, -327672, 0, 65537, -327671, 0, 65537, -327670, 0, 65537, -327669, 0, 65537, -327668, 0, 65537, -327667, 0, 65537, -327666, 0, 65537, -327665, 0, 65537, -327664, 0, 65537, -327663, 0, 65537, -327662, 0, 65537, -327661, 0, 65537, -327660, 0, 65537, -327659, 0, 65537, -327658, 0, 65537, -327657, 0, 65538, -262140, 0, 65536, -262139, 0, 65537, -262138, 0, 65537, -262137, 0, 65537, -262136, 0, 65537, -262135, 0, 65537, -262134, 0, 65537, -262133, 0, 65537, -262132, 0, 65537, -262131, 0, 65537, -262130, 0, 65537, -262129, 0, 65537, -262128, 0, 65537, -262127, 0, 65537, -262126, 0, 65537, -262125, 0, 65537, -262124, 0, 65537, -262123, 0, 65537, -262122, 0, 65537, -262121, 0, 65538, -196604, 0, 131072, -196603, 0, 131073, -196602, 0, 131073, -196601, 0, 131073, -196600, 0, 131073, -196599, 0, 131073, -196598, 0, 131073, -196597, 0, 131073, -196596, 0, 131073, -196595, 0, 131073, -196594, 0, 131073, -196593, 0, 131073, -196592, 0, 131073, -196591, 0, 131073, -196590, 0, 131073, -196589, 0, 131073, -196588, 0, 131073, -196587, 0, 131073, -196586, 0, 131073, -196585, 0, 131074, -131068, 3, 0, -131067, 3, 1, -131066, 3, 1, -131065, 3, 1, -131064, 3, 1, -131063, 3, 1, -131062, 3, 1, -131061, 3, 1, -131060, 3, 1, -131059, 3, 1, -131058, 3, 1, -131057, 3, 1, -131056, 3, 1, -131055, 3, 1, -131054, 3, 1, -131053, 3, 1, -131052, 3, 1, -131051, 3, 1, -131050, 3, 1, -131049, 3, 2, -65532, 3, 65536, -65531, 3, 65537, -65530, 3, 65537, -65529, 3, 65537, -65528, 3, 65537, -65527, 3, 65537, -65526, 3, 65537, -65525, 3, 65537, -65524, 3, 65537, -65523, 3, 65537, -65522, 3, 65537, -65521, 3, 65537, -65520, 3, 65537, -65519, 3, 65537, -65518, 3, 65537, -65517, 3, 65537, -65516, 3, 65537, -65515, 3, 65537, -65514, 3, 65537, -65513, 3, 65538, 4, 3, 65536, 5, 3, 65537, 6, 3, 65537, 7, 3, 65537, 8, 3, 65537, 9, 3, 65537, 10, 3, 65537, 11, 3, 65537, 12, 3, 65537, 13, 3, 65537, 14, 3, 65537, 15, 3, 65537, 16, 3, 65537, 17, 3, 65537, 18, 3, 65537, 19, 3, 65537, 20, 3, 65537, 21, 3, 65537, 22, 3, 65537, 23, 3, 65538, 65540, 3, 65536, 65541, 3, 65537, 65542, 3, 65537, 65543, 3, 65537, 65544, 3, 65537, 65545, 3, 65537, 65546, 3, 65537, 65547, 3, 65537, 65548, 3, 65537, 65549, 3, 65537, 65550, 3, 65537, 65551, 3, 65537, 65552, 3, 65537, 65553, 3, 65537, 65554, 3, 65537, 65555, 3, 65537, 65556, 3, 65537, 65557, 3, 65537, 65558, 3, 65537, 65559, 3, 65538, 131076, 3, 65536, 131077, 3, 65537, 131078, 3, 65537, 131079, 3, 65537, 131080, 3, 65537, 131081, 3, 65537, 131082, 3, 65537, 131083, 3, 65537, 131084, 3, 65537, 131085, 3, 65537, 131086, 3, 65537, 131087, 3, 65537, 131088, 3, 65537, 131089, 3, 65537, 131090, 3, 65537, 131091, 3, 65537, 131092, 3, 65537, 131093, 3, 65537, 131094, 3, 65537, 131095, 3, 65538, 196612, 3, 65536, 196613, 3, 65537, 196614, 3, 65537, 196615, 3, 65537, 196616, 3, 65537, 196617, 3, 65537, 196618, 3, 65537, 196619, 3, 65537, 196620, 3, 65537, 196621, 3, 65537, 196622, 3, 65537, 196623, 3, 65537, 196624, 3, 65537, 196625, 3, 65537, 196626, 3, 65537, 196627, 3, 65537, 196628, 3, 65537, 196629, 3, 65537, 196630, 3, 65537, 196631, 3, 65538, 262148, 3, 65536, 262149, 3, 65537, 262150, 3, 65537, 262151, 3, 65537, 262152, 3, 65537, 262153, 3, 65537, 262154, 3, 65537, 262155, 3, 65537, 262156, 3, 65537, 262157, 3, 65537, 262158, 3, 65537, 262159, 3, 65537, 262160, 3, 65537, 262161, 3, 65537, 262162, 3, 65537, 262163, 3, 65537, 262164, 3, 65537, 262165, 3, 65537, 262166, 3, 65537, 262167, 3, 65538, 327684, 3, 65536, 327685, 3, 65537, 327686, 3, 65537, 327687, 3, 65537, 327688, 3, 65537, 327689, 3, 65537, 327690, 3, 65537, 327691, 3, 65537, 327692, 3, 65537, 327693, 3, 65537, 327694, 3, 65537, 327695, 3, 65537, 327696, 3, 65537, 327697, 3, 65537, 327698, 3, 65537, 327699, 3, 65537, 327700, 3, 65537, 327701, 3, 65537, 327702, 3, 65537, 327703, 3, 65538, 393220, 3, 65536, 393221, 3, 65537, 393222, 3, 65537, 393223, 3, 65537, 393224, 3, 65537, 393225, 3, 65537, 393226, 3, 65537, 393227, 3, 65537, 393228, 3, 65537, 393229, 3, 65537, 393230, 3, 65537, 393231, 3, 65537, 393232, 3, 65537, 393233, 3, 65537, 393234, 3, 65537, 393235, 3, 65537, 393236, 3, 65537, 393237, 3, 65537, 393238, 3, 65537, 393239, 3, 65538, 458756, 3, 65536, 458757, 3, 65537, 458758, 3, 65537, 458759, 3, 65537, 458760, 3, 65537, 458761, 3, 65537, 458762, 3, 65537, 458763, 3, 65537, 458764, 3, 65537, 458765, 3, 65537, 458766, 3, 65537, 458767, 3, 65537, 458768, 3, 65537, 458769, 3, 65537, 458770, 3, 65537, 458771, 3, 65537, 458772, 3, 65537, 458773, 3, 65537, 458774, 3, 65537, 458775, 3, 65538, 524292, 3, 65536, 524293, 3, 65537, 524294, 3, 65537, 524295, 3, 65537, 524296, 3, 65537, 524297, 3, 65537, 524298, 3, 65537, 524299, 3, 65537, 524300, 3, 65537, 524301, 3, 65537, 524302, 3, 65537, 524303, 3, 65537, 524304, 3, 65537, 524305, 3, 65537, 524306, 3, 65537, 524307, 3, 65537, 524308, 3, 65537, 524309, 3, 65537, 524310, 3, 65537, 524311, 3, 65538, 589828, 3, 65536, 589829, 3, 65537, 589830, 3, 65537, 589831, 3, 65537, 589832, 3, 65537, 589833, 3, 65537, 589834, 3, 65537, 589835, 3, 65537, 589836, 3, 65537, 589837, 3, 65537, 589838, 3, 65537, 589839, 3, 65537, 589840, 3, 65537, 589841, 3, 65537, 589842, 3, 65537, 589843, 3, 65537, 589844, 3, 65537, 589845, 3, 65537, 589846, 3, 65537, 589847, 3, 65538, 655364, 3, 65536, 655365, 3, 65537, 655366, 3, 65537, 655367, 3, 65537, 655368, 3, 65537, 655369, 3, 65537, 655370, 3, 65537, 655371, 3, 65537, 655372, 3, 65537, 655373, 3, 65537, 655374, 3, 65537, 655375, 3, 65537, 655376, 3, 65537, 655377, 3, 65537, 655378, 3, 65537, 655379, 3, 65537, 655380, 3, 65537, 655381, 3, 65537, 655382, 3, 65537, 655383, 3, 65538, 720900, 3, 65536, 720901, 3, 65537, 720902, 3, 65537, 720903, 3, 65537, 720904, 3, 65537, 720905, 3, 65537, 720906, 3, 65537, 720907, 3, 65537, 720908, 3, 65537, 720909, 3, 65537, 720910, 3, 65537, 720911, 3, 65537, 720912, 3, 65537, 720913, 3, 65537, 720914, 3, 65537, 720915, 3, 65537, 720916, 3, 65537, 720917, 3, 65537, 720918, 3, 65537, 720919, 3, 65538, 786436, 3, 65536, 786437, 3, 65537, 786438, 3, 65537, 786439, 3, 65537, 786440, 3, 65537, 786441, 3, 65537, 786442, 3, 65537, 786443, 3, 65537, 786444, 3, 65537, 786445, 3, 65537, 786446, 3, 65537, 786447, 3, 65537, 786448, 3, 65537, 786449, 3, 65537, 786450, 3, 65537, 786451, 3, 65537, 786452, 3, 65537, 786453, 3, 65537, 786454, 3, 65537, 786455, 3, 65538, 851972, 3, 131072, 851973, 3, 131073, 851974, 3, 131073, 851975, 3, 131073, 851976, 3, 131073, 851977, 3, 131073, 851978, 3, 131073, 851979, 3, 131073, 851980, 3, 131073, 851981, 3, 131073, 851982, 3, 131073, 851983, 3, 131073, 851984, 3, 131073, 851985, 3, 131073, 851986, 3, 131073, 851987, 3, 131073, 851988, 3, 131073, 851989, 3, 131073, 851990, 3, 131073, 851991, 3, 131074 )
 
 [node name="Left Wall & Corner" type="TileMap" parent="."]
 position = Vector2( 9.53942, 0 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -393213, -1610612733, 0, -327677, -1610612734, 0, -262141, -1610612734, 0, -196605, -1610612734, 0, -131069, -1610612734, 0, -65533, -1610612734, 0, 3, -1610612734, 0, 65539, -1610612734, 0, 131075, -1610612734, 0, 196611, -1610612734, 0, 262147, -1610612734, 0, 327683, -1610612734, 0, 393219, -1610612734, 0, 458755, -1610612734, 0, 524291, -1610612734, 0, 589827, -1610612734, 0, 655363, -1610612734, 0, 720899, -1610612734, 0, 786435, -1610612734, 0 )
 
 [node name="Lower Wall" type="TileMap" parent="."]
 position = Vector2( 10.5421, -7.03497 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 917508, 1610612738, 0, 917509, 2, 0, 917510, 2, 0, 917511, 2, 0, 917512, 2, 0, 917513, 2, 0, 917514, 2, 0, 917515, 2, 0, 917516, 2, 0, 917518, 2, 0, 917519, 2, 0, 917520, 2, 0, 917521, 2, 0, 917522, 2, 0, 917523, 2, 0, 917524, 2, 0, 917525, 2, 0, 917526, 2, 0 )
 
 [node name="Corner Right Up " type="TileMap" parent="."]
 position = Vector2( -10.1929, -32.0222 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -262120, 1610612739, 0 )
 
 [node name="Right Wall" type="TileMap" parent="."]
 position = Vector2( 15.8076, -31.0378 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -196585, -1073741822, 0, -131049, -1073741822, 0, -65513, -1073741822, 0, 23, -1073741822, 0, 65559, -1073741822, 0, 131095, -1073741822, 0, 196631, -1073741822, 0, 262167, -1073741822, 0, 327703, -1073741822, 0, 393239, -1073741822, 0, 458775, -1073741822, 0, 524311, -1073741822, 0, 589847, -1073741822, 0, 655383, -1073741822, 0, 720919, -1073741822, 0, 786455, -1073741822, 0, 851991, -1073741822, 0, 917527, -1073741822, 0 )
 
 [node name="Corner Right Wall" type="TileMap" parent="."]
 position = Vector2( 53.7818, -33.0157 )
-tile_set = SubResource( 14 )
+tile_set = SubResource( 15 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 983060, -1073741821, 0 )
 
 [node name="Corner Left Wall" type="TileMap" parent="."]
 position = Vector2( 9.55328, -1.0253 )
-tile_set = SubResource( 17 )
+tile_set = SubResource( 18 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 851971, -1610612736, 0 )
+
+[node name="GroceryOutDoor" parent="." instance=ExtResource( 16 )]
+position = Vector2( 225.541, 208.065 )
 
 [node name="Sprite1" type="Sprite" parent="."]
 position = Vector2( 325.342, -20.3254 )
@@ -442,7 +471,7 @@ texture = ExtResource( 4 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite1/StaticBody2D"]
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 255.305, -20.8968 )
@@ -454,7 +483,7 @@ position = Vector2( 145.91, 1.19041 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/StaticBody2D2"]
 position = Vector2( -145.987, -1.46601 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 187.526, -20.6405 )
@@ -466,7 +495,7 @@ position = Vector2( 287.116, 0.656456 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite3/StaticBody2D3"]
 position = Vector2( -287.604, -0.879604 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 position = Vector2( 116.592, -19.6175 )
@@ -478,7 +507,7 @@ position = Vector2( 434.895, -1.47479 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite4/StaticBody2D4"]
 position = Vector2( -434.792, 0.586414 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite5" type="Sprite" parent="."]
 position = Vector2( 325.342, 35.3337 )
@@ -490,7 +519,7 @@ position = Vector2( 0, -115.956 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite5/StaticBody2D5"]
 position = Vector2( 0.313416, 115.965 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite6" type="Sprite" parent="."]
 position = Vector2( 255.305, 34.7622 )
@@ -502,7 +531,7 @@ position = Vector2( 145.91, -114.766 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite6/StaticBody2D6"]
 position = Vector2( -145.861, 113.826 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite7" type="Sprite" parent="."]
 position = Vector2( 187.526, 35.0185 )
@@ -514,7 +543,7 @@ position = Vector2( 287.116, -115.3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite7/StaticBody2D7"]
 position = Vector2( -287.4, 114.539 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite8" type="Sprite" parent="."]
 position = Vector2( 116.592, 36.0415 )
@@ -526,7 +555,7 @@ position = Vector2( 434.895, -117.431 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite8/StaticBody2D8"]
 position = Vector2( -435.511, 116.084 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite9" type="Sprite" parent="."]
 position = Vector2( 325.342, 90.2464 )
@@ -538,7 +567,7 @@ position = Vector2( 0, -230.357 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite9/StaticBody2D9"]
 position = Vector2( -0.189148, 229.606 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite10" type="Sprite" parent="."]
 position = Vector2( 255.305, 89.6749 )
@@ -550,7 +579,7 @@ position = Vector2( 145.91, -229.167 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite10/StaticBody2D10"]
 position = Vector2( -146.262, 227.933 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite11" type="Sprite" parent="."]
 position = Vector2( 187.526, 89.9312 )
@@ -562,7 +591,7 @@ position = Vector2( 287.116, -229.701 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite11/StaticBody2D11"]
 position = Vector2( -286.696, 228.3 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite12" type="Sprite" parent="."]
 position = Vector2( 116.592, 90.9543 )
@@ -574,7 +603,7 @@ position = Vector2( 434.895, -231.832 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite12/StaticBody2D12"]
 position = Vector2( -435.023, 230.308 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite13" type="Sprite" parent="."]
 position = Vector2( 325.342, 145.905 )
@@ -586,7 +615,7 @@ position = Vector2( 0, -346.313 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite13/StaticBody2D13"]
 position = Vector2( -0.207214, 344.514 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite14" type="Sprite" parent="."]
 position = Vector2( 255.305, 145.334 )
@@ -598,7 +627,7 @@ position = Vector2( 145.91, -345.123 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite14/StaticBody2D14"]
 position = Vector2( -146.403, 345.374 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite15" type="Sprite" parent="."]
 position = Vector2( 187.526, 145.59 )
@@ -610,7 +639,7 @@ position = Vector2( 287.116, -345.656 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite15/StaticBody2D15"]
 position = Vector2( -287.439, 345.374 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="Sprite16" type="Sprite" parent="."]
 position = Vector2( 116.592, 146.613 )
@@ -622,7 +651,7 @@ position = Vector2( 434.895, -347.788 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite16/StaticBody2D16"]
 position = Vector2( -434.781, 347.667 )
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 
 [node name="CashierTable" type="Sprite" parent="."]
 position = Vector2( 358.902, 193.2 )
@@ -645,7 +674,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ATM/StaticBody2D"]
 position = Vector2( 0, -0.491951 )
-shape = SubResource( 19 )
+shape = SubResource( 20 )
 
 [node name="Stall1" type="Sprite" parent="."]
 position = Vector2( 375.588, 7.56009 )
@@ -657,7 +686,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall1/StaticBody2D"]
-shape = SubResource( 20 )
+shape = SubResource( 21 )
 
 [node name="Stall2" type="Sprite" parent="."]
 position = Vector2( 376.423, 61.7396 )
@@ -669,7 +698,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall2/StaticBody2D"]
-shape = SubResource( 21 )
+shape = SubResource( 22 )
 
 [node name="Stall3" type="Sprite" parent="."]
 position = Vector2( 72.0633, 3.50076 )
@@ -681,7 +710,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall3/StaticBody2D"]
-shape = SubResource( 22 )
+shape = SubResource( 23 )
 
 [node name="Stall4" type="Sprite" parent="."]
 position = Vector2( 71.9037, 59.817 )
@@ -693,7 +722,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall4/StaticBody2D"]
-shape = SubResource( 23 )
+shape = SubResource( 24 )
 
 [node name="Stall5" type="Sprite" parent="."]
 position = Vector2( 72.526, 116.129 )
@@ -705,7 +734,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall5"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall5/StaticBody2D"]
-shape = SubResource( 24 )
+shape = SubResource( 25 )
 
 [node name="Stall6" type="Sprite" parent="."]
 position = Vector2( 376.102, 117.061 )
@@ -717,12 +746,18 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Stall6"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stall6/StaticBody2D"]
-shape = SubResource( 20 )
+shape = SubResource( 21 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+<<<<<<< Updated upstream
 position = Vector2( 226.124, 213.726 )
+=======
+position = Vector2( 205.262, 206.39 )
+collision_layer = 1
+collision_mask = 11
+>>>>>>> Stashed changes
 
 [node name="AnimationTree" parent="Player" index="3"]
-parameters/playback = SubResource( 25 )
+parameters/playback = SubResource( 26 )
 
 [editable path="Player"]
