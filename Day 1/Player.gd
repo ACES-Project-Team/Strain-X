@@ -93,7 +93,6 @@ func _on_Hurtbox_area_entered(area):
 	PlayerStats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
 	print(PlayerStats.HEALTH)
-	
 
 func _on_Hurtbox_invincibility_ended():
 	pass # Replace with function body.
