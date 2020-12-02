@@ -23,7 +23,6 @@ run/main_scene="res://Title Screen.tscn"
 JsonData="*res://JsonData.gd"
 PlayerInventory="*res://PlayerInventory.gd"
 Hitbox="*res://Hitbox.tscn"
-PlayerStats="*res://PlayerStats.tscn"
 
 [display]
 
@@ -116,7 +115,6 @@ change_to_lightsaber={
 2d_physics/layer_6="NPC"
 2d_physics/layer_7="Door"
 2d_physics/layer_8="Items"
-2d_physics/layer_9="playerHurtBox"
 
 [rendering]
 
