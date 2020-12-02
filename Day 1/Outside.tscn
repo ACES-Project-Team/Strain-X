@@ -477,6 +477,9 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 } ]
 0/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 2343.18, 224.062 )
+
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
 
@@ -1774,3 +1777,9 @@ texture = ExtResource( 15 )
 position = Vector2( 914.542, -249.215 )
 scale = Vector2( 1.47145, 1.68993 )
 polygon = PoolVector2Array( -7.15405, -8.01511, -7.15405, -4.53864, -2.43933, -0.285507, -2.39685, 6.74142, -1.7597, 7.40712, -0.358032, 7.37015, 0.321533, 6.7784, 0.406494, -0.285507, 5.75836, -0.285507, 7.11755, -1.50597, 7.11755, -3.20721, 5.71588, -4.42769, 0.364014, -4.42769, 0.321533, -6.20291, -0.358032, -6.75766, -1.6748, -6.79465, -2.39685, -6.23988, -2.43933, -5.61116, -2.99152, -5.61116, -2.99152, -6.20291, -5.15771, -7.94115 )
+
+[node name="Outside" type="StaticBody2D" parent="."]
+
+[node name="Outside" type="CollisionShape2D" parent="Outside"]
+position = Vector2( 1343.5, 101.823 )
+shape = SubResource( 30 )
