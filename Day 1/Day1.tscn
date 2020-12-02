@@ -33,7 +33,7 @@ position = Vector2( -4.88213, -1.89864 )
 position = Vector2( -532.874, -552.055 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 145.372, -146.239 )
+position = Vector2( 145.372, -73.7314 )
 
 [node name="Sprite" parent="Player" index="0"]
 frame = 6
