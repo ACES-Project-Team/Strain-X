@@ -5,9 +5,9 @@ enum {
 	MOVE, 
 	ATTACK }
 
-const ACCELERATION = 500
-const MAX_SPEED = 80
-const FRICTION = 500
+export var ACCELERATION = 500
+export var MAX_SPEED = 80
+export var FRICTION = 500
 var state = MOVE
 
 export var hasSprayBottle = false
@@ -24,6 +24,8 @@ var velocity = Vector2.ZERO
 onready var animationPlayer = $AnimationPlayer 
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
+
+onready var hurtbox = $Hurtbox
 
 func _ready():
 	animationTree.active = true
@@ -86,4 +88,15 @@ func _unhandled_input(event):
 		on_hand_sprite.texture = Alcohol_Spray_texture
 	elif event.is_action_pressed("change_to_lightsaber"):
 		on_hand_sprite.texture = Uv_LightSaber_texture
+
+func _on_Hurtbox_area_entered(area):
+	PlayerStats.HEALTH -= area.damage
+	hurtbox.start_invincibility(2)
+	print(PlayerStats.HEALTH)
 	
+
+func _on_Hurtbox_invincibility_ended():
+	pass # Replace with function body.
+
+func _on_Hurtbox_invincibility_started():
+	pass # Replace with function body.
