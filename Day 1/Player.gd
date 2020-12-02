@@ -87,3 +87,6 @@ func _unhandled_input(event):
 	elif event.is_action_pressed("change_to_lightsaber"):
 		on_hand_sprite.texture = Uv_LightSaber_texture
 	
+
+
+

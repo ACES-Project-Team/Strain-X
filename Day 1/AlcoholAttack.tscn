@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Day 1/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.4032, 12.1761 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "AttackRight"
+length = 1.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 25, 26, 27 ]
+}
+
+[node name="AlcoholAttack" type="KinematicBody2D"]
+
+[node name="player" type="Sprite" parent="."]
+position = Vector2( -34.0243, 18.5712 )
+texture = ExtResource( 1 )
+hframes = 216
+frame = 25
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -33.8694, 16.9347 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/AttackRight = SubResource( 2 )

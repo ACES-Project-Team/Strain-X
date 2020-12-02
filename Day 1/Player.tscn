@@ -1561,7 +1561,6 @@ hasSprayBottle = true
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 216
-frame = 215
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -1630,6 +1629,7 @@ anims/saberfaceshieldup = SubResource( 57 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 77 )
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/playback = SubResource( 78 )
 parameters/Attack/blend_position = Vector2( 0.0170015, -0.417241 )
 parameters/Idle/blend_position = Vector2( -0.00463676, 0.303448 )
