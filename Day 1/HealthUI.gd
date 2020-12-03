@@ -5,7 +5,7 @@ var max_healthBar = 150 setget set_max_healthBar
 
 func set_healthBar(value):
 	healthBar = clamp(value, 0, max_healthBar)
-	if label != null
+	if label != null:
 	
 func set_max_healthBar(value):
 	max_healthBar = max(value, 1)

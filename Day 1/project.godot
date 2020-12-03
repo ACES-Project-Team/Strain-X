@@ -117,6 +117,7 @@ change_to_lightsaber={
 2d_physics/layer_7="Door"
 2d_physics/layer_8="Items"
 2d_physics/layer_9="playerHurtBox"
+2d_physics/layer_10="Interactable"
 
 [rendering]
 
