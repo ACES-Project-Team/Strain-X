@@ -212,7 +212,7 @@ script = ExtResource( 2 )
 
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
-hframes = 216
+hframes = 256
 frame = 52
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -12,28 +12,17 @@ export var MAX_SPEED = 80
 export var FRICTION = 500
 var state = MOVE
 var attack1 = swtich_attack()
-
-onready var Attack = $AlcoholAttackWMask
+var stats = PlayerStats
+var velocity = Vector2.ZERO
 
 export var hasSprayBottle = false
 
-const Alcohol_Spray_texture = preload("res://Day 1/Item_Icons/Alcohol Spray.png")
-const Uv_LightSaber_texture = preload("res://Day 1/Item_Icons/Uv LightSaber.png")
-const Surgical_Mask_texture = preload("res://Day 1/Item_Icons/Surgical Mask.png")
-const Face_Shield_texture = preload("res://Day 1/Item_Icons/Face Shield.png")
-
-onready var on_hand_sprite = $Sprites/OnHandSprite 
-
-var velocity = Vector2.ZERO
-
+#onready var on_hand_sprite = $Sprites/OnHandSprite 
 onready var animationPlayer = $AnimationPlayer 
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 onready var hitbox = $Hitbox_pivot/Hitbox
-
 onready var hurtbox = $Hurtbox
-
-var stats = PlayerStats
 
 func _ready():
 	stats.connect("no_health", self, "queue_free")
