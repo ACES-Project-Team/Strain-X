@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Day 1/World/Grocery Inside Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://UserInterface2.gd" type="Script" id=14]
 [ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=15]
 [ext_resource path="res://GroceryOutDoor.tscn" type="PackedScene" id=16]
+[ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.1187, 2.16334 )
@@ -742,12 +743,16 @@ shape = SubResource( 21 )
 position = Vector2( 206.755, 46.941 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 205.367, 206.07 )
 collision_layer = 1
 collision_mask = 11
 
 [node name="AnimationTree" parent="Player" index="3"]
 parameters/playback = SubResource( 26 )
+
+[node name="GroceryOutfit " parent="." instance=ExtResource( 17 )]
+position = Vector2( 198.714, 218.19 )
 
 [node name="UserInterface2" type="CanvasLayer" parent="."]
 script = ExtResource( 14 )
