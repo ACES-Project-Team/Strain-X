@@ -1,14 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=2]
 [ext_resource path="res://AlcoholAttackWMask.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Outside.tscn" type="PackedScene" id=6]
 [ext_resource path="res://TestInventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 [ext_resource path="res://GroceryDoor.tscn" type="PackedScene" id=9]
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id=1]
 
 [node name="Day1" type="Node2D"]
 __meta__ = {
@@ -21,18 +18,8 @@ position = Vector2( -4.88213, -1.89864 )
 [node name="GroceryDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( -532.874, -552.055 )
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 145.372, -73.7314 )
-
-[node name="Sprite" parent="Player" index="0"]
-frame = 6
-
-[node name="AnimationTree" parent="Player" index="3"]
-parameters/playback = SubResource( 1 )
-
 [node name="GroceryOutfit " parent="." instance=ExtResource( 2 )]
-position = Vector2( 140.997, -82.1635 )
+position = Vector2( 146.864, -75.6567 )
 
 [node name="AlcoholAttackWMask" parent="." instance=ExtResource( 3 )]
 visible = false
