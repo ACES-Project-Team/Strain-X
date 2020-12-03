@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal change_to_alcohol_attack
+
 enum { 
 	STOP, 
 	MOVE, 
@@ -9,6 +11,9 @@ export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var FRICTION = 500
 var state = MOVE
+var attack1 = swtich_attack()
+
+onready var Attack = $AlcoholAttackWMask
 
 export var hasSprayBottle = false
 
@@ -86,12 +91,6 @@ func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("RunUp")
 		
-		
-func _unhandled_input(event):
-	if event.is_action_pressed("change_to_spray"):
-		on_hand_sprite.texture = Alcohol_Spray_texture
-	elif event.is_action_pressed("change_to_lightsaber"):
-		on_hand_sprite.texture = Uv_LightSaber_texture
 
 func _on_Timer_timeout():
 		self.invincible = false 
@@ -110,3 +109,8 @@ func _on_Hurtbox_invincibility_ended():
 func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
+
+func swtich_attack():
+	if Input.is_action_pressed("change_to_spray"):
+		if attack1 == true:
+			emit_signal("change_to_alcohol_attack") 
