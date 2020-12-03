@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://HealthUI.gd" type="Script" id=1]
+[ext_resource path="res://Day 1/UI/MainCharacter_Empty_HealthBar-Sheet.png" type="Texture" id=2]
+
+[node name="HealthUI" type="Control"]
+margin_right = 68.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBarUIEmpty" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBarUIFull" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
