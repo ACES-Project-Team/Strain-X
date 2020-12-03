@@ -1781,5 +1781,9 @@ polygon = PoolVector2Array( -7.15405, -8.01511, -7.15405, -4.53864, -2.43933, -0
 [node name="Outside" type="StaticBody2D" parent="."]
 
 [node name="Outside" type="CollisionShape2D" parent="Outside"]
-position = Vector2( 1343.5, 101.823 )
+position = Vector2( 2518.37, 90.7698 )
+shape = SubResource( 30 )
+
+[node name="Outside2" type="CollisionShape2D" parent="Outside"]
+position = Vector2( -2216.09, 88.8515 )
 shape = SubResource( 30 )
