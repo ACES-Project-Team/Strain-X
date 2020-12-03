@@ -24,10 +24,14 @@ var velocity = Vector2.ZERO
 onready var animationPlayer = $AnimationPlayer 
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
+onready var hitbox = $Hitbox_pivot/Hitbox
 
 onready var hurtbox = $Hurtbox
 
+var stats = PlayerStats
+
 func _ready():
+	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 
 func _physics_process(delta):
@@ -94,10 +98,15 @@ func _on_Timer_timeout():
 
 
 func _on_Hurtbox_invincibility_started():
-	collisionshape.set_deferred("disabled",true)
+	hurtbox.set_deferred("disabled",true)
 	set_deferred("Monitorable",false)
 
 
 func _on_Hurtbox_invincibility_ended():
-	collisionshape.disabled = false
-	monitorable = true
+	hurtbox.disabled = false
+	hurtbox.monitorable = true
+
+
+func _on_Hurtbox_area_entered(area):
+	stats.HEALTH -= area.damage
+	hurtbox.start_invincibility(2)
