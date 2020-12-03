@@ -740,7 +740,7 @@ shape = SubResource( 21 )
 position = Vector2( 206.755, 46.941 )
 
 [node name="GroceryOutfit " parent="." instance=ExtResource( 17 )]
-position = Vector2( 206.267, 205.408 )
+position = Vector2( 202.684, 201.131 )
 
 [node name="UserInterface2" type="CanvasLayer" parent="."]
 script = ExtResource( 14 )

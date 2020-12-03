@@ -139,27 +139,26 @@ tracks/0/keys = {
 "values": [ 46, 47, 48, 49, 50, 51 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=25]
+[sub_resource type="AnimationNodeAnimation" id=10]
 animation = "IdleLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=26]
-animation = "IdleUp"
-
-[sub_resource type="AnimationNodeAnimation" id=27]
-animation = "IdleRight"
-
-[sub_resource type="AnimationNodeAnimation" id=28]
+[sub_resource type="AnimationNodeAnimation" id=11]
 animation = "IdleDown"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=29]
-blend_point_0/node = SubResource( 25 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 26 )
-blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 27 )
-blend_point_2/pos = Vector2( 1, 0 )
-blend_point_3/node = SubResource( 28 )
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "IdleRight"
 
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "IdleUp"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=14]
+blend_point_0/node = SubResource( 10 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 11 )
+blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_2/node = SubResource( 12 )
+blend_point_2/pos = Vector2( 1, 0 )
+blend_point_3/node = SubResource( 13 )
 blend_point_3/pos = Vector2( 0, -1.1 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
@@ -169,10 +168,10 @@ blend_mode = 1
 animation = "WalkLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=16]
-animation = "WalkUp"
+animation = "WalkDown"
 
 [sub_resource type="AnimationNodeAnimation" id=17]
-animation = "WalkDown"
+animation = "WalkUp"
 
 [sub_resource type="AnimationNodeAnimation" id=18]
 animation = "WalkRight"
@@ -190,23 +189,22 @@ min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
 
 [sub_resource type="AnimationNodeStateMachine" id=22]
-states/Idle/node = SubResource( 29 )
+states/Idle/node = SubResource( 14 )
 states/Idle/position = Vector2( 165, 92 )
 states/Walk/node = SubResource( 19 )
 states/Walk/position = Vector2( 340, 92 )
-transitions = [ "Idle", "Walk", SubResource( 30 ), "Walk", "Idle", SubResource( 31 ) ]
-
+transitions = [ "Idle", "Walk", SubResource( 20 ), "Walk", "Idle", SubResource( 21 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=23]
 
 [sub_resource type="RectangleShape2D" id=24]
-extents = Vector2( 12.4399, 12.1127 )
+extents = Vector2( 13.4115, 13.1178 )
 
 [node name="GroceryOutfit " type="KinematicBody2D"]
 collision_mask = 2
@@ -222,12 +220,10 @@ position = Vector2( 0.194979, 7.25316 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-
 anims/IdleDown = SubResource( 2 )
 anims/IdleLeft = SubResource( 3 )
 anims/IdleRight = SubResource( 4 )
 anims/IdleUp = SubResource( 5 )
-
 anims/WalkDown = SubResource( 6 )
 anims/WalkLeft = SubResource( 7 )
 anims/WalkRight = SubResource( 8 )
@@ -238,9 +234,8 @@ tree_root = SubResource( 22 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 23 )
-
-parameters/Idle/blend_position = Vector2( 0.449163, 0.237069 )
-parameters/Walk/blend_position = Vector2( 0.027027, -0.65431 )
+parameters/Idle/blend_position = Vector2( 0.490348, 0.0284483 )
+parameters/Walk/blend_position = Vector2( 0.00643504, -0.730172 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -249,5 +244,7 @@ current = true
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]
-position = Vector2( 6.59496, -12.414 )
+position = Vector2( 0.516591, 0.924646 )
 shape = SubResource( 24 )
+[connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_entered"]
+[connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_exited"]
