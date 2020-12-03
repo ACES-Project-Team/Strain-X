@@ -1,0 +1,42 @@
+{
+  "Alcohol Spray": {
+    "ItemCategory": "Resource",
+    "StackSize": 10,
+    "Description": "A sturdy tree branch that can be used for crafting."
+  },
+  "Vitamins": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 50,
+    "Description": "It smells like medicine."
+  },
+   "Uv LightSaber": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 1,
+    "Description": "It smells like medicine."
+  },
+   "Face Shield": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 1,
+    "Description": "It smells like medicine."
+  },
+   "Uv Box": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 10,
+    "Description": "It smells like medicine."
+  },
+   "Surgical Mask": {
+    "ItemCategory": "Sword",
+    "ItemAttack": 3,
+    "ItemSpeed": 0.75, 
+    "StackSize": 1,
+    "Description": "Quite a rusty sword, but should be able to get the job done."
+  }
+}
