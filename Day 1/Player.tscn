@@ -1637,7 +1637,6 @@ parameters/Run/blend_position = Vector2( -0.00270271, -0.0314655 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 0.5, 0.5 )
 
 [node name="PickUpZone" type="Area2D" parent="."]
 visible = false
