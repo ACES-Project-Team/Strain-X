@@ -241,6 +241,8 @@ parameters/Walk/blend_position = Vector2( 0.00643504, -0.730172 )
 current = true
 
 [node name="PickUpZone" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]

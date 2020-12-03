@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Day 1/World/Bedroom 1 Floor Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Bedroom 1 Computer Set-up.png" type="Texture" id=2]
@@ -10,8 +10,10 @@
 [ext_resource path="res://Day 1/World/Bedroom 1 Angela Bed.png" type="Texture" id=8]
 [ext_resource path="res://Day 1/World/Bedroom 1 Wall Tile Set.png" type="Texture" id=9]
 [ext_resource path="res://Day 1/World/Hallway Tile Set.png" type="Texture" id=10]
+[ext_resource path="res://CabinetInteraction.gd" type="Script" id=11]
 [ext_resource path="res://Day 1/World/Bedroom 1 Nightshade and Cabinet.png" type="Texture" id=12]
 [ext_resource path="res://Day 1/World/Window.png" type="Texture" id=13]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -457,11 +459,11 @@ extents = Vector2( 13.1771, 8.07546 )
 [sub_resource type="RectangleShape2D" id=39]
 extents = Vector2( 8.00531, 5.84734 )
 
-[sub_resource type="RectangleShape2D" id=40]
-extents = Vector2( 3.88853, 16.3261 )
+[sub_resource type="RectangleShape2D" id=42]
+extents = Vector2( 3.82137, 2.09837 )
 
-[sub_resource type="RectangleShape2D" id=41]
-extents = Vector2( 1.01353, 6.3451 )
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 6.1424, 17.4295 )
 
 [node name="Bedroom1" type="Node2D"]
 position = Vector2( -13.6296, -186.399 )
@@ -609,14 +611,42 @@ texture = ExtResource( 6 )
 position = Vector2( 323.874, 216.746 )
 shape = SubResource( 39 )
 
-[node name="Cabinet Closet" type="Sprite" parent="Furniture"]
-position = Vector2( 204.904, 253.464 )
+[node name="Player" parent="." instance=ExtResource( 16 )]
+position = Vector2( 296.804, 275.884 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 204.097, 253.927 )
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2( 8.57144, 10.7638 )
+shape = SubResource( 42 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 203.402, 253.184 )
+script = ExtResource( 11 )
+
+[node name="Cabinet Closet" type="Sprite" parent="Area2D"]
+position = Vector2( 1.82455, 1.5719 )
 texture = ExtResource( 5 )
 
-[node name="Cabinet Closet2" type="CollisionShape2D" parent="Furniture"]
-position = Vector2( 203.866, 251.35 )
+[node name="Cabinet Closet2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1.17839, -1.6561 )
 shape = SubResource( 40 )
 
-[node name="Cabinet Closet3" type="CollisionShape2D" parent="Furniture"]
-position = Vector2( 208.616, 252.475 )
-shape = SubResource( 41 )
+[node name="Label" type="Label" parent="Area2D"]
+visible = false
+margin_left = -16.7784
+margin_top = -20.9626
+margin_right = 52.2216
+margin_bottom = -6.96262
+rect_scale = Vector2( 0.5, 0.5 )
+text = "Interact (E)"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
