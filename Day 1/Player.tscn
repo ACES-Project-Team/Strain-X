@@ -1463,7 +1463,7 @@ blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 59 )
 blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 60 )
-blend_point_2/pos = Vector2( 0, -1 )
+blend_point_2/pos = Vector2( 0, -1.1 )
 blend_point_3/node = SubResource( 61 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
@@ -1513,9 +1513,10 @@ blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 69 )
 blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 70 )
-blend_point_2/pos = Vector2( 0, -1 )
+blend_point_2/pos = Vector2( 0, -1.1 )
 blend_point_3/node = SubResource( 71 )
 blend_point_3/pos = Vector2( 1, 0 )
+min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
@@ -1560,8 +1561,8 @@ hasSprayBottle = true
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
-hframes = 216
-frame = 88
+hframes = 256
+frame = 27
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -1630,10 +1631,11 @@ anims/saberfaceshieldup = SubResource( 57 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 77 )
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/playback = SubResource( 78 )
-parameters/Attack/blend_position = Vector2( 0.0170015, -0.417241 )
-parameters/Idle/blend_position = Vector2( -0.00463676, 0.303448 )
-parameters/Run/blend_position = Vector2( -0.00270271, -0.0314655 )
+parameters/Attack/blend_position = Vector2( 0.262554, 0.0663793 )
+parameters/Idle/blend_position = Vector2( -0.337159, 0.00948286 )
+parameters/Run/blend_position = Vector2( 0.566715, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -1659,7 +1661,7 @@ shape = SubResource( 80 )
 [node name="Hitbox_pivot" type="Position2D" parent="."]
 visible = false
 position = Vector2( 0, 0.686012 )
-rotation = -0.523599
+rotation = 4.32842
 
 [node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 5 )]
 position = Vector2( -1.68179, 0.365109 )
