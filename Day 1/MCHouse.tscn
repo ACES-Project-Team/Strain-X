@@ -7,7 +7,7 @@
 [ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Day1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
-[ext_resource path="res://HealthUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Health.tscn" type="PackedScene" id=8]
 
 [node name="MCHouse" type="Node2D"]
 
@@ -40,4 +40,4 @@ target_scene = ExtResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 324.63, 130.815 )
 
-[node name="HealthUI" parent="." instance=ExtResource( 8 )]
+[node name="Health" parent="." instance=ExtResource( 8 )]
