@@ -9,7 +9,7 @@ var player = null
 var being_picked_up = false 
 
 func _ready():
-	item_name = "Surgical Mask"
+	item_name = "Cloth Mask"
 	
 func _physics_process(delta):
 	if being_picked_up == false: 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fruits-Sheet.png-5fcecbd3256ea2cf796c1232144de343.stex"
+path="res://.import/Cloth Mask.png-108062e496212b0ca4d64910aae52f78.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/Item_Icons/Fruits-Sheet.png"
-dest_files=[ "res://.import/Fruits-Sheet.png-5fcecbd3256ea2cf796c1232144de343.stex" ]
+source_file="res://Day 1/Item_Icons/Cloth Mask.png"
+dest_files=[ "res://.import/Cloth Mask.png-108062e496212b0ca4d64910aae52f78.stex" ]
 
 [params]
 

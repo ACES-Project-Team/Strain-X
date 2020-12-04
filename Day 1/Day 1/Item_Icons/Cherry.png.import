@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cloth_Mask_Icon-Sheet.png-ae56ccd756dd7aff5cbdac6e307050e9.stex"
+path="res://.import/Cherry.png-addebfdb7e856cd7b52ca8649754cd64.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/Item_Icons/Cloth_Mask_Icon-Sheet.png"
-dest_files=[ "res://.import/Cloth_Mask_Icon-Sheet.png-ae56ccd756dd7aff5cbdac6e307050e9.stex" ]
+source_file="res://Day 1/Item_Icons/Cherry.png"
+dest_files=[ "res://.import/Cherry.png-addebfdb7e856cd7b52ca8649754cd64.stex" ]
 
 [params]
 

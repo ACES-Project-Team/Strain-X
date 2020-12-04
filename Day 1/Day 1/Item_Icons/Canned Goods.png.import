@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cereal-Sheet.png-4b344fedcfc9f80f819ba8dfad0005db.stex"
+path="res://.import/Canned Goods.png-8662d4a9893292ffcc832c6a3196974b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Day 1/Item_Icons/Cereal-Sheet.png"
-dest_files=[ "res://.import/Cereal-Sheet.png-4b344fedcfc9f80f819ba8dfad0005db.stex" ]
+source_file="res://Day 1/Item_Icons/Canned Goods.png"
+dest_files=[ "res://.import/Canned Goods.png-8662d4a9893292ffcc832c6a3196974b.stex" ]
 
 [params]
 
