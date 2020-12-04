@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Day 1/World/Bedroom 1 Floor Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Bedroom 1 Computer Set-up.png" type="Texture" id=2]
@@ -13,7 +13,6 @@
 [ext_resource path="res://CabinetInteraction.gd" type="Script" id=11]
 [ext_resource path="res://Day 1/World/Bedroom 1 Nightshade and Cabinet.png" type="Texture" id=12]
 [ext_resource path="res://Day 1/World/Window.png" type="Texture" id=13]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -459,10 +458,10 @@ extents = Vector2( 13.1771, 8.07546 )
 [sub_resource type="RectangleShape2D" id=39]
 extents = Vector2( 8.00531, 5.84734 )
 
-[sub_resource type="RectangleShape2D" id=42]
+[sub_resource type="RectangleShape2D" id=40]
 extents = Vector2( 3.82137, 2.09837 )
 
-[sub_resource type="RectangleShape2D" id=40]
+[sub_resource type="RectangleShape2D" id=41]
 extents = Vector2( 6.1424, 17.4295 )
 
 [node name="Bedroom1" type="Node2D"]
@@ -611,9 +610,6 @@ texture = ExtResource( 6 )
 position = Vector2( 323.874, 216.746 )
 shape = SubResource( 39 )
 
-[node name="Player" parent="." instance=ExtResource( 16 )]
-position = Vector2( 296.804, 275.884 )
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 204.097, 253.927 )
 collision_layer = 2
@@ -622,7 +618,7 @@ collision_mask = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 visible = false
 position = Vector2( 8.57144, 10.7638 )
-shape = SubResource( 42 )
+shape = SubResource( 40 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 203.402, 253.184 )
@@ -634,7 +630,7 @@ texture = ExtResource( 5 )
 
 [node name="Cabinet Closet2" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 1.17839, -1.6561 )
-shape = SubResource( 40 )
+shape = SubResource( 41 )
 
 [node name="Label" type="Label" parent="Area2D"]
 visible = false

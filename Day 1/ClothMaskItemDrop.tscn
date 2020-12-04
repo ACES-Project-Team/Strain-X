@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Day 1/UI/Surgical Mask.png" type="Texture" id=1]
-[ext_resource path="res://MaskItemDrop.gd" type="Script" id=2]
+[ext_resource path="res://Day 1/Item_Icons/Cloth Mask.png" type="Texture" id=1]
+[ext_resource path="res://ClothMaskItemDrop.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.98729, 8.42081 )
@@ -12,7 +12,7 @@ length = 0.5
 loop = true
 step = 0.3
 tracks/0/type = "value"
-tracks/0/path = NodePath("../MaskItemDrop/Surgical Mask:offset")
+tracks/0/path = NodePath("Cloth Mask:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -24,16 +24,15 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0.8 ) ]
 }
 
-[node name="MaskItemDrop" type="KinematicBody2D"]
+[node name="ClothMaskItemDrop" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
 collision_layer = 516
 collision_mask = 2
 script = ExtResource( 2 )
 
-[node name="Surgical Mask" type="Sprite" parent="."]
+[node name="Cloth Mask" type="Sprite" parent="."]
 position = Vector2( 5.49126, 0.833401 )
 texture = ExtResource( 1 )
-offset = Vector2( 0, 0.0931194 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 5.34688, 0.411301 )

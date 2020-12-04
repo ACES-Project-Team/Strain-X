@@ -21,7 +21,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 40 ]
+"values": [ 216 ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -38,7 +38,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 58 ]
+"values": [ 234 ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -55,7 +55,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 52 ]
+"values": [ 228 ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -69,10 +69,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( -0.1 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 46 ]
+"values": [ 222 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -85,10 +85,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 40, 41, 42, 43, 44, 45 ]
+"values": [ 218, 219, 220, 221 ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -104,7 +104,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 59, 60, 61, 62, 63 ]
+"values": [ 235, 236, 237, 238, 239 ]
 }
 
 [sub_resource type="Animation" id=8]
@@ -120,7 +120,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 53, 54, 55, 56, 57 ]
+"values": [ 229, 230, 231, 232, 233 ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -133,10 +133,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 46, 47, 48, 49, 50, 51 ]
+"values": [ 223, 224, 225, 226, 227 ]
 }
 
 [sub_resource type="AnimationNodeAnimation" id=10]
@@ -213,7 +213,7 @@ script = ExtResource( 2 )
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 52
+frame = 228
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.194979, 7.25316 )
@@ -232,7 +232,6 @@ anims/WalkUp = SubResource( 9 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 22 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/playback = SubResource( 23 )
 parameters/Idle/blend_position = Vector2( 0.490348, 0.0284483 )
 parameters/Walk/blend_position = Vector2( 0.00643504, -0.730172 )

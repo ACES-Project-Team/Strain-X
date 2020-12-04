@@ -4,7 +4,7 @@ var item_name
 var item_quantity 
 
 func _ready():
-	var rand_val = randi() % 4
+	var rand_val = randi() % 7
 	if rand_val == 0:
 		 item_name = "Alcohol Spray" 
 	elif rand_val == 1: 
@@ -15,7 +15,12 @@ func _ready():
 		item_name = "Surgical Mask"
 	elif rand_val == 4: 
 		item_name = "Uv LightSaber"
-	
+	elif rand_val == 5: 
+		item_name = "Cloth Mask"
+	elif rand_val == 6: 
+		item_name = "Canned Goods"
+	elif rand_val == 7: 
+		item_name = "Cherry"
 	
 	$TextureRect.texture = load("res://Day 1/Item_Icons/" + item_name + ".png")
 	var stack_size = int(JsonData.item_data[item_name] ["StackSize"])
