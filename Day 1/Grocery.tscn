@@ -380,10 +380,10 @@ shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 0.25
-margin_left = -456.0
-margin_top = -300.0
-margin_right = 925.0
-margin_bottom = 485.0
+margin_left = -454.243
+margin_top = -297.969
+margin_right = 926.757
+margin_bottom = 487.031
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -750,5 +750,20 @@ script = ExtResource( 14 )
 [node name="InventoryButton" parent="UserInterface2" instance=ExtResource( 15 )]
 
 [node name="Health" parent="." instance=ExtResource( 2 )]
+
+[node name="FoodCount" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="FoodCount"]
+anchor_right = 0.056
+anchor_bottom = 0.027
+margin_left = 7.41975
+margin_top = 12.321
+margin_right = 60.5398
+margin_bottom = 19.301
+rect_scale = Vector2( 0.5, 0.5 )
+text = "Food Count: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="GroceryMain" parent="." instance=ExtResource( 18 )]
