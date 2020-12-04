@@ -96,6 +96,6 @@ func _on_Hurtbox_area_entered(area):
 	volHurtbox.start_invincibility(.4)
 	print(volStats.HEALTH)
 
-func _on_Hitbox_body_entered(body):
-	volanimationstate.travel("Attacking")
+func _on_Hitbox_area_entered(area):
+	volanimationstate.travel("attack")
 	state = attack
