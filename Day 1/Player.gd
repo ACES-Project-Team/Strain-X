@@ -79,20 +79,14 @@ func _input(event):
 func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("RunUp")
-		
-
-func _on_Timer_timeout():
-		self.invincible = false 
 
 
 func _on_Hurtbox_invincibility_started():
-	hurtbox.set_deferred("disabled",true)
-	set_deferred("Monitorable",false)
+	pass
 
 
 func _on_Hurtbox_invincibility_ended():
-	hurtbox.disabled = false
-	hurtbox.monitorable = true
+	pass
 
 
 func _on_Hurtbox_area_entered(area):

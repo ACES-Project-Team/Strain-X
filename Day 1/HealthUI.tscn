@@ -12,19 +12,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HealthBarUIEmpty" type="TextureRect" parent="."]
-margin_right = 96.0
-margin_bottom = 32.0
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HealthBarUIFull" type="TextureRect" parent="."]
-margin_right = 96.0
-margin_bottom = 32.0
-texture = ExtResource( 3 )
-expand = true
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
