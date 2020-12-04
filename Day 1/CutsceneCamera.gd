@@ -4,6 +4,8 @@ onready var tween = $Tween
 
 var original_pos
 
+signal player_camera
+
 func _ready():
 	original_pos = global_position
 
@@ -18,3 +20,8 @@ func return_to_old_position(speed : float):
 	tween.interpolate_property(self, "global_position", global_position, original_pos, (global_position - original_pos).length() / speed)
 	tween.start()
 	yield(tween, "tween_all_completed")
+	emit_signal("player_camera")
+	queue_free()
+	
+	
+
