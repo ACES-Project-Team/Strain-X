@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Day 1/World/Living Room Wall Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Day 1/World/Living Room Floor Tile Set.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Day 1/World/Coffee Table.png" type="Texture" id=8]
 [ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UserInterface3.gd" type="Script" id=10]
+[ext_resource path="res://Dad.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -898,3 +899,6 @@ script = ExtResource( 10 )
 
 [node name="InventoryButton" parent="UserInterface3" instance=ExtResource( 9 )]
 position = Vector2( 15.4926, 1.54926 )
+
+[node name="Dad" parent="." instance=ExtResource( 11 )]
+position = Vector2( 39.3913, 287.762 )

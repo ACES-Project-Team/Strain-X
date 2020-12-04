@@ -1,6 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Day 1/Player/Dad-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://WanderController.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Dad.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 5.13599
@@ -141,16 +143,83 @@ tracks/0/keys = {
 "values": [ 7, 8, 9, 10, 11 ]
 }
 
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "IdleDown"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "IdleUp"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "IdleLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "IdleRight"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=14]
+blend_point_0/node = SubResource( 10 )
+blend_point_0/pos = Vector2( 0, 1.1 )
+blend_point_1/node = SubResource( 11 )
+blend_point_1/pos = Vector2( 0, -1.1 )
+blend_point_2/node = SubResource( 12 )
+blend_point_2/pos = Vector2( -1, 0 )
+blend_point_3/node = SubResource( 13 )
+blend_point_3/pos = Vector2( 1, 0 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id=20]
+animation = "WalkDown"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "WalkUp"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "WalkRight"
+
+[sub_resource type="AnimationNodeAnimation" id=23]
+animation = "WalkLeft"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=15]
+blend_point_0/node = SubResource( 20 )
+blend_point_0/pos = Vector2( 0, 1.1 )
+blend_point_1/node = SubResource( 21 )
+blend_point_1/pos = Vector2( 0, -1.1 )
+blend_point_2/node = SubResource( 22 )
+blend_point_2/pos = Vector2( 1, 0 )
+blend_point_3/node = SubResource( 23 )
+blend_point_3/pos = Vector2( -1, 0 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=17]
+
+[sub_resource type="AnimationNodeStateMachine" id=18]
+states/Idle/node = SubResource( 14 )
+states/Idle/position = Vector2( -484.446, 42 )
+states/Walk/node = SubResource( 15 )
+states/Walk/position = Vector2( -289.446, 42 )
+transitions = [ "Idle", "Walk", SubResource( 16 ), "Walk", "Idle", SubResource( 17 ) ]
+start_node = "Idle"
+graph_offset = Vector2( -707.396, 0 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=19]
+
 [node name="Dad" type="KinematicBody2D"]
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 24
-frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.0701294, 6.52194 )
 shape = SubResource( 1 )
+
+[node name="WanderController" parent="." instance=ExtResource( 2 )]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "IdleDown"
@@ -162,3 +231,10 @@ anims/WalkDown = SubResource( 6 )
 anims/WalkLeft = SubResource( 7 )
 anims/WalkRight = SubResource( 8 )
 anims/WalkUp = SubResource( 9 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 18 )
+anim_player = NodePath("../AnimationPlayer")
+parameters/playback = SubResource( 19 )
+parameters/Idle/blend_position = Vector2( -0.0071736, 0.0568966 )
+parameters/Walk/blend_position = Vector2( 0, 0 )
