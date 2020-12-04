@@ -17,7 +17,7 @@
 [ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=15]
 [ext_resource path="res://GroceryOutDoor.tscn" type="PackedScene" id=16]
 [ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=17]
-[ext_resource path="res://GroceryMain.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Groceryfood.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.1187, 2.16334 )
@@ -741,8 +741,41 @@ shape = SubResource( 21 )
 [node name="ItemDrop" parent="." instance=ExtResource( 13 )]
 position = Vector2( 206.755, 46.941 )
 
-[node name="GroceryOutfit " parent="." instance=ExtResource( 17 )]
-position = Vector2( 202.684, 201.131 )
+[node name="YSort" type="YSort" parent="."]
+position = Vector2( 412.173, -152.024 )
+
+[node name="Grocery food4" parent="YSort" instance=ExtResource( 18 )]
+position = Vector2( 265.008, 98.6563 )
+
+[node name="Grocery food3" parent="YSort" instance=ExtResource( 18 )]
+position = Vector2( 197.126, -7.40968 )
+
+[node name="Grocery food2" parent="YSort" instance=ExtResource( 18 )]
+
+[node name="GroceryOutfit " parent="YSort" instance=ExtResource( 17 )]
+position = Vector2( -209.489, 353.155 )
+collision_mask = 522
+
+[node name="FoodLabel" type="Label" parent="YSort/GroceryOutfit "]
+margin_left = -234.141
+margin_top = -107.006
+margin_right = -135.141
+margin_bottom = -93.0058
+rect_scale = Vector2( 0.97645, 0.804764 )
+text = "Food Collected:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count" type="Label" parent="YSort/GroceryOutfit "]
+margin_left = -133.492
+margin_top = -107.006
+margin_right = -93.4923
+margin_bottom = -93.0058
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="UserInterface2" type="CanvasLayer" parent="."]
 script = ExtResource( 14 )
@@ -750,20 +783,3 @@ script = ExtResource( 14 )
 [node name="InventoryButton" parent="UserInterface2" instance=ExtResource( 15 )]
 
 [node name="Health" parent="." instance=ExtResource( 2 )]
-
-[node name="FoodCount" type="CanvasLayer" parent="."]
-
-[node name="Label" type="Label" parent="FoodCount"]
-anchor_right = 0.056
-anchor_bottom = 0.027
-margin_left = 7.41975
-margin_top = 12.321
-margin_right = 60.5398
-margin_bottom = 19.301
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Food Count: "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="GroceryMain" parent="." instance=ExtResource( 18 )]
