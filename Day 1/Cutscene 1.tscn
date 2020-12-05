@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Cutscene 1.gd" type="Script" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://HouseDoor.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Mom.tscn" type="PackedScene" id=9]
 
 [node name="Cutscene 1" type="Node2D"]
 script = ExtResource( 1 )
@@ -33,10 +32,7 @@ position = Vector2( 109.904, -66.6154 )
 position = Vector2( 133.279, -74.8744 )
 
 [node name="Kitchen" parent="." instance=ExtResource( 8 )]
-position = Vector2( 125.84, 244.507 )
-
-[node name="Mom" parent="." instance=ExtResource( 9 )]
-position = Vector2( 61.8281, 191.468 )
+position = Vector2( 124.84, 244.507 )
 
 [node name="HouseDoor" parent="." instance=ExtResource( 6 )]
 position = Vector2( 276.538, 127.322 )
@@ -50,4 +46,6 @@ current = true
 script = ExtResource( 5 )
 
 [node name="Tween" type="Tween" parent="CutsceneCamera"]
+
+[node name="Area2D" type="Area2D" parent="."]
 [connection signal="player_camera" from="CutsceneCamera" to="Player" method="_on_CutsceneCamera_player_camera"]
