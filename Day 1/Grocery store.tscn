@@ -1,12 +1,13 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Day 1/World/Grocery Large Shelf 2.png" type="Texture" id=1]
-[ext_resource path="res://Day 1/World/Grocery Inside Tile Set.png" type="Texture" id=2]
-[ext_resource path="res://Day 1/World/Grocery Door-Sheet.png" type="Texture" id=3]
-[ext_resource path="res://Day 1/World/Grocery Front View Part.png" type="Texture" id=4]
-[ext_resource path="res://Day 1/World/Grocery Large Shelf 1.png" type="Texture" id=5]
-[ext_resource path="res://Day 1/World/Grocery Top View Ceiling Tile Set.png" type="Texture" id=6]
-[ext_resource path="res://Day 1/World/Grocery Large Shelf 3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/World/Grocery Large Shelf 2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/World/Grocery Inside Tile Set.png" type="Texture" id=2]
+[ext_resource path="res://Assets/World/Grocery Door-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://Assets/World/Grocery Front View Part.png" type="Texture" id=4]
+[ext_resource path="res://Assets/World/Grocery Large Shelf 1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/World/Grocery Top View Ceiling Tile Set.png" type="Texture" id=6]
+[ext_resource path="res://Assets/World/Grocery Large Shelf 3.png" type="Texture" id=7]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "Grocery Inside Tile Set.png 0"
