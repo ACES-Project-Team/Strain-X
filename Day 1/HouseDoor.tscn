@@ -1,6 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Day 1/World/Living Room Door Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Assets/World/Living Room Door Sheet.png" type="Texture" id=1]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.408, 17.3747 )

@@ -22,7 +22,7 @@ func _ready():
 	elif rand_val == 7: 
 		item_name = "Cherry"
 	
-	$TextureRect.texture = load("res://Day 1/Item_Icons/" + item_name + ".png")
+	$TextureRect.texture = load("res://Assets/Item_Icons/" + item_name + ".png")
 	var stack_size = int(JsonData.item_data[item_name] ["StackSize"])
 	item_quantity = randi() % stack_size + 1 
 	
@@ -35,7 +35,7 @@ func _ready():
 func set_item(nm, qt):
 	item_name = nm 
 	item_quantity = qt
-	$TextureRect.texture = load("res://Day 1/Item_Icons/" + item_name + ".png")
+	$TextureRect.texture = load("res://Assets/Item_Icons/" + item_name + ".png")
 	
 	var stack_size = int(JsonData.item_data[item_name]["StackSize"])
 	if stack_size == 1: 
