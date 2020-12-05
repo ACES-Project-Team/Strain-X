@@ -4,7 +4,6 @@
 [ext_resource path="res://GroceryOutfit .gd" type="Script" id=2]
 [ext_resource path="res://GroceryPickUp.gd" type="Script" id=3]
 
-
 [sub_resource type="CircleShape2D" id=1]
 radius = 3.9153
 
@@ -205,7 +204,7 @@ start_node = "Idle"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=23]
 
 [sub_resource type="RectangleShape2D" id=24]
-extents = Vector2( 7.80329, 13.1178 )
+extents = Vector2( 13.4739, 14.5405 )
 
 [node name="GroceryOutfit " type="KinematicBody2D"]
 collision_mask = 2
