@@ -3,7 +3,6 @@
 [ext_resource path="res://Assets/Player/SIster-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://WanderController.tscn" type="PackedScene" id=2]
 
-
 [sub_resource type="GDScript" id=1]
 script/source = "extends KinematicBody2D
 
@@ -235,6 +234,8 @@ graph_offset = Vector2( 0, -45.4607 )
 [sub_resource type="AnimationNodeStateMachinePlayback" id=20]
 
 [node name="Sister" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 0
 script = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -245,8 +246,6 @@ frame = 18
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.237549, 6.22508 )
 shape = SubResource( 2 )
-
-[node name="WanderController" parent="." instance=ExtResource( 2 )]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "IdleDown"
@@ -264,5 +263,7 @@ tree_root = SubResource( 19 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 20 )
-parameters/Idle/blend_position = Vector2( -0.00143474, -0.024627 )
+parameters/Idle/blend_position = Vector2( -0.0071736, 0 )
 "parameters/Walk /blend_position" = Vector2( 0, 0 )
+
+[node name="WanderController" parent="." instance=ExtResource( 2 )]
