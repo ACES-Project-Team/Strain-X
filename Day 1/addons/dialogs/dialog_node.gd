@@ -12,48 +12,22 @@ var dialog_script = [
 		'fade-in': 2
 	},
 	{
-		'background': "res://addons/dialogs/Images/background/placeholder-2.png"
+		'text': 'Welcome to Strain-X!'
 	},
 	{
-		'text': 'Welcome to the dialog node! You can pick options'
+		'text': 'Here are the controls:'
 	},
 	{
-		'question': 'Choose your favourite color',
-		'options': [
-			{ 'label': 'Red', 'value': '#f7411d'},
-			{ 'label': 'Blue', 'value': '#1da0f7'}
-		],
-		'variable': 'fav_color'
+		'text': 'You can move using W,A,S,D keys. You can also attack by pressing the "K" button'
 	},
 	{
-		'text': 'You picked the color [color=fav_color.value][fav_color][/color]'
-	},
-	{
-		'question': 'Are you sure you want the color [fav_color]?',
-		'options': [
-			{ 'label': 'No, let me pick again', 'value': '0'},
-			{ 'label': 'Yes, I love it', 'value': '1'}
-		],
-		'checkpoint': '-3'
-	},
-	{
-		'input': 'Now the name you want to set.',
-		'window_title': 'Write your name',
-		'variable': 'name'
-	},
-	{
-		'text': 'So, your name is [name] and you like the color [color=fav_color.value][fav_color][/color].'
-	},
-	{
-		'name': '[color=fav_color.value][name][/color]',
-		'text': 'I actually want to be able to pick more colors but you won\'t let me!'
+		'text': 'Pressing the "Space" key will open your inventory. You can also interact with objects and pickup items using the "E" button.'
 	},
 	{  
-		'name': 'Dialog System',
-		'text': 'It doesn\'t matter, this is only a demonstration!'
+		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
 	},
 	{
-		'action': 'game_end'
+		'scene': 'start'
 	}
 ]
 
@@ -200,7 +174,8 @@ func event_handler(event):
 			if event['action'] == 'game_end':
 				get_tree().quit()
 		{'scene'}:
-			get_tree().change_scene(event['scene'])
+			if event['scene'] == 'start':
+				get_tree().change_scene("res://MCHouse.tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])

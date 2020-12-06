@@ -74,10 +74,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -455.0
-margin_top = -209.488
-margin_right = 455.0
-margin_bottom = -42.4877
+margin_left = -225.351
+margin_top = -116.0
+margin_right = 225.649
+margin_bottom = -11.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -98,12 +98,14 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 15.0
-margin_top = 15.0
-margin_right = -15.0
-margin_bottom = -15.0
+margin_top = 12.0
+margin_right = 349.0
+margin_bottom = 31.0
+rect_scale = Vector2( 0.541655, 0.575849 )
 bbcode_enabled = true
 bbcode_text = "Placeholder text for testing and formatting."
 text = "Placeholder text for testing and formatting."
+scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -111,15 +113,15 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="TextBubble"]
 
 [node name="NextIndicator" type="TextureRect" parent="TextBubble"]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -36.4279
-margin_top = -35.9016
-margin_right = 14.5721
-margin_bottom = 51.4957
-rect_scale = Vector2( 0.4, 0.4 )
+anchor_left = 0.97
+anchor_top = 0.883
+anchor_right = 0.97
+anchor_bottom = 0.883
+margin_left = -5.47
+margin_top = -7.715
+margin_right = 45.53
+margin_bottom = 79.285
+rect_scale = Vector2( 0.221536, 0.177229 )
 texture = ExtResource( 2 )
 stretch_mode = 4
 __meta__ = {
@@ -131,9 +133,15 @@ autoplay = "IDLE"
 anims/IDLE = SubResource( 1 )
 
 [node name="NameLabel" type="RichTextLabel" parent="TextBubble"]
-margin_left = 2.0
-margin_top = -37.0
-margin_right = 369.0
+anchor_left = 0.033
+anchor_top = -0.115
+anchor_right = 0.033
+anchor_bottom = -0.115
+margin_left = -9.51561
+margin_top = -10.333
+margin_right = 357.484
+margin_bottom = 26.667
+rect_scale = Vector2( 0.52, 0.56 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 10
 bbcode_enabled = true
@@ -145,14 +153,14 @@ __meta__ = {
 }
 
 [node name="Options" type="VBoxContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -19.9999
-margin_right = 20.0
-margin_bottom = 19.9999
+anchor_left = 0.485
+anchor_top = 0.262
+anchor_right = 0.485
+anchor_bottom = 0.262
+margin_left = -78.8
+margin_top = -37.12
+margin_right = 79.2
+margin_bottom = 36.88
 grow_horizontal = 2
 grow_vertical = 2
 __meta__ = {
@@ -161,13 +169,14 @@ __meta__ = {
 
 [node name="TextInputDialog" type="AcceptDialog" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.182
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -192.0
-margin_top = -57.0
-margin_right = 192.0
-margin_bottom = 57.0
+anchor_bottom = 0.182
+margin_left = -128.812
+margin_top = -21.5631
+margin_right = 213.188
+margin_bottom = 92.4369
+rect_scale = Vector2( 0.804697, 0.76 )
 popup_exclusive = true
 dialog_hide_on_ok = false
 __meta__ = {
@@ -177,7 +186,7 @@ __meta__ = {
 [node name="LineEdit" type="LineEdit" parent="TextInputDialog"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 376.0
+margin_right = 334.0
 margin_bottom = 55.0
 
 [node name="FX" type="Control" parent="."]
@@ -192,6 +201,10 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -0.471939
+margin_top = 0.471939
+margin_right = -0.471924
+margin_bottom = 0.471924
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 __meta__ = {

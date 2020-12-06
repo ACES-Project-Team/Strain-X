@@ -24,6 +24,7 @@ JsonData="*res://JsonData.gd"
 PlayerInventory="*res://PlayerInventory.gd"
 Hitbox="*res://Hitbox.tscn"
 PlayerStats="*res://PlayerStats.tscn"
+global="*res://global.gd"
 
 [display]
 
@@ -34,6 +35,10 @@ window/size/test_height=720
 mouse_cursor/custom_image="res://Assets/UI/cursor.png"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "dialogs" )
 
 [importer_defaults]
 
@@ -121,4 +126,5 @@ change_to_lightsaber={
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"

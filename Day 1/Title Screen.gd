@@ -15,7 +15,7 @@ func _physics_process(delta):
 
 
 func _on_NewGame_pressed():
-	get_tree().change_scene("res://MCHouse.tscn")
+	get_tree().change_scene("res://Tutorial.tscn")
 
 func _on_Exit_pressed():
 	get_tree().quit()
