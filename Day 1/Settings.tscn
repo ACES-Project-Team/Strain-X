@@ -46,7 +46,5 @@ text = "Music Volume:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="value_changed" from="HSlider2" to="." method="_on_HSlider2_value_changed"]

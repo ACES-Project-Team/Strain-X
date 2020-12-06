@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Title Screen.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/option button pressed-Sheet.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Assets/UI/new game button hover-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UI/exit button hover-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/UI/option button hover-Sheet.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Music and Sounds/MainBackgroundMusic.wav" type="AudioStream" id=12]
 
 [node name="Title Screen" type="Node"]
 script = ExtResource( 1 )
@@ -60,5 +61,9 @@ margin_bottom = 96.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 10 )
+
+[node name="Background Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+autoplay = true
 [connection signal="pressed" from="MarginContainer/VBoxContainer/NewGame" to="." method="_on_NewGame_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
