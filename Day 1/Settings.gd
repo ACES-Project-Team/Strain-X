@@ -7,3 +7,5 @@ func _on_HSlider_value_changed(value):
 
 func _on_HSlider2_value_changed(value):
 	pass # Replace with function body.
+	
+	
