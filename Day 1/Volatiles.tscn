@@ -422,7 +422,7 @@ graph_offset = Vector2( -820, 0 )
 
 [node name="Volatiles" type="KinematicBody2D"]
 position = Vector2( 183.882, 57.6473 )
-collision_layer = 2147483652
+collision_layer = 2147483648
 script = ExtResource( 1 )
 max_speed = 65
 
