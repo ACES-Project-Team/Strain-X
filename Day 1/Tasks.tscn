@@ -1,0 +1,34 @@
+[gd_scene format=2]
+
+[node name="Tasks" type="Node"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Panel"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel/Panel"]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+margin_right = 12.0
+margin_bottom = 12.0
+
+[node name="ItemList" type="ItemList" parent="Panel/ScrollContainer"]
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/ItemList"]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
