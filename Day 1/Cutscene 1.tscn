@@ -1,6 +1,5 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Cutscene 1.gd" type="Script" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Bedroom1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=4]
@@ -9,8 +8,19 @@
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=8]
 
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+onready var cam = $CutsceneCamera
+
+func _ready():
+	yield(cam.move_to_position(cam.global_position + Vector2.LEFT * 100, 50), \"completed\")
+	yield(get_tree().create_timer(2.0), \"timeout\")
+	yield(cam.return_to_old_position(250), \"completed\")
+"
+
 [node name="Cutscene 1" type="Node2D"]
-script = ExtResource( 1 )
+script = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -747.0
@@ -46,6 +56,4 @@ current = true
 script = ExtResource( 5 )
 
 [node name="Tween" type="Tween" parent="CutsceneCamera"]
-
-[node name="Area2D" type="Area2D" parent="."]
 [connection signal="player_camera" from="CutsceneCamera" to="Player" method="_on_CutsceneCamera_player_camera"]
