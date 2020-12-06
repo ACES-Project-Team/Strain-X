@@ -6,7 +6,6 @@
 [ext_resource path="res://Hitbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=6]
 
-
 [sub_resource type="CircleShape2D" id=1]
 radius = 3.26704
 
@@ -1634,7 +1633,7 @@ tree_root = SubResource( 77 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 78 )
-parameters/Attack/blend_position = Vector2( 0.262554, 0.0663793 )
+parameters/Attack/blend_position = Vector2( 0.0759331, -0.303448 )
 parameters/Idle/blend_position = Vector2( -0.337159, 0.00948286 )
 parameters/Run/blend_position = Vector2( 0.566715, 0 )
 
