@@ -27,7 +27,7 @@ var dialog_script = [
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
 	},
 	{
-		'scene': 'start'
+		'scene': 'wakeup'
 	}
 ]
 
@@ -72,7 +72,7 @@ func _ready():
 	# Setting everything up for the node to be default
 	$TextBubble/NameLabel.text = ''
 	$Background.visible = false
-	$CloseUp.visible = false
+	$Mom.visible = false
 	load_dialog()
 
 func _process(delta):
@@ -110,13 +110,13 @@ func update_name(event):
 	# This function will search for the name key and try to parse it into the NameLabel node of the dialog
 	if event.has('name'):
 		$TextBubble/NameLabel.bbcode_text = parse_text(event['name'])
-		if '[name]' in event['name']:
-			$CloseUp.visible = true
+		if event['name'] == 'Mom':
+			$Mom.visible = true
 		else:
-			$CloseUp.visible = false
+			$Mom.visible = false
 	else:
 		$TextBubble/NameLabel.bbcode_text = ''
-		$CloseUp.visible = false
+		$Mom.visible = false
 
 func update_text(text):
 	# Updating the text and starting the animation from 0
@@ -175,6 +175,10 @@ func event_handler(event):
 				get_tree().quit()
 		{'scene'}:
 			if event['scene'] == 'start':
+				get_tree().change_scene("res://MCHouse.tscn")
+			if event['scene'] == 'wakeup':
+				get_tree().change_scene("res://WakeUp.tscn")
+			if event['scene'] == 'main':
 				get_tree().change_scene("res://MCHouse.tscn")
 		{'background'}:
 			$Background.visible = true

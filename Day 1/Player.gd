@@ -58,6 +58,7 @@ func move_state(delta):
 	
 	if hasSprayBottle:
 		if Input.is_action_pressed("attack"):
+			$SpraySound.play()
 			state = ATTACK
 		
 func attack_state(delta):
