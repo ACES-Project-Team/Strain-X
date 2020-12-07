@@ -20,7 +20,6 @@
 [ext_resource path="res://Assets/World/Mug.png" type="Texture" id=18]
 [ext_resource path="res://Mom.tscn" type="PackedScene" id=19]
 
-
 [sub_resource type="TileSet" id=1]
 0/name = "Kitchen Floor Tile Set.png 0"
 0/texture = ExtResource( 10 )
