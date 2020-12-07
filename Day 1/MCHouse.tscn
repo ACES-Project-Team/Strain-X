@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -9,8 +9,11 @@
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Health.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
+[ext_resource path="res://CutsceneCamera.gd" type="Script" id=10]
+[ext_resource path="res://MCHouse.gd" type="Script" id=11]
 
 [node name="MCHouse" type="Node2D"]
+script = ExtResource( 11 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -440.74
@@ -45,3 +48,10 @@ position = Vector2( 378.297, 112.366 )
 position = Vector2( 324.63, 130.815 )
 
 [node name="Health" parent="." instance=ExtResource( 8 )]
+
+[node name="CutsceneCamera" type="Camera2D" parent="."]
+position = Vector2( 324.548, 130.24 )
+current = true
+script = ExtResource( 10 )
+
+[node name="Tween" type="Tween" parent="CutsceneCamera"]

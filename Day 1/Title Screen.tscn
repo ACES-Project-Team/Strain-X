@@ -11,7 +11,7 @@
 [ext_resource path="res://Assets/UI/new game button hover-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UI/exit button hover-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/UI/option button hover-Sheet.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Music and Sounds/MainBackgroundMusic.wav" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Music and Sounds/TitleScreenMusic.wav" type="AudioStream" id=12]
 
 [node name="Title Screen" type="Node"]
 script = ExtResource( 1 )

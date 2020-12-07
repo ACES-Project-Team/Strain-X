@@ -1,9 +1,78 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://SurgicalMaskOutfit .gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.75485, 11.6922 )
+
+[sub_resource type="Animation" id=24]
+resource_name = "AlcoholAttackDown"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 88, 89, 90, 91 ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "AlcoholAttackLeft"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 84, 85, 86, 87 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "AlcoholAttackRight"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 80, 81, 82, 83 ]
+}
+
+[sub_resource type="Animation" id=27]
+resource_name = "AlcoholAttackUp"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 92, 93, 94, 95 ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "IdleDown"
@@ -22,7 +91,7 @@ tracks/0/keys = {
 "values": [ 96 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=3]
 resource_name = "IdleLeft"
 length = 0.1
 loop = true
@@ -39,7 +108,7 @@ tracks/0/keys = {
 "values": [ 114 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 resource_name = "IdleRight"
 length = 0.1
 loop = true
@@ -56,8 +125,7 @@ tracks/0/keys = {
 "values": [ 108 ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "IdleUp"
+[sub_resource type="Animation" id=5]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -73,8 +141,75 @@ tracks/0/keys = {
 "values": [ 102 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "WalkDown"
+[sub_resource type="Animation" id=37]
+resource_name = "LightsaberAttackDown"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 128, 129, 130, 131 ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_name = "LightsaberAttackLeft"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 124, 125, 126, 127 ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "LightsaberAttackRight"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 120, 121, 122, 123 ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_name = "LightsaberAttackUp"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 132, 133, 134, 135 ]
+}
+
+[sub_resource type="Animation" id=6]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -90,7 +225,7 @@ tracks/0/keys = {
 "values": [ 97, 98, 99, 100, 101 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=7]
 resource_name = "WalkLeft"
 length = 0.5
 loop = true
@@ -107,8 +242,7 @@ tracks/0/keys = {
 "values": [ 115, 116, 117, 118, 119 ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "WalkRight"
+[sub_resource type="Animation" id=8]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -124,8 +258,7 @@ tracks/0/keys = {
 "values": [ 109, 110, 111, 112, 113 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "WalkUp"
+[sub_resource type="Animation" id=9]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -141,94 +274,134 @@ tracks/0/keys = {
 "values": [ 103, 104, 105, 106, 107 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=12]
+[sub_resource type="AnimationNodeAnimation" id=28]
+animation = "AlcoholAttackLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=29]
+animation = "AlcoholAttackUp"
+
+[sub_resource type="AnimationNodeAnimation" id=30]
+animation = "AlcoholAttackDown"
+
+[sub_resource type="AnimationNodeAnimation" id=31]
+animation = "AlcoholAttackRight"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=32]
+blend_point_0/node = SubResource( 28 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 29 )
+blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_2/node = SubResource( 30 )
+blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_3/node = SubResource( 31 )
+blend_point_3/pos = Vector2( 1, 0 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id=10]
 animation = "IdleLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=13]
+[sub_resource type="AnimationNodeAnimation" id=11]
 animation = "IdleUp"
 
-[sub_resource type="AnimationNodeAnimation" id=14]
+[sub_resource type="AnimationNodeAnimation" id=12]
 animation = "IdleDown"
 
-[sub_resource type="AnimationNodeAnimation" id=15]
+[sub_resource type="AnimationNodeAnimation" id=13]
 animation = "IdleRight"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=16]
-blend_point_0/node = SubResource( 12 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=14]
+blend_point_0/node = SubResource( 10 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 13 )
+blend_point_1/node = SubResource( 11 )
 blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 14 )
+blend_point_2/node = SubResource( 12 )
 blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 15 )
+blend_point_3/node = SubResource( 13 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=20]
+[sub_resource type="AnimationNodeAnimation" id=15]
 animation = "WalkLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=21]
+[sub_resource type="AnimationNodeAnimation" id=16]
 animation = "WalkUp"
 
-[sub_resource type="AnimationNodeAnimation" id=22]
+[sub_resource type="AnimationNodeAnimation" id=17]
 animation = "WalkDown"
 
-[sub_resource type="AnimationNodeAnimation" id=23]
+[sub_resource type="AnimationNodeAnimation" id=18]
 animation = "WalkRight"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=17]
-blend_point_0/node = SubResource( 20 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=19]
+blend_point_0/node = SubResource( 15 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 21 )
+blend_point_1/node = SubResource( 16 )
 blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 22 )
+blend_point_2/node = SubResource( 17 )
 blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 23 )
+blend_point_3/node = SubResource( 18 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=18]
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
 
-[sub_resource type="AnimationNodeStateMachine" id=10]
-states/Idle/node = SubResource( 16 )
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=34]
+
+[sub_resource type="AnimationNodeStateMachine" id=22]
+states/AlcoholAttack/node = SubResource( 32 )
+states/AlcoholAttack/position = Vector2( 130, 186 )
+states/Idle/node = SubResource( 14 )
 states/Idle/position = Vector2( 130, 108 )
-states/Walk/node = SubResource( 17 )
+states/Walk/node = SubResource( 19 )
 states/Walk/position = Vector2( 314, 108 )
-transitions = [ "Idle", "Walk", SubResource( 18 ), "Walk", "Idle", SubResource( 19 ) ]
+transitions = [ "Idle", "Walk", SubResource( 20 ), "Walk", "Idle", SubResource( 21 ), "Idle", "AlcoholAttack", SubResource( 33 ), "AlcoholAttack", "Idle", SubResource( 34 ) ]
 start_node = "Idle"
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=11]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=23]
 
 [node name="SurgicalMaskOutfit " type="KinematicBody2D"]
+script = ExtResource( 2 )
 
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 96
+frame = 135
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/AlcoholAttackDown = SubResource( 24 )
+anims/AlcoholAttackLeft = SubResource( 26 )
+anims/AlcoholAttackRight = SubResource( 25 )
+anims/AlcoholAttackUp = SubResource( 27 )
 anims/IdleDown = SubResource( 2 )
-anims/IdleLeft = SubResource( 8 )
-anims/IdleRight = SubResource( 6 )
-anims/IdleUp = SubResource( 4 )
-anims/WalkDown = SubResource( 3 )
-anims/WalkLeft = SubResource( 9 )
-anims/WalkRight = SubResource( 7 )
-anims/WalkUp = SubResource( 5 )
+anims/IdleLeft = SubResource( 3 )
+anims/IdleRight = SubResource( 4 )
+anims/IdleUp = SubResource( 5 )
+anims/LightsaberAttackDown = SubResource( 37 )
+anims/LightsaberAttackLeft = SubResource( 36 )
+anims/LightsaberAttackRight = SubResource( 35 )
+anims/LightsaberAttackUp = SubResource( 38 )
+anims/WalkDown = SubResource( 6 )
+anims/WalkLeft = SubResource( 7 )
+anims/WalkRight = SubResource( 8 )
+anims/WalkUp = SubResource( 9 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 10 )
+tree_root = SubResource( 22 )
 anim_player = NodePath("../AnimationPlayer")
-active = true
-parameters/playback = SubResource( 11 )
+parameters/playback = SubResource( 23 )
+parameters/AlcoholAttack/blend_position = Vector2( -0.009009, 0.0474138 )
 parameters/Idle/blend_position = Vector2( -0.039897, -0.464655 )
 parameters/Walk/blend_position = Vector2( -0.544402, 0.0474138 )
