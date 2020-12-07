@@ -9,3 +9,7 @@ func _on_HSlider2_value_changed(value):
 	pass # Replace with function body.
 	
 	
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Title Screen.tscn")
