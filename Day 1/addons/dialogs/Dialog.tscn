@@ -4,7 +4,7 @@
 [ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
 [ext_resource path="res://addons/dialogs/dialog_node.gd" type="Script" id=3]
 [ext_resource path="res://addons/dialogs/Theme.tres" type="Theme" id=4]
-[ext_resource path="res://addons/dialogs/Images/portraits/df-1.png" type="Texture" id=5]
+[ext_resource path="res://addons/dialogs/Images/portraits/Mom_Large-Sheet.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IDLE"
@@ -41,15 +41,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CloseUp" type="Control" parent="."]
-visible = false
+[node name="Mom" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="CloseUp"]
+[node name="ColorRect" type="ColorRect" parent="Mom"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
@@ -57,11 +56,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PortraitLeft" type="TextureRect" parent="CloseUp"]
+[node name="PortraitLeft" type="TextureRect" parent="Mom"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -361.0
-margin_right = 221.0
+margin_left = 16.3416
+margin_top = -259.362
+margin_right = 217.342
+margin_bottom = -4.36211
 texture = ExtResource( 5 )
 expand = true
 stretch_mode = 5

@@ -1,12 +1,13 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://FaceShieldOutfit.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Music and Sounds/AttackSpraySound.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.75485, 11.4316 )
 
-[sub_resource type="Animation" id=26]
+[sub_resource type="Animation" id=2]
 resource_name = "AlcoholAttackDown"
 length = 0.5
 loop = true
@@ -23,7 +24,7 @@ tracks/0/keys = {
 "values": [ 208, 209, 210, 211 ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=3]
 resource_name = "AlcoholAttackLeft"
 length = 0.5
 loop = true
@@ -40,7 +41,7 @@ tracks/0/keys = {
 "values": [ 204, 205, 206, 207 ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=4]
 resource_name = "AlcoholAttackRight"
 length = 0.5
 loop = true
@@ -57,7 +58,7 @@ tracks/0/keys = {
 "values": [ 200, 201, 202, 203 ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=5]
 resource_name = "AlcoholAttackup"
 length = 0.5
 loop = true
@@ -74,8 +75,7 @@ tracks/0/keys = {
 "values": [ 212, 213, 214, 215 ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "IdleDown"
+[sub_resource type="Animation" id=6]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -91,8 +91,7 @@ tracks/0/keys = {
 "values": [ 176 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "IdleLeft"
+[sub_resource type="Animation" id=7]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -108,8 +107,7 @@ tracks/0/keys = {
 "values": [ 194 ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "IdleRight"
+[sub_resource type="Animation" id=8]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -125,8 +123,7 @@ tracks/0/keys = {
 "values": [ 188 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "IdleUp"
+[sub_resource type="Animation" id=9]
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -142,7 +139,7 @@ tracks/0/keys = {
 "values": [ 182 ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=10]
 resource_name = "LightsaberAttackDown"
 length = 0.5
 loop = true
@@ -159,7 +156,7 @@ tracks/0/keys = {
 "values": [ 168, 169, 170, 171 ]
 }
 
-[sub_resource type="Animation" id=31]
+[sub_resource type="Animation" id=11]
 resource_name = "LightsaberAttackLeft"
 length = 0.5
 loop = true
@@ -176,7 +173,7 @@ tracks/0/keys = {
 "values": [ 164, 165, 166, 167 ]
 }
 
-[sub_resource type="Animation" id=30]
+[sub_resource type="Animation" id=12]
 resource_name = "LightsaberAttackRight"
 length = 0.5
 loop = true
@@ -193,7 +190,7 @@ tracks/0/keys = {
 "values": [ 160, 161, 162, 163 ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=13]
 resource_name = "LightsaberAttackUp"
 length = 0.5
 loop = true
@@ -210,7 +207,7 @@ tracks/0/keys = {
 "values": [ 172, 173, 174, 175 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=14]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -226,8 +223,7 @@ tracks/0/keys = {
 "values": [ 177, 178, 179, 180, 181 ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "WalkLeft"
+[sub_resource type="Animation" id=15]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -243,7 +239,7 @@ tracks/0/keys = {
 "values": [ 195, 196, 197, 198, 199 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=16]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -259,7 +255,7 @@ tracks/0/keys = {
 "values": [ 189, 190, 191, 192, 193 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=17]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -275,69 +271,69 @@ tracks/0/keys = {
 "values": [ 183, 184, 185, 186, 187 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=10]
+[sub_resource type="AnimationNodeAnimation" id=18]
 animation = "IdleLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=11]
+[sub_resource type="AnimationNodeAnimation" id=19]
 animation = "IdleUp"
 
-[sub_resource type="AnimationNodeAnimation" id=12]
+[sub_resource type="AnimationNodeAnimation" id=20]
 animation = "IdleDown"
 
-[sub_resource type="AnimationNodeAnimation" id=13]
+[sub_resource type="AnimationNodeAnimation" id=21]
 animation = "IdleRight"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=14]
-blend_point_0/node = SubResource( 10 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=22]
+blend_point_0/node = SubResource( 18 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 11 )
+blend_point_1/node = SubResource( 19 )
 blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 12 )
+blend_point_2/node = SubResource( 20 )
 blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 13 )
+blend_point_3/node = SubResource( 21 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=15]
+[sub_resource type="AnimationNodeAnimation" id=23]
 animation = "WalkLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=16]
+[sub_resource type="AnimationNodeAnimation" id=24]
 animation = "Walkup"
 
-[sub_resource type="AnimationNodeAnimation" id=17]
+[sub_resource type="AnimationNodeAnimation" id=25]
 animation = "WalkDown"
 
-[sub_resource type="AnimationNodeAnimation" id=18]
+[sub_resource type="AnimationNodeAnimation" id=26]
 animation = "WalkRight"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=19]
-blend_point_0/node = SubResource( 15 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=27]
+blend_point_0/node = SubResource( 23 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 16 )
+blend_point_1/node = SubResource( 24 )
 blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 17 )
+blend_point_2/node = SubResource( 25 )
 blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 18 )
+blend_point_3/node = SubResource( 26 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
 
-[sub_resource type="AnimationNodeStateMachine" id=22]
-states/Idle/node = SubResource( 14 )
+[sub_resource type="AnimationNodeStateMachine" id=30]
+states/Idle/node = SubResource( 22 )
 states/Idle/position = Vector2( 120, 57 )
-states/Walk/node = SubResource( 19 )
+states/Walk/node = SubResource( 27 )
 states/Walk/position = Vector2( 358, 57 )
-transitions = [ "Idle", "Walk", SubResource( 20 ), "Walk", "Idle", SubResource( 21 ) ]
+transitions = [ "Idle", "Walk", SubResource( 28 ), "Walk", "Idle", SubResource( 29 ) ]
 start_node = "Idle"
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=23]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=31]
 
 [node name="FaceShieldOutfit" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -345,32 +341,35 @@ script = ExtResource( 2 )
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 164
+frame = 208
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/AlcoholAttackDown = SubResource( 26 )
-anims/AlcoholAttackLeft = SubResource( 25 )
-anims/AlcoholAttackRight = SubResource( 24 )
-anims/AlcoholAttackup = SubResource( 27 )
-anims/IdleDown = SubResource( 2 )
-anims/IdleLeft = SubResource( 3 )
-anims/IdleRight = SubResource( 4 )
-anims/IdleUp = SubResource( 5 )
-anims/LightsaberAttackDown = SubResource( 28 )
-anims/LightsaberAttackLeft = SubResource( 31 )
-anims/LightsaberAttackRight = SubResource( 30 )
-anims/LightsaberAttackUp = SubResource( 29 )
-anims/WalkDown = SubResource( 6 )
-anims/WalkLeft = SubResource( 7 )
-anims/WalkRight = SubResource( 8 )
-anims/Walkup = SubResource( 9 )
+anims/AlcoholAttackDown = SubResource( 2 )
+anims/AlcoholAttackLeft = SubResource( 3 )
+anims/AlcoholAttackRight = SubResource( 4 )
+anims/AlcoholAttackup = SubResource( 5 )
+anims/IdleDown = SubResource( 6 )
+anims/IdleLeft = SubResource( 7 )
+anims/IdleRight = SubResource( 8 )
+anims/IdleUp = SubResource( 9 )
+anims/LightsaberAttackDown = SubResource( 10 )
+anims/LightsaberAttackLeft = SubResource( 11 )
+anims/LightsaberAttackRight = SubResource( 12 )
+anims/LightsaberAttackUp = SubResource( 13 )
+anims/WalkDown = SubResource( 14 )
+anims/WalkLeft = SubResource( 15 )
+anims/WalkRight = SubResource( 16 )
+anims/Walkup = SubResource( 17 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 22 )
+tree_root = SubResource( 30 )
 anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource( 23 )
+parameters/playback = SubResource( 31 )
 parameters/Idle/blend_position = Vector2( -0.0553411, -0.663793 )
 parameters/Walk/blend_position = Vector2( -0.0862291, -0.65431 )
+
+[node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
