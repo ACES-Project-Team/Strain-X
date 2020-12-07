@@ -1,3 +1,14 @@
 [
-  {"text": "this dialog is being loaded from a json file!"}
+  {
+	"text": "..."
+  },
+  {
+	"text": "*yawns*"
+  },
+  {
+	"text": "You get up from your bed and you go downstairs to ask your mom what's going."
+  },
+  {
+	"scene": "start"
+  }
 ]

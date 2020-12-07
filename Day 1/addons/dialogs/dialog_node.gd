@@ -27,7 +27,7 @@ var dialog_script = [
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
 	},
 	{
-		'scene': 'start'
+		'scene': 'wakeup'
 	}
 ]
 
@@ -176,6 +176,8 @@ func event_handler(event):
 		{'scene'}:
 			if event['scene'] == 'start':
 				get_tree().change_scene("res://MCHouse.tscn")
+			if event['scene'] == 'wakeup':
+				get_tree().change_scene("res://WakeUp.tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])
