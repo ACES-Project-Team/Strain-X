@@ -1,0 +1,15 @@
+[
+	{
+		"fade-in": 2
+	},
+	{
+		"background": "res://addons/dialogs/Images/background/Kitchen.png"
+	},
+	{
+		"name": "Mom",
+		"text": "Hi d00d"
+	},
+	{
+		"scene": "main"
+	}
+]

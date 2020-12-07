@@ -52,3 +52,4 @@ func move_to_point(point,delta):
 func random_new_state(state_list):
 	state_list.shuffle()
 	return state_list.pop_front()
+
