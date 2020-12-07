@@ -1633,7 +1633,7 @@ tree_root = SubResource( 77 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 78 )
-parameters/Attack/blend_position = Vector2( 0.0759331, -0.303448 )
+parameters/Attack/blend_position = Vector2( -0.00643498, 0.512069 )
 parameters/Idle/blend_position = Vector2( -0.337159, 0.00948286 )
 parameters/Run/blend_position = Vector2( 0.566715, 0 )
 
@@ -1661,7 +1661,6 @@ shape = SubResource( 80 )
 [node name="Hitbox_pivot" type="Position2D" parent="."]
 visible = false
 position = Vector2( 0, 0.686012 )
-rotation = 4.32842
 
 [node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 5 )]
 position = Vector2( -1.68179, 0.365109 )
@@ -1674,7 +1673,6 @@ damage = 5
 position = Vector2( -5.3494, 16.4242 )
 rotation = 1.5708
 shape = SubResource( 81 )
-disabled = true
 [connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_entered"]
 [connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_exited"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
