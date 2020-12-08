@@ -14,7 +14,6 @@
 [ext_resource path="res://Assets/World/Bedroom 1 Nightshade and Cabinet.png" type="Texture" id=12]
 [ext_resource path="res://Assets/World/Window.png" type="Texture" id=13]
 
-
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
@@ -469,7 +468,7 @@ extents = Vector2( 3.40666, 16.26 )
 extents = Vector2( 7.74333, 17.4295 )
 
 [node name="Bedroom1" type="Node2D"]
-position = Vector2( -13.6296, -186.399 )
+position = Vector2( -13.6296, -186.11 )
 
 [node name="Wall and Floor" type="TileMap" parent="."]
 tile_set = SubResource( 10 )

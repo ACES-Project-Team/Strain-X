@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
 signal change_to_alcohol_attack
+signal health_updated(health)
+signal killed()
 
 enum { 
 	STOP, 
@@ -11,13 +13,17 @@ export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var FRICTION = 500
 var state = MOVE
-var attack1 = swtich_attack()
+var attack1 = switch_attack()
 var stats = PlayerStats
 var velocity = Vector2.ZERO
 
 export var hasSprayBottle = false
+export (float) var max_health = 100 
+
 
 #onready var on_hand_sprite = $Sprites/OnHandSprite 
+onready var health = max_health setget _set_health
+onready var invulnetability_timer = $InvulnerabilityTimer
 onready var animationPlayer = $AnimationPlayer 
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -94,7 +100,7 @@ func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
 
-func swtich_attack():
+func switch_attack():
 	if Input.is_action_pressed("change_to_spray"):
 		if attack1 == true:
 			emit_signal("change_to_alcohol_attack") 
@@ -104,3 +110,21 @@ func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
+
+func damage(amount):
+	if invulnetability_timer.is_stopped():
+		invulnetability_timer.start()
+	_set_health(health - amount)
+	
+func kill(): 
+	pass 
+	
+func _set_health(value):
+	var prev_health = health 
+	health = clamp(value, 0, max_health)
+	if health != prev_health:
+		emit_signal("health_updated", health)
+		if health == 0:
+			kill() 
+			emit_signal("killed")
+	

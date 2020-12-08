@@ -8,18 +8,19 @@
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( -0.757263, 7.57255 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 281.682, 55.5005 )
+position = Vector2( 218.83, 110.023 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 2 )]
 position = Vector2( 115.369, 48.64 )
 
 [node name="Carnagephase1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 355.099, 56.1865 )
+position = Vector2( 383.117, 86.4767 )
 
 [node name="Carnagephase2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 322.885, -18.7288 )
+position = Vector2( 302.439, 157.712 )
 
 [node name="Sister" parent="." instance=ExtResource( 5 )]
 position = Vector2( 148.332, 125.109 )
