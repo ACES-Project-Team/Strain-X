@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Carnagephase2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Karen.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -0.757263, 7.57255 )
@@ -23,3 +24,6 @@ position = Vector2( 302.439, 157.712 )
 
 [node name="Sister" parent="." instance=ExtResource( 5 )]
 position = Vector2( 148.332, 125.109 )
+
+[node name="Karen" parent="." instance=ExtResource( 6 )]
+position = Vector2( 196.576, 58.6899 )
