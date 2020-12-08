@@ -16,9 +16,9 @@ texture = ExtResource( 3 )
 
 [node name="HSlider" type="HSlider" parent="."]
 margin_left = 189.0
-margin_top = 113.0
+margin_top = 113.348
 margin_right = 294.0
-margin_bottom = 141.0
+margin_bottom = 141.348
 __meta__ = {
 "_edit_use_anchors_": false
 }
