@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pekora BGM Lyrics.wav-c76b98df95a7c0e1c9b3d7b89a57442a.sample"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/Pekora BGM Lyrics.wav"
+dest_files=[ "res://.import/Pekora BGM Lyrics.wav-c76b98df95a7c0e1c9b3d7b89a57442a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

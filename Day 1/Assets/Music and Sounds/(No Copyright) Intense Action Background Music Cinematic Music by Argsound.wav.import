@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/(No Copyright) Intense Action Background Music Cinematic Music by Argsound.wav-6469f4088b9db2e02793df37de8340f5.sample"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/(No Copyright) Intense Action Background Music Cinematic Music by Argsound.wav"
+dest_files=[ "res://.import/(No Copyright) Intense Action Background Music Cinematic Music by Argsound.wav-6469f4088b9db2e02793df37de8340f5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

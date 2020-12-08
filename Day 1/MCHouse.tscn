@@ -42,6 +42,7 @@ position = Vector2( 202, 67.8408 )
 target_scene = ExtResource( 6 )
 
 [node name="Sister" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 378.297, 112.366 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]

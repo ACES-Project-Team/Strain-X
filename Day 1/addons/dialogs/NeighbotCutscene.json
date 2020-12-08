@@ -1,0 +1,60 @@
+[
+	{
+		"background": "res://addons/dialogs/Images/background/Outside.png"
+	},
+	
+	{
+		"sound": "neighbormusic"
+	},
+	
+	{
+		"fade-in": 2
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "Thank you for saving me, I can't thank you enough. Just wait for a while here I will get stuff from my house."
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "Here is a faceshield, you'll need more protection than that if you are going to stay longer outside."
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "I can't find any other way to repay your kindness since my supply is low and I'm out of food."
+	},
+	
+	{
+		"text": "Thank you very much. Here I have some extra food. Take them."
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "Oh no sir! I'm fine!"
+	},
+	
+	{
+		"text": "Take them."
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "Well if you say so. Thank you very much!"
+	},
+	
+	{
+		"text": "No problem. Stay safe always."
+	},
+	
+	{
+		"name": "Neighbor",
+		"text": "Will do."
+	},
+
+]

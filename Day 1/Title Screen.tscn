@@ -67,5 +67,4 @@ stream = ExtResource( 12 )
 autoplay = true
 mix_target = 1
 [connection signal="pressed" from="MarginContainer/VBoxContainer/NewGame" to="." method="_on_NewGame_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_Options_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
