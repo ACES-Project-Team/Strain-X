@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -20,7 +20,7 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-
+[ext_resource path="res://Volatiles.tscn" type="PackedScene" id=21]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -2090,3 +2090,99 @@ shape = SubResource( 31 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
+
+[node name="Volatiles" parent="." instance=ExtResource( 21 )]
+position = Vector2( -344.118, -569.353 )
+
+[node name="Volatiles2" parent="." instance=ExtResource( 21 )]
+position = Vector2( -261.618, -511.853 )
+
+[node name="Volatiles3" parent="." instance=ExtResource( 21 )]
+position = Vector2( -249.618, -627.353 )
+
+[node name="Volatiles4" parent="." instance=ExtResource( 21 )]
+position = Vector2( -206.118, -560.353 )
+
+[node name="Volatiles5" parent="." instance=ExtResource( 21 )]
+position = Vector2( -356.618, -491.353 )
+
+[node name="Volatiles6" parent="." instance=ExtResource( 21 )]
+position = Vector2( -263.618, -435.353 )
+
+[node name="Volatiles7" parent="." instance=ExtResource( 21 )]
+position = Vector2( -429.618, -461.853 )
+
+[node name="Volatiles8" parent="." instance=ExtResource( 21 )]
+position = Vector2( -355.118, -403.853 )
+
+[node name="Volatiles9" parent="." instance=ExtResource( 21 )]
+position = Vector2( -280.618, -571.353 )
+
+[node name="Volatiles10" parent="." instance=ExtResource( 21 )]
+position = Vector2( -354.118, -638.353 )
+
+[node name="Volatiles11" parent="." instance=ExtResource( 21 )]
+position = Vector2( -621.618, -449.853 )
+
+[node name="Volatiles12" parent="." instance=ExtResource( 21 )]
+position = Vector2( -569.618, -419.853 )
+
+[node name="Volatiles13" parent="." instance=ExtResource( 21 )]
+position = Vector2( -619.618, -375.853 )
+
+[node name="Volatiles14" parent="." instance=ExtResource( 21 )]
+position = Vector2( -686.618, -336.353 )
+
+[node name="Volatiles15" parent="." instance=ExtResource( 21 )]
+position = Vector2( -573.618, -328.353 )
+
+[node name="Volatiles16" parent="." instance=ExtResource( 21 )]
+position = Vector2( -446.618, -405.353 )
+
+[node name="Volatiles17" parent="." instance=ExtResource( 21 )]
+position = Vector2( -299.618, -352.353 )
+
+[node name="Volatiles18" parent="." instance=ExtResource( 21 )]
+position = Vector2( -702.118, -448.853 )
+
+[node name="Volatiles19" parent="." instance=ExtResource( 21 )]
+position = Vector2( -727.118, -528.353 )
+
+[node name="Volatiles20" parent="." instance=ExtResource( 21 )]
+position = Vector2( -691.618, -584.853 )
+
+[node name="Volatiles21" parent="." instance=ExtResource( 21 )]
+position = Vector2( -725.618, -300.353 )
+
+[node name="Volatiles22" parent="." instance=ExtResource( 21 )]
+position = Vector2( -414.118, -320.853 )
+
+[node name="Volatiles23" parent="." instance=ExtResource( 21 )]
+position = Vector2( -259.118, -299.353 )
+
+[node name="Volatiles24" parent="." instance=ExtResource( 21 )]
+position = Vector2( -209.118, -355.353 )
+
+[node name="Volatiles25" parent="." instance=ExtResource( 21 )]
+position = Vector2( -473.618, -351.353 )
+
+[node name="Volatiles26" parent="." instance=ExtResource( 21 )]
+position = Vector2( -647.118, -275.353 )
+
+[node name="Volatiles27" parent="." instance=ExtResource( 21 )]
+position = Vector2( -542.618, -255.353 )
+
+[node name="Volatiles28" parent="." instance=ExtResource( 21 )]
+position = Vector2( -472.118, -300.353 )
+
+[node name="Volatiles29" parent="." instance=ExtResource( 21 )]
+position = Vector2( -372.118, -264.353 )
+
+[node name="Volatiles30" parent="." instance=ExtResource( 21 )]
+position = Vector2( -649.618, -196.853 )
+
+[node name="Volatiles31" parent="." instance=ExtResource( 21 )]
+position = Vector2( -495.618, -159.353 )
+
+[node name="Volatiles32" parent="." instance=ExtResource( 21 )]
+position = Vector2( -326.618, -228.353 )
