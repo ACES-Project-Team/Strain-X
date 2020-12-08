@@ -107,7 +107,6 @@ rect_scale = Vector2( 0.541655, 0.575849 )
 bbcode_enabled = true
 bbcode_text = "Placeholder text for testing and formatting."
 text = "Placeholder text for testing and formatting."
-scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
