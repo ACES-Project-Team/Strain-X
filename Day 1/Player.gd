@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
 signal change_to_alcohol_attack
+signal health_updated(health)
+signal killed()
 
 enum { 
 	STOP, 
@@ -16,8 +18,12 @@ var stats = PlayerStats
 var velocity = Vector2.ZERO
 
 export var hasSprayBottle = false
+export (float) var max_health = 100 
+
 
 #onready var on_hand_sprite = $Sprites/OnHandSprite 
+onready var health = max_health setget _set_health
+onready var invulnetability_timer = $InvulnerabilityTimer
 onready var animationPlayer = $AnimationPlayer 
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -104,3 +110,21 @@ func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
+
+func damage(amount):
+	if invulnetability_timer.is_stopped():
+		invulnetability_timer.start()
+	_set_health(health - amount)
+	
+func kill(): 
+	pass 
+	
+func _set_health(value):
+	var prev_health = health 
+	health = clamp(value, 0, max_health)
+	if health != prev_health:
+		emit_signal("health_updated", health)
+		if health == 0:
+			kill() 
+			emit_signal("killed")
+	

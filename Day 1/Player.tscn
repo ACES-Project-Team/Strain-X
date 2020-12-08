@@ -1674,9 +1674,14 @@ damage = 5
 position = Vector2( -5.3494, 16.4242 )
 rotation = 1.5708
 shape = SubResource( 81 )
+disabled = true
 
 [node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
+
+[node name="InvulnerabilityTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
 [connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_entered"]
 [connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_exited"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
