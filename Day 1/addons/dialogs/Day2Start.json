@@ -2,7 +2,9 @@
 	{
 		"fade-in": 2
 	},
-	
+	{
+		"background": "res://addons/dialogs/Images/background/Bedroom1.png"
+	},
 	{
 		"text": "..."
 	},
@@ -14,33 +16,7 @@
 	{
 		"text": "(You got out of bed to wake up. As you come close to the living room, you hear the sound of the TV open with the news playing.)"
 	},
-	
 	{
-		"name": "Newscaster",
-		"text": "Goodmorning citizens, scientists and researchers have been fast at work to analyze this deadly virus and they have concluded that the infection rates been skryrocketing and that the number of dead people have increased-"
-	},
-	
-	{
-		"text": "..."
-	},
-	
-	{
-		"text": "(You hear an vociferous scream from outside your house screaming for help.)"
-	},
-	
-	{
-		"text": "(You sneaked out of the house to check it out.)"
-	},
-	
-	{
-		"text": "(You saw your neighbor being attacked by a person who's typically sterotyped as a Karen)"
-	},
-	
-	{
-		"text": "(Just looming in back, there was a person with pale skin and green eyes, seemingly planning to harm other people.)"
-	},
-	
-	{
-		"text": "[These are volatiles, the mindless creatures that I was fighting yesterday.]"
-	},
+		"scene": "startday2second"
+	}
 ]

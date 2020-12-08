@@ -114,9 +114,14 @@ func update_name(event):
 			$Mom.visible = true
 		else:
 			$Mom.visible = false
+		if event['name'] == 'Neighbor':
+			$Neighbor.visible = true
+		else:
+			$Neighbor.visible = false
 	else:
 		$TextBubble/NameLabel.bbcode_text = ''
 		$Mom.visible = false
+		$Neighbor.visible = false
 
 func update_text(text):
 	# Updating the text and starting the animation from 0
@@ -180,6 +185,8 @@ func event_handler(event):
 				get_tree().change_scene("res://WakeUp.tscn")
 			if event['scene'] == 'main':
 				get_tree().change_scene("res://MCHouse.tscn")
+			if event['scene'] == 'startday2second':
+				get_tree().change_scene("res://StartOfDay2(2).tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])
@@ -195,12 +202,15 @@ func event_handler(event):
 			dialog_index += 1
 			load_dialog(true)
 		{'sound'}:
-			print('Play sound here: ', event)
+			if event['sound'] == 'intensemusic':
+				$IntenseMusic.play()
+			if event['sound'] == 'scream':
+				$ScreamMan.play()
+			if event['sound'] == 'neighbormusic':
+				$NeighborBGM.play()
+
 			dialog_index += 1
 			load_dialog()
-		_:
-			hide_dialog()
-			print('Other event. ', event)
 
 func _on_input_set(variable):
 	var input_value = $TextInputDialog/LineEdit.text
