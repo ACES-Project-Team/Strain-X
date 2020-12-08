@@ -13,7 +13,7 @@ export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var FRICTION = 500
 var state = MOVE
-var attack1 = swtich_attack()
+var attack1 = switch_attack()
 var stats = PlayerStats
 var velocity = Vector2.ZERO
 
@@ -100,7 +100,7 @@ func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
 
-func swtich_attack():
+func switch_attack():
 	if Input.is_action_pressed("change_to_spray"):
 		if attack1 == true:
 			emit_signal("change_to_alcohol_attack") 
