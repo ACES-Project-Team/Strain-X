@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -20,7 +20,7 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-
+[ext_resource path="res://MCLamp.gd" type="Script" id=21]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -416,6 +416,12 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 8.17778, 14.1724 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 9.27819, 13.8984 )
 
 [sub_resource type="RectangleShape2D" id=23]
 extents = Vector2( 4.49902, 11.6486 )
@@ -1394,7 +1400,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 96, 96 )
 
 [node name="Sidewalk" type="Sprite" parent="."]
-position = Vector2( -577.278, -134.959 )
+position = Vector2( -577.278, -134.736 )
 rotation = -1.56905
 texture = ExtResource( 13 )
 centered = false
@@ -1629,13 +1635,39 @@ position = Vector2( 0, -12.4907 )
 scale = Vector2( 15.2328, 13.222 )
 polygon = PoolVector2Array( -8.04154, -7.24632, -8.04154, 7.08683, -0.548599, 7.28229, -0.579464, 6.08228, 0.665367, 6.08228, 0.752064, 7.15198, 8.13191, 7.15198, 8.13191, -7.34405 )
 
-[node name="Mailboxes and Lamp Posts" type="StaticBody2D" parent="."]
+[node name="MCLamp" type="Area2D" parent="."]
+script = ExtResource( 21 )
 
-[node name="MC Mailbox" type="Sprite" parent="Mailboxes and Lamp Posts"]
+[node name="MC Mailbox" type="Sprite" parent="MCLamp"]
 position = Vector2( 120.53, -141.539 )
 texture = ExtResource( 18 )
 
+[node name="StaticBody2D" type="StaticBody2D" parent="MCLamp/MC Mailbox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MCLamp/MC Mailbox/StaticBody2D"]
+position = Vector2( -0.22345, 0.22345 )
+shape = SubResource( 33 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MCLamp"]
+position = Vector2( 120.107, -142.49 )
+shape = SubResource( 34 )
+
+[node name="Label" type="Label" parent="MCLamp"]
+visible = false
+margin_left = 102.329
+margin_top = -165.892
+margin_right = 171.329
+margin_bottom = -151.892
+rect_scale = Vector2( 0.5, 0.5 )
+text = "Interact (E)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mailboxes and Lamp Posts" type="StaticBody2D" parent="."]
+
 [node name="MC Mailbox2" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
+visible = false
 position = Vector2( 120.53, -142.539 )
 shape = SubResource( 23 )
 
@@ -2072,7 +2104,7 @@ position = Vector2( 2518.37, 90.7698 )
 shape = SubResource( 30 )
 
 [node name="Outside2" type="CollisionShape2D" parent="Outside"]
-position = Vector2( -2216.09, 88.8515 )
+position = Vector2( -2211.99, 85.262 )
 shape = SubResource( 30 )
 
 [node name="Outside3" type="CollisionShape2D" parent="Outside"]
@@ -2090,3 +2122,5 @@ shape = SubResource( 31 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
+[connection signal="body_entered" from="MCLamp" to="MCLamp" method="_on_MCLamp_body_entered"]
+[connection signal="body_exited" from="MCLamp" to="MCLamp" method="_on_MCLamp_body_exited"]
