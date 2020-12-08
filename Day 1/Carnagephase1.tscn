@@ -76,7 +76,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 9 )
 animation = "Phase1attack "
-frame = 5
+frame = 1
 playing = true
 offset = Vector2( 0, -20 )
 
