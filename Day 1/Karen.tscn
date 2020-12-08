@@ -336,7 +336,7 @@ animation = "AttackLeft"
 blend_point_0/node = SubResource( 14 )
 blend_point_0/pos = Vector2( 0, 1.1 )
 blend_point_1/node = SubResource( 15 )
-blend_point_1/pos = Vector2( 0, -1 )
+blend_point_1/pos = Vector2( 0, -1.1 )
 blend_point_2/node = SubResource( 16 )
 blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 17 )
@@ -424,7 +424,7 @@ script = ExtResource( 7 )
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 41
-frame = 39
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -440,6 +440,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" parent="DetectionZone" index="0"]
 shape = SubResource( 36 )
+disabled = true
 
 [node name="Hitbox" parent="." instance=ExtResource( 5 )]
 rotation = -2.12232
@@ -449,6 +450,7 @@ collision_mask = 256
 damage = 5
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
+scale = Vector2( 1.66797, 1.66797 )
 shape = SubResource( 38 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
@@ -457,9 +459,9 @@ collision_mask = 0
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 shape = SubResource( 37 )
-disabled = true
 
 [node name="Stats" parent="." instance=ExtResource( 6 )]
+MAX_HEALTH = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "IdleDown"
@@ -479,10 +481,11 @@ anims/WalkUp = SubResource( 13 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 34 )
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/playback = SubResource( 35 )
 parameters/Attack/blend_position = Vector2( -0.00540543, 0 )
-parameters/Idle/blend_position = Vector2( -0.0189189, -0.00948286 )
-parameters/Walk/blend_position = Vector2( -0.0216216, -0.00948286 )
+parameters/Idle/blend_position = Vector2( -0.0162162, 0.17069 )
+parameters/Walk/blend_position = Vector2( -0.0108108, 0.123276 )
 [connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
