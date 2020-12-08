@@ -39,7 +39,7 @@ func _physics_process(delta):
 		idle:
 			vel = vel.move_toward(Vector2.ZERO,friction*delta)
 			seek_player()
-			volanimationstate.travel("idle")
+			volanimationstate.travel("Idle")
 			if wandercontroller.get_time_left()==0:
 				state_randomizer()
 		wander:
@@ -49,7 +49,7 @@ func _physics_process(delta):
 				state_randomizer()
 			move_to_point(wandercontroller.target_position,delta)
 			
-			volanimationstate.travel("walk")
+			volanimationstate.travel("Walk")
 			
 			if global_position.distance_to(wandercontroller.target_position) <= wander_range:
 				state_randomizer()
@@ -57,7 +57,7 @@ func _physics_process(delta):
 		chase:
 			var player = detectionzone.player
 			if player != null:
-				volanimationstate.travel("walk")
+				volanimationstate.travel("Walk")
 				move_to_point(player.global_position,delta)
 			else:
 				state = idle
@@ -65,7 +65,7 @@ func _physics_process(delta):
 		attack:
 			var player = hitbox.enemy
 			if player != null:
-				volanimationstate.travel("attack")
+				volanimationstate.travel("Attack")
 			else:
 				state = idle
 	
@@ -87,7 +87,7 @@ func random_new_state(state_list):
 	return state_list.pop_front()
 
 func _on_Stats_no_health():
-	volanimationstate.travel("walk")
+	volanimationstate.travel("Walk")
 	queue_free()
 
 func _on_Hurtbox_area_entered(area):
@@ -97,5 +97,5 @@ func _on_Hurtbox_area_entered(area):
 	print(volStats.HEALTH)
 
 func _on_Hitbox_area_entered(area):
-	volanimationstate.travel("attack")
+	volanimationstate.travel("Attack")
 	state = attack

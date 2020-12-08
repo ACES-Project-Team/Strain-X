@@ -1,30 +1,13 @@
-extends Node
+extends Control
 
-signal max_changed(new_max)
-signal changed(new_amount) 
-signal depleted 
+onready var health_bar = $HealthBar
+onready var update_tween = $UpdateTween
 
-export(int) var max_amount = 500 setget set_max
-
-onready var current = max_amount setget set_current
-
-func _ready():
-	_initialize()
+func _on_health_updated(health,amount):
+	health_bar.value = health
+	update_tween.interpolate_property(health_bar, "value", health_bar.value, health, 0.4, Tween.TRANS.SINE, Tween.EASE_IN_OUT)
+	update_tween.start()
 	
-func set_max(new_max):
-	max_amount = new_max
-	max_amount = max(1, new_max)
-	emit_signal("max_changed", max_amount)
+func on_max_health_updated(max_health):
+	health_bar.max_valye = max_health
 	
-func set_current(new_value):
-	current = new_value
-	current = clamp(current,0, max_amount)
-	emit_signal("changed", current)
-	
-	if current == 0:
-		emit_signal("depleted")
-
-func _initialize(): 
-	emit_signal("max_changed", max_amount)
-	emit_signal("changed", current)
-

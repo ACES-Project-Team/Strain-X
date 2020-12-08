@@ -50,5 +50,3 @@ func _on_GroceryDoor_body_entered(body):
 func play_walk_in_animation():
 	state = STOP 
 	$AnimationPlayer.play("WalkUp")
-
-

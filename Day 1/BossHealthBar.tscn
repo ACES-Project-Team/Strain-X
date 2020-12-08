@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://Assets/UI/Boss Health Bar_Empty-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Boss Health Bar_Full-Sheet.png" type="Texture" id=2]
 [ext_resource path="res://BossHealthBar.gd" type="Script" id=3]
 
-[node name="BossHealthBar" type="Node"]
+[node name="BossHealthBar" type="Control"]
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_right = 128.0
+margin_bottom = 32.0
+max_value = 300.0
+texture_under = ExtResource( 1 )
+texture_over = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpdateTween" type="Tween" parent="."]
