@@ -74,7 +74,7 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true, false ]
 }
 
@@ -115,7 +115,7 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true, false ]
 }
 
@@ -156,7 +156,7 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true, false ]
 }
 
@@ -196,7 +196,7 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.1, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true, false ]
 }
 
@@ -453,11 +453,9 @@ damage = 10
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( 0.44194, 0 )
-scale = Vector2( 2.5, 2.5 )
 shape = SubResource( 3 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 6 )]
-visible = false
 collision_layer = 2147483664
 collision_mask = 0
 

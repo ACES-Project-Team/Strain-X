@@ -1662,6 +1662,7 @@ shape = SubResource( 80 )
 [node name="Hitbox_pivot" type="Position2D" parent="."]
 visible = false
 position = Vector2( 0, 0.686012 )
+rotation = 3.02291
 
 [node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 5 )]
 position = Vector2( -1.68179, 0.365109 )
@@ -1674,6 +1675,7 @@ damage = 5
 position = Vector2( -5.3494, 16.4242 )
 rotation = 1.5708
 shape = SubResource( 81 )
+disabled = true
 
 [node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
