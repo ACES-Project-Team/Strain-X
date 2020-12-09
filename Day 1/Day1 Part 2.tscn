@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ClothMaskOutfit.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Music and Sounds/Day1Music.wav" type="AudioStream" id=3]
 [ext_resource path="res://Pause.tscn" type="PackedScene" id=4]
 [ext_resource path="res://PauseMenu.gd" type="Script" id=5]
@@ -18,7 +19,10 @@ __meta__ = {
 position = Vector2( -0.00474533, 0.221104 )
 
 [node name="GroceryDoor" parent="." instance=ExtResource( 9 )]
-position = Vector2( -528.086, -550.687 )
+position = Vector2( -527.997, -550.051 )
+
+[node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
+position = Vector2( -529.603, -517.017 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
