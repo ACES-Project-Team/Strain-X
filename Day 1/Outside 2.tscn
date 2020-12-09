@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -21,9 +21,7 @@
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
 [ext_resource path="res://McNeighbor.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Task2.gd" type="Script" id=24]
 [ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=27]
 [ext_resource path="res://Task.gd" type="Script" id=28]
 
@@ -497,11 +495,6 @@ extents = Vector2( 13.3114, 13.9164 )
 
 [sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 10.247, 9.43387 )
-
-[sub_resource type="RectangleShape2D" id=35]
-extents = Vector2( 12.8203, 13.6451 )
-
-[sub_resource type="RectangleShape2D" id=36]
 
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
@@ -2182,24 +2175,6 @@ position = Vector2( 945.762, -242.409 )
 [node name="Volatiles25" parent="." instance=ExtResource( 23 )]
 position = Vector2( 407.236, -157.382 )
 
-[node name="Karen" parent="." instance=ExtResource( 22 )]
-position = Vector2( 749.116, -149.095 )
-
-[node name="Karen2" parent="." instance=ExtResource( 22 )]
-position = Vector2( 706.486, -285.209 )
-
-[node name="Karen3" parent="." instance=ExtResource( 22 )]
-position = Vector2( 768.854, -223.164 )
-
-[node name="Karen4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 734.024, -199.489 )
-
-[node name="Karen5" parent="." instance=ExtResource( 22 )]
-position = Vector2( 593.283, -188.731 )
-
-[node name="Karen6" parent="." instance=ExtResource( 22 )]
-position = Vector2( 692.719, -253.749 )
-
 [node name="McNeighbor" parent="." instance=ExtResource( 21 )]
 position = Vector2( 617.828, 69.6032 )
 
@@ -2236,42 +2211,5 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Task"]
 position = Vector2( -801.242, -26.7097 )
 shape = SubResource( 34 )
-
-[node name="Task2" type="Area2D" parent="."]
-position = Vector2( -206.401, -24.6236 )
-script = ExtResource( 24 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Traffic Cone" type="Sprite" parent="Task2"]
-position = Vector2( 544.627, -167.461 )
-scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 27 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Task2/Traffic Cone"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Task2/Traffic Cone/StaticBody2D"]
-position = Vector2( 0, -0.344391 )
-shape = SubResource( 35 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Task2"]
-position = Vector2( 545.447, -166.466 )
-shape = SubResource( 36 )
-
-[node name="Label" type="Label" parent="Task2"]
-margin_left = 518.897
-margin_top = -200.62
-margin_right = 620.897
-margin_bottom = -142.62
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Interact (E) To Show Task"
-align = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="body_entered" from="Task" to="Task" method="_on_Task_body_entered"]
 [connection signal="body_exited" from="Task" to="Task" method="_on_Task_body_exited"]
-[connection signal="body_entered" from="Task2" to="Task2" method="_on_Task2_body_entered"]
-[connection signal="body_exited" from="Task2" to="Task2" method="_on_Task2_body_exited"]
