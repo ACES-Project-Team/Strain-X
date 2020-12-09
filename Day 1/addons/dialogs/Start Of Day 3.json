@@ -1,6 +1,14 @@
 [
 	{
+		"sound": "morning"
+	},
+	
+	{
 		"fade-in": 2
+	},
+	
+	{
+		"background": "res://addons/dialogs/Images/background/Bedroom1.png"
 	},
 	
 	{
@@ -78,6 +86,6 @@
 	
 	{
 		"name": "Mom",
-		"text": "It's set then, we will be setting out in a few minutes."
+		"text": "It's settled then, we will be setting out in a few minutes."
 	},
 ]

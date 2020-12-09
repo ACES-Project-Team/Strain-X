@@ -213,6 +213,8 @@ func event_handler(event):
 				$ScreamMan.play()
 			if event['sound'] == 'neighbormusic':
 				$NeighborBGM.play()
+			if event['sound'] == 'morning':
+				$MorningBGM.play()
 
 			dialog_index += 1
 			load_dialog()
