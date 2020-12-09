@@ -1,13 +1,77 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Player/Neighbor-Sheet.png" type="Texture" id=1]
-
+[ext_resource path="res://Neighbor.gd" type="Script" id=2]
+[ext_resource path="res://WanderController.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 5.96733
 
-[sub_resource type="Animation" id=2]
-resource_name = "IdleDown"
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "IdleLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "IdleUp"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "IdleDown"
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "IdleRight"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=6]
+blend_point_0/node = SubResource( 2 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 3 )
+blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_2/node = SubResource( 4 )
+blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_3/node = SubResource( 5 )
+blend_point_3/pos = Vector2( 1, 0 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "WalkLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "WalkUp"
+
+[sub_resource type="AnimationNodeAnimation" id=9]
+animation = "WalkDown"
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "WalkRight"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=11]
+blend_point_0/node = SubResource( 7 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 8 )
+blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_2/node = SubResource( 9 )
+blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_3/node = SubResource( 10 )
+blend_point_3/pos = Vector2( 1, 0 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=13]
+
+[sub_resource type="AnimationNodeStateMachine" id=14]
+states/Idle/node = SubResource( 6 )
+states/Idle/position = Vector2( 105, 77 )
+states/Walk/node = SubResource( 11 )
+states/Walk/position = Vector2( 299, 77 )
+transitions = [ "Idle", "Walk", SubResource( 12 ), "Walk", "Idle", SubResource( 13 ) ]
+start_node = "Idle"
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=15]
+
+[sub_resource type="Animation" id=16]
 length = 0.2
 loop = true
 tracks/0/type = "value"
@@ -23,8 +87,23 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "IdleRight"
+[sub_resource type="Animation" id=17]
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 18 ]
+}
+
+[sub_resource type="Animation" id=18]
 length = 0.2
 loop = true
 tracks/0/type = "value"
@@ -40,8 +119,7 @@ tracks/0/keys = {
 "values": [ 12 ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "IdleUp"
+[sub_resource type="Animation" id=19]
 length = 0.2
 loop = true
 tracks/0/type = "value"
@@ -57,8 +135,7 @@ tracks/0/keys = {
 "values": [ 7 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "WalkDown"
+[sub_resource type="Animation" id=20]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -74,8 +151,7 @@ tracks/0/keys = {
 "values": [ 1, 2, 3, 4, 5 ]
 }
 
-[sub_resource type="Animation" id=6]
-resource_name = "WalkLeft"
+[sub_resource type="Animation" id=21]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -91,8 +167,7 @@ tracks/0/keys = {
 "values": [ 20, 21, 22, 23 ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "WalkRight"
+[sub_resource type="Animation" id=22]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -108,8 +183,7 @@ tracks/0/keys = {
 "values": [ 13, 14, 15, 16, 17 ]
 }
 
-[sub_resource type="Animation" id=8]
-resource_name = "WalkUp"
+[sub_resource type="Animation" id=23]
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -126,6 +200,11 @@ tracks/0/keys = {
 }
 
 [node name="Neighbor" type="KinematicBody2D"]
+position = Vector2( 154.425, 92.6666 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -136,12 +215,22 @@ frame = 18
 position = Vector2( 0.452354, 5.59788 )
 shape = SubResource( 1 )
 
+[node name="WanderController" parent="." instance=ExtResource( 3 )]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 14 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 15 )
+parameters/Idle/blend_position = Vector2( -0.00391132, -0.0189655 )
+parameters/Walk/blend_position = Vector2( -0.0977836, -0.730172 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "IdleDown"
-anims/IdleDown = SubResource( 2 )
-anims/IdleRight = SubResource( 3 )
-anims/IdleUp = SubResource( 4 )
-anims/WalkDown = SubResource( 5 )
-anims/WalkLeft = SubResource( 6 )
-anims/WalkRight = SubResource( 7 )
-anims/WalkUp = SubResource( 8 )
+anims/IdleDown = SubResource( 16 )
+anims/IdleLeft = SubResource( 17 )
+anims/IdleRight = SubResource( 18 )
+anims/IdleUp = SubResource( 19 )
+anims/WalkDown = SubResource( 20 )
+anims/WalkLeft = SubResource( 21 )
+anims/WalkRight = SubResource( 22 )
+anims/WalkUp = SubResource( 23 )
