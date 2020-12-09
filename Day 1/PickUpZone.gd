@@ -6,6 +6,8 @@ func _ready():
 
 var items_in_range = {}
 
+
+
 func _on_PickUpZone_body_entered(body):
 	items_in_range[body] = body 
 

@@ -1,61 +1,70 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Enemies/Carnage-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/LargeShadow.png" type="Texture" id=2]
-[ext_resource path="res://Carnagephase2.gd" type="Script" id=3]
+[ext_resource path="res://Carnagephase1.gd" type="Script" id=3]
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DetectionZone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
-region = Rect2( 256, 0, 128, 128 )
+region = Rect2( 1280, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
-region = Rect2( 384, 0, 128, 128 )
+region = Rect2( 1408, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
-region = Rect2( 1280, 0, 128, 128 )
+region = Rect2( 1536, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
-region = Rect2( 1408, 0, 128, 128 )
+region = Rect2( 1664, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 1536, 0, 128, 128 )
+region = Rect2( 1792, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 1 )
-region = Rect2( 1664, 0, 128, 128 )
+region = Rect2( 1920, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
-region = Rect2( 1792, 0, 128, 128 )
+region = Rect2( 256, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 1920, 0, 128, 128 )
+region = Rect2( 384, 0, 128, 128 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ) ],
-"loop": true,
-"name": "Phase2",
-"speed": 3.0
-}, {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "Phase2attack",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Phase2",
+"speed": 3.0
 } ]
 
 [sub_resource type="CircleShape2D" id=10]
 radius = 12.5071
 
+[sub_resource type="CircleShape2D" id=12]
+radius = 130.953
+
 [sub_resource type="CapsuleShape2D" id=11]
 radius = 18.1249
 height = 0.742737
+
+[sub_resource type="CircleShape2D" id=13]
+radius = 20.6327
 
 [node name="Carnagephase2" type="KinematicBody2D"]
 collision_layer = 0
@@ -66,11 +75,11 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( 0, -20 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Enemy shadow " type="Sprite" parent="."]
 position = Vector2( -0.992126, 16.6677 )
 scale = Vector2( 0.913189, 0.92063 )
 texture = ExtResource( 2 )
@@ -79,6 +88,13 @@ texture = ExtResource( 2 )
 position = Vector2( -0.794594, 16.4217 )
 shape = SubResource( 10 )
 
+[node name="DetectionZone" parent="." instance=ExtResource( 5 )]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" parent="DetectionZone" index="0"]
+shape = SubResource( 12 )
+
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
 collision_layer = 16
 collision_mask = 0
@@ -86,6 +102,22 @@ collision_mask = 0
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( -1.49831, -11.9865 )
 shape = SubResource( 11 )
+
+[node name="Stats" parent="." instance=ExtResource( 7 )]
+
+[node name="Hitbox" parent="." instance=ExtResource( 6 )]
+collision_layer = 0
+collision_mask = 256
+damage = 1
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( -3.30356, -8.02293 )
+shape = SubResource( 13 )
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
+
+[editable path="DetectionZone"]
 
 [editable path="Hurtbox"]
+
+[editable path="Hitbox"]

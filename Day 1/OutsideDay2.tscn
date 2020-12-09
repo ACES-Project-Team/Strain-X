@@ -20,7 +20,7 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-[ext_resource path="res://McNeighbor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Neighbor.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=24]
@@ -2106,9 +2106,6 @@ shape = SubResource( 31 )
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
 
-[node name="McNeighbor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 624.443, 67.8831 )
-
 [node name="Karen" parent="." instance=ExtResource( 22 )]
 position = Vector2( 713.17, -239.458 )
 
@@ -2205,11 +2202,17 @@ margin_top = -44.4402
 margin_right = -589.187
 margin_bottom = 11.5598
 rect_scale = Vector2( 0.3, 0.3 )
+custom_colors/font_color = Color( 0.988235, 0.956863, 0.137255, 1 )
+custom_colors/font_outline_modulate = Color( 0.960784, 0.945098, 0.0705882, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Interact (E) To See Task"
 align = 1
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Neighbor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 717.104, -275.059 )
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
