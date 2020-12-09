@@ -68,10 +68,10 @@ func attack_animation_finished():
 
 func _input(event):
 	if event.is_action_pressed("PickUp"):
-		if $PickUpZone.items_in_range.size() > 0: 
-			var pickup_item = $PickUpZone.items_in_range.values()[0]
+		if $PickUPZone.items_in_range.size() > 0: 
+			var pickup_item = $PickUPZone.items_in_range.values()[0]
 			pickup_item.pick_up_item(self)
-			$PickUpZone.items_in_range.erase(pickup_item)
+			$PickUPZone.items_in_range.erase(pickup_item)
 	
 	velocity = move_and_slide(velocity)
 
@@ -97,3 +97,4 @@ func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
+

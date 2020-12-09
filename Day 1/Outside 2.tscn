@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -20,7 +20,8 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-[ext_resource path="res://McNeighbor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Neighbor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://ClothMaskOutfit.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=27]
 [ext_resource path="res://Task.gd" type="Script" id=28]
@@ -2175,9 +2176,6 @@ position = Vector2( 945.762, -242.409 )
 [node name="Volatiles25" parent="." instance=ExtResource( 23 )]
 position = Vector2( 407.236, -157.382 )
 
-[node name="McNeighbor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 617.828, 69.6032 )
-
 [node name="Task" type="Area2D" parent="."]
 position = Vector2( 465.237, -164.822 )
 script = ExtResource( 28 )
@@ -2211,5 +2209,11 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Task"]
 position = Vector2( -801.242, -26.7097 )
 shape = SubResource( 34 )
+
+[node name="Neighbor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 712.274, -276.72 )
+
+[node name="ClothMaskOutfit" parent="." instance=ExtResource( 22 )]
+position = Vector2( 153.894, -96.7132 )
 [connection signal="body_entered" from="Task" to="Task" method="_on_Task_body_entered"]
 [connection signal="body_exited" from="Task" to="Task" method="_on_Task_body_exited"]

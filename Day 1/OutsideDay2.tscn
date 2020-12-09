@@ -20,7 +20,7 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-[ext_resource path="res://McNeighbor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Neighbor.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=24]
@@ -2106,9 +2106,6 @@ shape = SubResource( 31 )
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
 
-[node name="McNeighbor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 624.443, 67.8831 )
-
 [node name="Karen" parent="." instance=ExtResource( 22 )]
 position = Vector2( 713.17, -239.458 )
 
@@ -2211,5 +2208,8 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Neighbor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 717.104, -275.059 )
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
