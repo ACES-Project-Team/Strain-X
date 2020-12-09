@@ -1,21 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MCHealthBar.gd" type="Script" id=1]
-
-[sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.419608, 0.847059, 0.0627451, 1 )
-border_width_left = 2
-border_width_top = 2
-border_width_bottom = 2
-border_color = Color( 0, 0, 0, 1 )
-
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 1, 0, 0, 1 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color( 0, 0, 0, 1 )
+[ext_resource path="res://Assets/UI/MainCharacter_Under-Sheet.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/MainCharacter_Progress-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/MainCharacter_Over-Sheet.png" type="Texture" id=4]
 
 [node name="MCHealthBar" type="Control"]
 margin_right = 104.0
@@ -26,15 +14,30 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HealthBar" type="ProgressBar" parent="."]
-margin_right = 80.0
+[node name="HealthUnder" type="TextureProgress" parent="."]
+margin_right = 96.0
 margin_bottom = 16.0
-custom_styles/fg = SubResource( 1 )
-custom_styles/bg = SubResource( 2 )
-value = 50.0
-percent_visible = false
+texture_progress = ExtResource( 3 )
+tint_progress = Color( 0.94902, 0.956863, 0.972549, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tween" type="Tween" parent="."]
+[node name="HealthOver" type="TextureProgress" parent="."]
+margin_right = 96.0
+margin_bottom = 16.0
+value = 100.0
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpdateTween" type="Tween" parent="."]
+
+[node name="PulseTween" type="Tween" parent="."]
+repeat = true
+playback/repeat = true
+
+[node name="FlashTween" type="Tween" parent="."]

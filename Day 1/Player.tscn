@@ -1679,13 +1679,18 @@ shape = SubResource( 81 )
 disabled = true
 
 [node name="MCHealthBar" parent="." instance=ExtResource( 7 )]
-margin_left = -20.439
-margin_top = -29.458
-margin_right = 63.561
-margin_bottom = -13.458
+margin_left = -19.0
+margin_top = -26.0
+margin_right = 74.0
+margin_bottom = -9.0
+rect_scale = Vector2( 0.4, 0.4 )
 
 [node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
+
+[node name="InvulnerabilityTimer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
 [connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_entered"]
 [connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_exited"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
