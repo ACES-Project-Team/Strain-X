@@ -648,12 +648,13 @@ shape = SubResource( 19 )
 shape = SubResource( 20 )
 
 [node name="Label" type="Label" parent="Area2D"]
-visible = false
-margin_left = -32.5757
-margin_top = -62.9048
-margin_right = 40.4243
-margin_bottom = -46.9048
-text = "Interact (E) "
+margin_left = -42.6404
+margin_top = -71.5061
+margin_right = 46.3596
+margin_bottom = -40.5061
+text = "Interact (E)  To Show Task"
+align = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -21,10 +21,6 @@
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
 [ext_resource path="res://Lamp.gd" type="Script" id=21]
-[ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=22]
-[ext_resource path="res://Area2D2.gd" type="Script" id=23]
-[ext_resource path="res://Area2D3.gd" type="Script" id=24]
-[ext_resource path="res://Area2D4.gd" type="Script" id=25]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -496,24 +492,6 @@ extents = Vector2( 304.513, 417.607 )
 
 [sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 275.082, 575.323 )
-
-[sub_resource type="RectangleShape2D" id=39]
-extents = Vector2( 11.1849, 12.3166 )
-
-[sub_resource type="RectangleShape2D" id=40]
-extents = Vector2( 11.1838, 9.20668 )
-
-[sub_resource type="RectangleShape2D" id=41]
-extents = Vector2( 11.7375, 12.3815 )
-
-[sub_resource type="RectangleShape2D" id=42]
-extents = Vector2( 8.90375, 10.1936 )
-
-[sub_resource type="RectangleShape2D" id=35]
-extents = Vector2( 11.2277, 11.2277 )
-
-[sub_resource type="RectangleShape2D" id=36]
-extents = Vector2( 8.87617, 8.92519 )
 
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
@@ -1674,13 +1652,14 @@ position = Vector2( 120.221, -141.799 )
 shape = SubResource( 24 )
 
 [node name="Label" type="Label" parent="Area2D"]
-visible = false
-margin_left = 103.668
-margin_top = -165.204
-margin_right = 172.668
-margin_bottom = -134.204
+margin_left = 99.4493
+margin_top = -171.068
+margin_right = 186.449
+margin_bottom = -140.068
 rect_scale = Vector2( 0.5, 0.5 )
-text = "Interact (E)"
+text = "Interact (E) To Show Task"
+align = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -2142,101 +2121,5 @@ shape = SubResource( 33 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 34 )
-
-[node name="Area2D4" type="Area2D" parent="."]
-position = Vector2( 642.291, -185.068 )
-script = ExtResource( 25 )
-
-[node name="Traffic Cone" type="Sprite" parent="Area2D4"]
-position = Vector2( 690.285, -17.795 )
-scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 22 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Area2D4/Traffic Cone"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4/Traffic Cone/StaticBody2D"]
-shape = SubResource( 39 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
-position = Vector2( 691.213, -17.8725 )
-shape = SubResource( 40 )
-
-[node name="Label" type="Label" parent="Area2D4"]
-visible = false
-margin_left = 674.232
-margin_top = -34.7384
-margin_right = 743.232
-margin_bottom = -20.7384
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Interact (E)"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Area2D3" type="Area2D" parent="."]
-position = Vector2( 17.0287, 18.5768 )
-script = ExtResource( 24 )
-
-[node name="Traffic cone" type="Sprite" parent="Area2D3"]
-position = Vector2( 585.216, -205.014 )
-scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 22 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Area2D3/Traffic cone"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3/Traffic cone/StaticBody2D"]
-shape = SubResource( 41 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( 585.284, -205.121 )
-shape = SubResource( 42 )
-
-[node name="Label" type="Label" parent="Area2D3"]
-visible = false
-margin_left = 568.583
-margin_top = -225.014
-margin_right = 641.583
-margin_bottom = -211.014
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Interact (E) "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Area2D2" type="Area2D" parent="."]
-script = ExtResource( 23 )
-
-[node name="Traffic Cone" type="Sprite" parent="Area2D2"]
-position = Vector2( 193.594, -199.078 )
-scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 22 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Area2D2/Traffic Cone"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2/Traffic Cone/StaticBody2D"]
-shape = SubResource( 35 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( 193.532, -199.257 )
-shape = SubResource( 36 )
-
-[node name="Label" type="Label" parent="Area2D2"]
-visible = false
-margin_left = 178.813
-margin_top = -217.099
-margin_right = 251.813
-margin_bottom = -186.099
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Interact (E) 
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
-[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_entered"]
-[connection signal="body_exited" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_exited"]
-[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
-[connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
-[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
-[connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_exited"]
