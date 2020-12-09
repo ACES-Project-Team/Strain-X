@@ -11,7 +11,7 @@ func _input(event):
 		
 
 func _on_Task_body_entered(body):
-	if body.name == "Player":
+	if body.name == "GroceryOutfit ":
 		$Label.show()
 		can_interact = true
 	

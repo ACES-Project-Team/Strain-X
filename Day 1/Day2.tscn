@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Health.tscn" type="PackedScene" id=1]
 [ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=2]
-[ext_resource path="res://Outside 2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://OutsideDay2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://TestInventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 
