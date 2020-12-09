@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Panting Male Sound Effect.wav-02afaf44dbe903956e935ebccab03d13.sample"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/Panting Male Sound Effect.wav"
+dest_files=[ "res://.import/Panting Male Sound Effect.wav-02afaf44dbe903956e935ebccab03d13.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

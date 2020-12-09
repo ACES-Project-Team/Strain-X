@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://addons/dialogs/Images/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://addons/dialogs/Images/portraits/Big_Neighbor-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://addons/dialogs/Images/portraits/big_daddy-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Music and Sounds/bg music morning.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Music and Sounds/Happy time (1).wav" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IDLE"
@@ -38,16 +39,6 @@ __meta__ = {
 }
 
 [node name="Background" type="TextureRect" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-expand = true
-stretch_mode = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Background2" type="TextureRect" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -306,9 +297,14 @@ volume_db = -7.704
 
 [node name="NeighborBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = -15.407
+volume_db = -25.679
 
 [node name="MorningBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 volume_db = -10.272
+
+[node name="AfterBossBGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -14.123
+mix_target = 1
 [connection signal="tween_completed" from="TextBubble/Tween" to="." method="_on_Tween_tween_completed"]
