@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -24,10 +24,8 @@
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Task2.gd" type="Script" id=24]
-[ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=27]
 [ext_resource path="res://Task.gd" type="Script" id=28]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=29]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -2205,12 +2203,12 @@ position = Vector2( 692.719, -253.749 )
 [node name="McNeighbor" parent="." instance=ExtResource( 21 )]
 position = Vector2( 617.828, 69.6032 )
 
-[node name="Carnagephase1" parent="." instance=ExtResource( 26 )]
-position = Vector2( 1071.99, -172.263 )
-
 [node name="Task" type="Area2D" parent="."]
-position = Vector2( 1071.99, -172.263 )
+position = Vector2( 465.237, -164.822 )
 script = ExtResource( 28 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Trafic Cone" type="Sprite" parent="Task"]
 position = Vector2( -800.4, -26.9893 )
@@ -2240,8 +2238,11 @@ position = Vector2( -801.242, -26.7097 )
 shape = SubResource( 34 )
 
 [node name="Task2" type="Area2D" parent="."]
-position = Vector2( -2.62207, -19.0406 )
+position = Vector2( -206.401, -24.6236 )
 script = ExtResource( 24 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Traffic Cone" type="Sprite" parent="Task2"]
 position = Vector2( 544.627, -167.461 )
@@ -2270,9 +2271,6 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Player" parent="." instance=ExtResource( 29 )]
-position = Vector2( 149.94, -98.5416 )
 [connection signal="body_entered" from="Task" to="Task" method="_on_Task_body_entered"]
 [connection signal="body_exited" from="Task" to="Task" method="_on_Task_body_exited"]
 [connection signal="body_entered" from="Task2" to="Task2" method="_on_Task2_body_entered"]

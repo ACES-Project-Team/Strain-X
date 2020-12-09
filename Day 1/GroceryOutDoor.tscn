@@ -3,7 +3,6 @@
 [ext_resource path="res://Assets/World/Grocery Door-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://GroceryOutDoor.gd" type="Script" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5.57277, 13.5043 )
 
@@ -80,7 +79,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
-target_scene = "res://Day1.tscn"
+target_scene = "res://Day1 Part 2.tscn"
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

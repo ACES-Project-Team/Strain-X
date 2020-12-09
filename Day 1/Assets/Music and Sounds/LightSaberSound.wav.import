@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/LightSaberSound.wav-89297f63b08fc0d6b8e4b9bf47a7cb0c.sample"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/LightSaberSound.wav"
+dest_files=[ "res://.import/LightSaberSound.wav-89297f63b08fc0d6b8e4b9bf47a7cb0c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
