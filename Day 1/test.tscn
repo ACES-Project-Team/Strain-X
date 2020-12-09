@@ -1,16 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Carnagephase2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=6]
-[ext_resource path="res://ClothMaskOutfit.tscn" type="PackedScene" id=7]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="ClothMaskOutfit" parent="." instance=ExtResource( 7 )]
-position = Vector2( 115.369, 48.64 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 2 )]
 visible = false
@@ -24,7 +21,12 @@ visible = false
 position = Vector2( 322.885, -18.7288 )
 
 [node name="Sister" parent="." instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 148.332, 125.109 )
 
 [node name="Karen" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 196.576, 58.6899 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 197.808, 90.0283 )
