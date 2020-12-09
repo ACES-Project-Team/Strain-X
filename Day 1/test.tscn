@@ -10,15 +10,13 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Volatiles" parent="." instance=ExtResource( 2 )]
-visible = false
 position = Vector2( 115.369, 48.64 )
 
 [node name="Carnagephase1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 355.099, 56.1865 )
+position = Vector2( 367.798, 99.0463 )
 
 [node name="Carnagephase2" parent="." instance=ExtResource( 4 )]
-visible = false
-position = Vector2( 322.885, -18.7288 )
+position = Vector2( 226.054, -48.0957 )
 
 [node name="Sister" parent="." instance=ExtResource( 5 )]
 visible = false
@@ -30,3 +28,4 @@ position = Vector2( 196.576, 58.6899 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 197.808, 90.0283 )
+max_health = 200.0
