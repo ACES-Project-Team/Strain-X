@@ -7,7 +7,7 @@
 [ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Day1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Health.tscn" type="PackedScene" id=8]
+[ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
 [ext_resource path="res://CutsceneCamera.gd" type="Script" id=10]
 [ext_resource path="res://MCHouse.gd" type="Script" id=11]
@@ -48,11 +48,13 @@ position = Vector2( 378.297, 112.366 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 324.63, 130.815 )
 
-[node name="Health" parent="." instance=ExtResource( 8 )]
-
 [node name="CutsceneCamera" type="Camera2D" parent="."]
 position = Vector2( 324.548, 130.24 )
 current = true
 script = ExtResource( 10 )
 
 [node name="Tween" type="Tween" parent="CutsceneCamera"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 8 )]

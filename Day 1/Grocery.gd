@@ -16,3 +16,5 @@ func _on_CannedGoods_picked_up():
 func _on_Cherry_picked_up():
 	count+=1
 	foodcount.text = str(count)
+
+
