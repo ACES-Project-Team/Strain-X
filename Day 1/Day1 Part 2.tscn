@@ -22,7 +22,7 @@ position = Vector2( -0.00474533, 0.221104 )
 position = Vector2( -527.997, -550.051 )
 
 [node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
-position = Vector2( -529.603, -517.017 )
+position = Vector2( -527.491, -532.236 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
