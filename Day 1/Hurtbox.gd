@@ -21,7 +21,7 @@ func start_invincibility(duration):
 
 func _on_Timer_timeout():
 	self.invincible = false
-
+	
 func _on_Hurtbox_invincibility_started():
 	collisionshape.set_deferred("disabled" ,true)
 	set_deferred("Monitorable",false)
