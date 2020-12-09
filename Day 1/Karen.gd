@@ -3,7 +3,7 @@ extends KinematicBody2D
 var knockback =  Vector2.ZERO
 var vel = Vector2.ZERO
 var damage = Hitbox
-var state = idle
+var state = Idle
 
 export var acceleration = 300
 export var max_speed = 80
@@ -11,10 +11,10 @@ export var friction = 200
 export var wander_range = 4
 
 enum{
-	idle,
+	Idle,
 	wander,
 	chase,
-	attack
+	Attack
 }
 
 onready var volsprite = $Sprite
@@ -36,7 +36,7 @@ func _physics_process(delta):
 	
 	vel = move_and_slide(vel)
 	match state:
-		idle:
+		Idle:
 			vel = vel.move_toward(Vector2.ZERO,friction*delta)
 			seek_player()
 			volanimationstate.travel("Idle")
@@ -60,17 +60,17 @@ func _physics_process(delta):
 				volanimationstate.travel("Walk")
 				move_to_point(player.global_position,delta)
 			else:
-				state = idle
+				state = Idle
 				
-		attack:
+		Attack:
 			var player = hitbox.enemy
 			if player != null:
 				volanimationstate.travel("Attack")
 			else:
-				state = idle
+				state = Idle
 	
 func state_randomizer():
-	state = random_new_state([idle, wander])
+	state = random_new_state([Idle, wander])
 	wandercontroller.start_wander_timer(rand_range(1,3))
 	
 func move_to_point(point,delta):
@@ -98,4 +98,4 @@ func _on_Hurtbox_area_entered(area):
 
 func _on_Hitbox_area_entered(area):
 	volanimationstate.travel("Attack")
-	state = attack
+	state = Attack

@@ -309,10 +309,10 @@ tracks/0/keys = {
 }
 
 [sub_resource type="AnimationNodeAnimation" id=17]
-animation = "AttackDown"
+animation = "AttackUp"
 
 [sub_resource type="AnimationNodeAnimation" id=18]
-animation = "AttackUp"
+animation = "AttackDown"
 
 [sub_resource type="AnimationNodeAnimation" id=19]
 animation = "AttackRight"
@@ -359,10 +359,10 @@ max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=27]
-animation = "WalkDown"
+animation = "WalkUp"
 
 [sub_resource type="AnimationNodeAnimation" id=28]
-animation = "WalkUp"
+animation = "WalkDown"
 
 [sub_resource type="AnimationNodeAnimation" id=29]
 animation = "WalkRight"
@@ -428,7 +428,6 @@ collision_mask = 2
 
 [node name="CollisionShape2D" parent="DetectionZone" index="0"]
 shape = SubResource( 2 )
-disabled = true
 
 [node name="Hitbox" parent="." instance=ExtResource( 5 )]
 rotation = -2.12232
@@ -438,7 +437,7 @@ collision_mask = 256
 damage = 5
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
-scale = Vector2( 1.66797, 1.66797 )
+scale = Vector2( 1.02558, 1.02558 )
 shape = SubResource( 3 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
@@ -471,9 +470,9 @@ tree_root = SubResource( 37 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 38 )
-parameters/Attack/blend_position = Vector2( -0.00540543, 0 )
+parameters/Attack/blend_position = Vector2( 0.364865, 0.17069 )
 parameters/Idle/blend_position = Vector2( -0.0162162, 0.17069 )
-parameters/Walk/blend_position = Vector2( -0.0108108, 0.123276 )
+parameters/Walk/blend_position = Vector2( 0.316216, -0.275 )
 [connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
