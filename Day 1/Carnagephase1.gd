@@ -14,7 +14,9 @@ var knockback = Vector2.ZERO
 
 var state = CHASE 
 
+onready var sprite = $AnimatedSprite
 onready var stats = $Stats
+onready var detectionzone = $DetectionZone
 
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO, FRICTION * delta)
@@ -23,22 +25,33 @@ func _physics_process(delta):
 	match state:
 		IDLE:
 			velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+			seek_player()
 		
 		WANDER:
 			pass
 		
 		CHASE:
-			pass 
+			var player = detectionzone.player
+			if player != null:
+				var direction = (player.global_position - global_position).normalized()
+				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+			else:
+				state = IDLE
+			sprite.flip_h = velocity.x < 0
+ 
+	velocity = move_and_slide(velocity)
 
 func seek_player():
-	pass
+	if detectionzone.can_see_enemy():
+		state = CHASE
 
 func _on_Hurtbox_area_entered(area):
-	knockback = Vector2.RIGHT * 120
+	stats.HEALTH -= area.damage
+#	knockback = area.knockback_vector * 120
 
 
 func _on_Stats_no_health():
 	queue_free()
-	var enemyDeathEffect = EnemyDeathEffect.instance()
-	get_parent().add_child(enemyDeathEffect)
-	enemyDeathEffect.global_position = global_position 
+#	var enemyDeathEffect = EnemyDeathEffect.instance()
+#	get_parent().add_child(enemyDeathEffect)
+#	enemyDeathEffect.global_position = global_position 

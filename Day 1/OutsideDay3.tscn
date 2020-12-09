@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -22,6 +22,8 @@
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
 [ext_resource path="res://Carnagephase2.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=23]
+[ext_resource path="res://Task3.gd" type="Script" id=24]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -487,6 +489,12 @@ extents = Vector2( 304.513, 417.607 )
 
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 275.082, 575.323 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 12.0328, 13.0172 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 8.96997, 8.47034 )
 
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
@@ -2093,7 +2101,7 @@ position = Vector2( -1048.1, -397.529 )
 shape = SubResource( 31 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
-position = Vector2( 3469.63, -281.097 )
+position = Vector2( 3476.65, -229.589 )
 shape = SubResource( 32 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 22 )]
@@ -2192,5 +2200,96 @@ position = Vector2( 2001.47, -220.095 )
 [node name="Volatiles32" parent="." instance=ExtResource( 22 )]
 position = Vector2( 2002.1, -152.369 )
 
+[node name="Volatiles33" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2068.06, -189.827 )
+
+[node name="Volatiles34" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2108.77, -157.255 )
+
+[node name="Volatiles35" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2147.86, -207.742 )
+
+[node name="Volatiles36" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2189.39, -169.47 )
+
+[node name="Volatiles37" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2250.46, -154.812 )
+
+[node name="Volatiles38" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2337.6, -180.056 )
+
+[node name="Volatiles39" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2395.41, -153.183 )
+
+[node name="Volatiles40" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2446.71, -188.199 )
+
+[node name="Volatiles41" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2511.86, -172.727 )
+
+[node name="Volatiles42" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2583.52, -173.541 )
+
+[node name="Volatiles43" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2654.36, -202.856 )
+
+[node name="Volatiles44" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2681.23, -175.984 )
+
+[node name="Volatiles45" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2746.38, -197.97 )
+
+[node name="Volatiles46" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2800.12, -178.427 )
+
+[node name="Volatiles47" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2865.27, -197.156 )
+
+[node name="Volatiles48" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2917.38, -177.613 )
+
+[node name="Volatiles49" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2965.43, -214.257 )
+
+[node name="Volatiles50" parent="." instance=ExtResource( 22 )]
+position = Vector2( 2971.13, -156.441 )
+
 [node name="Carnagephase2" parent="." instance=ExtResource( 21 )]
-position = Vector2( 2056.79, -182.961 )
+position = Vector2( 3148, -197.087 )
+
+[node name="FinalTask" type="Area2D" parent="."]
+
+[node name="Task3" type="Area2D" parent="."]
+script = ExtResource( 24 )
+
+[node name="TrafficCone" type="Sprite" parent="Task3"]
+position = Vector2( 804.806, -202.074 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Task3/TrafficCone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Task3/TrafficCone/StaticBody2D"]
+shape = SubResource( 33 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Task3"]
+position = Vector2( 804.962, -203.292 )
+shape = SubResource( 34 )
+
+[node name="Label" type="Label" parent="Task3"]
+margin_left = 781.436
+margin_top = -230.262
+margin_right = 878.436
+margin_bottom = -199.262
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.94902, 0.894118, 0.0745098, 1 )
+custom_colors/font_outline_modulate = Color( 0.862745, 0.843137, 0.560784, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Interact (E) To Show Task"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="Task3" to="Task3" method="_on_Task3_body_entered"]
+[connection signal="body_exited" from="Task3" to="Task3" method="_on_Task3_body_exited"]

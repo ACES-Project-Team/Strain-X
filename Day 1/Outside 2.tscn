@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -20,10 +20,8 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
-[ext_resource path="res://McNeighbor.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Neighbor.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=24]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -2094,9 +2092,6 @@ shape = SubResource( 31 )
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
 
-[node name="Carnagephase1" parent="." instance=ExtResource( 24 )]
-position = Vector2( 1001.46, -192.282 )
-
 [node name="Volatiles" parent="." instance=ExtResource( 23 )]
 position = Vector2( 678.716, -274.933 )
 
@@ -2164,7 +2159,7 @@ position = Vector2( 568.418, -149.439 )
 position = Vector2( 958.652, -166.08 )
 
 [node name="Volatiles23" parent="." instance=ExtResource( 23 )]
-position = Vector2( 647.472, -277.52 )
+position = Vector2( 628.137, -283.877 )
 
 [node name="Volatiles24" parent="." instance=ExtResource( 23 )]
 position = Vector2( 945.762, -242.409 )
@@ -2172,23 +2167,5 @@ position = Vector2( 945.762, -242.409 )
 [node name="Volatiles25" parent="." instance=ExtResource( 23 )]
 position = Vector2( 407.236, -157.382 )
 
-[node name="Karen" parent="." instance=ExtResource( 22 )]
-position = Vector2( 749.116, -149.095 )
-
-[node name="Karen2" parent="." instance=ExtResource( 22 )]
-position = Vector2( 706.486, -285.209 )
-
-[node name="Karen3" parent="." instance=ExtResource( 22 )]
-position = Vector2( 768.854, -223.164 )
-
-[node name="Karen4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 734.024, -199.489 )
-
-[node name="Karen5" parent="." instance=ExtResource( 22 )]
-position = Vector2( 593.283, -188.731 )
-
-[node name="Karen6" parent="." instance=ExtResource( 22 )]
-position = Vector2( 692.719, -253.749 )
-
-[node name="McNeighbor" parent="." instance=ExtResource( 21 )]
-position = Vector2( 617.828, 69.6032 )
+[node name="Neighbor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 712.274, -276.72 )

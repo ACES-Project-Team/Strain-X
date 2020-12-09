@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -20,6 +20,12 @@
 [ext_resource path="res://Assets/World/Outside Mailbox MC.png" type="Texture" id=18]
 [ext_resource path="res://Assets/World/Outside Neighbor Home 2.png" type="Texture" id=19]
 [ext_resource path="res://Assets/World/Outside-Neighbor-Home-Back-Side-Sheet.png" type="Texture" id=20]
+[ext_resource path="res://Neighbor.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Karen.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Carnagephase1.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=25]
+[ext_resource path="res://Area2D.gd" type="Script" id=26]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -485,6 +491,12 @@ extents = Vector2( 304.513, 417.607 )
 
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 275.082, 575.323 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 12.7637, 11.9088 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 8.10208, 7.65823 )
 
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
@@ -2093,3 +2105,114 @@ shape = SubResource( 31 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
 shape = SubResource( 32 )
+
+[node name="Karen" parent="." instance=ExtResource( 22 )]
+position = Vector2( 713.17, -239.458 )
+
+[node name="Karen2" parent="." instance=ExtResource( 22 )]
+position = Vector2( 747.719, -275.316 )
+
+[node name="Karen3" parent="." instance=ExtResource( 22 )]
+position = Vector2( 757.73, -203.809 )
+
+[node name="Karen4" parent="." instance=ExtResource( 22 )]
+position = Vector2( 672.794, -206.03 )
+
+[node name="Karen5" parent="." instance=ExtResource( 22 )]
+position = Vector2( 683.897, -278.197 )
+
+[node name="Volatiles" parent="." instance=ExtResource( 23 )]
+position = Vector2( 632.412, -226.068 )
+
+[node name="Volatiles2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 607.494, -192.844 )
+
+[node name="Volatiles3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 640.23, -152.78 )
+
+[node name="Volatiles4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 711.564, -159.131 )
+
+[node name="Volatiles11" parent="." instance=ExtResource( 23 )]
+position = Vector2( 778.013, -147.894 )
+
+[node name="Volatiles12" parent="." instance=ExtResource( 23 )]
+position = Vector2( 810.26, -193.821 )
+
+[node name="Volatiles13" parent="." instance=ExtResource( 23 )]
+position = Vector2( 872.311, -188.936 )
+
+[node name="Volatiles14" parent="." instance=ExtResource( 23 )]
+position = Vector2( 846.904, -223.625 )
+
+[node name="Volatiles15" parent="." instance=ExtResource( 23 )]
+position = Vector2( 844.461, -147.894 )
+
+[node name="Volatiles16" parent="." instance=ExtResource( 23 )]
+position = Vector2( 905.535, -155.223 )
+
+[node name="Volatiles17" parent="." instance=ExtResource( 23 )]
+position = Vector2( 910.909, -220.694 )
+
+[node name="Volatiles18" parent="." instance=ExtResource( 23 )]
+position = Vector2( 951.463, -190.89 )
+
+[node name="Volatiles5" parent="." instance=ExtResource( 23 )]
+position = Vector2( 573.781, -224.114 )
+
+[node name="Volatiles6" parent="." instance=ExtResource( 23 )]
+position = Vector2( 563.521, -156.688 )
+
+[node name="Volatiles7" parent="." instance=ExtResource( 23 )]
+position = Vector2( 525.411, -196.264 )
+
+[node name="Volatiles8" parent="." instance=ExtResource( 23 )]
+position = Vector2( 483.881, -216.297 )
+
+[node name="Volatiles9" parent="." instance=ExtResource( 23 )]
+position = Vector2( 485.835, -155.223 )
+
+[node name="Volatiles10" parent="." instance=ExtResource( 23 )]
+position = Vector2( 451.633, -193.821 )
+
+[node name="Carnagephase1" parent="." instance=ExtResource( 24 )]
+position = Vector2( 1029.67, -175.964 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 1029.67, -175.964 )
+script = ExtResource( 26 )
+
+[node name="TrafficCone" type="Sprite" parent="Area2D"]
+position = Vector2( -683.646, -20.2939 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 25 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Area2D/TrafficCone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D/TrafficCone/StaticBody2D"]
+shape = SubResource( 33 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -683.682, -20.6372 )
+shape = SubResource( 34 )
+
+[node name="Label" type="Label" parent="Area2D"]
+margin_left = -699.187
+margin_top = -44.4402
+margin_right = -589.187
+margin_bottom = 11.5598
+rect_scale = Vector2( 0.3, 0.3 )
+custom_colors/font_color = Color( 0.988235, 0.956863, 0.137255, 1 )
+custom_colors/font_outline_modulate = Color( 0.960784, 0.945098, 0.0705882, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Interact (E) To See Task"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Neighbor" parent="." instance=ExtResource( 21 )]
+position = Vector2( 717.104, -275.059 )
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
