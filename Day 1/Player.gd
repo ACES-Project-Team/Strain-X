@@ -88,12 +88,7 @@ func play_walk_in_animation():
 		$AnimationPlayer.play("RunUp")
 
 
-func _on_Hurtbox_invincibility_started():
-	pass
 
-
-func _on_Hurtbox_invincibility_ended():
-	pass
 
 
 func _on_Hurtbox_area_entered(area):

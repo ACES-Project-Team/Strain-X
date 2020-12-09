@@ -1,8 +1,11 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://SurgicalMaskOutfit .gd" type="Script" id=2]
 [ext_resource path="res://Assets/Music and Sounds/AttackSpraySound.wav" type="AudioStream" id=3]
+[ext_resource path="res://PickUpZone.gd" type="Script" id=4]
+[ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.75485, 11.6922 )
@@ -366,15 +369,26 @@ start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=38]
 
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 12.091, 12.3317 )
+
+[sub_resource type="CapsuleShape2D" id=40]
+radius = 5.632
+height = 6.71761
+
+[sub_resource type="CapsuleShape2D" id=41]
+height = 0.0
+
 [node name="SurgicalMaskOutfit " type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 135
+frame = 128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -405,3 +419,33 @@ parameters/Walk/blend_position = Vector2( -0.544402, 0.0474138 )
 
 [node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+
+[node name="PickUpZone" type="Area2D" parent="."]
+visible = false
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]
+shape = SubResource( 39 )
+
+[node name="Hurtbox" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 0.222725, -0.222725 )
+shape = SubResource( 40 )
+
+[node name="Position2D" type="Position2D" parent="."]
+rotation = -0.514872
+
+[node name="Hitbox" parent="Position2D" instance=ExtResource( 6 )]
+position = Vector2( -1.0179, 15.6982 )
+
+[node name="CollisionShape2D" parent="Position2D/Hitbox" index="0"]
+shape = SubResource( 41 )
+[connection signal="area_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_entered"]
+[connection signal="area_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_exited"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+
+[editable path="Hurtbox"]
+
+[editable path="Position2D/Hitbox"]
