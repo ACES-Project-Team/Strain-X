@@ -29,12 +29,12 @@ __meta__ = {
 [node name="GroceryDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( -527.997, -550.051 )
 
+[node name="BackToMCHouse" parent="." instance=ExtResource( 12 )]
+position = Vector2( 502.7, -183.377 )
+target_scene = "res://Day2_Transition.tscn"
+
 [node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
 position = Vector2( 149.608, -70.6847 )
-
-[node name="BackToMCHouse" parent="." instance=ExtResource( 12 )]
-position = Vector2( 504.728, -175.312 )
-target_scene = "res://Day2_Transition.tscn"
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
