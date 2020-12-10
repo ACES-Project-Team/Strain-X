@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://addons/dialogs/Images/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Assets/Music and Sounds/bg music morning.wav" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Music and Sounds/Happy time (1).wav" type="AudioStream" id=12]
 [ext_resource path="res://addons/dialogs/Images/portraits/big_sister-Sheet.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Music and Sounds/Panting Male Sound Effect.wav" type="AudioStream" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IDLE"
@@ -342,4 +343,8 @@ volume_db = -10.272
 stream = ExtResource( 12 )
 volume_db = -14.123
 mix_target = 1
+
+[node name="PantMan" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -20.544
 [connection signal="tween_completed" from="TextBubble/Tween" to="." method="_on_Tween_tween_completed"]

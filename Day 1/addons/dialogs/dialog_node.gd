@@ -223,6 +223,8 @@ func event_handler(event):
 				$MorningBGM.play()
 			if event['sound'] == 'afterbossbgm':
 				$AfterBossBGM.play()
+			if event['sound'] == 'pant':
+				$PantMan.play()
 
 			dialog_index += 1
 			load_dialog()
