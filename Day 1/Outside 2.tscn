@@ -485,8 +485,8 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 [sub_resource type="RectangleShape2D" id=30]
 extents = Vector2( 13.293, 13.199 )
 
-[sub_resource type="RectangleShape2D" id=31]
-extents = Vector2( 8.03323, 7.81941 )
+[sub_resource type="RectangleShape2D" id=37]
+extents = Vector2( 8.98579, 8.61807 )
 
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 2343.18, 224.062 )
@@ -1641,6 +1641,10 @@ polygon = PoolVector2Array( -8.04154, -7.24632, -8.04154, 7.08683, -0.548599, 7.
 
 [node name="Mailboxes and Lamp Posts" type="StaticBody2D" parent="."]
 
+[node name="Lamp Post" type="Sprite" parent="Mailboxes and Lamp Posts"]
+position = Vector2( 184.17, -147.195 )
+texture = ExtResource( 17 )
+
 [node name="MC Mailbox" type="Sprite" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 120.53, -141.539 )
 texture = ExtResource( 18 )
@@ -1696,10 +1700,6 @@ texture = ExtResource( 6 )
 [node name="Neighbor Mailbox12" type="CollisionShape2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 2923.14, -258.296 )
 shape = SubResource( 25 )
-
-[node name="Lamp Post" type="Sprite" parent="Mailboxes and Lamp Posts"]
-position = Vector2( 184.17, -147.195 )
-texture = ExtResource( 17 )
 
 [node name="Lamp Post15" type="CollisionPolygon2D" parent="Mailboxes and Lamp Posts"]
 position = Vector2( 184.17, -147.195 )
@@ -2000,15 +2000,15 @@ texture = ExtResource( 22 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoHomeTask"]
-position = Vector2( -613.432, 73.9201 )
-shape = SubResource( 31 )
+position = Vector2( -613.355, 73.938 )
+shape = SubResource( 37 )
 
 [node name="Label" type="Label" parent="GoHomeTask"]
-margin_left = -627.624
-margin_top = 55.1532
-margin_right = -534.624
-margin_bottom = 92.1532
-rect_scale = Vector2( 0.3, 0.3 )
+margin_left = -635.135
+margin_top = 50.4431
+margin_right = -542.135
+margin_bottom = 87.4431
+rect_scale = Vector2( 0.5, 0.5 )
 custom_colors/font_color = Color( 0.976471, 0.921569, 0.109804, 1 )
 custom_colors/font_outline_modulate = Color( 0.976471, 0.835294, 0.0705882, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -2212,6 +2212,22 @@ position = Vector2( -505.145, -171.826 )
 
 [node name="Neighbor" parent="." instance=ExtResource( 21 )]
 position = Vector2( 716.113, -275.524 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 119.5
+margin_top = -76.0933
+margin_right = 247.5
+margin_bottom = -44.0933
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.984314, 0.92549, 0.0745098, 1 )
+custom_colors/font_outline_modulate = Color( 0.968627, 0.933333, 0.0784314, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Press \"Enter\" to Enter House"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 25 )]
 position = Vector2( 151.141, -57.3469 )

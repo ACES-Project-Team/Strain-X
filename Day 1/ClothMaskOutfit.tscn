@@ -526,7 +526,7 @@ hasSprayBottle = true
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 216
+frame = 230
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -554,7 +554,7 @@ active = true
 parameters/playback = SubResource( 34 )
 parameters/Attack/blend_position = Vector2( 0.00270271, -0.037931 )
 parameters/Idle/blend_position = Vector2( 0.00130379, -0.474138 )
-parameters/Walk/blend_position = Vector2( -0.434159, -0.142241 )
+parameters/Walk/blend_position = Vector2( 0.614081, 0.0663793 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
