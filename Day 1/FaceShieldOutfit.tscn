@@ -592,6 +592,7 @@ shape = SubResource( 37 )
 
 [node name="SwooshSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="Hitbox_pivot/Hitbox"]
 
