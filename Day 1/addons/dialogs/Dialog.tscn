@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://addons/dialogs/Images/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://addons/dialogs/Images/portraits/big_daddy-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Music and Sounds/bg music morning.wav" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Music and Sounds/Happy time (1).wav" type="AudioStream" id=12]
+[ext_resource path="res://addons/dialogs/Images/portraits/big_sister-Sheet.png" type="Texture" id=13]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IDLE"
@@ -107,6 +108,40 @@ margin_right = 187.485
 margin_bottom = -28.4485
 rect_scale = Vector2( 1.33678, 1.28 )
 texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sister" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -11.6119
+margin_top = 0.749153
+margin_right = -11.6119
+margin_bottom = 0.749146
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Sister"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortraitLeft" type="TextureRect" parent="Sister"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 34.053
+margin_top = -223.988
+margin_right = 235.053
+margin_bottom = 31.0118
+rect_scale = Vector2( 0.872179, 0.844435 )
+texture = ExtResource( 13 )
 expand = true
 stretch_mode = 5
 __meta__ = {
