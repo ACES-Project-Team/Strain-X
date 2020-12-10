@@ -15,7 +15,7 @@ var attack1 = swtich_attack()
 var stats = PlayerStats
 var velocity = Vector2.ZERO
 
-export var hasSprayBottle = false
+export var hasLightsaber = false
 
 #onready var on_hand_sprite = $Sprites/OnHandSprite 
 onready var animationPlayer = $AnimationPlayer 
@@ -56,8 +56,9 @@ func move_state(delta):
 		
 	velocity = move_and_slide(velocity)
 	
-	if hasSprayBottle:
+	if hasLightsaber:
 		if Input.is_action_pressed("attack"):
+			$SwooshSound.play()
 			state = ATTACK
 		
 func attack_state(delta):

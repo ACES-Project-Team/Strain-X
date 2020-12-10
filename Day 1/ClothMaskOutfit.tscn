@@ -461,47 +461,47 @@ min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=24]
-animation = "WalkUp"
-
-[sub_resource type="AnimationNodeAnimation" id=25]
-animation = "WalkDown"
-
-[sub_resource type="AnimationNodeAnimation" id=26]
-animation = "WalkRight"
-
-[sub_resource type="AnimationNodeAnimation" id=27]
+[sub_resource type="AnimationNodeAnimation" id=38]
 animation = "WalkLeft"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=28]
-blend_point_0/node = SubResource( 24 )
-blend_point_0/pos = Vector2( 0, 1.1 )
-blend_point_1/node = SubResource( 25 )
-blend_point_1/pos = Vector2( 0, -1.1 )
-blend_point_2/node = SubResource( 26 )
-blend_point_2/pos = Vector2( 1, 0 )
-blend_point_3/node = SubResource( 27 )
-blend_point_3/pos = Vector2( -1, 0 )
+[sub_resource type="AnimationNodeAnimation" id=39]
+animation = "WalkDown"
+
+[sub_resource type="AnimationNodeAnimation" id=40]
+animation = "WalkUp"
+
+[sub_resource type="AnimationNodeAnimation" id=41]
+animation = "WalkRight"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=42]
+blend_point_0/node = SubResource( 38 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 39 )
+blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_2/node = SubResource( 40 )
+blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_3/node = SubResource( 41 )
+blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=29]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=30]
-
 [sub_resource type="AnimationNodeStateMachineTransition" id=31]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=43]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=44]
 
 [sub_resource type="AnimationNodeStateMachine" id=33]
 states/Attack/node = SubResource( 18 )
 states/Attack/position = Vector2( 101, 160 )
 states/Idle/node = SubResource( 23 )
 states/Idle/position = Vector2( 101, 76 )
-states/Walk/node = SubResource( 28 )
-states/Walk/position = Vector2( 265, 76 )
-transitions = [ "Walk", "Idle", SubResource( 29 ), "Idle", "Walk", SubResource( 30 ), "Attack", "Idle", SubResource( 31 ), "Idle", "Attack", SubResource( 32 ) ]
+states/Walk/node = SubResource( 42 )
+states/Walk/position = Vector2( 275, 76 )
+transitions = [ "Attack", "Idle", SubResource( 31 ), "Idle", "Attack", SubResource( 32 ), "Idle", "Walk", SubResource( 43 ), "Walk", "Idle", SubResource( 44 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=34]
@@ -526,7 +526,7 @@ hasSprayBottle = true
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 230
+frame = 216
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -554,7 +554,7 @@ active = true
 parameters/playback = SubResource( 34 )
 parameters/Attack/blend_position = Vector2( 0.00270271, -0.037931 )
 parameters/Idle/blend_position = Vector2( 0.00130379, -0.474138 )
-parameters/Walk/blend_position = Vector2( 0.614081, 0.0663793 )
+parameters/Walk/blend_position = Vector2( -0.00912648, -0.663793 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
