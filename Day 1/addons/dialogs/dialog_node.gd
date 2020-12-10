@@ -27,7 +27,7 @@ var dialog_script = [
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
 	},
 	{
-		'scene': 'wakeup'
+		'scene': 'day1transition'
 	}
 ]
 
@@ -192,12 +192,18 @@ func event_handler(event):
 		{'scene'}:
 			if event['scene'] == 'start':
 				get_tree().change_scene("res://MCHouse.tscn")
-			if event['scene'] == 'wakeup':
-				get_tree().change_scene("res://WakeUp.tscn")
+			if event['scene'] == 'day1transition':
+				get_tree().change_scene("res://Day1_Transition.tscn")
 			if event['scene'] == 'main':
 				get_tree().change_scene("res://MCHouse.tscn")
 			if event['scene'] == 'startday2second':
 				get_tree().change_scene("res://StartOfDay2(2).tscn")
+			if event['scene'] == 'startday2':
+				get_tree().change_scene("res://Day2.tscn")
+			if event['scene'] == 'day2transition':
+				get_tree().change_scene("res://Day2_Transition.tscn")
+			if event['scene'] == 'startday3':
+				get_tree().change_scene("res://Day3.tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])
