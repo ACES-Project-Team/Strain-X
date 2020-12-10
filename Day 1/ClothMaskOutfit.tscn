@@ -461,47 +461,47 @@ min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=38]
+[sub_resource type="AnimationNodeAnimation" id=24]
 animation = "WalkLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=39]
+[sub_resource type="AnimationNodeAnimation" id=25]
 animation = "WalkDown"
 
-[sub_resource type="AnimationNodeAnimation" id=40]
+[sub_resource type="AnimationNodeAnimation" id=26]
 animation = "WalkUp"
 
-[sub_resource type="AnimationNodeAnimation" id=41]
+[sub_resource type="AnimationNodeAnimation" id=27]
 animation = "WalkRight"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=42]
-blend_point_0/node = SubResource( 38 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=28]
+blend_point_0/node = SubResource( 24 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 39 )
+blend_point_1/node = SubResource( 25 )
 blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 40 )
+blend_point_2/node = SubResource( 26 )
 blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 41 )
+blend_point_3/node = SubResource( 27 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
 [sub_resource type="AnimationNodeStateMachineTransition" id=31]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=32]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=43]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=44]
 
 [sub_resource type="AnimationNodeStateMachine" id=33]
 states/Attack/node = SubResource( 18 )
 states/Attack/position = Vector2( 101, 160 )
 states/Idle/node = SubResource( 23 )
 states/Idle/position = Vector2( 101, 76 )
-states/Walk/node = SubResource( 42 )
+states/Walk/node = SubResource( 28 )
 states/Walk/position = Vector2( 275, 76 )
-transitions = [ "Attack", "Idle", SubResource( 31 ), "Idle", "Attack", SubResource( 32 ), "Idle", "Walk", SubResource( 43 ), "Walk", "Idle", SubResource( 44 ) ]
+transitions = [ "Attack", "Idle", SubResource( 29 ), "Idle", "Attack", SubResource( 30 ), "Idle", "Walk", SubResource( 31 ), "Walk", "Idle", SubResource( 32 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=34]
@@ -596,6 +596,7 @@ one_way_collision_margin = 0.0
 stream = ExtResource( 3 )
 [connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUPZone_body_entered"]
 [connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUPZone_body_exited"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="Hurtbox"]
 
