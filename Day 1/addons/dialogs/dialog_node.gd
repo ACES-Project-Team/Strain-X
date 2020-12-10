@@ -118,10 +118,15 @@ func update_name(event):
 			$Neighbor.visible = true
 		else:
 			$Neighbor.visible = false
+		if event['name'] == 'Dad':
+			$Dad.visible = true
+		else:
+			$Dad.visible = false
 	else:
 		$TextBubble/NameLabel.bbcode_text = ''
 		$Mom.visible = false
 		$Neighbor.visible = false
+		$Dad.visible = false
 
 func update_text(text):
 	# Updating the text and starting the animation from 0
@@ -208,6 +213,8 @@ func event_handler(event):
 				$ScreamMan.play()
 			if event['sound'] == 'neighbormusic':
 				$NeighborBGM.play()
+			if event['sound'] == 'morning':
+				$MorningBGM.play()
 
 			dialog_index += 1
 			load_dialog()

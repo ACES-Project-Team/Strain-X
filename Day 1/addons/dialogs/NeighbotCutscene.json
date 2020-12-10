@@ -31,6 +31,7 @@
 	},
 	
 	{
+		"name": "You",
 		"text": "Thank you very much. Here I have some extra food. Take them."
 	},
 	
@@ -40,6 +41,7 @@
 	},
 	
 	{
+		"name": "You",
 		"text": "Take them."
 	},
 	
@@ -49,6 +51,7 @@
 	},
 	
 	{
+		"name": "You",
 		"text": "No problem. Stay safe always."
 	},
 	
