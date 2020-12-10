@@ -98,7 +98,7 @@ func _on_Hurtbox_invincibility_ended():
 
 func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
-	hurtbox.start_invincibility(2)
+	hurtbox.start_invincibility(.5)
 
 func swtich_attack():
 	if Input.is_action_pressed("change_to_spray"):
