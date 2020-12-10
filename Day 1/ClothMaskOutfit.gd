@@ -85,7 +85,7 @@ func _input(event):
 
 func play_walk_in_animation():
 		state = STOP
-		$AnimationPlayer.play("RunUp")
+		$AnimationPlayer.play("WalkRight")
 
 
 func _on_Hurtbox_invincibility_started():
