@@ -90,6 +90,10 @@
 	
 	{
 		"name": "Mom",
-		"text": "It's settled then, we will be setting out in a few minutes."
+		"text": "It's settled then, we will be setting out in a few minutes. Pack your things and help your sister do hers."
+	},
+	
+	{
+		"fade-in": 2
 	},
 ]

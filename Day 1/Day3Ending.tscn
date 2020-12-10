@@ -10,3 +10,4 @@ __meta__ = {
 }
 
 [node name="DialogNode" parent="." instance=ExtResource( 1 )]
+extenal_file = "res://addons/dialogs/Endofday3.json"

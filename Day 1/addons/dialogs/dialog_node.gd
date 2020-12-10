@@ -122,11 +122,17 @@ func update_name(event):
 			$Dad.visible = true
 		else:
 			$Dad.visible = false
+		if event['name'] == 'Sister':
+			$Sister.visible = true
+		else:
+			$Sister.visible = false
+			
 	else:
 		$TextBubble/NameLabel.bbcode_text = ''
 		$Mom.visible = false
 		$Neighbor.visible = false
 		$Dad.visible = false
+		$Sister.visible = false
 
 func update_text(text):
 	# Updating the text and starting the animation from 0
@@ -215,6 +221,8 @@ func event_handler(event):
 				$NeighborBGM.play()
 			if event['sound'] == 'morning':
 				$MorningBGM.play()
+			if event['sound'] == 'afterbossbgm':
+				$AfterBossBGM.play()
 
 			dialog_index += 1
 			load_dialog()
