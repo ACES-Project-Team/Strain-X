@@ -3,11 +3,10 @@
 [ext_resource path="res://Day1_Transition.gd" type="Script" id=1]
 [ext_resource path="res://addons/dialogs/Fonts/FFFFORWA.TTF" type="DynamicFontData" id=2]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
 
-[sub_resource type="Animation" id=1]
-resource_name = "fade_to_black"
+[sub_resource type="Animation" id=2]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
@@ -46,8 +45,7 @@ tracks/2/keys = {
 "values": [ 0.288, 0.457, 0.66, 1.0 ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "fade_to_normal"
+[sub_resource type="Animation" id=3]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
@@ -95,8 +93,8 @@ margin_top = -27.0
 margin_right = -7.80002
 margin_bottom = 4.0
 rect_scale = Vector2( 2.64, 2.64665 )
-custom_fonts/normal_font = SubResource( 3 )
-visible_characters = 1
+custom_fonts/normal_font = SubResource( 1 )
+visible_characters = 0
 percent_visible = 0.288
 text = "DAY 1"
 __meta__ = {
@@ -104,6 +102,6 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/fade_to_black = SubResource( 1 )
-anims/fade_to_normal = SubResource( 2 )
+anims/fade_to_black = SubResource( 2 )
+anims/fade_to_normal = SubResource( 3 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
