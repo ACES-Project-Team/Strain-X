@@ -33,6 +33,12 @@
     "AddEnergy": 32,
     "StackSize": 10,
   },
+  "Cereal": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 10,
+  },
   "Cloth Mask": {
     "ItemCategory": "Consumable",
     "AddHealth": 5,

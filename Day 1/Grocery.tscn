@@ -1,7 +1,7 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Assets/World/Grocery Inside Tile Set.png" type="Texture" id=1]
-[ext_resource path="res://Health.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MCHealthBar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/World/Grocery Large Shelf 3.png" type="Texture" id=3]
 [ext_resource path="res://Assets/World/Grocery Large Shelf 2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/World/Grocery Large Shelf 1.png" type="Texture" id=5]
@@ -18,12 +18,14 @@
 [ext_resource path="res://GroceryOutDoor.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=17]
 [ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=18]
-[ext_resource path="res://CannedGoods.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Groceries.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Cereal.tscn" type="PackedScene" id=21]
+[ext_resource path="res://CherryDrop.tscn" type="PackedScene" id=19]
+[ext_resource path="res://CerealDrop.gd" type="Script" id=20]
+[ext_resource path="res://CerealDrop.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Grocery.gd" type="Script" id=22]
 [ext_resource path="res://Assets/Music and Sounds/CashRegister.wav" type="AudioStream" id=23]
 [ext_resource path="res://GroceryTask.gd" type="Script" id=24]
+[ext_resource path="res://CanDrop .tscn" type="PackedScene" id=25]
+[ext_resource path="res://CanDrop .gd" type="Script" id=26]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.1187, 2.16334 )
@@ -376,6 +378,9 @@ extents = Vector2( 8.49362, 16.0569 )
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 8.37349, 15.2583 )
 
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 3.6925, 1.78734 )
+
 [node name="Grocery" type="Node2D"]
 script = ExtResource( 22 )
 
@@ -390,10 +395,10 @@ shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 0.25
-margin_left = -454.243
-margin_top = -297.969
-margin_right = 926.757
-margin_bottom = 487.031
+margin_left = -552.694
+margin_top = -295.208
+margin_right = 828.306
+margin_bottom = 489.792
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -779,111 +784,183 @@ collision_mask = 514
 [node name="Cashier" parent="." instance=ExtResource( 17 )]
 position = Vector2( 359.265, 176.579 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="FoodLabel" type="Label" parent="CanvasLayer"]
-margin_left = 8.18343
-margin_top = 14.5309
-margin_right = 107.183
-margin_bottom = 28.5309
-rect_scale = Vector2( 0.5, 0.5 )
-text = "Food Collected:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Count" type="Label" parent="CanvasLayer"]
-margin_left = 60.211
-margin_top = 14.7763
-margin_right = 73.211
-margin_bottom = 31.7763
-rect_scale = Vector2( 0.5, 0.5 )
-text = "0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="YSort" type="YSort" parent="."]
-
-[node name="Cereal" parent="YSort" instance=ExtResource( 21 )]
-position = Vector2( 151.661, 91.0043 )
-
-[node name="Cereal2" parent="YSort" instance=ExtResource( 21 )]
-position = Vector2( 72.9033, 147.686 )
-
-[node name="Cereal3" parent="YSort" instance=ExtResource( 21 )]
-position = Vector2( 371.227, 89.2144 )
-
-[node name="Cereal4" parent="YSort" instance=ExtResource( 21 )]
-position = Vector2( 325.882, 6.87703 )
-
-[node name="CannedGoods" parent="YSort" instance=ExtResource( 19 )]
-position = Vector2( 150.813, 64.992 )
-
-[node name="CannedGoods2" parent="YSort" instance=ExtResource( 19 )]
-position = Vector2( 221.815, -11.9755 )
-
-[node name="CannedGoods3" parent="YSort" instance=ExtResource( 19 )]
-position = Vector2( 293.412, 84.6814 )
-
-[node name="CannedGoods4" parent="YSort" instance=ExtResource( 19 )]
-position = Vector2( 365.01, 33.9664 )
-
-[node name="Cherry" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 89.2181, 25.5573 )
-
-[node name="Cherry2" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 222.271, 73.8857 )
-
-[node name="Cherry3" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 290.288, -7.85501 )
-
-[node name="Cherry4" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 150.076, 124.004 )
-
-[node name="Cherry5" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 223.464, 103.121 )
-
-[node name="Cherry6" parent="YSort" instance=ExtResource( 20 )]
-position = Vector2( 354.13, 64.3394 )
-
 [node name="UserInterface2" type="CanvasLayer" parent="."]
 script = ExtResource( 14 )
 
 [node name="InventoryButton" parent="UserInterface2" instance=ExtResource( 15 )]
 
-[node name="Health" parent="." instance=ExtResource( 2 )]
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 23 )
 autoplay = true
+
+[node name="CerealDrop" parent="." instance=ExtResource( 21 )]
+position = Vector2( 222.305, 51.8634 )
+script = ExtResource( 20 )
+
+[node name="CerealDrop5" parent="." instance=ExtResource( 21 )]
+position = Vector2( 289.326, -18.648 )
+script = ExtResource( 20 )
+
+[node name="CerealDrop2" parent="." instance=ExtResource( 21 )]
+position = Vector2( 78.715, 79.2428 )
+script = ExtResource( 20 )
+
+[node name="CerealDrop3" parent="." instance=ExtResource( 21 )]
+position = Vector2( 165.112, -1.07011 )
+script = ExtResource( 20 )
+
+[node name="CerealDrop4" parent="." instance=ExtResource( 21 )]
+position = Vector2( 361.635, 123.05 )
+script = ExtResource( 20 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 150.01, 100.745 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="."]
+position = Vector2( 289.636, -20.0323 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D13"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="."]
+position = Vector2( 361.744, 123.257 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+position = Vector2( 164.612, -0.863411 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="."]
+position = Vector2( 292.383, 77.0158 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="CherryDrop" parent="." instance=ExtResource( 19 )]
+position = Vector2( 150.01, 100.745 )
+
+[node name="CherryDrop4" parent="." instance=ExtResource( 19 )]
+position = Vector2( 291.166, 75.799 )
+
+[node name="CherryDrop2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 292.383, 128.124 )
+
+[node name="CherryDrop3" parent="." instance=ExtResource( 19 )]
+position = Vector2( 89.1667, 21.0401 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 221.072, 53.0957 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2( 89.0428, 20.2404 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2( 78.0911, 79.2583 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="."]
+position = Vector2( 80.5248, 171.74 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D11"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="."]
+position = Vector2( 114.737, 186.402 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D12"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="CanDrop " parent="." instance=ExtResource( 25 )]
+position = Vector2( 223.632, 112.455 )
+script = ExtResource( 26 )
+
+[node name="CanDrop 4" parent="." instance=ExtResource( 25 )]
+position = Vector2( 115.294, 189.024 )
+script = ExtResource( 26 )
+
+[node name="CanDrop 3" parent="." instance=ExtResource( 25 )]
+position = Vector2( 80.0418, 170.865 )
+script = ExtResource( 26 )
+
+[node name="CanDrop 2" parent="." instance=ExtResource( 25 )]
+position = Vector2( 355.899, 16.5483 )
+script = ExtResource( 26 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 223.726, 112.361 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2( 290.654, 130.005 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2( 354.412, 18.5616 )
+collision_layer = 2
+collision_mask = 2147483655
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 0.321716, 9.46221 )
+shape = SubResource( 27 )
+
+[node name="HealthMC" type="CanvasLayer" parent="."]
+
+[node name="MCHealthBar" parent="HealthMC" instance=ExtResource( 2 )]
+rect_scale = Vector2( 1, 1 )
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
-[connection signal="area_entered" from="YSort/Cereal" to="YSort/Cereal" method="_on_Cereal_area_entered"]
-[connection signal="picked_up" from="YSort/Cereal" to="." method="_on_Cereal_picked_up"]
-[connection signal="area_entered" from="YSort/Cereal2" to="YSort/Cereal2" method="_on_Cereal_area_entered"]
-[connection signal="picked_up" from="YSort/Cereal2" to="." method="_on_Cereal_picked_up"]
-[connection signal="area_entered" from="YSort/Cereal3" to="YSort/Cereal3" method="_on_Cereal_area_entered"]
-[connection signal="picked_up" from="YSort/Cereal3" to="." method="_on_Cereal_picked_up"]
-[connection signal="area_entered" from="YSort/Cereal4" to="YSort/Cereal4" method="_on_Cereal_area_entered"]
-[connection signal="picked_up" from="YSort/Cereal4" to="." method="_on_Cereal_picked_up"]
-[connection signal="area_entered" from="YSort/CannedGoods" to="YSort/CannedGoods" method="_on_CannedGoods_area_entered"]
-[connection signal="picked_up" from="YSort/CannedGoods" to="." method="_on_CannedGoods_picked_up"]
-[connection signal="area_entered" from="YSort/CannedGoods2" to="YSort/CannedGoods2" method="_on_CannedGoods_area_entered"]
-[connection signal="picked_up" from="YSort/CannedGoods2" to="." method="_on_CannedGoods_picked_up"]
-[connection signal="area_entered" from="YSort/CannedGoods3" to="YSort/CannedGoods3" method="_on_CannedGoods_area_entered"]
-[connection signal="picked_up" from="YSort/CannedGoods3" to="." method="_on_CannedGoods_picked_up"]
-[connection signal="area_entered" from="YSort/CannedGoods4" to="YSort/CannedGoods4" method="_on_CannedGoods_area_entered"]
-[connection signal="picked_up" from="YSort/CannedGoods4" to="." method="_on_CannedGoods_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry" to="YSort/Cherry" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry" to="." method="_on_Cherry_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry2" to="YSort/Cherry2" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry2" to="." method="_on_Cherry_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry3" to="YSort/Cherry3" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry3" to="." method="_on_Cherry_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry4" to="YSort/Cherry4" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry4" to="." method="_on_Cherry_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry5" to="YSort/Cherry5" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry5" to="." method="_on_Cherry_picked_up"]
-[connection signal="area_entered" from="YSort/Cherry6" to="YSort/Cherry6" method="_on_Cherry_area_entered"]
-[connection signal="picked_up" from="YSort/Cherry6" to="." method="_on_Cherry_picked_up"]
