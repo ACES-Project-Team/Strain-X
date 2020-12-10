@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ktchen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bedroom1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Day1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
+[ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
+[ext_resource path="res://CutsceneCamera.gd" type="Script" id=10]
+[ext_resource path="res://MCHouse.gd" type="Script" id=11]
+
+[node name="MCHouse" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -440.74
+margin_top = -177.66
+margin_right = 845.26
+margin_bottom = 636.34
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bedroom1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 58.6292, -134.591 )
+
+[node name="Label" parent="Bedroom1/Area2D" index="2"]
+visible = false
+
+[node name="Bedroom 2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 35.1618, -126.675 )
+
+[node name="ClothMaskItemDrop" parent="Bedroom 2" index="18"]
+visible = false
+
+[node name="Kitchen" parent="." instance=ExtResource( 3 )]
+position = Vector2( 51.0387, 182.538 )
+
+[node name="LivingRoom" parent="." instance=ExtResource( 5 )]
+position = Vector2( 49.9012, -156.475 )
+
+[node name="GroceryDoor" parent="." instance=ExtResource( 7 )]
+position = Vector2( 202, 67.8408 )
+target_scene = ExtResource( 6 )
+
+[node name="Sister" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 378.297, 112.366 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 202.043, 82.2657 )
+
+[node name="CutsceneCamera" type="Camera2D" parent="."]
+position = Vector2( 324.548, 130.24 )
+current = true
+script = ExtResource( 10 )
+
+[node name="Tween" type="Tween" parent="CutsceneCamera"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 8 )]
+
+[editable path="Bedroom1"]
+
+[editable path="Bedroom 2"]
