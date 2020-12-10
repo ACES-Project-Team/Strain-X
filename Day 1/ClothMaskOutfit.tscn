@@ -437,24 +437,24 @@ max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=19]
-animation = "IdleUp"
+animation = "IdleLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=20]
 animation = "IdleDown"
 
 [sub_resource type="AnimationNodeAnimation" id=21]
-animation = "IdleLeft"
+animation = "IdleUp"
 
 [sub_resource type="AnimationNodeAnimation" id=22]
 animation = "IdleRight"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=23]
 blend_point_0/node = SubResource( 19 )
-blend_point_0/pos = Vector2( 0, 1.1 )
+blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 20 )
-blend_point_1/pos = Vector2( 0, -1.1 )
+blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 21 )
-blend_point_2/pos = Vector2( -1, 0 )
+blend_point_2/pos = Vector2( 0, -1.1 )
 blend_point_3/node = SubResource( 22 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
@@ -501,7 +501,7 @@ states/Idle/node = SubResource( 23 )
 states/Idle/position = Vector2( 101, 76 )
 states/Walk/node = SubResource( 28 )
 states/Walk/position = Vector2( 275, 76 )
-transitions = [ "Attack", "Idle", SubResource( 29 ), "Idle", "Attack", SubResource( 30 ), "Idle", "Walk", SubResource( 31 ), "Walk", "Idle", SubResource( 32 ) ]
+transitions = [ "Idle", "Walk", SubResource( 29 ), "Walk", "Idle", SubResource( 30 ), "Idle", "Attack", SubResource( 31 ), "Attack", "Idle", SubResource( 32 ) ]
 start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=34]
@@ -526,7 +526,7 @@ hasSprayBottle = true
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 216
+frame = 228
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -553,7 +553,7 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 34 )
 parameters/Attack/blend_position = Vector2( 0.00270271, -0.037931 )
-parameters/Idle/blend_position = Vector2( 0.00130379, -0.474138 )
+parameters/Idle/blend_position = Vector2( 0.0221642, 0.0758619 )
 parameters/Walk/blend_position = Vector2( -0.00912648, -0.663793 )
 
 [node name="Camera2D" type="Camera2D" parent="."]

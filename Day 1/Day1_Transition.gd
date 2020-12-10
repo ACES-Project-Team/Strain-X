@@ -13,3 +13,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name == "fade_to_black":
 		emit_signal("transitioned")
 		$AnimationPlayer.play("fade_to_normal")
+# warning-ignore:return_value_discarded
+		get_tree().change_scene("res://StartOfDay2.tscn")
+		
+

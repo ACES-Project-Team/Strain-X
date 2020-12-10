@@ -5,6 +5,7 @@ var vel = Vector2.ZERO
 var damage = Hitbox
 var state = idle
 
+
 export var acceleration = 300
 export var max_speed = 80
 export var friction = 200
@@ -27,8 +28,6 @@ onready var volStats = $Stats
 onready var volanimationstate = volAnimationTree.get("parameters/playback")
 onready var hitbox = $Hitbox
 
-func _ready():
-	volAnimationTree.active = true
 	
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO,friction*delta)

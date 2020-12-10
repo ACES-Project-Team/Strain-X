@@ -430,7 +430,6 @@ max_speed = 65
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 hframes = 40
-frame = 25
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
