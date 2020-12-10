@@ -55,7 +55,11 @@ visible = false
 [node name="PlayerHealthBar" parent="Health" instance=ExtResource( 1 )]
 
 [node name="VolatileTask" type="Area2D" parent="."]
+position = Vector2( -200.562, -250.513 )
 script = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Traffic Cone" type="Sprite" parent="VolatileTask"]
 position = Vector2( -318.708, -196.224 )

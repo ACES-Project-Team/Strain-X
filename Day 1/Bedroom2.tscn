@@ -15,7 +15,6 @@
 [ext_resource path="res://Assets/World/Window.png" type="Texture" id=13]
 [ext_resource path="res://ClothMaskItemDrop.tscn" type="PackedScene" id=14]
 
-
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
@@ -557,7 +556,7 @@ extents = Vector2( 10, 10.5518 )
 extents = Vector2( 14.5062, 6.09 )
 
 [sub_resource type="RectangleShape2D" id=48]
-extents = Vector2( 14.4579, 2.8739 )
+extents = Vector2( 9.62842, 0.891052 )
 
 [node name="Bedroom 2" type="Node2D"]
 position = Vector2( 197.449, -66.0717 )
@@ -776,7 +775,9 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0.693573, 2.50079 )
 shape = SubResource( 48 )
 
 [node name="ClothMaskItemDrop" parent="." instance=ExtResource( 14 )]
-position = Vector2( -93.4165, 261.205 )
+position = Vector2( -93.6186, 262.001 )
+collision_layer = 4

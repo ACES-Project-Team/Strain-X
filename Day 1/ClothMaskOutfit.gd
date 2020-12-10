@@ -128,3 +128,4 @@ func _set_health(value):
 		if health == 0:
 			kill()
 			emit_signal("killed")
+
