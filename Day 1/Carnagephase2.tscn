@@ -56,10 +56,10 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=10]
 radius = 12.5071
 
-[sub_resource type="CircleShape2D" id=12]
+[sub_resource type="CircleShape2D" id=14]
 radius = 130.953
 
-[sub_resource type="CapsuleShape2D" id=11]
+[sub_resource type="CapsuleShape2D" id=12]
 radius = 18.1249
 height = 0.742737
 
@@ -75,7 +75,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 1
+frame = 4
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -85,27 +85,32 @@ scale = Vector2( 0.913189, 0.92063 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( -0.794594, 16.4217 )
 shape = SubResource( 10 )
 
 [node name="DetectionZone" parent="." instance=ExtResource( 5 )]
+visible = false
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" parent="DetectionZone" index="0"]
-shape = SubResource( 12 )
+shape = SubResource( 14 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
+visible = false
 collision_layer = 16
 collision_mask = 0
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( -1.49831, -11.9865 )
-shape = SubResource( 11 )
+shape = SubResource( 12 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
+MAX_HEALTH = 500
 
 [node name="Hitbox" parent="." instance=ExtResource( 6 )]
+visible = false
 collision_layer = 0
 collision_mask = 256
 damage = 1
