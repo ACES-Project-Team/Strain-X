@@ -16,7 +16,7 @@ func _physics_process(delta):
 			$MarginContainer/VBoxContainer/Exit.grab_focus()
 
 func _on_Continue_pressed():
-	get_tree().change_scene("res://Title Screen.tscn")
+	get_tree().change_scene_to(load("res://Title Screen.tscn"))
 
 func _on_Exit_pressed():
 	get_tree().quit()
