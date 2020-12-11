@@ -208,6 +208,8 @@ func event_handler(event):
 				get_tree().change_scene("res://Day2AfterDialogue.tscn")
 			if event['scene'] == 'tobecontinued':
 				get_tree().change_scene("res://To_be_continued.tscn")
+			if event['scene'] == 'day3lasthouse':
+				get_tree().change_scene("res://MCHouse_Last.tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])
