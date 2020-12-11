@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Music and Sounds/Day2Music.wav" type="AudioStream" id=4]
 [ext_resource path="res://Assets/World/day3_sign-Sheet.png" type="Texture" id=5]
 [ext_resource path="res://GoingtoDay3.tscn" type="PackedScene" id=6]
-[ext_resource path="res://TestInventoryButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://InventoryButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UserInterface.gd" type="Script" id=8]
 
 [node name="Day2" type="Node2D"]
