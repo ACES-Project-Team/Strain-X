@@ -1,5 +1,5 @@
 extends Node
-
+const DeathEffect = preload ("res://DeathEffect.tscn")
 export var MAX_HEALTH = 100 setget set_max_health
 var HEALTH = MAX_HEALTH setget set_health
 
@@ -25,3 +25,9 @@ func _ready():
 
 func _GameOver():
 		get_tree().change_scene_to(load("res://GameOVer.tscn"))
+
+
+func _on_PlayerStats_no_health():
+	var deathEffect = DeathEffect.instance()
+	get_parent().add_child(deathEffect)
+

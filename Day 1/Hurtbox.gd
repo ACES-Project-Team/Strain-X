@@ -1,5 +1,4 @@
 extends Area2D
-
 var invincible = false setget set_invincible
 
 onready var timer = $Timer
@@ -29,3 +28,4 @@ func _on_Hurtbox_invincibility_started():
 func _on_Hurtbox_invincibility_ended():
 	collisionshape.disabled = false
 	monitorable = true
+
