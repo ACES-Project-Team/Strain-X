@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,9 @@
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UvLightSaber .tscn" type="PackedScene" id=10]
 [ext_resource path="res://FaceShieldDrop .tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4.4767, 0.740112 )
 
 [node name="MCHouse-AfterDialogue" type="Node2D"]
 
@@ -45,7 +48,7 @@ visible = false
 position = Vector2( 378.297, 112.366 )
 
 [node name="FaceShieldDrop " parent="." instance=ExtResource( 11 )]
-position = Vector2( 211.869, 259.875 )
+position = Vector2( 219.388, 234.474 )
 
 [node name="UvLightSaber " parent="." instance=ExtResource( 10 )]
 position = Vector2( 91.8525, 102.414 )
@@ -56,3 +59,19 @@ position = Vector2( 200.649, 88.5889 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 8 )]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 218.408, 244.154 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 90.1901, 112.639 )
+shape = SubResource( 1 )
