@@ -87,7 +87,6 @@ func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("WalkRight")
 
-
 func _on_Hurtbox_invincibility_started():
 	pass
 
