@@ -21,7 +21,7 @@ var dialog_script = [
 		'text': 'You can move using the W, A, S, D keys and attack by pressing the "K" button.'
 	},
 	{
-		'text': 'Pressing the "I" key will open your inventory. You can also interact with objects and pick up items using the "E" button.'
+		'text': 'Pressing the "I" key will open your inventory. You interact with objects and pick up items using the "E" button and press "Enter" to interact with people needed.'
 	},
 	{  
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
@@ -195,11 +195,11 @@ func event_handler(event):
 			if event['scene'] == 'day1transition':
 				get_tree().change_scene("res://Day1_Transition.tscn")
 			if event['scene'] == 'main':
-				get_tree().change_scene("res://MCHouse.tscn")
+				get_tree().change_scene("res://MCHouseAfterDialogue.tscn")
 			if event['scene'] == 'startday2second':
 				get_tree().change_scene("res://StartOfDay2(2).tscn")
 			if event['scene'] == 'startday2':
-				get_tree().change_scene("res://Day2.tscn")
+				get_tree().change_scene("res://Day2AfterDialogue.tscn")
 			if event['scene'] == 'day2transition':
 				get_tree().change_scene("res://Day2_Transition.tscn")
 			if event['scene'] == 'startday3':

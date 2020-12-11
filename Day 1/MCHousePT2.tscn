@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,10 @@
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
 [ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
+[ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.30068, 1.3345 )
 
 [node name="MCHouse" type="Node2D"]
 
@@ -48,3 +52,14 @@ position = Vector2( 201.59, 79.2524 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 8 )]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 79.8796, 168.793 )
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="SurgicalMaskDrop " parent="." instance=ExtResource( 10 )]
+position = Vector2( 80.1714, 158.87 )
