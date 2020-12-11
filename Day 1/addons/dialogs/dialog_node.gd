@@ -195,7 +195,7 @@ func event_handler(event):
 			if event['scene'] == 'day1transition':
 				get_tree().change_scene("res://Day1_Transition.tscn")
 			if event['scene'] == 'main':
-				get_tree().change_scene("res://MCHouse.tscn")
+				get_tree().change_scene("res://MCHouseAfterDialogue.tscn")
 			if event['scene'] == 'startday2second':
 				get_tree().change_scene("res://StartOfDay2(2).tscn")
 			if event['scene'] == 'startday2':
