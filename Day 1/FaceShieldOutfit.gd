@@ -15,7 +15,7 @@ var attack1 = swtich_attack()
 var stats = PlayerStats
 var velocity = Vector2.ZERO
 
-export var hasSprayBottle = false
+export var hasLightsaber = false
 
 #onready var on_hand_sprite = $Sprites/OnHandSprite 
 onready var animationPlayer = $AnimationPlayer 
@@ -46,9 +46,9 @@ func move_state(delta):
 	
 	if input_vector != Vector2.ZERO:
 		animationTree.set("parameters/Idle/blend_position", input_vector)
-		animationTree.set("parameters/Run/blend_position", input_vector)
+		animationTree.set("parameters/Walk/blend_position", input_vector)
 		animationTree.set("parameters/Attack/blend_position", input_vector)
-		animationState.travel("Run")
+		animationState.travel("Walk")
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		animationState.travel("Idle")
@@ -56,9 +56,9 @@ func move_state(delta):
 		
 	velocity = move_and_slide(velocity)
 	
-	if hasSprayBottle:
+	if hasLightsaber:
 		if Input.is_action_pressed("attack"):
-			$SpraySound.play()
+			$SwooshSound.play()
 			state = ATTACK
 		
 func attack_state(delta):
@@ -92,7 +92,7 @@ func _on_Hurtbox_invincibility_ended():
 
 func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
-	hurtbox.start_invincibility(2)
+	hurtbox.start_invincibility(.5)
 
 func swtich_attack():
 	if Input.is_action_pressed("change_to_spray"):

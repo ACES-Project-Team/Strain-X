@@ -8,6 +8,7 @@
 [ext_resource path="res://Karen.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 86.6123, 109.317 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 2 )]
 position = Vector2( 115.369, 48.64 )

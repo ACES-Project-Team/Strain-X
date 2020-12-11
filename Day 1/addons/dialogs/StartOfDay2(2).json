@@ -28,6 +28,10 @@
 	},
 	
 	{
+		"text": "..."
+	},
+	
+	{
 		"text": "(You hear an vociferous scream from outside your house screaming for help.)"
 	},
 	
@@ -44,6 +48,12 @@
 	},
 	
 	{
+		"name": "You",
 		"text": "[These are volatiles, the mindless creatures that I was fighting yesterday.]"
 	},
+	
+	{
+		"scene": "startday2"
+	}
+	
 ]

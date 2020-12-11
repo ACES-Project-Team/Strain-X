@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ClothMaskOutfit.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://GroceryDoor.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=10]
 [ext_resource path="res://VolatileTask.gd" type="Script" id=11]
+[ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13.0926, 13.2403 )
@@ -18,19 +19,22 @@ extents = Vector2( 13.0926, 13.2403 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 9.64471, 9.70454 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 4.54016, 1.75218 )
+
 [node name="Day1 Part 2" type="Node2D"]
 __meta__ = {
 "_edit_vertical_guides_": [ 24.5324 ]
 }
 
 [node name="Outside" parent="." instance=ExtResource( 6 )]
-position = Vector2( -0.00474533, 0.221104 )
+position = Vector2( -0.00474533, 0.387989 )
 
 [node name="GroceryDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( -527.997, -550.051 )
 
 [node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
-position = Vector2( -527.491, -532.236 )
+position = Vector2( -525.948, -526.247 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
@@ -55,7 +59,11 @@ visible = false
 [node name="PlayerHealthBar" parent="Health" instance=ExtResource( 1 )]
 
 [node name="VolatileTask" type="Area2D" parent="."]
+position = Vector2( -200.562, -250.513 )
 script = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Traffic Cone" type="Sprite" parent="VolatileTask"]
 position = Vector2( -318.708, -196.224 )
@@ -86,5 +94,33 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SurgicalMaskDrop " parent="." instance=ExtResource( 12 )]
+position = Vector2( 137.834, -100.923 )
+
+[node name="Label" type="Label" parent="SurgicalMaskDrop "]
+margin_left = -14.2179
+margin_top = -24.8596
+margin_right = 43.7821
+margin_bottom = 6.14037
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.160784, 1, 0.0431373, 1 )
+custom_colors/font_outline_modulate = Color( 0.243137, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Collect Reward"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 135.403, -93.7946 )
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2.18811, 1.57504 )
+shape = SubResource( 3 )
 [connection signal="body_entered" from="VolatileTask" to="VolatileTask" method="_on_VolatileTask_body_entered"]
 [connection signal="body_exited" from="VolatileTask" to="VolatileTask" method="_on_VolatileTask_body_exited"]

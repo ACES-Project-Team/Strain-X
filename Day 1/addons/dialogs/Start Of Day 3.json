@@ -1,0 +1,102 @@
+[
+	{
+		"sound": "morning"
+	},
+	
+	{
+		"fade-in": 2
+	},
+	
+	{
+		"background": "res://addons/dialogs/Images/background/Bedroom1.png"
+	},
+	
+	{
+		"text": "[Early morning]"
+	},
+	
+	{
+		"text": "(Your mom wakes you up from your sleep.)"
+	},
+	
+	{
+		"name": "You",
+		"text": "What is it mom? Why are you up this early?"
+	},
+	
+	{
+		"name": "Mom",
+		"text": "We need to leave early and pack our things."
+	},
+	
+	{
+		"name": "Mom",
+		"text": "There has been an exponential increase of infected here in our area and we need to move to a safer place."
+	},
+	
+	{
+		"name": "Mom",
+		"text": "We wont be able to stay here as long as these vicious creatures live. We a safer and more permanent place."
+	},
+	
+	{
+		"name": "You",
+		"text": "Do you mean something like a bunker or a safe of sorts?"
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"name": "Dad",
+		"text": "Oh I know something. Theres this military bunker somewhere far away. I know this because I have a coworker that has a brother that works for the military."
+	},
+	
+	{
+		"name": "Dad",
+		"text": "I presume it's empty right now because of the virus. We should get there fast as other people would also have the same idea of going to a bunker."
+	},
+	
+	{
+		"name": "Dad",
+		"text": "If we can secure that place early, we'll be set for this pandemic. There will probably an abundance of MRE and food supplies there for military purposes."
+	},
+	
+	{
+		"name": "You",
+		"text": "But isn't that too convienient?"
+	},
+	
+	{
+		"name": "Mom",
+		"text": "What do you mean?"
+	},
+	
+	{
+		"name": "You",
+		"text": "I mean if there is a place where we can stay for rest of this pandemic with the surplus of food and water, there must some kind of catch. Right?"
+	},
+	
+	{
+		"name": "Dad",
+		"text": "You do have a point. But we have no other choice or else we will be stranded here. Our benefits overweight over disadvantages."
+	},
+	
+	{
+		"name": "Dad",
+		"text": "Once were stranded here, our food and water supplies will dry out as we keep going. It basically suicide with extra steps."
+	},
+	
+	{
+		"name": "Mom",
+		"text": "It's settled then, we will be setting out in a few minutes. Pack your things and help your sister do hers."
+	},
+	
+	{
+		"fade-in": 2
+	},
+	{
+		"scene": "startday3"
+	}
+]

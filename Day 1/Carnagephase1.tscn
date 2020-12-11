@@ -74,6 +74,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 9 )
 animation = "Phase1attack "
+frame = 4
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -104,7 +105,7 @@ position = Vector2( -2.01903, -11.402 )
 shape = SubResource( 12 )
 
 [node name="Stats" parent="." instance=ExtResource( 5 )]
-MAX_HEALTH = 10
+MAX_HEALTH = 150
 
 [node name="Hitbox" parent="." instance=ExtResource( 6 )]
 collision_layer = 0

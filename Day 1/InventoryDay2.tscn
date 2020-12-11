@@ -1,0 +1,110 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/UI/inventory slot-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Inventory-Sheet.png" type="Texture" id=2]
+[ext_resource path="res://InventoryDay2.gd" type="Script" id=3]
+[ext_resource path="res://Panel.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="InventoryDay2" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 161.909
+margin_top = 68.2363
+margin_right = 271.909
+margin_bottom = 148.236
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 183.0
+margin_top = 81.2427
+margin_right = 237.0
+margin_bottom = 135.243
+custom_constants/vseparation = 3
+custom_constants/hseparation = 3
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel2" type="Panel" parent="GridContainer"]
+margin_left = 19.0
+margin_right = 35.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel3" type="Panel" parent="GridContainer"]
+margin_left = 38.0
+margin_right = 54.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel4" type="Panel" parent="GridContainer"]
+margin_top = 19.0
+margin_right = 16.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel5" type="Panel" parent="GridContainer"]
+margin_left = 19.0
+margin_top = 19.0
+margin_right = 35.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel6" type="Panel" parent="GridContainer"]
+margin_left = 38.0
+margin_top = 19.0
+margin_right = 54.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel7" type="Panel" parent="GridContainer"]
+margin_top = 38.0
+margin_right = 16.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel8" type="Panel" parent="GridContainer"]
+margin_left = 19.0
+margin_top = 38.0
+margin_right = 35.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel9" type="Panel" parent="GridContainer"]
+margin_left = 38.0
+margin_top = 38.0
+margin_right = 54.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 16, 16 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )

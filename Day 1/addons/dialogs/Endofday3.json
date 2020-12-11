@@ -1,0 +1,91 @@
+[
+	{
+		"sound": "afterbossbgm"
+	},
+	
+	{
+		"fade-in": 2
+	},
+	
+	{
+		"sound": "newsstop"
+	},
+	
+	{
+		"sound": "pant"
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"text": "*pants*"
+	},
+	
+	{
+		"name": "You",
+		"text": "Phew! That was so scary. I don't want to do it again"
+	},
+	
+	{
+		"name": "Mom",
+		"text": "Is there anyone that got injured?"
+	},
+	
+	{
+		"name": "Dad",
+		"text": "Fortunately, none of us are injured."
+	},
+	
+	{
+		"name": "Sister",
+		"text": "Is it okay now onii-chan? Is it?"
+	},
+	
+	{
+		"name": "You",
+		"text": "Yes, we're safe, for now."
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"name": "You",
+		"text": "We don't know if there more of those creatures lying around so I suggest we pick up the pace."
+	},
+	
+	{
+		"text": "..."
+	},
+	
+	{
+		"name": "Narrator",
+		"text": "After having a fierce battle with the mutated creature called Livid, they have sucessfully secured the safe/bunker."
+	},
+	
+	
+	{
+		"name": "Narrator",
+		"text": "Will they be able to continue living in peace in this bunker? Or will they be pestered further by these infected creatures."
+	},
+	
+	{
+		"name": "Narrator",
+		"text": "Only time will tell."
+	},
+	
+	{
+		"text": "..."
+	},
+]

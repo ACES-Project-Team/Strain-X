@@ -8,7 +8,7 @@ onready var update_tween = $UpdateTween
 onready var pulse_tween = $PulseTween
 onready var flash_tween = $FlashTween
 
-export (Color) var healthy_color = Color.red
+export (Color) var healthy_color = Color.green
 export (Color) var caution_color = Color.yellow 
 export (Color) var danger_color = Color.orange 
 export (Color) var pulse_color = Color.darkorange

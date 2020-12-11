@@ -1,18 +1,15 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://SurgicalMaskOutfit .gd" type="Script" id=2]
-[ext_resource path="res://Assets/Music and Sounds/AttackSpraySound.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Music and Sounds/LightSaberSound.wav" type="AudioStream" id=3]
 [ext_resource path="res://PickUpZone.gd" type="Script" id=4]
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Hitbox.tscn" type="PackedScene" id=6]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 9.75485, 11.6922 )
-
-[sub_resource type="Animation" id=2]
-resource_name = "AlcoholAttackDown"
-length = 0.5
+[sub_resource type="Animation" id=1]
+resource_name = "Attackdown"
+length = 0.4
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
@@ -24,12 +21,127 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 88, 89, 90, 91 ]
+"values": [ 128, 129, 130, 131 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hitbox_pivot:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -16.7 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 124, 125, 126, 127 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hitbox_pivot:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -253.9 ]
 }
 
 [sub_resource type="Animation" id=3]
-resource_name = "AlcoholAttackLeft"
-length = 0.5
+length = 0.4
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
@@ -41,12 +153,62 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 84, 85, 86, 87 ]
+"values": [ 120, 121, 122, 123 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hitbox_pivot:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -104.3 ]
 }
 
 [sub_resource type="Animation" id=4]
-resource_name = "AlcoholAttackRight"
-length = 0.5
+resource_name = "Attackup"
+length = 0.4
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
@@ -58,29 +220,62 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 80, 81, 82, 83 ]
+"values": [ 132, 133, 134, 135 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hitbox_pivot/Hitbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hitbox_pivot:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -203.8 ]
 }
 
 [sub_resource type="Animation" id=5]
-resource_name = "AlcoholAttackUp"
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 92, 93, 94, 95 ]
-}
-
-[sub_resource type="Animation" id=6]
+resource_name = "Idledown"
 length = 0.1
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
 tracks/0/interp = 1
@@ -94,9 +289,9 @@ tracks/0/keys = {
 "values": [ 96 ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=6]
+resource_name = "Idleleft"
 length = 0.1
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
 tracks/0/interp = 1
@@ -110,9 +305,9 @@ tracks/0/keys = {
 "values": [ 114 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
+resource_name = "Idleright"
 length = 0.1
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Player:frame")
 tracks/0/interp = 1
@@ -126,7 +321,8 @@ tracks/0/keys = {
 "values": [ 108 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
+resource_name = "Idleup"
 length = 0.1
 loop = true
 tracks/0/type = "value"
@@ -142,8 +338,8 @@ tracks/0/keys = {
 "values": [ 102 ]
 }
 
-[sub_resource type="Animation" id=10]
-resource_name = "LightsaberAttackDown"
+[sub_resource type="Animation" id=9]
+resource_name = "Walkdown"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -153,14 +349,31 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 128, 129, 130, 131 ]
+"values": [ 96, 97, 98, 99, 100 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Walkleft"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 114, 115, 116, 117, 118 ]
 }
 
 [sub_resource type="Animation" id=11]
-resource_name = "LightsaberAttackLeft"
+resource_name = "Walkright"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -170,47 +383,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 124, 125, 126, 127 ]
+"values": [ 108, 109, 110, 111, 112 ]
 }
 
 [sub_resource type="Animation" id=12]
-resource_name = "LightsaberAttackRight"
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 120, 121, 122, 123 ]
-}
-
-[sub_resource type="Animation" id=13]
-resource_name = "LightsaberAttackUp"
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 132, 133, 134, 135 ]
-}
-
-[sub_resource type="Animation" id=14]
+resource_name = "Walkup"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -223,229 +403,197 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 97, 98, 99, 100, 101 ]
+"values": [ 102, 103, 104, 105, 106 ]
 }
 
-[sub_resource type="Animation" id=15]
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 115, 116, 117, 118, 119 ]
-}
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "Attackdown"
 
-[sub_resource type="Animation" id=16]
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 109, 110, 111, 112, 113 ]
-}
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "Attackright"
 
-[sub_resource type="Animation" id=17]
-length = 0.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Player:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 103, 104, 105, 106, 107 ]
-}
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "Attackleft"
+
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "Attackup"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=17]
+blend_point_0/node = SubResource( 13 )
+blend_point_0/pos = Vector2( 0, 1.1 )
+blend_point_1/node = SubResource( 14 )
+blend_point_1/pos = Vector2( 1, 0 )
+blend_point_2/node = SubResource( 15 )
+blend_point_2/pos = Vector2( -1, 0 )
+blend_point_3/node = SubResource( 16 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=18]
-animation = "AlcoholAttackLeft"
+animation = "Idledown"
 
 [sub_resource type="AnimationNodeAnimation" id=19]
-animation = "AlcoholAttackUp"
+animation = "Idleup"
 
 [sub_resource type="AnimationNodeAnimation" id=20]
-animation = "AlcoholAttackDown"
+animation = "Idleright"
 
 [sub_resource type="AnimationNodeAnimation" id=21]
-animation = "AlcoholAttackRight"
+animation = "Idleleft"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=22]
 blend_point_0/node = SubResource( 18 )
-blend_point_0/pos = Vector2( -1, 0 )
+blend_point_0/pos = Vector2( 0, 1.1 )
 blend_point_1/node = SubResource( 19 )
-blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_1/pos = Vector2( 0, -1.1 )
 blend_point_2/node = SubResource( 20 )
-blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 21 )
-blend_point_3/pos = Vector2( 1, 0 )
+blend_point_3/pos = Vector2( -1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=23]
-animation = "IdleLeft"
+animation = "Walkdown"
 
 [sub_resource type="AnimationNodeAnimation" id=24]
-animation = "IdleUp"
+animation = "Walkup"
 
 [sub_resource type="AnimationNodeAnimation" id=25]
-animation = "IdleDown"
+animation = "Walkright"
 
 [sub_resource type="AnimationNodeAnimation" id=26]
-animation = "IdleRight"
+animation = "Walkleft"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=27]
 blend_point_0/node = SubResource( 23 )
-blend_point_0/pos = Vector2( -1, 0 )
+blend_point_0/pos = Vector2( 0, 1.1 )
 blend_point_1/node = SubResource( 24 )
-blend_point_1/pos = Vector2( 0, 1.1 )
+blend_point_1/pos = Vector2( 0, -1 )
 blend_point_2/node = SubResource( 25 )
-blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 26 )
-blend_point_3/pos = Vector2( 1, 0 )
+blend_point_3/pos = Vector2( -1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=28]
-animation = "WalkLeft"
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
 
-[sub_resource type="AnimationNodeAnimation" id=29]
-animation = "WalkUp"
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
 
-[sub_resource type="AnimationNodeAnimation" id=30]
-animation = "WalkDown"
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
 
-[sub_resource type="AnimationNodeAnimation" id=31]
-animation = "WalkRight"
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=32]
-blend_point_0/node = SubResource( 28 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 29 )
-blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 30 )
-blend_point_2/pos = Vector2( 0, -1.1 )
-blend_point_3/node = SubResource( 31 )
-blend_point_3/pos = Vector2( 1, 0 )
-min_space = Vector2( -1, -1.1 )
-max_space = Vector2( 1, 1.1 )
-blend_mode = 1
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=33]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=34]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=35]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=36]
-
-[sub_resource type="AnimationNodeStateMachine" id=37]
-states/AlcoholAttack/node = SubResource( 22 )
-states/AlcoholAttack/position = Vector2( 130, 186 )
-states/Idle/node = SubResource( 27 )
-states/Idle/position = Vector2( 130, 108 )
-states/Walk/node = SubResource( 32 )
-states/Walk/position = Vector2( 314, 108 )
-transitions = [ "Idle", "Walk", SubResource( 33 ), "Walk", "Idle", SubResource( 34 ), "Idle", "AlcoholAttack", SubResource( 35 ), "AlcoholAttack", "Idle", SubResource( 36 ) ]
+[sub_resource type="AnimationNodeStateMachine" id=32]
+states/Attack/node = SubResource( 17 )
+states/Attack/position = Vector2( -58, 148 )
+states/Idle/node = SubResource( 22 )
+states/Idle/position = Vector2( -58, 61 )
+states/Walk/node = SubResource( 27 )
+states/Walk/position = Vector2( 142, 61 )
+transitions = [ "Attack", "Idle", SubResource( 28 ), "Idle", "Attack", SubResource( 29 ), "Walk", "Idle", SubResource( 30 ), "Idle", "Walk", SubResource( 31 ) ]
 start_node = "Idle"
+graph_offset = Vector2( -221.614, 0 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=38]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=33]
 
-[sub_resource type="RectangleShape2D" id=39]
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 9.75485, 11.6922 )
+
+[sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 12.091, 12.3317 )
 
-[sub_resource type="CapsuleShape2D" id=40]
+[sub_resource type="CapsuleShape2D" id=36]
 radius = 5.632
 height = 6.71761
 
-[sub_resource type="CapsuleShape2D" id=41]
+[sub_resource type="CapsuleShape2D" id=37]
 height = 0.0
 
 [node name="SurgicalMaskOutfit " type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 9
 script = ExtResource( 2 )
+hasLightsaber = true
 
 [node name="Player" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 256
-frame = 128
+frame = 132
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idledown"
+anims/Attackdown = SubResource( 1 )
+anims/Attackleft = SubResource( 2 )
+anims/Attackright = SubResource( 3 )
+anims/Attackup = SubResource( 4 )
+anims/Idledown = SubResource( 5 )
+anims/Idleleft = SubResource( 6 )
+anims/Idleright = SubResource( 7 )
+anims/Idleup = SubResource( 8 )
+anims/Walkdown = SubResource( 9 )
+anims/Walkleft = SubResource( 10 )
+anims/Walkright = SubResource( 11 )
+anims/Walkup = SubResource( 12 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 32 )
+anim_player = NodePath("../AnimationPlayer")
+parameters/playback = SubResource( 33 )
+parameters/Attack/blend_position = Vector2( 0, 0.00948286 )
+parameters/Idle/blend_position = Vector2( -0.00540543, 0.037931 )
+parameters/Walk/blend_position = Vector2( 0, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-shape = SubResource( 1 )
+shape = SubResource( 34 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/AlcoholAttackDown = SubResource( 2 )
-anims/AlcoholAttackLeft = SubResource( 3 )
-anims/AlcoholAttackRight = SubResource( 4 )
-anims/AlcoholAttackUp = SubResource( 5 )
-anims/IdleDown = SubResource( 6 )
-anims/IdleLeft = SubResource( 7 )
-anims/IdleRight = SubResource( 8 )
-anims/IdleUp = SubResource( 9 )
-anims/LightsaberAttackDown = SubResource( 10 )
-anims/LightsaberAttackLeft = SubResource( 11 )
-anims/LightsaberAttackRight = SubResource( 12 )
-anims/LightsaberAttackUp = SubResource( 13 )
-anims/WalkDown = SubResource( 14 )
-anims/WalkLeft = SubResource( 15 )
-anims/WalkRight = SubResource( 16 )
-anims/WalkUp = SubResource( 17 )
-
-[node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 37 )
-anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource( 38 )
-parameters/AlcoholAttack/blend_position = Vector2( -0.009009, 0.0474138 )
-parameters/Idle/blend_position = Vector2( -0.039897, -0.464655 )
-parameters/Walk/blend_position = Vector2( -0.544402, 0.0474138 )
-
-[node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 15.4632, -2.89108 )
+rotation = -1.82038
 
 [node name="PickUpZone" type="Area2D" parent="."]
 visible = false
+collision_layer = 512
+collision_mask = 4
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]
-shape = SubResource( 39 )
+shape = SubResource( 35 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 5 )]
 visible = false
+collision_layer = 256
+collision_mask = 0
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( 0.222725, -0.222725 )
-shape = SubResource( 40 )
+shape = SubResource( 36 )
 
-[node name="Position2D" type="Position2D" parent="."]
-rotation = -0.514872
+[node name="Hitbox_pivot" type="Position2D" parent="."]
+rotation = -3.55698
 
-[node name="Hitbox" parent="Position2D" instance=ExtResource( 6 )]
+[node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 6 )]
 position = Vector2( -1.0179, 15.6982 )
+collision_layer = 0
+collision_mask = 16
+damage = 5
 
-[node name="CollisionShape2D" parent="Position2D/Hitbox" index="0"]
-shape = SubResource( 41 )
+[node name="CollisionShape2D" parent="Hitbox_pivot/Hitbox" index="0"]
+shape = SubResource( 37 )
+disabled = true
+
+[node name="SwooshSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
 [connection signal="area_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_entered"]
 [connection signal="area_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_exited"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="Hurtbox"]
 
-[editable path="Position2D/Hitbox"]
+[editable path="Hitbox_pivot/Hitbox"]

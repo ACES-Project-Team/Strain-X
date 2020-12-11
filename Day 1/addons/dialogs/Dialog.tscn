@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://addons/dialogs/Images/dialog-background.png" type="Texture" id=1]
 [ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
@@ -9,6 +9,11 @@
 [ext_resource path="res://Assets/Music and Sounds/Pekora BGM Lyrics.wav" type="AudioStream" id=7]
 [ext_resource path="res://Assets/Music and Sounds/(No Copyright) Intense Action Background Music Cinematic Music by Argsound.wav" type="AudioStream" id=8]
 [ext_resource path="res://addons/dialogs/Images/portraits/Big_Neighbor-Sheet.png" type="Texture" id=9]
+[ext_resource path="res://addons/dialogs/Images/portraits/big_daddy-Sheet.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Music and Sounds/bg music morning.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Music and Sounds/Happy time (1).wav" type="AudioStream" id=12]
+[ext_resource path="res://addons/dialogs/Images/portraits/big_sister-Sheet.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Music and Sounds/Panting Male Sound Effect.wav" type="AudioStream" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IDLE"
@@ -45,16 +50,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Background2" type="TextureRect" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-expand = true
-stretch_mode = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Mom" type="Control" parent="."]
 visible = false
 anchor_right = 1.0
@@ -79,6 +74,75 @@ margin_top = -259.362
 margin_right = 217.342
 margin_bottom = -4.36211
 texture = ExtResource( 5 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dad" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -11.6119
+margin_top = 0.749153
+margin_right = -11.6119
+margin_bottom = 0.749146
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Dad"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortraitLeft" type="TextureRect" parent="Dad"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -13.5153
+margin_top = -283.448
+margin_right = 187.485
+margin_bottom = -28.4485
+rect_scale = Vector2( 1.33678, 1.28 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sister" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -11.6119
+margin_top = 0.749153
+margin_right = -11.6119
+margin_bottom = 0.749146
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Sister"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortraitLeft" type="TextureRect" parent="Sister"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 34.053
+margin_top = -223.988
+margin_right = 235.053
+margin_bottom = 31.0118
+rect_scale = Vector2( 0.872179, 0.844435 )
+texture = ExtResource( 13 )
 expand = true
 stretch_mode = 5
 __meta__ = {
@@ -269,5 +333,18 @@ volume_db = -7.704
 
 [node name="NeighborBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = -15.407
+volume_db = -25.679
+
+[node name="MorningBGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -10.272
+
+[node name="AfterBossBGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -14.123
+mix_target = 1
+
+[node name="PantMan" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -20.544
 [connection signal="tween_completed" from="TextBubble/Tween" to="." method="_on_Tween_tween_completed"]

@@ -1,5 +1,8 @@
 [
 	{
+		"sound": "morning"
+	},
+	{
 		"fade-in": 2
 	},
 	{
@@ -10,6 +13,7 @@
 		"text": "Goodmorning, how was your sleep dear?"
 	},
 	{
+		"name": "You",
 		"text": "It was very unsettling and I had a really bad nightmare. More importantly, why are there barricades nailed into the windows and doors?"
 	},
 	{
@@ -20,6 +24,7 @@
 		"text": "Well...., you see, we can't go outside of the house right now."
 	},
 	{
+		"name": "You",
 		"text": "What? Why? What's happening?"
 	},
 	{
@@ -31,6 +36,7 @@
 		"text": "Government, health, police, and fire departments are also out of service as most of the people outside when it occured turned into a..."
 	},
 	{
+		"name": "You",
 		"text": "A what?"
 	},
 	{
@@ -49,6 +55,7 @@
 		"text": "The outside is also very dangerous and the virus can kill you immediately. However, the virus are big in diamter so a mask is sufficient. Either cloth or face."
 	},
 	{
+		"name": "You",
 		"text": "Hmmmm... I get the situation now. Thanks mom for explaining, I wouldve died going outside of the door without you!"
 	},
 	{
