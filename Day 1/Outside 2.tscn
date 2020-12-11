@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -26,7 +26,6 @@
 [ext_resource path="res://GoHomeTask.gd" type="Script" id=24]
 [ext_resource path="res://BackToMCHouse.tscn" type="PackedScene" id=25]
 [ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=26]
-[ext_resource path="res://SurgicalMaskDrop .gd" type="Script" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -1971,7 +1970,6 @@ tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -22282
 
 [node name="SurgicalMaskDrop " parent="." instance=ExtResource( 26 )]
 position = Vector2( 134.594, -110.081 )
-script = ExtResource( 27 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -6.9899, -0.531769 )
@@ -2189,5 +2187,6 @@ __meta__ = {
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 25 )]
 position = Vector2( 151.141, -57.3469 )
+target_scene = "res://MCHouseAfterGrocery.tscn"
 [connection signal="body_entered" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_entered"]
 [connection signal="body_exited" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_exited"]
