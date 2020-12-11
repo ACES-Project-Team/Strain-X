@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://PlayerHealthBar.gd" type="Script" id=1]
-[ext_resource path="res://MCHealthBar.tscn" type="PackedScene" id=2]
 
-[node name="PlayerHealthBar" type="Node"]
+[node name="PlayerHealthBar" type="Control"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="MCHealthBar" parent="." instance=ExtResource( 2 )]
-rect_scale = Vector2( 1, 1 )
+[node name="HealthBar" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "HP = 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}

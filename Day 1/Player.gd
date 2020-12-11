@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 signal change_to_alcohol_attack
 signal health_updated(health)
+signal max_health_updated(max_health)
 signal killed() 
 
 enum { 
@@ -12,7 +13,6 @@ enum {
 export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var FRICTION = 500
-export (float) var max_health = 100
 
 var state = MOVE
 var attack1 = swtich_attack()
@@ -27,8 +27,6 @@ onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 onready var hitbox = $Hitbox_pivot/Hitbox
 onready var hurtbox = $Hurtbox
-onready var health = max_health setget _set_health
-onready var invulnerability_timer = $InvulnerabilityTimer
 
 func _ready():
 	stats.connect("no_health", self, "queue_free")
@@ -87,10 +85,6 @@ func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("RunUp")
 
-
-
-
-
 func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
@@ -104,21 +98,3 @@ func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
-
-func damage(amount):
-	if invulnerability_timer.is_stopped(): 
-		invulnerability_timer.start()
-	_set_health(health - amount)
-	
-
-func kill():
-	pass
-
-func _set_health(value): 
-	var prev_health = health 
-	health = clamp(value, 0 , max_health)
-	if health != prev_health: 
-		emit_signal("health_updated", health)
-		if health == 0:
-			kill()
-			emit_signal("killed")

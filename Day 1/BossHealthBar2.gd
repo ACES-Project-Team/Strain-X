@@ -1,7 +1,7 @@
 extends Control
 
-var health = 850 setget set_health
-var max_health = 850 setget set_max_health
+var health = 500 setget set_health
+var max_health = 500 setget set_max_health
 
 onready var healthbar = $BossHealthBar
 
