@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://MCHealthBar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://FaceShieldOutfit.tscn" type="PackedScene" id=2]
 [ext_resource path="res://OutsideDay3.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Music and Sounds/MainBackgroundMusic.wav" type="AudioStream" id=4]
@@ -28,5 +28,4 @@ autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="MCHealthBar" parent="CanvasLayer" instance=ExtResource( 1 )]
-rect_scale = Vector2( 1, 1 )
+[node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 1 )]
