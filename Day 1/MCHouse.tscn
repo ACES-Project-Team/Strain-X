@@ -16,9 +16,9 @@
 script = ExtResource( 11 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -440.74
+margin_left = -436.24
 margin_top = -177.66
-margin_right = 845.26
+margin_right = 849.76
 margin_bottom = 636.34
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
@@ -46,10 +46,10 @@ visible = false
 position = Vector2( 378.297, 112.366 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 324.63, 130.815 )
+position = Vector2( 326.95, 132.252 )
 
 [node name="CutsceneCamera" type="Camera2D" parent="."]
-position = Vector2( 324.548, 130.24 )
+position = Vector2( 318.12, 132.361 )
 current = true
 smoothing_enabled = true
 script = ExtResource( 10 )
