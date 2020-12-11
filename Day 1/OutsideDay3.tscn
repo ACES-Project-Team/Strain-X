@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -25,6 +25,8 @@
 [ext_resource path="res://Assets/World/Outside_Traffic_Cone-Sheet.png" type="Texture" id=23]
 [ext_resource path="res://Task3.gd" type="Script" id=24]
 [ext_resource path="res://Assets/World/Bunker_Safe-Sheet.png" type="Texture" id=25]
+[ext_resource path="res://SafePlace.gd" type="Script" id=26]
+[ext_resource path="res://VitaminsDrop.tscn" type="PackedScene" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -496,6 +498,12 @@ extents = Vector2( 12.0328, 13.0172 )
 
 [sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 8.96997, 8.47034 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 12.6328, 12.9618 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 10.042, 10.1402 )
 
 [node name="Outside" type="Node2D"]
 position = Vector2( 0.2211, 0.221104 )
@@ -2119,159 +2127,88 @@ __meta__ = {
 polygon = PoolVector2Array( -38.5303, -8.30076, -38.5303, 37.3421, 37.9915, 37.5351, 38.1845, -9.16923, 36.8336, -13.8011, 35.386, -18.0469, 33.8421, -22.7752, 29.0173, -27.9861, 26.2189, -29.337, 22.8416, -30.688, 19.6572, -31.4599, 15.2183, -32.5214, -14.4061, -32.4249, -19.5204, -31.2669, -23.3803, -30.9774, -28.2051, -29.53, -29.7491, -27.6966, -33.03, -23.7402, -34.0914, -20.7488, -36.0214, -17.5644, -36.3109, -14.8625 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1366.21, -189.817 )
+position = Vector2( 1474.92, -192.512 )
 
 [node name="Volatiles2" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1422.71, -212.237 )
+position = Vector2( 1432.59, -224.814 )
 
 [node name="Volatiles3" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1401.19, -167.396 )
+position = Vector2( 1420.06, -155.717 )
 
 [node name="Volatiles4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1436.61, -149.46 )
+position = Vector2( 1488.72, -148.562 )
 
 [node name="Volatiles5" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1454.99, -180.4 )
+position = Vector2( 1501.71, -227.116 )
 
 [node name="Volatiles6" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1482.35, -208.65 )
+position = Vector2( 1558.71, -174.511 )
 
 [node name="Volatiles7" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1503.42, -167.845 )
+position = Vector2( 1652.55, -156.166 )
 
 [node name="Volatiles8" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1525.4, -150.357 )
+position = Vector2( 1592.78, -211.447 )
 
 [node name="Volatiles9" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1585.93, -205.063 )
+position = Vector2( 1647.02, -237.405 )
 
 [node name="Volatiles10" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1539.3, -191.162 )
+position = Vector2( 1717.18, -186.67 )
 
 [node name="Volatiles11" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1583.69, -169.638 )
+position = Vector2( 1817.27, -151.67 )
 
 [node name="Volatiles12" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1630.77, -149.908 )
+position = Vector2( 1785, -207.081 )
 
 [node name="Volatiles13" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1635.26, -182.642 )
+position = Vector2( 1865.28, -187.96 )
 
 [node name="Volatiles14" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1666.2, -214.479 )
+position = Vector2( 1937.44, -150.658 )
 
 [node name="Volatiles15" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1683.68, -147.666 )
+position = Vector2( 1916.36, -215.476 )
 
 [node name="Volatiles16" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1735.25, -148.563 )
+position = Vector2( 1998.51, -193.77 )
 
 [node name="Volatiles17" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1703.86, -177.71 )
+position = Vector2( 2069.5, -225.576 )
 
 [node name="Volatiles18" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1717.31, -211.789 )
+position = Vector2( 2100.57, -155.309 )
 
 [node name="Volatiles19" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1754.08, -187.575 )
+position = Vector2( 2151.46, -242.038 )
 
 [node name="Volatiles20" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1788.16, -159.773 )
+position = Vector2( 2227.9, -155.739 )
 
 [node name="Volatiles21" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1795.79, -222.102 )
+position = Vector2( 2275.87, -226.136 )
 
 [node name="Volatiles22" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1833, -222.102 )
+position = Vector2( 2381.66, -155.536 )
 
 [node name="Volatiles23" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1816.41, -190.265 )
+position = Vector2( 2439.71, -200.351 )
 
 [node name="Volatiles24" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1830.76, -146.769 )
+position = Vector2( 2558.93, -150.327 )
 
 [node name="Volatiles25" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1867.08, -157.98 )
+position = Vector2( 2639.13, -205.418 )
 
 [node name="Volatiles26" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1863.94, -201.475 )
+position = Vector2( 3079.55, -160.157 )
 
 [node name="Volatiles27" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1906.09, -187.126 )
-
-[node name="Volatiles28" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1909.68, -150.357 )
-
-[node name="Volatiles29" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1924.93, -222.551 )
-
-[node name="Volatiles30" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1952.73, -202.372 )
-
-[node name="Volatiles31" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2001.47, -220.095 )
-
-[node name="Volatiles32" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2002.1, -152.369 )
-
-[node name="Volatiles33" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2068.06, -189.827 )
-
-[node name="Volatiles34" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2108.77, -157.255 )
-
-[node name="Volatiles35" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2147.86, -207.742 )
-
-[node name="Volatiles36" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2189.39, -169.47 )
-
-[node name="Volatiles37" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2250.46, -154.812 )
-
-[node name="Volatiles38" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2337.6, -180.056 )
-
-[node name="Volatiles39" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2395.41, -153.183 )
-
-[node name="Volatiles40" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2446.71, -188.199 )
-
-[node name="Volatiles41" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2511.86, -172.727 )
-
-[node name="Volatiles42" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2583.52, -173.541 )
-
-[node name="Volatiles43" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2654.36, -202.856 )
-
-[node name="Volatiles44" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2681.23, -175.984 )
-
-[node name="Volatiles45" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2746.38, -197.97 )
-
-[node name="Volatiles46" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2800.12, -178.427 )
-
-[node name="Volatiles47" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2865.27, -197.156 )
-
-[node name="Volatiles48" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2917.38, -177.613 )
-
-[node name="Volatiles49" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2965.43, -214.257 )
-
-[node name="Volatiles50" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2971.13, -156.441 )
+position = Vector2( 3075.64, -218.014 )
 
 [node name="Carnagephase2" parent="." instance=ExtResource( 21 )]
 position = Vector2( 3148, -197.087 )
-
-[node name="FinalTask" type="Area2D" parent="."]
 
 [node name="Task3" type="Area2D" parent="."]
 script = ExtResource( 24 )
@@ -2305,5 +2242,153 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SafePlace" type="Area2D" parent="."]
+position = Vector2( 1182.12, -182.088 )
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 26 )
+
+[node name="Traffic Cone" type="Sprite" parent="SafePlace"]
+position = Vector2( 3772.42, -33.6649 )
+texture = ExtResource( 23 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SafePlace/Traffic Cone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SafePlace/Traffic Cone/StaticBody2D"]
+shape = SubResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SafePlace"]
+position = Vector2( 3772.27, -34.2676 )
+shape = SubResource( 36 )
+
+[node name="Label" type="Label" parent="SafePlace"]
+margin_left = 3747.41
+margin_top = -60.4757
+margin_right = 3844.41
+margin_bottom = -29.4757
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.933333, 0.992157, 0.0509804, 1 )
+custom_colors/font_outline_modulate = Color( 0.968627, 0.984314, 0.0470588, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Interact (E) To Show Task"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VitaminsDrop" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2733.16, -191.769 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop2" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2778.06, -205.022 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop3" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2839.68, -192.458 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop4" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2824.13, -218.783 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop5" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2800.2, -177.5 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop6" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2857.03, -153.568 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop7" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2889.94, -191.261 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop8" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2928.23, -201.432 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop9" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2928.23, -163.141 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop10" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2975.5, -189.466 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop11" parent="." instance=ExtResource( 27 )]
+position = Vector2( 2968.92, -155.961 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop12" parent="." instance=ExtResource( 27 )]
+position = Vector2( 3011.99, -215.193 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="VitaminsDrop13" parent="." instance=ExtResource( 27 )]
+position = Vector2( 3011.99, -155.363 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Cone" type="Sprite" parent="."]
+position = Vector2( 308.99, -192.455 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone2" type="Sprite" parent="."]
+position = Vector2( 389.622, -183.816 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone3" type="Sprite" parent="."]
+position = Vector2( 470.255, -190.727 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone4" type="Sprite" parent="."]
+position = Vector2( 564.134, -198.214 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone5" type="Sprite" parent="."]
+position = Vector2( 897.031, -186.12 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone6" type="Sprite" parent="."]
+position = Vector2( 640.159, -183.816 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone7" type="Sprite" parent="."]
+position = Vector2( 1065.21, -198.79 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone8" type="Sprite" parent="."]
+position = Vector2( 1182.12, -182.088 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone9" type="Sprite" parent="."]
+position = Vector2( 3229.59, -184.224 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone11" type="Sprite" parent="."]
+position = Vector2( 3299.64, -200.503 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone12" type="Sprite" parent="."]
+position = Vector2( 3386.46, -190.9 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
+
+[node name="Cone10" type="Sprite" parent="."]
+position = Vector2( 1299.49, -200.619 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 23 )
 [connection signal="body_entered" from="Task3" to="Task3" method="_on_Task3_body_entered"]
 [connection signal="body_exited" from="Task3" to="Task3" method="_on_Task3_body_exited"]
+[connection signal="body_entered" from="SafePlace" to="SafePlace" method="_on_SafePlace_body_entered"]
+[connection signal="body_exited" from="SafePlace" to="SafePlace" method="_on_SafePlace_body_exited"]

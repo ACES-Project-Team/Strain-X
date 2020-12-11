@@ -2110,73 +2110,49 @@ shape = SubResource( 32 )
 position = Vector2( 713.17, -239.458 )
 
 [node name="Karen2" parent="." instance=ExtResource( 22 )]
-position = Vector2( 747.719, -275.316 )
+position = Vector2( 755.02, -271.997 )
 
 [node name="Karen3" parent="." instance=ExtResource( 22 )]
-position = Vector2( 757.73, -203.809 )
+position = Vector2( 599.763, -157.348 )
 
 [node name="Karen4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 672.794, -206.03 )
+position = Vector2( 439.79, -160.042 )
 
 [node name="Karen5" parent="." instance=ExtResource( 22 )]
-position = Vector2( 683.897, -278.197 )
+position = Vector2( 515.31, -221.116 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 23 )]
-position = Vector2( 632.412, -226.068 )
+position = Vector2( 799.698, -150.686 )
 
 [node name="Volatiles2" parent="." instance=ExtResource( 23 )]
-position = Vector2( 607.494, -192.844 )
+position = Vector2( 665.238, -223.375 )
 
 [node name="Volatiles3" parent="." instance=ExtResource( 23 )]
-position = Vector2( 640.23, -152.78 )
+position = Vector2( 512.794, -157.426 )
 
 [node name="Volatiles4" parent="." instance=ExtResource( 23 )]
-position = Vector2( 711.564, -159.131 )
-
-[node name="Volatiles11" parent="." instance=ExtResource( 23 )]
-position = Vector2( 778.013, -147.894 )
-
-[node name="Volatiles12" parent="." instance=ExtResource( 23 )]
-position = Vector2( 810.26, -193.821 )
-
-[node name="Volatiles13" parent="." instance=ExtResource( 23 )]
-position = Vector2( 872.311, -188.936 )
-
-[node name="Volatiles14" parent="." instance=ExtResource( 23 )]
-position = Vector2( 846.904, -223.625 )
-
-[node name="Volatiles15" parent="." instance=ExtResource( 23 )]
-position = Vector2( 844.461, -147.894 )
-
-[node name="Volatiles16" parent="." instance=ExtResource( 23 )]
-position = Vector2( 905.535, -155.223 )
-
-[node name="Volatiles17" parent="." instance=ExtResource( 23 )]
-position = Vector2( 910.909, -220.694 )
-
-[node name="Volatiles18" parent="." instance=ExtResource( 23 )]
-position = Vector2( 951.463, -190.89 )
+position = Vector2( 685.679, -280.593 )
 
 [node name="Volatiles5" parent="." instance=ExtResource( 23 )]
-position = Vector2( 573.781, -224.114 )
+position = Vector2( 659.402, -157.078 )
 
 [node name="Volatiles6" parent="." instance=ExtResource( 23 )]
-position = Vector2( 563.521, -156.688 )
+position = Vector2( 871.49, -181.91 )
 
 [node name="Volatiles7" parent="." instance=ExtResource( 23 )]
-position = Vector2( 525.411, -196.264 )
+position = Vector2( 793.557, -196.928 )
 
 [node name="Volatiles8" parent="." instance=ExtResource( 23 )]
-position = Vector2( 483.881, -216.297 )
+position = Vector2( 577.467, -194.394 )
 
 [node name="Volatiles9" parent="." instance=ExtResource( 23 )]
-position = Vector2( 485.835, -155.223 )
+position = Vector2( 854.204, -218.277 )
 
 [node name="Volatiles10" parent="." instance=ExtResource( 23 )]
 position = Vector2( 451.633, -193.821 )
 
 [node name="Carnagephase1" parent="." instance=ExtResource( 24 )]
-position = Vector2( 1029.67, -175.964 )
+position = Vector2( 926.129, -178.619 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 1029.67, -175.964 )
