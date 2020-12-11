@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const EnemyDeathEffect = preload("res://Assets/Effects/EnemyDeathEffect.png")
+const DeathEffect = preload("res://DeathEffect.tscn")
 export var ACCELERATION = 300 
 export var MAX_SPEED = 50
 export var FRICTION = 200
@@ -15,7 +15,7 @@ var knockback = Vector2.ZERO
 var state = CHASE 
 
 onready var sprite = $AnimatedSprite
-onready var stats = $Stats
+onready var phase1stats = $Phase1stats
 onready var detectionzone = $DetectionZone
 
 func _physics_process(delta):
@@ -46,12 +46,11 @@ func seek_player():
 		state = CHASE
 
 func _on_Hurtbox_area_entered(area):
-	stats.HEALTH -= area.damage
+	phase1stats.HEALTH -= area.damage
 #	knockback = area.knockback_vector * 120
 
-
-func _on_Stats_no_health():
+func _on_Phase1stats_no_health():
 	queue_free()
-#	var enemyDeathEffect = EnemyDeathEffect.instance()
-#	get_parent().add_child(enemyDeathEffect)
-#	enemyDeathEffect.global_position = global_position 
+	var deathEffect = DeathEffect.instance()
+	get_parent().add_child(deathEffect)
+	deathEffect.global_position = global_position 

@@ -565,7 +565,7 @@ rotation = -3.52906
 [node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 4 )]
 collision_layer = 0
 collision_mask = 16
-damage = 75
+damage = 20
 
 [node name="CollisionShape2D" parent="Hitbox_pivot/Hitbox" index="0"]
 position = Vector2( 1.40308, 14.592 )

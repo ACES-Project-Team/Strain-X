@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+const DeathEffect = preload("res://DeathEffect.tscn")
 var knockback =  Vector2.ZERO
 var vel = Vector2.ZERO
 var damage = Hitbox
@@ -87,8 +87,11 @@ func random_new_state(state_list):
 	return state_list.pop_front()
 
 func _on_Stats_no_health():
-	volanimationstate.travel("Walk")
-	queue_free()
+		volanimationstate.travel("Walk")
+		queue_free()
+		var deathEffect = DeathEffect.instance()
+		get_parent().add_child(deathEffect)
+		deathEffect.global_position = global_position 
 
 func _on_Hurtbox_area_entered(area):
 	volStats.HEALTH -= area.damage

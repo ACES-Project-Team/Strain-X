@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Volatiles.gd" type="Script" id=1]
 [ext_resource path="res://Enemies/Volatiles-Sheet.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Music and Sounds/ZombieSoundEffects.wav" type="AudioStream" id=8]
+[ext_resource path="res://DeathEffect.tscn" type="PackedScene" id=9]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 3.85703
@@ -22,7 +23,6 @@ radius = 5.14482
 height = 8.85389
 
 [sub_resource type="Animation" id=5]
-resource_name = "WalkUp"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -39,7 +39,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-resource_name = "attackdown"
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -80,7 +79,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-resource_name = "attackleft"
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -121,7 +119,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-resource_name = "attackright"
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -162,7 +159,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=9]
-resource_name = "attackup"
 length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -202,7 +198,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-resource_name = "idledown"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -218,7 +213,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-resource_name = "idleleft"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -234,7 +228,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=12]
-resource_name = "idleright"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -250,7 +243,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=13]
-resource_name = "idleup"
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -266,7 +258,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=14]
-resource_name = "walkdown"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -283,7 +274,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=15]
-resource_name = "walkleft"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -300,7 +290,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=16]
-resource_name = "walkright"
 length = 0.5
 loop = true
 tracks/0/type = "value"
@@ -435,6 +424,10 @@ hframes = 40
 visible = false
 position = Vector2( 0.619575, 7.8389 )
 shape = SubResource( 1 )
+
+[node name="DeathEffect" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 0.33371, 18.354 )
 
 [node name="WanderController" parent="." instance=ExtResource( 4 )]
 visible = false
