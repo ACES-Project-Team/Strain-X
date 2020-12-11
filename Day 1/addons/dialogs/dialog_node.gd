@@ -199,11 +199,13 @@ func event_handler(event):
 			if event['scene'] == 'startday2second':
 				get_tree().change_scene("res://StartOfDay2(2).tscn")
 			if event['scene'] == 'startday2':
-				get_tree().change_scene("res://Day2.tscn")
+				get_tree().change_scene("res://Day2AfterDialogue.tscn")
 			if event['scene'] == 'day2transition':
 				get_tree().change_scene("res://Day2_Transition.tscn")
 			if event['scene'] == 'startday3':
 				get_tree().change_scene("res://Day3.tscn")
+			if event['scene'] == 'day2afterdialogue':
+				get_tree().change_scene("res://Day2AfterDialogue.tscn")
 		{'background'}:
 			$Background.visible = true
 			$Background.texture = load(event['background'])
