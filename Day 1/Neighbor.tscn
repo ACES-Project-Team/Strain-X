@@ -1,8 +1,10 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Assets/Player/Neighbor-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://Neighbor.gd" type="Script" id=2]
 [ext_resource path="res://WanderController.tscn" type="PackedScene" id=3]
+[ext_resource path="res://NeighborCollision.tscn" type="PackedScene" id=4]
+[ext_resource path="res://NeighborCutscene.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 5.96733
@@ -234,3 +236,9 @@ anims/WalkDown = SubResource( 20 )
 anims/WalkLeft = SubResource( 21 )
 anims/WalkRight = SubResource( 22 )
 anims/WalkUp = SubResource( 23 )
+
+[node name="GroceryDoor" parent="." instance=ExtResource( 4 )]
+position = Vector2( -0.0494919, -0.33749 )
+target_scene = ExtResource( 5 )
+
+[editable path="GroceryDoor"]
