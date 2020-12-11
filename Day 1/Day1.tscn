@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://GroceryOutfit .tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Music and Sounds/Day1Music.wav" type="AudioStream" id=3]
 [ext_resource path="res://Pause.tscn" type="PackedScene" id=4]
@@ -45,9 +44,5 @@ autoplay = true
 script = ExtResource( 5 )
 
 [node name="Pause" parent="PauseMenu" instance=ExtResource( 4 )]
-
-[node name="Health" type="CanvasLayer" parent="."]
-
-[node name="PlayerHealthBar" parent="Health" instance=ExtResource( 1 )]
 
 [editable path="GroceryOutfit "]

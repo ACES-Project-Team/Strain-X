@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://PlayerHealthBar2.gd" type="Script" id=1]
+
+[node name="PlayerHealthBar" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "HP = 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
