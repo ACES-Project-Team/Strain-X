@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Ktchen_Last.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://LivingRoom_Last.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Day3.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
-[ext_resource path="res://PlayerHealthBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
 
 [node name="MCHouse-Last" type="Node2D"]
@@ -44,7 +43,3 @@ position = Vector2( 378.297, 112.366 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 190.077, 121.238 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="PlayerHealthBar" parent="CanvasLayer" instance=ExtResource( 8 )]

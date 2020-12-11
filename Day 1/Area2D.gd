@@ -7,7 +7,7 @@ func _ready():
 		
 func _input(event):
 	if Input.is_action_just_pressed("PickUp") and can_interact == true: 
-		$Label.text = "Kill More Volatiles & Avoid Karens"
+		$Label.text = "Defeat More Volatiles & Avoid Karens"
 		
 
 func _on_Area2D_body_entered(body):
