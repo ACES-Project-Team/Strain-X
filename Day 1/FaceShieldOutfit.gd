@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+const DeathEffect = preload ("res://DeathEffect.tscn")
 signal change_to_alcohol_attack
 
 enum { 
@@ -104,3 +104,9 @@ func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
+
+
+func _on_PlayerStats_no_health():
+	var deathEffect = DeathEffect.instance()
+	get_parent().add_child(deathEffect)
+	deathEffect.global_position = global_position

@@ -5,3 +5,4 @@
 [node name="PlayerStats" type="Node"]
 script = ExtResource( 1 )
 MAX_HEALTH = 50
+[connection signal="no_health" from="." to="." method="_on_PlayerStats_no_health"]

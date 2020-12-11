@@ -6,6 +6,7 @@
 [ext_resource path="res://Hitbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://PickUpZone.gd" type="Script" id=5]
 [ext_resource path="res://Assets/Music and Sounds/LightSaberSound.wav" type="AudioStream" id=6]
+[ext_resource path="res://DeathEffect.tscn" type="PackedScene" id=7]
 [ext_resource path="res://PlayerHealthBar3.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -595,14 +596,15 @@ shape = SubResource( 37 )
 [node name="SwooshSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
 
+[node name="DeathEffect" parent="." instance=ExtResource( 7 )]
 [node name="PlayerHealthBar" parent="." instance=ExtResource( 7 )]
-
 [node name="HealthBar" parent="PlayerHealthBar" index="0"]
 margin_left = -27.0
 margin_top = -26.0607
 margin_right = 31.0
 margin_bottom = -12.0607
 text = "HP = 175"
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="Hitbox_pivot/Hitbox"]
