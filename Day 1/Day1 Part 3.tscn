@@ -30,7 +30,8 @@ __meta__ = {
 position = Vector2( -527.997, -550.051 )
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 12 )]
-position = Vector2( 502.7, -183.377 )
+position = Vector2( 502.7, -183.855 )
+collision_mask = 3
 target_scene = "res://Day2_Transition.tscn"
 
 [node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
