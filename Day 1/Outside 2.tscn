@@ -498,7 +498,7 @@ extents = Vector2( 304.513, 417.607 )
 extents = Vector2( 275.082, 575.323 )
 
 [node name="Outside2" type="Node2D"]
-position = Vector2( 0.2211, 0.221104 )
+position = Vector2( 0.370911, 0.221104 )
 
 [node name="Grass" type="Sprite" parent="."]
 position = Vector2( -2207.07, -984.598 )
@@ -2171,5 +2171,6 @@ __meta__ = {
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 25 )]
 position = Vector2( 151.141, -57.3469 )
+target_scene = "res://MCHouseAfterGrocery.tscn"
 [connection signal="body_entered" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_entered"]
 [connection signal="body_exited" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_exited"]
