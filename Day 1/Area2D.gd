@@ -11,14 +11,14 @@ func _input(event):
 		
 
 func _on_Area2D_body_entered(body):
-	if body.name == "GroceryOutfit ":
+	if body.name == "SurgicalMaskOutfit":
 		$Label.show()
 		can_interact = true
 	
 
 
 func _on_Area2D_body_exited(body):
-	if body.name == "Player":
+	if body.name == "SurgicalMaskOutfit":
 		$Label.hide()
 		can_interact = false 
 		$Label.text = "Interact (E)"

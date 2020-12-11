@@ -7,3 +7,4 @@
 script = ExtResource( 1 )
 
 [node name="MCHealthBar" parent="." instance=ExtResource( 2 )]
+rect_scale = Vector2( 1, 1 )
