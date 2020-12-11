@@ -19,8 +19,8 @@ func move_to_position(target_pos : Vector2, speed : float):
 func return_to_old_position(speed : float):
 	tween.interpolate_property(self, "global_position", global_position, original_pos, (global_position - original_pos).length() / speed)
 	tween.start()
-	yield(tween, "tween_all_completed")
 	emit_signal("player_camera")
+	yield(tween, "tween_all_completed")
 	queue_free()
 	
 	

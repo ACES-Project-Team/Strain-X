@@ -100,12 +100,11 @@ func swtich_attack():
 		if attack1 == true:
 			emit_signal("change_to_alcohol_attack") 
 
-
 func _on_CutsceneCamera_player_camera():
 	var cam = Camera2D.new()
 	add_child(cam)
 	cam.current = true
-	
+
 func damage(amount):
 	if invulnerability_timer.is_stopped(): 
 		invulnerability_timer.start()
