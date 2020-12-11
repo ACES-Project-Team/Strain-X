@@ -21,7 +21,7 @@ var dialog_script = [
 		'text': 'You can move using the W, A, S, D keys and attack by pressing the "K" button.'
 	},
 	{
-		'text': 'Pressing the "I" key will open your inventory. You can also interact with objects and pick up items using the "E" button.'
+		'text': 'Pressing the "I" key will open your inventory. You interact with objects and pick up items using the "E" button and press "Enter" to interact with people needed.'
 	},
 	{  
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'
