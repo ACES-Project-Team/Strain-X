@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -25,6 +25,8 @@
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://GoHomeTask.gd" type="Script" id=24]
 [ext_resource path="res://BackToMCHouse.tscn" type="PackedScene" id=25]
+[ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=26]
+[ext_resource path="res://SurgicalMaskDrop .gd" type="Script" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -483,18 +485,21 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 0/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 4.01315, 0.862122 )
+
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 13.293, 13.199 )
 
-[sub_resource type="RectangleShape2D" id=37]
+[sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 8.98579, 8.61807 )
 
-[sub_resource type="RectangleShape2D" id=32]
+[sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 2343.18, 224.062 )
 
-[sub_resource type="RectangleShape2D" id=33]
+[sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 304.513, 417.607 )
 
-[sub_resource type="RectangleShape2D" id=34]
+[sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 275.082, 575.323 )
 
 [node name="Outside2" type="Node2D"]
@@ -1964,6 +1969,19 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
+[node name="SurgicalMaskDrop " parent="." instance=ExtResource( 26 )]
+position = Vector2( 134.594, -110.081 )
+script = ExtResource( 27 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -6.9899, -0.531769 )
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 141.293, -99.4192 )
+shape = SubResource( 30 )
+
 [node name="Neighbor Fence Front View7" type="TileMap" parent="."]
 position = Vector2( 2798.4, -10.5547 )
 tile_set = SubResource( 27 )
@@ -1997,11 +2015,11 @@ texture = ExtResource( 22 )
 [node name="StaticBody2D" type="StaticBody2D" parent="GoHomeTask/Traffic Cone"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoHomeTask/Traffic Cone/StaticBody2D"]
-shape = SubResource( 30 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoHomeTask"]
 position = Vector2( -613.355, 73.938 )
-shape = SubResource( 37 )
+shape = SubResource( 32 )
 
 [node name="Label" type="Label" parent="GoHomeTask"]
 margin_left = -635.135
@@ -2113,102 +2131,42 @@ polygon = PoolVector2Array( -7.15405, -8.01511, -7.15405, -4.53864, -2.43933, -0
 
 [node name="Outside" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 2518.37, 90.7698 )
-shape = SubResource( 32 )
+shape = SubResource( 33 )
 
 [node name="Outside2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -2216.09, 88.8515 )
-shape = SubResource( 32 )
+shape = SubResource( 33 )
 
 [node name="Outside3" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -578.624, -999.305 )
-shape = SubResource( 32 )
+shape = SubResource( 33 )
 
 [node name="Outside4" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 2152.27, -999.197 )
-shape = SubResource( 32 )
+shape = SubResource( 33 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -1048.1, -397.529 )
-shape = SubResource( 33 )
+shape = SubResource( 34 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
-shape = SubResource( 34 )
+shape = SubResource( 35 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 23 )]
-position = Vector2( -529.999, -206.432 )
+position = Vector2( -566.615, -283.208 )
 
 [node name="Volatiles2" parent="." instance=ExtResource( 23 )]
-position = Vector2( -78.4927, -230.713 )
+position = Vector2( -477.725, -223.626 )
 
 [node name="Volatiles3" parent="." instance=ExtResource( 23 )]
-position = Vector2( 53.2021, -192.365 )
+position = Vector2( -403.908, -162.836 )
 
 [node name="Volatiles4" parent="." instance=ExtResource( 23 )]
-position = Vector2( -156.503, -202.591 )
+position = Vector2( -156.503, -195.504 )
 
 [node name="Volatiles5" parent="." instance=ExtResource( 23 )]
-position = Vector2( -133.643, -158.786 )
-
-[node name="Volatiles6" parent="." instance=ExtResource( 23 )]
-position = Vector2( -190.628, -227.388 )
-
-[node name="Volatiles7" parent="." instance=ExtResource( 23 )]
-position = Vector2( -9.50745, -175.276 )
-
-[node name="Volatiles8" parent="." instance=ExtResource( 23 )]
-position = Vector2( -603.372, -186.745 )
-
-[node name="Volatiles9" parent="." instance=ExtResource( 23 )]
-position = Vector2( -504.185, -333.515 )
-
-[node name="Volatiles10" parent="." instance=ExtResource( 23 )]
-position = Vector2( -262.598, -184.679 )
-
-[node name="Volatiles11" parent="." instance=ExtResource( 23 )]
-position = Vector2( -615.422, -449.826 )
-
-[node name="Volatiles12" parent="." instance=ExtResource( 23 )]
-position = Vector2( -592.346, -356.181 )
-
-[node name="Volatiles13" parent="." instance=ExtResource( 23 )]
-position = Vector2( -583.885, -258.023 )
-
-[node name="Volatiles14" parent="." instance=ExtResource( 23 )]
-position = Vector2( -408.893, -437.203 )
-
-[node name="Volatiles15" parent="." instance=ExtResource( 23 )]
-position = Vector2( -413.255, -355.795 )
-
-[node name="Volatiles16" parent="." instance=ExtResource( 23 )]
-position = Vector2( -204.06, -301.027 )
-
-[node name="Volatiles17" parent="." instance=ExtResource( 23 )]
-position = Vector2( -366.658, -192.147 )
-
-[node name="Volatiles18" parent="." instance=ExtResource( 23 )]
-position = Vector2( 212.593, -151.837 )
-
-[node name="Volatiles19" parent="." instance=ExtResource( 23 )]
-position = Vector2( 147.73, -181.126 )
-
-[node name="Volatiles20" parent="." instance=ExtResource( 23 )]
-position = Vector2( -417.447, -282.792 )
-
-[node name="Volatiles21" parent="." instance=ExtResource( 23 )]
-position = Vector2( -298.224, -260.177 )
-
-[node name="Volatiles22" parent="." instance=ExtResource( 23 )]
-position = Vector2( 103.003, -167.348 )
-
-[node name="Volatiles23" parent="." instance=ExtResource( 23 )]
-position = Vector2( -479.239, -252.582 )
-
-[node name="Volatiles24" parent="." instance=ExtResource( 23 )]
-position = Vector2( -292.332, -337.234 )
-
-[node name="Volatiles25" parent="." instance=ExtResource( 23 )]
-position = Vector2( -505.145, -171.826 )
+position = Vector2( -14.9619, -219.144 )
 
 [node name="Neighbor" parent="." instance=ExtResource( 21 )]
 position = Vector2( 716.113, -275.524 )
