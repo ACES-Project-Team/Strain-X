@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -26,7 +26,6 @@
 [ext_resource path="res://Task3.gd" type="Script" id=24]
 [ext_resource path="res://Assets/World/Bunker_Safe-Sheet.png" type="Texture" id=25]
 [ext_resource path="res://SafePlace.gd" type="Script" id=26]
-[ext_resource path="res://VitaminsDrop.tscn" type="PackedScene" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -2276,58 +2275,6 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="VitaminsDrop" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2733.16, -191.769 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop2" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2778.06, -205.022 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop3" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2839.68, -192.458 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop4" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2824.13, -218.783 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop5" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2800.2, -177.5 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop6" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2857.03, -153.568 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop7" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2889.94, -191.261 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop8" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2928.23, -201.432 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop9" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2928.23, -163.141 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop10" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2975.5, -189.466 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop11" parent="." instance=ExtResource( 27 )]
-position = Vector2( 2968.92, -155.961 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop12" parent="." instance=ExtResource( 27 )]
-position = Vector2( 3011.99, -215.193 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="VitaminsDrop13" parent="." instance=ExtResource( 27 )]
-position = Vector2( 3011.99, -155.363 )
-scale = Vector2( 0.6, 0.6 )
 
 [node name="Cone" type="Sprite" parent="."]
 position = Vector2( 308.99, -192.455 )
