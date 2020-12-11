@@ -826,4 +826,4 @@ position = Vector2( 21.9394, 158.431 )
 shape = SubResource( 49 )
 
 [node name="Mom" parent="." instance=ExtResource( 19 )]
-position = Vector2( 27.2236, 76.014 )
+position = Vector2( 33.0328, 75.0039 )

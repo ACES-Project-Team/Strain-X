@@ -33,7 +33,7 @@ position = Vector2( 58.6292, -134.591 )
 position = Vector2( 35.1618, -126.675 )
 
 [node name="Kitchen" parent="." instance=ExtResource( 3 )]
-position = Vector2( 51.0387, 182.538 )
+position = Vector2( 51.0387, 182.726 )
 
 [node name="LivingRoom" parent="." instance=ExtResource( 5 )]
 position = Vector2( 49.9012, -156.475 )

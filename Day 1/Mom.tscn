@@ -1,8 +1,10 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Assets/Player/Mom-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://Mom.gd" type="Script" id=2]
 [ext_resource path="res://WanderController.tscn" type="PackedScene" id=3]
+[ext_resource path="res://MomCollision.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MomCutscene.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 5.89079
@@ -209,6 +211,9 @@ start_node = "Idle"
 
 [node name="Mom" type="KinematicBody2D"]
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -239,3 +244,15 @@ active = true
 parameters/playback = SubResource( 23 )
 parameters/Idle/blend_position = Vector2( 0.00143468, 0.142241 )
 parameters/Walk/blend_position = Vector2( -0.00430417, 0.0284483 )
+
+[node name="Collision" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0.355888, 1.60393 )
+target_scene = ExtResource( 5 )
+
+[node name="Sprite" parent="Collision" index="0"]
+visible = false
+
+[node name="CollisionShape2D" parent="Collision" index="2"]
+position = Vector2( -0.0962143, -2.30905 )
+
+[editable path="Collision"]
