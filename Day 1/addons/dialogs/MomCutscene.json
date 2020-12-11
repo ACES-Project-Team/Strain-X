@@ -10,18 +10,18 @@
 	},
 	{
 		"name": "Mom",
-		"text": "Goodmorning, how was your sleep dear?"
+		"text": "Good morning, how was your sleep dear?"
 	},
 	{
 		"name": "You",
-		"text": "It was very unsettling and I had a really bad nightmare. More importantly, why are there barricades nailed into the windows and doors?"
+		"text": "It was very unsettling as I had a really bad nightmare. More importantly, why are there boards nailed onto the windows and doors?"
 	},
 	{
 		"text": "(You notice your mom averting her eyes as she hesitates to speak.)"
 	},
 	{
 		"name": "Mom",
-		"text": "Well...., you see, we can't go outside of the house right now."
+		"text": "Well... you see, we can't go outside of the house right now."
 	},
 	{
 		"name": "You",
@@ -29,11 +29,11 @@
 	},
 	{
 		"name": "Mom",
-		"text": "We can't go outiside of the house because when you were sleeping, a deadly virus emerged." 
+		"text": "We can't go outside of the house because when you were sleeping, a deadly virus emerged." 
 	},
 	{
 		"name": "Mom",
-		"text": "Government, health, police, and fire departments are also out of service as most of the people outside when it occured turned into a..."
+		"text": "Government, health, police, and fire departments are out of service because most of the people outside when it occured turned into a..."
 	},
 	{
 		"name": "You",
@@ -41,22 +41,22 @@
 	},
 	{
 		"name": "Mom",
-		"text": "Volatiles... They are previously humans that are basically dead but they are mindless and they are moving."
+		"text": "Volatiles... They are infected people that have lost their cognitive abilities due to the virus."
 	},
 	{
 		"name": "Mom",
-		"text": "They are creatures the spread spores that may turn you into a volatile and render you dead in an instant."
+		"text": "They infect through droplets in the air. Those can render you dead in an instant."
 	},
 	{
 		"text": "..."
 	},
 	{
 		"name": "Mom",
-		"text": "The outside is also very dangerous and the virus can kill you immediately. However, the virus are big in diamter so a mask is sufficient. Either cloth or face."
+		"text": "The outside is also very dangerous as the virus can kill you immediately. However, this can be countered by wearing a mask."
 	},
 	{
 		"name": "You",
-		"text": "Hmmmm... I get the situation now. Thanks mom for explaining, I wouldve died going outside of the door without you!"
+		"text": "This feels so unreal! I could've died going outside withoit wearing one. Thank you mom."
 	},
 	{
 		"scene": "main"

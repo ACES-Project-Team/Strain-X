@@ -12,16 +12,16 @@ var dialog_script = [
 		'fade-in': 2
 	},
 	{
-		'text': 'Welcome to Strain-X!'
+		'text': 'Welcome to Strain X!'
 	},
 	{
 		'text': 'Here are the controls:'
 	},
 	{
-		'text': 'You can move using W,A,S,D keys. You can also attack by pressing the "K" button'
+		'text': 'You can move using the W, A, S, D keys and attack by pressing the "K" button.'
 	},
 	{
-		'text': 'Pressing the "Space" key will open your inventory. You can also interact with objects and pickup items using the "E" button.'
+		'text': 'Pressing the "I" key will open your inventory. You can also interact with objects and pick up items using the "E" button.'
 	},
 	{  
 		'text': 'Your objective is to survive and do your tasks. Goodluck, survivor.'

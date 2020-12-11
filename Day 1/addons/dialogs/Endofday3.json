@@ -37,12 +37,12 @@
 	
 	{
 		"name": "You",
-		"text": "Phew! That was so scary. I don't want to do it again"
+		"text": "Phew! That was so scary. I don't want to do that again."
 	},
 	
 	{
 		"name": "Mom",
-		"text": "Is there anyone that got injured?"
+		"text": "Is there anyone injured?"
 	},
 	
 	{
@@ -52,7 +52,7 @@
 	
 	{
 		"name": "Sister",
-		"text": "Is it okay now onii-chan? Is it?"
+		"text": "Kuya, is it okay now? Is it?"
 	},
 	
 	{
@@ -66,7 +66,7 @@
 	
 	{
 		"name": "You",
-		"text": "We don't know if there more of those creatures lying around so I suggest we pick up the pace."
+		"text": "We don't know if there's more of those infected wandering around so I suggest we pick up the pace."
 	},
 	
 	{
@@ -75,13 +75,13 @@
 	
 	{
 		"name": "Narrator",
-		"text": "After having a fierce battle with the mutated creature called Livid, they have sucessfully secured the safe/bunker."
+		"text": "After having a fierce battle with the mutated creature called Livid, they have sucessfully secured the bunker."
 	},
 	
 	
 	{
 		"name": "Narrator",
-		"text": "Will they be able to continue living in peace in this bunker? Or will they be pestered further by these infected creatures."
+		"text": "Will they be able to continue living in peace in this bunker? Or will they be pestered further by the infected?"
 	},
 	
 	{
