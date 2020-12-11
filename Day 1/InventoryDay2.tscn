@@ -10,6 +10,7 @@ texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 16, 16 )
 
 [node name="InventoryDay2" type="Node2D"]
+scale = Vector2( 3, 3 )
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
