@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 signal change_to_alcohol_attack
 signal health_updated(health)
+signal max_health_updated(max_health)
 signal killed() 
 
 enum { 
@@ -87,10 +88,6 @@ func play_walk_in_animation():
 		state = STOP
 		$AnimationPlayer.play("RunUp")
 
-
-
-
-
 func _on_Hurtbox_area_entered(area):
 	stats.HEALTH -= area.damage
 	hurtbox.start_invincibility(2)
@@ -110,10 +107,9 @@ func damage(amount):
 	if invulnerability_timer.is_stopped(): 
 		invulnerability_timer.start()
 	_set_health(health - amount)
-	
 
 func kill():
-	pass
+	queue_free()
 
 func _set_health(value): 
 	var prev_health = health 
