@@ -1,5 +1,9 @@
 [
 	{
+		"background": "res://addons/dialogs/Images/background/OutsideEnding.png"
+	},
+	
+	{
 		"sound": "afterbossbgm"
 	},
 	

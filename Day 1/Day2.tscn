@@ -17,7 +17,6 @@ __meta__ = {
 [node name="Outside" parent="." instance=ExtResource( 3 )]
 
 [node name="SurgicalMaskOutfit " parent="." instance=ExtResource( 2 )]
-position = Vector2( 149.875, -71.3106 )
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1541.04, -179.919 )

@@ -26,6 +26,7 @@ Hitbox="*res://Hitbox.tscn"
 PlayerStats="*res://PlayerStats.tscn"
 global="*res://global.gd"
 PlayerInventory2="*res://PlayerInventory2.gd"
+Pause="*res://Pause.tscn "
 
 [display]
 
