@@ -333,7 +333,7 @@ volume_db = -7.704
 
 [node name="NeighborBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = -25.679
+volume_db = -10.271
 
 [node name="MorningBGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
