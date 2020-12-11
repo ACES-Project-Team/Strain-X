@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://SurgicalMaskOutfit .gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://PickUpZone.gd" type="Script" id=4]
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Hitbox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://PlayerHealthBar2.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Attackdown"
@@ -591,6 +592,15 @@ disabled = true
 
 [node name="SpraySound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+
+[node name="PlayerHealthBar" parent="." instance=ExtResource( 7 )]
+
+[node name="HealthBar" parent="PlayerHealthBar" index="0"]
+margin_left = -26.8701
+margin_top = -24.7487
+margin_right = 31.1299
+margin_bottom = -10.7487
+text = "HP = 150"
 [connection signal="area_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_entered"]
 [connection signal="area_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_exited"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
@@ -598,3 +608,5 @@ stream = ExtResource( 3 )
 [editable path="Hurtbox"]
 
 [editable path="Hitbox_pivot/Hitbox"]
+
+[editable path="PlayerHealthBar"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Assets/World/Outside Neighbor Home.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Outside Road Intersection.png" type="Texture" id=2]
@@ -25,8 +25,6 @@
 [ext_resource path="res://Volatiles.tscn" type="PackedScene" id=23]
 [ext_resource path="res://GoHomeTask.gd" type="Script" id=24]
 [ext_resource path="res://BackToMCHouse.tscn" type="PackedScene" id=25]
-[ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=26]
-[ext_resource path="res://SurgicalMaskDrop .gd" type="Script" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Outside Road Vertical2.png 0"
@@ -485,25 +483,22 @@ points = PoolVector2Array( 0, 0, 6, 0, 6, 39, 0, 39 )
 0/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=30]
-extents = Vector2( 4.01315, 0.862122 )
-
-[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 13.293, 13.199 )
 
-[sub_resource type="RectangleShape2D" id=32]
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 8.98579, 8.61807 )
 
-[sub_resource type="RectangleShape2D" id=33]
+[sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 2343.18, 224.062 )
 
-[sub_resource type="RectangleShape2D" id=34]
+[sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 304.513, 417.607 )
 
-[sub_resource type="RectangleShape2D" id=35]
+[sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 275.082, 575.323 )
 
 [node name="Outside2" type="Node2D"]
-position = Vector2( 0.2211, 0.221104 )
+position = Vector2( 0.370911, 0.221104 )
 
 [node name="Grass" type="Sprite" parent="."]
 position = Vector2( -2207.07, -984.598 )
@@ -1969,19 +1964,6 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -2228227, 0, 0, -2293739, 0, 0, -2162691, 0, 0, -2228203, 0, 0, -2097155, 0, 0, -2162667, 0, 0, -2031619, 0, 0, -2097131, 0, 0, -1966083, 0, 0, -2031595, 0, 0, -1900547, 0, 0, -1966059, 0, 0, -1835011, 0, 0, -1900523, 0, 0, -1769475, 0, 0, -1834987, 0, 0, -1703939, 0, 0, -1769451, 0, 0, -1638403, 0, 0, -1703915, 0, 0, -1572867, 0, 0, -1638379, 0, 0, -1507331, 0, 0, -1572843, 0, 0, -1441795, 0, 0, -1507307, 0, 0, -1376259, 0, 0, -1441771, 0, 0, -1310723, 0, 0, -1376235, 0, 0, -1245187, 0, 0, -1310699, 0, 0, -1179651, 0, 0, -1245163, 0, 0, -1114115, 0, 0, -1179627, 0, 0, -1048579, 0, 0, -1114091, 0, 0 )
 
-[node name="SurgicalMaskDrop " parent="." instance=ExtResource( 26 )]
-position = Vector2( 134.594, -110.081 )
-script = ExtResource( 27 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( -6.9899, -0.531769 )
-collision_layer = 2
-collision_mask = 7
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 141.293, -99.4192 )
-shape = SubResource( 30 )
-
 [node name="Neighbor Fence Front View7" type="TileMap" parent="."]
 position = Vector2( 2798.4, -10.5547 )
 tile_set = SubResource( 27 )
@@ -2015,11 +1997,11 @@ texture = ExtResource( 22 )
 [node name="StaticBody2D" type="StaticBody2D" parent="GoHomeTask/Traffic Cone"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoHomeTask/Traffic Cone/StaticBody2D"]
-shape = SubResource( 31 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoHomeTask"]
 position = Vector2( -613.355, 73.938 )
-shape = SubResource( 32 )
+shape = SubResource( 31 )
 
 [node name="Label" type="Label" parent="GoHomeTask"]
 margin_left = -635.135
@@ -2131,27 +2113,27 @@ polygon = PoolVector2Array( -7.15405, -8.01511, -7.15405, -4.53864, -2.43933, -0
 
 [node name="Outside" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 2518.37, 90.7698 )
-shape = SubResource( 33 )
+shape = SubResource( 32 )
 
 [node name="Outside2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -2216.09, 88.8515 )
-shape = SubResource( 33 )
+shape = SubResource( 32 )
 
 [node name="Outside3" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -578.624, -999.305 )
-shape = SubResource( 33 )
+shape = SubResource( 32 )
 
 [node name="Outside4" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 2152.27, -999.197 )
-shape = SubResource( 33 )
+shape = SubResource( 32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Outside"]
 position = Vector2( -1048.1, -397.529 )
-shape = SubResource( 34 )
+shape = SubResource( 33 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Outside"]
 position = Vector2( 3469.63, -281.097 )
-shape = SubResource( 35 )
+shape = SubResource( 34 )
 
 [node name="Volatiles" parent="." instance=ExtResource( 23 )]
 position = Vector2( -566.615, -283.208 )
@@ -2189,5 +2171,6 @@ __meta__ = {
 
 [node name="BackToMCHouse" parent="." instance=ExtResource( 25 )]
 position = Vector2( 151.141, -57.3469 )
+target_scene = "res://MCHouseAfterGrocery.tscn"
 [connection signal="body_entered" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_entered"]
 [connection signal="body_exited" from="GoHomeTask" to="GoHomeTask" method="_on_GoHomeTask_body_exited"]
