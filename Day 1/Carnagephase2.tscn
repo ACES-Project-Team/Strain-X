@@ -117,7 +117,7 @@ MAX_HEALTH = 500
 visible = false
 collision_layer = 0
 collision_mask = 256
-damage = 1
+damage = 80
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( -3.30356, -8.02293 )
