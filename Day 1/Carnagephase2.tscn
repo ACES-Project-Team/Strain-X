@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Enemies/Carnage-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/LargeShadow.png" type="Texture" id=2]
-[ext_resource path="res://Carnagephase1.gd" type="Script" id=3]
+[ext_resource path="res://Carnagephase2.gd" type="Script" id=3]
 [ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://DetectionZone.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Hitbox.tscn" type="PackedScene" id=6]
@@ -79,7 +79,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 2
+frame = 4
 playing = true
 offset = Vector2( 0, -20 )
 
