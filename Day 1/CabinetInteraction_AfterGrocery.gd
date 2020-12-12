@@ -18,5 +18,5 @@ func _on_Area2D_body_exited(body):
 		
 func _input(event):
 	if Input.is_action_just_pressed("PickUp") and can_interact == true: 
-		$Label.text = "Get Face Mask and UV Lighsaber."
+		$Label.text = "Get Surgical Mask"
 		
