@@ -79,7 +79,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 5
+frame = 4
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -117,7 +117,7 @@ MAX_HEALTH = 500
 visible = false
 collision_layer = 0
 collision_mask = 256
-damage = 80
+damage = 20
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( -3.30356, -8.02293 )

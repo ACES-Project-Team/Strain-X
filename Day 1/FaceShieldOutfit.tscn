@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Assets/Player/Main Character_Wider-Sheet.png" type="Texture" id=1]
 [ext_resource path="res://FaceShieldOutfit.gd" type="Script" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://PickUpZone.gd" type="Script" id=5]
 [ext_resource path="res://Assets/Music and Sounds/LightSaberSound.wav" type="AudioStream" id=6]
 [ext_resource path="res://PlayerHealthBar3.tscn" type="PackedScene" id=7]
-[ext_resource path="res://DeathEffect.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.75485, 11.4316 )
@@ -568,7 +567,7 @@ rotation = -3.52906
 [node name="Hitbox" parent="Hitbox_pivot" instance=ExtResource( 4 )]
 collision_layer = 0
 collision_mask = 16
-damage = 75
+damage = 15
 
 [node name="CollisionShape2D" parent="Hitbox_pivot/Hitbox" index="0"]
 position = Vector2( 1.40308, 14.592 )
@@ -604,8 +603,6 @@ margin_top = -25.3924
 margin_right = 65.4649
 margin_bottom = -3.39242
 text = "HP = 175"
-
-[node name="DeathEffect" parent="." instance=ExtResource( 8 )]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="Hitbox_pivot/Hitbox"]
@@ -613,5 +610,3 @@ text = "HP = 175"
 [editable path="Hurtbox"]
 
 [editable path="PlayerHealthBar"]
-
-[editable path="DeathEffect"]
