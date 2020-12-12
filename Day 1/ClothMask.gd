@@ -7,7 +7,7 @@ func _ready():
 		
 func _input(event):
 	if Input.is_action_just_pressed("PickUp") and can_interact == true: 
-		$Label.text = "Get Cloth Mask on Parent's Bedroom"
+		$Label.text = "Get Surgical Mask."
 		
 
 
