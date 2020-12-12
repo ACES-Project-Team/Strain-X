@@ -517,6 +517,7 @@ height = 6.71761
 height = 0.0
 
 [node name="SurgicalMaskOutfit " type="KinematicBody2D"]
+collision_layer = 2
 collision_mask = 10
 script = ExtResource( 2 )
 hasSprayBottle = true
