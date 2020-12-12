@@ -54,4 +54,5 @@ func _on_Stats_no_health():
 	queue_free()
 	var deathEffect = DeathEffect.instance()
 	get_parent().add_child(deathEffect)
-	deathEffect.global_position = global_position 
+	deathEffect.global_position = global_position
+	get_tree().change_scene_to(load("res://Day3Ending.tscn"))
