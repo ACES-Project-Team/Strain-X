@@ -17,9 +17,9 @@ _global_script_class_icons={
 
 config/name="Strain-X"
 run/main_scene="res://Title Screen.tscn"
-config/icon="res://Assets/Strain X.ico"
-config/macos_native_icon="res://Assets/Strain X.icns"
-config/windows_native_icon="res://Assets/Strain X.ico"
+config/icon="res://Assets/Strain X_Logo.png"
+config/macos_native_icon="res://Assets/Strain X_Logo.icns"
+config/windows_native_icon="res://Assets/Strain X_Logo.ico"
 
 [autoload]
 
