@@ -76,7 +76,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 9 )
 animation = "Phase1attack "
-frame = 2
+frame = 3
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -121,10 +121,10 @@ position = Vector2( -3.7755, -13.4502 )
 shape = SubResource( 13 )
 
 [node name="BossHealthBar" parent="." instance=ExtResource( 8 )]
-margin_left = -28.9914
-margin_top = -57.2757
-margin_right = -28.9914
-margin_bottom = -57.2757
+margin_left = -21.1667
+margin_top = -56.9031
+margin_right = -21.1667
+margin_bottom = -56.9031
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
