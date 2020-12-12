@@ -21,6 +21,8 @@ __meta__ = {
 [node name="Outside" parent="." instance=ExtResource( 3 )]
 
 [node name="SurgicalMaskOutfit " parent="." instance=ExtResource( 2 )]
+position = Vector2( 149.08, -69.9112 )
+collision_mask = 11
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
