@@ -558,6 +558,7 @@ shape = SubResource( 34 )
 position = Vector2( 15.4632, -2.89108 )
 rotation = -1.82038
 current = true
+smoothing_enabled = true
 
 [node name="PickUpZone" type="Area2D" parent="."]
 visible = false
