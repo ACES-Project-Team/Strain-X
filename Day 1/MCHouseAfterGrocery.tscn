@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Bedroom2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -7,9 +7,8 @@
 [ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Day1 Part 3.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
+[ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
-[ext_resource path="res://UvLightSaber .tscn" type="PackedScene" id=10]
-[ext_resource path="res://FaceShieldDrop .tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4.4767, 0.740112 )
@@ -17,10 +16,10 @@ extents = Vector2( 4.4767, 0.740112 )
 [node name="MCHouse-AfterDialogue" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -436.24
-margin_top = -177.66
-margin_right = 849.76
-margin_bottom = 636.34
+margin_left = -435.251
+margin_top = -175.353
+margin_right = 850.749
+margin_bottom = 638.647
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -46,27 +45,17 @@ target_scene = ExtResource( 6 )
 visible = false
 position = Vector2( 378.297, 112.366 )
 
-[node name="FaceShieldDrop " parent="." instance=ExtResource( 11 )]
-position = Vector2( 219.388, 234.474 )
-
-[node name="UvLightSaber " parent="." instance=ExtResource( 10 )]
-position = Vector2( 91.8525, 102.414 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 200.649, 88.5889 )
 
+[node name="SurgicalMaskDrop " parent="." instance=ExtResource( 8 )]
+position = Vector2( 79.9975, 153.922 )
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -139.425, -80.4248 )
 collision_layer = 2
 collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 218.408, 244.154 )
-shape = SubResource( 1 )
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-collision_layer = 2
-collision_mask = 7
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2( 90.1901, 112.639 )
 shape = SubResource( 1 )
