@@ -47,12 +47,6 @@ script = ExtResource( 8 )
 [node name="InventoryButton" parent="UserInterface" instance=ExtResource( 7 )]
 position = Vector2( 26.2426, -1.0497 )
 
-[node name="Background Music" type="Node" parent="."]
-
-[node name="Background Music" type="AudioStreamPlayer2D" parent="Background Music"]
-stream = ExtResource( 3 )
-autoplay = true
-
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 script = ExtResource( 5 )
 
@@ -147,5 +141,10 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -7.0
+autoplay = true
 [connection signal="body_entered" from="VolatileTask" to="VolatileTask" method="_on_VolatileTask_body_entered"]
 [connection signal="body_exited" from="VolatileTask" to="VolatileTask" method="_on_VolatileTask_body_exited"]
