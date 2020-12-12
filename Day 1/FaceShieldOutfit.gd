@@ -12,7 +12,7 @@ export var MAX_SPEED = 80
 export var FRICTION = 500
 var state = MOVE
 var attack1 = swtich_attack()
-var stats = PlayerStats
+var stats = PlayerStats3
 var velocity = Vector2.ZERO
 
 export var hasLightsaber = false
