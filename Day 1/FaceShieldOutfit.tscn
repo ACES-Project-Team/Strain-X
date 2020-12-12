@@ -599,10 +599,10 @@ stream = ExtResource( 6 )
 [node name="PlayerHealthBar" parent="." instance=ExtResource( 7 )]
 
 [node name="HealthBar" parent="PlayerHealthBar" index="0"]
-margin_left = -27.0
-margin_top = -26.0607
-margin_right = 31.0
-margin_bottom = -12.0607
+margin_left = -18.5351
+margin_top = -25.3924
+margin_right = 65.4649
+margin_bottom = -3.39242
 text = "HP = 175"
 
 [node name="DeathEffect" parent="." instance=ExtResource( 8 )]

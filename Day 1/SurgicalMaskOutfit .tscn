@@ -595,10 +595,10 @@ stream = ExtResource( 3 )
 [node name="PlayerHealthBar" parent="." instance=ExtResource( 7 )]
 
 [node name="HealthBar" parent="PlayerHealthBar" index="0"]
-margin_left = -26.8701
-margin_top = -24.7487
-margin_right = 31.1299
-margin_bottom = -10.7487
+margin_left = -20.206
+margin_top = -24.5019
+margin_right = 63.794
+margin_bottom = -2.50188
 text = "HP = 150"
 [connection signal="area_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_entered"]
 [connection signal="area_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_area_exited"]
