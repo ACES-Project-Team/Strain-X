@@ -558,6 +558,7 @@ parameters/Walk/blend_position = Vector2( -0.00912648, -0.663793 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+smoothing_enabled = true
 
 [node name="PickUpZone" type="Area2D" parent="."]
 visible = false

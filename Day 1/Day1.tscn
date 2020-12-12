@@ -28,6 +28,9 @@ position = Vector2( 146.864, -75.6567 )
 [node name="AnimationTree" parent="GroceryOutfit " index="3"]
 parameters/playback = SubResource( 1 )
 
+[node name="Camera2D" parent="GroceryOutfit " index="4"]
+smoothing_enabled = true
+
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
 
