@@ -52,6 +52,7 @@ func _on_Hurtbox_area_entered(area):
 
 func _on_Stats_no_health():
 	queue_free()
+	get_tree().change_scene("res://Day3Ending.tscn")
 	var deathEffect = DeathEffect.instance()
 	get_parent().add_child(deathEffect)
 	deathEffect.global_position = global_position
