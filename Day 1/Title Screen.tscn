@@ -64,6 +64,7 @@ texture_hover = ExtResource( 10 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+volume_db = -10.272
 autoplay = true
 mix_target = 1
 [connection signal="pressed" from="MarginContainer/VBoxContainer/NewGame" to="." method="_on_NewGame_pressed"]
