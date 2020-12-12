@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://Assets/World/Living Room Wall Tile Set.png" type="Texture" id=1]
 [ext_resource path="res://Assets/World/Living Room Floor Tile Set.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://UserInterface3.gd" type="Script" id=10]
 [ext_resource path="res://Dad.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/Music and Sounds/TitleScreenMusic.wav" type="AudioStream" id=12]
+[ext_resource path="res://ClothMask.gd" type="Script" id=13]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -642,6 +643,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 0/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=52]
+extents = Vector2( 16.8213, 15.2346 )
+
+[sub_resource type="RectangleShape2D" id=53]
+extents = Vector2( 17.2623, 16.7737 )
+
 [sub_resource type="RectangleShape2D" id=49]
 extents = Vector2( 15.8482, 15.598 )
 
@@ -787,6 +794,41 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 1310732, -1073741824, 0 )
 
+[node name="ClothMask" type="Area2D" parent="."]
+position = Vector2( 21.5869, 242.987 )
+script = ExtResource( 13 )
+
+[node name="Bookshelf" type="Sprite" parent="ClothMask"]
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ClothMask/Bookshelf"]
+position = Vector2( -3.84834, -7.80807 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClothMask/Bookshelf/StaticBody2D"]
+position = Vector2( 4.61924, 2.96951 )
+shape = SubResource( 52 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClothMask"]
+position = Vector2( 0.98983, -4.94917 )
+shape = SubResource( 53 )
+
+[node name="Label" type="Label" parent="ClothMask"]
+margin_left = -19.0923
+margin_top = -43.5439
+margin_right = 59.9077
+margin_bottom = 4.45607
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.968627, 1, 0.0392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.945098, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Interact (E) To Show Task"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Furniture" type="StaticBody2D" parent="."]
 
 [node name="Couch and TV" type="Sprite" parent="Furniture"]
@@ -807,10 +849,6 @@ polygon = PoolVector2Array( 6.22932, -2.55635, 6.22932, -2.08334, 6.45865, -2.08
 position = Vector2( 90.5297, 263.846 )
 scale = Vector2( 3.08333, 2.98982 )
 polygon = PoolVector2Array( -6.84261, -9.71063, -6.78528, -4.62577, 3.592, -4.6849, 3.592, -9.71063, 3.30533, -9.71063, 3.30533, -10.0063 )
-
-[node name="Bookshelf" type="Sprite" parent="Furniture"]
-position = Vector2( 21.5869, 242.987 )
-texture = ExtResource( 5 )
 
 [node name="Bookshelf2" type="CollisionShape2D" parent="Furniture"]
 position = Vector2( 22.6476, 238.391 )
@@ -909,8 +947,11 @@ position = Vector2( 39.3913, 287.762 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background Music"]
 stream = ExtResource( 12 )
+volume_db = -7.0
 autoplay = true
 mix_target = 1
 
 [node name="Dad2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 31.0095, 286.955 )
+[connection signal="body_entered" from="ClothMask" to="ClothMask" method="_on_ClothMask_body_entered"]
+[connection signal="body_exited" from="ClothMask" to="ClothMask" method="_on_ClothMask_body_exited"]
