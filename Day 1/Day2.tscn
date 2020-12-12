@@ -22,6 +22,7 @@ __meta__ = {
 
 [node name="SurgicalMaskOutfit " parent="." instance=ExtResource( 2 )]
 position = Vector2( 151.052, -79.1223 )
+collision_layer = 1
 collision_mask = 2147483658
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
