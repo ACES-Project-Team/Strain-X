@@ -3,7 +3,7 @@ extends KinematicBody2D
 const DeathEffect = preload ("res://DeathEffect.tscn")
 var knockback =  Vector2.ZERO
 var vel = Vector2.ZERO
-var damage = Hitbox
+var damage = 3
 var state = idle
 
 

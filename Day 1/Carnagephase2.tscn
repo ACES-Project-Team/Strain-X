@@ -79,7 +79,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 3
+frame = 1
 playing = true
 offset = Vector2( 0, -20 )
 
