@@ -11,47 +11,47 @@
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
-region = Rect2( 1280, 0, 128, 128 )
+region = Rect2( 256, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
-region = Rect2( 1408, 0, 128, 128 )
+region = Rect2( 384, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
-region = Rect2( 1536, 0, 128, 128 )
+region = Rect2( 1280, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
-region = Rect2( 1664, 0, 128, 128 )
+region = Rect2( 1408, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
-region = Rect2( 1792, 0, 128, 128 )
+region = Rect2( 1536, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 1 )
-region = Rect2( 1920, 0, 128, 128 )
+region = Rect2( 1664, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 1 )
-region = Rect2( 256, 0, 128, 128 )
+region = Rect2( 1792, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 1 )
-region = Rect2( 384, 0, 128, 128 )
+region = Rect2( 1920, 0, 128, 128 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
-"loop": true,
-"name": "Phase2attack",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
 "loop": true,
 "name": "Phase2",
 "speed": 3.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Phase2attack",
+"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=10]
@@ -78,7 +78,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 5
+frame = 3
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -110,13 +110,13 @@ position = Vector2( -1.49831, -11.9865 )
 shape = SubResource( 12 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-MAX_HEALTH = 100
+MAX_HEALTH = 150
 
 [node name="Hitbox" parent="." instance=ExtResource( 6 )]
 visible = false
 collision_layer = 0
 collision_mask = 256
-damage = 5
+damage = 15
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( -3.30356, -8.02293 )
