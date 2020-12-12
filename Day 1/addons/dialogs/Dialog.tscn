@@ -10,7 +10,7 @@
 [ext_resource path="res://Assets/Music and Sounds/(No Copyright) Intense Action Background Music Cinematic Music by Argsound.wav" type="AudioStream" id=8]
 [ext_resource path="res://addons/dialogs/Images/portraits/Big_Neighbor-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://addons/dialogs/Images/portraits/big_daddy-Sheet.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Music and Sounds/bg music morning.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Music and Sounds/Lost My Family (Calm Background Music).wav" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Music and Sounds/Happy time (1).wav" type="AudioStream" id=12]
 [ext_resource path="res://addons/dialogs/Images/portraits/big_sister-Sheet.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Music and Sounds/Panting Male Sound Effect.wav" type="AudioStream" id=14]
