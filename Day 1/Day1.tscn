@@ -36,9 +36,10 @@ position = Vector2( 26.2426, -1.0497 )
 
 [node name="Background Music" type="Node" parent="."]
 
-[node name="Background Music" type="AudioStreamPlayer2D" parent="Background Music"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background Music"]
 stream = ExtResource( 3 )
 autoplay = true
+mix_target = 1
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 script = ExtResource( 5 )

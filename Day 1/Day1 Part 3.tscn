@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://FaceShieldOutfit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SurgicalMaskOutfit .tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Music and Sounds/Day1Music.wav" type="AudioStream" id=3]
 [ext_resource path="res://Pause.tscn" type="PackedScene" id=4]
 [ext_resource path="res://PauseMenu.gd" type="Script" id=5]
@@ -38,7 +38,8 @@ position = Vector2( -527.997, -550.051 )
 position = Vector2( 502.7, -183.855 )
 target_scene = "res://Day2_Transition.tscn"
 
-[node name="FaceShieldOutfit" parent="." instance=ExtResource( 2 )]
+[node name="SurgicalMaskOutfit " parent="." instance=ExtResource( 1 )]
+position = Vector2( 153.174, -78.3495 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
