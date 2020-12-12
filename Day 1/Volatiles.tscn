@@ -503,7 +503,7 @@ parameters/walk/blend_position = Vector2( 0.0017575, 0.00948286 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
-volume_db = -20.0
+volume_db = -40.0
 autoplay = true
 [connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
