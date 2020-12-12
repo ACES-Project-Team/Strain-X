@@ -27,6 +27,8 @@ PlayerStats="*res://PlayerStats.tscn"
 global="*res://global.gd"
 PlayerInventory2="*res://PlayerInventory2.gd"
 Stats="*res://Stats.tscn"
+PlayerStats2="*res://PlayerStats2.tscn"
+PlayerStats3="*res://PlayerStats3.tscn"
 
 [display]
 

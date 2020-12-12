@@ -14,6 +14,6 @@ func set_max_health(value):
 	max_health = max(value, 1)
 
 func _ready():
-	max_health = PlayerStats.MAX_HEALTH
-	health = PlayerStats.HEALTH
-	PlayerStats.connect("health_changed", self, "set_health")
+	max_health = PlayerStats2.MAX_HEALTH
+	health = PlayerStats2.HEALTH
+	PlayerStats2.connect("health_changed", self, "set_health")
