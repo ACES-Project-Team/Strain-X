@@ -79,7 +79,7 @@ script = ExtResource( 3 )
 position = Vector2( -0.264862, 0 )
 frames = SubResource( 9 )
 animation = "Phase2attack"
-frame = 4
+frame = 5
 playing = true
 offset = Vector2( 0, -20 )
 
@@ -111,7 +111,7 @@ position = Vector2( -1.49831, -11.9865 )
 shape = SubResource( 12 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-MAX_HEALTH = 500
+MAX_HEALTH = 300
 
 [node name="Hitbox" parent="." instance=ExtResource( 6 )]
 visible = false
