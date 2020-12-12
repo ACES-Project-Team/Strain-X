@@ -5,7 +5,7 @@
 [ext_resource path="res://Ktchen.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Bedroom1_AfterGrocery.tscn" type="PackedScene" id=4]
 [ext_resource path="res://LivingRoom.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Day1 Part 3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Day2_Transition.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MainHouseDoor.tscn" type="PackedScene" id=7]
 [ext_resource path="res://SurgicalMaskDrop .tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sister.tscn" type="PackedScene" id=9]
