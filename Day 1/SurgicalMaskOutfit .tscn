@@ -503,8 +503,8 @@ graph_offset = Vector2( -221.614, 0 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=33]
 
-[sub_resource type="RectangleShape2D" id=34]
-extents = Vector2( 9.75485, 11.6922 )
+[sub_resource type="CircleShape2D" id=34]
+radius = 6.69305
 
 [sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 12.091, 12.3317 )
@@ -551,7 +551,7 @@ parameters/Idle/blend_position = Vector2( -0.00540543, 0.037931 )
 parameters/Walk/blend_position = Vector2( 0, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+position = Vector2( 0.328377, 3.7216 )
 shape = SubResource( 34 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
