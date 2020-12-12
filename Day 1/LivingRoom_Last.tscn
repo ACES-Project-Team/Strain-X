@@ -909,6 +909,7 @@ position = Vector2( 39.3913, 287.762 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background Music"]
 stream = ExtResource( 12 )
+volume_db = -7.0
 autoplay = true
 mix_target = 1
 
