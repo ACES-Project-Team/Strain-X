@@ -30,6 +30,7 @@ position = Vector2( -527.997, -550.051 )
 
 [node name="ClothMaskOutfit" parent="." instance=ExtResource( 2 )]
 position = Vector2( -525.948, -526.247 )
+collision_layer = 3
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
