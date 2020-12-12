@@ -95,6 +95,10 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="Dad"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 11.6119
+margin_top = -0.735012
+margin_right = 11.6119
+margin_bottom = -0.735016
 color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -116,6 +120,7 @@ __meta__ = {
 }
 
 [node name="Sister" type="Control" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -11.6119
@@ -129,6 +134,10 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="Sister"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 11.6058
+margin_top = -0.732942
+margin_right = 11.6058
+margin_bottom = -0.732941
 color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -311,10 +320,6 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -0.471939
-margin_top = 0.471939
-margin_right = -0.471924
-margin_bottom = 0.471924
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
