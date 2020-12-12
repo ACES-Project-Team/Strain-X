@@ -447,7 +447,6 @@ shape = SubResource( 1 )
 visible = false
 
 [node name="DetectionZone" parent="." instance=ExtResource( 3 )]
-visible = false
 collision_layer = 0
 collision_mask = 2
 
